@@ -1,26 +1,32 @@
 /* common css start */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container{
-    max-width: 1720px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
+body {
+  background: #0b0e1e;
 }
-img{
-    max-width: 100%;
+.container {
+  max-width: 1720px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-li{
-    list-style: none;
-    display: block;
+button {
+  cursor: pointer;
 }
-a{
-    text-decoration: none;
-    display: inline-block;
+img {
+  max-width: 100%;
 }
-::placeholder{
-    color: #FFFFFF;
+li {
+  list-style: none;
+  display: block;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+::placeholder {
+  color: #ffffff;
 }
