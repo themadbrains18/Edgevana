@@ -1,0 +1,26 @@
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1720px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+img{
+    max-width: 100%;
+}
+li{
+    list-style: none;
+    display: block;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+::placeholder{
+    color: #FFFFFF;
+}
