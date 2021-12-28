@@ -23,4 +23,12 @@
     font-weight: 500;
     font-style: normal;
 }
-
+.toggle__btn{
+    svg{
+        cursor: pointer;
+        display: none;
+    }
+}
+.col-lg-hide{
+    display: none;
+}

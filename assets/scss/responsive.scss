@@ -1,0 +1,80 @@
+// === RESPONSIVE CSS 480PX START === //
+@media only screen and (max-width: 480px){
+    //footer responsive css 480px 
+    .footer__text {
+        svg{
+            width: 71px;
+            height: 15px;
+        }
+    }
+    .footer__form {
+        border-radius: 4px;
+        .form__group{
+            border-radius: 4px;
+        }
+        input {
+            padding: 10px;
+        }
+        .submit__btn{
+            max-width: 27%;
+            width: 100%;
+            button {
+                padding: 8px 15px;
+                border-radius: 4px;
+                margin: 2px 2px 2px -2px;
+            }
+        }
+    }
+}
+// === RESPONSIVE CSS 480PX END === //
+
+// === RESPONSIVE CSS 767PX START === //
+@media only screen and (max-width: 767px) {
+    // footer responsive css 767px
+    .container{
+        padding: 0 30px;
+    }
+    .copywrite__text {
+        flex-direction: column-reverse;
+    }
+    .footer__text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer__text .footer__text__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+// === RESPONSIVE CSS 767PX end === //
+
+// === RESPONSIVE CSS 1200PX START === //
+@media only screen and (max-width: 1200px) {
+    // footer responsive max-width 1200px
+    .footer{
+        padding: 50px 0;
+    }
+    .footer__content {
+        flex-direction: column;
+        margin-bottom: 45px;
+    }
+    .submit__btn button {
+        margin: 3px 3px 3px -3px;
+        width: 100%;
+    }
+    .footer__text ,
+    .footer__items__wrapper 
+    {
+        flex-direction: column;
+    }
+    .footer__text__inner,
+    .footer__items__inner,
+    form.footer__form 
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+// === RESPONSIVE CSS 1200PX END === //

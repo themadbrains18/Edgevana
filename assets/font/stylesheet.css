@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'ABC Diatype Trial';
+    src: url('ABCDiatype-BlackItalic.woff2') format('woff2'),
+        url('ABCDiatype-BlackItalic.woff') format('woff'),
+        url('ABCDiatype-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Trial';
+    src: url('ABCDiatype-Black.woff2') format('woff2'),
+        url('ABCDiatype-Black.woff') format('woff'),
+        url('ABCDiatype-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Trial';
+    src: url('ABCDiatype-Bold.woff2') format('woff2'),
+        url('ABCDiatype-Bold.woff') format('woff'),
+        url('ABCDiatype-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Trial';
+    src: url('ABCDiatype-BoldItalic.woff2') format('woff2'),
+        url('ABCDiatype-BoldItalic.woff') format('woff'),
+        url('ABCDiatype-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Trial';
+    src: url('ABCDiatype-Italic.woff2') format('woff2'),
+        url('ABCDiatype-Italic.woff') format('woff'),
+        url('ABCDiatype-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Trial';
+    src: url('ABCDiatype-HeavyItalic.woff2') format('woff2'),
+        url('ABCDiatype-HeavyItalic.woff') format('woff'),
+        url('ABCDiatype-HeavyItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Trial';
+    src: url('ABCDiatype-LightItalic.woff2') format('woff2'),
+        url('ABCDiatype-LightItalic.woff') format('woff'),
+        url('ABCDiatype-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Trial';
+    src: url('ABCDiatype-Heavy.woff2') format('woff2'),
+        url('ABCDiatype-Heavy.woff') format('woff'),
+        url('ABCDiatype-Heavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Trial';
+    src: url('ABCDiatype-Light.woff2') format('woff2'),
+        url('ABCDiatype-Light.woff') format('woff'),
+        url('ABCDiatype-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Trial';
+    src: url('ABCDiatype-MediumItalic.woff2') format('woff2'),
+        url('ABCDiatype-MediumItalic.woff') format('woff'),
+        url('ABCDiatype-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Trial';
+    src: url('ABCDiatype-Medium.woff2') format('woff2'),
+        url('ABCDiatype-Medium.woff') format('woff'),
+        url('ABCDiatype-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Trial';
+    src: url('ABCDiatype-Italic_1.woff2') format('woff2'),
+        url('ABCDiatype-Italic_1.woff') format('woff'),
+        url('ABCDiatype-Italic_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Trial';
+    src: url('ABCDiatype-Regular.woff2') format('woff2'),
+        url('ABCDiatype-Regular.woff') format('woff'),
+        url('ABCDiatype-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Trial';
+    src: url('ABCDiatype-ThinItalic.woff2') format('woff2'),
+        url('ABCDiatype-ThinItalic.woff') format('woff'),
+        url('ABCDiatype-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Trial';
+    src: url('ABCDiatype-Thin.woff2') format('woff2'),
+        url('ABCDiatype-Thin.woff') format('woff'),
+        url('ABCDiatype-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Trial';
+    src: url('ABCDiatype-UltraItalic.woff2') format('woff2'),
+        url('ABCDiatype-UltraItalic.woff') format('woff'),
+        url('ABCDiatype-UltraItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Trial';
+    src: url('ABCDiatype-Ultra.woff2') format('woff2'),
+        url('ABCDiatype-Ultra.woff') format('woff'),
+        url('ABCDiatype-Ultra.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
