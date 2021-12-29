@@ -1,43 +1,42 @@
 /* header css start */
-.header{
-    position: fixed;
-    top: 67px;
-    left: 0;
-    width: 100%;
-    z-index: 99;
+.header {
+  position: fixed;
+  top: 67px;
+  left: 0;
+  width: 100%;
+  z-index: 99;
 }
-.header__inner{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    justify-content: space-between;
+.header__inner {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-between;
 }
 .nav__list ul {
-    display: flex;
-    align-items: center;
-    gap: clamp(20px,8vw,143px);
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 8vw, 143px);
 }
 .nav__list ul li .nav__item,
-.contact__btn .nav__item
-{
-    color: #FFFFFF;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 500;
-    
+.contact__btn .nav__item {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  font-style: normal;
 }
-.toggle__btn{
-    svg{
-        cursor: pointer;
-        display: none;
-    }
-}
-.col-lg-hide{
+.toggle__btn {
+  svg {
+    cursor: pointer;
     display: none;
+  }
 }
-.toggle__btn{
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    transform: translateY(-50%);
+.col-lg-hide {
+  display: none;
+}
+.toggle__btn {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
 }

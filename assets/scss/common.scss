@@ -1,9 +1,9 @@
 /* common css start */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'ABC Diatype Trial';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ABC Diatype Trial";
 }
 body{
     background-color: #000;
@@ -18,16 +18,16 @@ img,svg{
     max-width: 100%;
     height: auto;
 }
-li{
-    list-style: none;
-    display: block;
+li {
+  list-style: none;
+  display: block;
 }
-a{
-    text-decoration: none;
-    display: inline-block;
+a {
+  text-decoration: none;
+  display: inline-block;
 }
-::placeholder{
-    color: #FFFFFF;
+::placeholder {
+  color: #ffffff;
 }
 .sec__heading{
     
