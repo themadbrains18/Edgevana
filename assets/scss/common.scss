@@ -25,3 +25,17 @@ a{
 ::placeholder{
     color: #FFFFFF;
 }
+.sec__heading{
+    font-style: normal;
+    font-weight: 800;
+    font-size: clamp(41px,5vw,67px);
+    line-height: clamp(51px,6vw,80px);
+    color: #FFFFFF;
+}
+.sec__brief{
+    font-style: normal;
+    font-weight: bold;
+    font-size: clamp(25px,4vw,41px);
+    line-height: clamp(35px,6vw,70px);
+    color: #BABFC5;
+}

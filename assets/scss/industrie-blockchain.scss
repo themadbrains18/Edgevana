@@ -1,0 +1,45 @@
+.industrie__banner{
+    background-color: #000;
+    position: relative;
+    padding: 243px 0 249px;
+
+    .breadcrums{
+        margin-bottom: 62px;
+        a,span{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 36px;
+            color: #fff;
+            transition: 0.4s;
+
+            &:hover{
+                background: linear-gradient(to right, #D177A5, #7A70E1, #7EA9C2);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .active__link{
+            font-weight: 800;
+            background: linear-gradient(to right, #D177A5, #7A70E1, #7EA9C2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .banner__inner {
+        display: flex;
+        align-items: center;
+        gap: 95px;
+
+        .banner__text {
+            width: 64%;
+
+            .sec__heading{
+                margin-bottom: clamp(20px,4vw,50px);
+            }
+        }
+        .banner__image {
+            width: 36%;
+        }
+    }
+}
