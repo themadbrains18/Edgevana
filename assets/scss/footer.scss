@@ -28,14 +28,14 @@
     background: linear-gradient(to right, #D177A5 0%, #7A70E1 48%, #7EA9C2 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-style: normal;
+    
     font-weight: 800;
     font-size: clamp(25px, 8vw, 109px);
 }
 
 .footer__heading {
     margin-bottom: clamp(15px, 2vw, 30px);
-    font-style: normal;
+    
     color: #D4DBFC;
     font-weight: 800;
     font-size: clamp(16px, 2vw, 25px);
@@ -43,7 +43,7 @@
 }
 
 .footer__info {
-    font-style: normal;
+    
     font-weight: 500;
     font-size: clamp(16px, 2vw, 25px);
     line-height: clamp(20px, 3vw, 36px);
@@ -62,7 +62,7 @@
 }
 
 .item__heading {
-    font-style: normal;
+    
     font-weight: bold;
     font-size: clamp(16px, 2vw, 25px);
     line-height: clamp(19px, 3vw, 35px);
@@ -75,7 +75,7 @@
 }
 
 .footer__items__inner .item {
-    font-style: normal;
+    
     color: #6F6F6F;
     font-weight: 500;
     font-size: clamp(16px, 2vw, 25px);
@@ -136,7 +136,7 @@
     background-color: #000000;
     color: #FFFFFF;
     border: none;
-    font-style: normal;
+    
     font-weight: 500;
     font-size: clamp(16px, 2vw, 25px);
     line-height: clamp(20px, 3vw, 36px);
@@ -155,7 +155,7 @@
     outline: none;
     color: #FFFFFF;
     border-radius: 10px;
-    font-style: normal;
+    
     font-weight: 700;
     font-size: clamp(16px, 2vw, 25px);
     line-height: clamp(20px, 3vw, 36px);
@@ -179,7 +179,7 @@
 
 .copywrite__info,
 .copywrite__links a {
-    font-style: normal;
+    
     font-weight: 500;
     font-size: clamp(10px, 2vw, 16px);
     line-height: 20px;

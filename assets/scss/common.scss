@@ -5,14 +5,18 @@
     box-sizing: border-box;
     font-family: 'ABC Diatype Trial';
 }
+body{
+    background-color: #000;
+}
 .container{
     max-width: 1720px;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
-img{
+img,svg{
     max-width: 100%;
+    height: auto;
 }
 li{
     list-style: none;
@@ -26,16 +30,31 @@ a{
     color: #FFFFFF;
 }
 .sec__heading{
-    font-style: normal;
+    
     font-weight: 800;
     font-size: clamp(41px,5vw,67px);
     line-height: clamp(51px,6vw,80px);
     color: #FFFFFF;
 }
 .sec__brief{
-    font-style: normal;
+    
     font-weight: bold;
-    font-size: clamp(25px,4vw,41px);
-    line-height: clamp(35px,6vw,70px);
+    font-size: clamp(16px,4vw,41px);
+    line-height: clamp(20px,6vw,70px);
     color: #BABFC5;
+}
+.primary-btn{
+    color: #FFFFFF;
+    font-weight: 500;
+    line-height: clamp(20px,3vw,36px);
+    font-size: clamp(16px,2vw,25px);
+    padding: 12px 25px;
+    background: #2940D3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+button{
+    background-color: transparent;
+    outline: none;
+    border: none;
 }

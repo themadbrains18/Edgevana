@@ -24,18 +24,72 @@
         width: 100%;
         max-width: 100%;
     }
+
+    // === industrie Page start === // 
+    .industrie__banner{
+        padding: 150px 0;
+        .banner__inner{
+            flex-direction: column-reverse;
+            gap: 50px;
+            .banner__text,
+            .banner__image{
+                width: 100%;
+            }
+            .banner__image{
+                text-align: center;
+            }
+        }
+    } 
+    .faq__sec{
+        .container {
+            margin: 0;
+        }
+        .sec__content {
+            .sec__content__inner {
+                flex-direction: column;
+                gap: 25px;
+                .sec__image,
+                .sec__text{
+                    width: 100%;
+                }
+                .sec__image{
+                    text-align: center;
+                }
+            }
+        }
+    } 
+    // === industrie Page end === // 
+
+    // === career Page start === // 
+    .career__banner__sec{
+        .sec__content__inner{
+            flex-direction: column;
+            gap: 22px;
+            .sec__image{
+                width: 100%;
+                text-align: center;
+            }
+            .sec__text{
+                width: 100%;
+            }
+        }
+    }
+    // === career Page end === // 
 }
 // === RESPONSIVE CSS 1200PX END === //
 
 // === RESPONSIVE CSS 991PX START === //
 @media only screen and (max-width: 991px) {
+    // header responsive css 991px start
     .toggle__btn{
         svg{
             display: block;
         }
     }
-    .contact__btn{
-        display: none;    
+    .header{
+        .contact__btn{
+            display: none;    
+        }
     }
     .col-lg-hide{
         display: block;
@@ -84,15 +138,35 @@
             }
         }
     }
+    // header responsive css 991px start
+
+    // === industrie Page start === // 
+    .industrie__banner{
+        .breadcrums {
+            display: none;
+        }
+    } 
+    // === industrie Page end === // 
+
+    // === career Page start === // 
+    .career__banner__sec{
+        .breadcrums{
+            display: none;
+        }
+    }
+    // === career Page end === //  
 }
 // === RESPONSIVE CSS 991PX END === //
 
 // === RESPONSIVE CSS 767PX START === //
 @media only screen and (max-width: 767px) {
-    // footer responsive css 767px
+    // common responsive css start
     .container{
         padding: 0 30px;
     }
+    // common responsive css end
+
+    // footer responsive css 767px start
     .copywrite__text {
         flex-direction: column-reverse;
     }
@@ -106,11 +180,13 @@
         align-items: center;
         justify-content: space-between;
     }
+    // footer responsive css 767px end
 }
 // === RESPONSIVE CSS 767PX end === //
 
 // === RESPONSIVE CSS 576PX START === //
 @media only screen and (max-width: 576px){
+    // header responsive css start
     .header__logo img {
         width: 138px; 
         height: 28px; 
@@ -118,12 +194,19 @@
     nav.nav__list{
         top: 72px;
     }
+    // header responsive css end
 }
 // === RESPONSIVE CSS 576PX END === //
 
 // === RESPONSIVE CSS 480PX START === //
 @media only screen and (max-width: 480px){
-    //footer responsive css 480px 
+    // common responsive css start
+    .sec__brief{
+        font-weight: 500;
+    }
+    // common responsive css end
+
+    //footer responsive css 480px start
     .footer__text {
         svg{
             width: 71px;
@@ -148,8 +231,92 @@
             }
         }
     }
+    //footer responsive css 480px end
+
+    // === industrie Page start === // 
+    .industrie__banner{
+        padding: 123px 0 50px;
+        .banner__inner{
+            .banner__image{
+                svg{
+                    padding: 0 21px;
+                }
+            }
+        } 
+    }
+    .how__its__work__sec{
+        padding: 50px 0 77px;
+        .sec__head{
+            .sec__heading{
+                font-weight: 700;
+            }
+        }
+        .sec__content{
+            padding: 0;
+            ul{
+                li{
+                    align-items: flex-start;
+                    padding: 20px 0 30px;
+
+                    .info,
+                    .sec__brief
+                    {
+                        color: #D4DBFC;    
+                    }
+                }
+            }
+        }
+    }
+    .contact__our__team__sec{
+        padding: 50px 0;
+        .sec__head {
+            .sec__brief{
+                padding: 0;   
+                font-size: 25px;
+                line-height: 36px;             
+            }
+        }
+        .sec__content{
+            .contact__btn{
+                .primary-btn {
+                    width: 100%;
+                    text-align: center;
+                }
+            } 
+        } 
+    }
+    .faq__sec{
+        padding: 50px 0;
+    }
+    // === industrie Page end === // 
+
+    // === career Page start === // 
+    .career__banner__sec {
+        padding: 123px 0 50px;
+        .sec__content__inner{
+            .sec__image{
+                svg{
+                    max-width: calc(100% + 60px);
+                    margin-left: -30px;
+                }
+            }
+        }
+    }
+    // === career Page end === // 
 }
 // === RESPONSIVE CSS 480PX END === //
 
-
-
+// === RESPONSIVE CSS 340PX START === //
+@media only screen and (max-width: 340px){
+    .how__its__work__sec{
+        padding: 50px 0 77px;
+        .sec__head{
+            .sec__heading{
+                width: calc(100% + 20px);
+                margin-left: -10px;
+                text-align: center;
+            }
+        }
+    }
+}
+// === RESPONSIVE CSS 340PX end === //
