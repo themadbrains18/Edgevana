@@ -1,10 +1,10 @@
 /* header css start */
 .header {
-  position: absolute;
+  position: fixed;
+  top: 67px;
   left: 0;
-  top: 0;
   width: 100%;
-  padding: 60px 0;
+  z-index: 99;
 }
 .header__inner {
   display: flex;
@@ -33,4 +33,10 @@
 }
 .col-lg-hide {
   display: none;
+}
+.toggle__btn {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
 }

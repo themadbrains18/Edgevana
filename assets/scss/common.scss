@@ -5,23 +5,18 @@
   box-sizing: border-box;
   font-family: "ABC Diatype Trial";
 }
-body {
-  background: #0b0e1e;
-}
 .container {
   max-width: 1720px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }
-button {
-  cursor: pointer;
-}
 img {
   max-width: 100%;
 }
 li {
   list-style: none;
+  display: block;
 }
 a {
   text-decoration: none;
@@ -29,4 +24,18 @@ a {
 }
 ::placeholder {
   color: #ffffff;
+}
+.sec__heading {
+  font-style: normal;
+  font-weight: 800;
+  font-size: clamp(41px, 5vw, 67px);
+  line-height: clamp(51px, 6vw, 80px);
+  color: #ffffff;
+}
+.sec__brief {
+  font-style: normal;
+  font-weight: bold;
+  font-size: clamp(25px, 4vw, 41px);
+  line-height: clamp(35px, 6vw, 70px);
+  color: #babfc5;
 }
