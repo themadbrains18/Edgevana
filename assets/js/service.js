@@ -4,19 +4,22 @@
 /* Service Tabs Js */
 let tabs = document.querySelectorAll(".tabs__button");
 
+let ServiceBannerImg = document.querySelector(".service__banner__img");
+
 for(let i in tabs){
   if(tabs.length >= i){
       
       tabs[i].setAttribute("value",i);
       tabs[i].addEventListener("click",()=>{
+        ServiceBannerImg.setAttribute("style","display:none;");
         let activeTab = document.querySelector(".tabs__button.active");
         if(activeTab){
           activeTab.classList.remove("active");  
         }
         tabs[i].classList.add("active");
         let tabSelected = tabs[i].getAttribute("value");
-        let tabsImg = document.querySelectorAll(`.tabs__content`);
-        let tabsImgActive = document.querySelector(`.tabs__content.active`);
+        let tabsImg = document.querySelectorAll(`.tabs__item`);
+        let tabsImgActive = document.querySelector(`.tabs__item.active`);
         if(tabsImgActive){
           tabsImgActive.classList.remove("active");  
         }
