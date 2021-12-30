@@ -62,15 +62,21 @@
     .sec__content__inner{
         .tabs{
             display: flex;
-            // align-items: center;
+            align-items: center;
             .tab__btn{
-                width: 50%;
+                width: 35%;
+                ul{
+                    li:not(:last-child){
+                        margin-bottom: clamp(30px,3vw,35px);
+                    }
+                }
                 .btn{
                     font-size: clamp(16px,2vw,25px);
                     line-height: clamp(20px,2vw,30px);
                     color: #FFFFFF;
                     text-align: start;
                     position: relative;
+                    width: 100%;
                     &::after{
                         content: '';
                         background-color: #6F6F6F;
@@ -84,8 +90,11 @@
                 }
             }
             .tab__content{
-                width: 50%;
-                padding-right: clamp(20px,9vw,120px);
+                width: 65%;
+                .tab__content__inner{
+                    margin: auto;
+                    max-width: 720px;
+                }    
                 .sec__brief{
                     line-height: clamp(20px, 6vw, 51px);
                     margin-bottom: clamp(10px,2vw,30px);
