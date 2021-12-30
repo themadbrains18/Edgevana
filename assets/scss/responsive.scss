@@ -202,9 +202,32 @@
   .sec__service .sec__text {
     width: 40%;
   }
-}
-.breadcrums{
-  display: none;
+  .breadcrums{
+    display: none;
+  }
+  // career page responsive start
+  .grow__sec{
+    .sec__content__inner {
+     flex-direction: column;
+     gap: 50px;
+     .sec__img,
+     .sec__text{
+       width: 100%;
+     }
+     .sec__text{
+       .email__resume,
+       .sec__brief
+       {
+        max-width: 100%;
+       }
+     }
+     .sec__img{
+       text-align: center;
+     }
+
+   }
+  }
+  // career page responsive end
 }
 // === RESPONSIVE CSS 991PX END === //
 
@@ -478,8 +501,21 @@
           margin-left: -30px;
         }
       }
+
     }
   }
+.grow__sec{
+  padding: 50px 0;
+  .sec__content__inner{
+    .sec__text{
+      .email__resume{
+        flex-direction: column;
+        align-items: flex-start !important  ;
+        gap: 0;
+      }
+    }
+  }
+}
 
   // === career Page end === // 
 }
