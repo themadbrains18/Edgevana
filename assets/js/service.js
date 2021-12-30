@@ -50,3 +50,17 @@ window.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+
+/* Industries Section Js Code */
+let industriesTabs = document.querySelectorAll(".industries__tabs__button");
+
+for( let p of industriesTabs){
+  p.addEventListener("click",()=>{
+
+    for(let q of industriesTabs){
+      q.classList.remove("active")    
+    }
+    p.classList.add("active")
+  });
+}
