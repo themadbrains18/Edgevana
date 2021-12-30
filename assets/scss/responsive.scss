@@ -13,19 +13,28 @@
     top: 300px;
   }
 
-  // Faq responsive max-width 1400px
+  // Faq responsive max-width 1440px
   .sec__service .service__faq .container {
     gap: 50px;
   }
 
-  // Section Why Edge responsive max-width 1400px
+  // Section Why Edge responsive max-width 1440px
   .sec__why__edge .edge__features ul {
     margin: 90px auto 0 500px;
   }
   .sec__why__edge {
     padding-top: 300px;
   }
+
+  // Section Partner Banner responsive max-width 1440px
+  .industrie__banner.sec--partner--banner {
+    .banner__image,
+    .banner__text {
+      width: 45% !important;
+    }
+  }
 }
+// === RESPONSIVE CSS 1440PX end === //
 
 // === RESPONSIVE CSS 1200PX START === //
 @media only screen and (max-width: 1200px) {
@@ -33,31 +42,68 @@
   .footer {
     padding: 50px 0;
   }
+
   .footer__content {
     flex-direction: column;
     margin-bottom: 45px;
   }
+
   .submit__btn button {
     margin: 3px 3px 3px -3px;
     width: 100%;
   }
+
   .footer__text,
   .footer__items__wrapper {
     flex-direction: column;
   }
+
   .footer__text__inner,
   .footer__items__inner,
   form.footer__form {
     width: 100%;
     max-width: 100%;
   }
-  /* Service Responsive 1200px */
-  .sec__service .sec__content {
-    gap: 200px;
+
+  // === industrie Page start === //
+  .industrie__banner {
+    padding: 150px 0;
+
+    .banner__inner {
+      flex-direction: column-reverse;
+      gap: 50px;
+
+      .banner__text,
+      .banner__image {
+        width: 100%;
+      }
+
+      .banner__image {
+        text-align: center;
+      }
+    }
   }
 
-  .sec__service .service__banner__img img {
-    margin-right: 50px;
+  .faq__sec {
+    .container {
+      margin: 0;
+    }
+
+    .sec__content {
+      .sec__content__inner {
+        flex-direction: column;
+        gap: 25px;
+
+        .sec__image,
+        .sec__text {
+          width: 100%;
+        }
+
+        .sec__image {
+          text-align: center;
+        }
+      }
+    }
   }
   .sec__why__edge .edge__features ul {
     margin: 90px auto 0 300px;
@@ -67,6 +113,18 @@
   }
   .tabs__content.industries--tabs {
     right: 50px;
+  }
+
+  // Partner Banner Section
+  .industrie__banner.sec--partner--banner .banner__inner {
+    flex-direction: initial;
+  }
+  .industrie__banner.sec--partner--banner .banner__image svg {
+    width: 500px;
+  }
+  .industrie__banner.sec--partner--banner .banner__image,
+  .industrie__banner.sec--partner--banner .banner__text {
+    width: 50% !important;
   }
 }
 // === RESPONSIVE CSS 1200PX END === //
@@ -80,8 +138,78 @@
 }
 // === RESPONSIVE CSS 1024PX END === //
 
-// === RESPONSIVE CSS 991PX Start === //
+// === RESPONSIVE CSS 1200PX END === //
+
+// === RESPONSIVE CSS 991PX START === //
 @media only screen and (max-width: 991px) {
+  // header responsive css 991px start
+  .toggle__btn {
+    svg {
+      display: block;
+    }
+  }
+
+  .header {
+    .contact__btn {
+      display: none;
+    }
+  }
+
+  .col-lg-hide {
+    display: block;
+  }
+
+  .header {
+    top: 0;
+    padding: 20px 0;
+    background-color: #000;
+  }
+
+  nav.nav__list {
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    right: 0;
+    top: 90px;
+    height: 100%;
+    min-height: 100vh;
+    z-index: 9;
+    left: auto;
+    padding: 30px;
+    transform: translateX(100%);
+    transition: 0.4s;
+  }
+
+  .nav__list.show {
+    transform: translateX(0);
+  }
+
+  .nav__list ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  .toggle__btn {
+    svg.cross {
+      path.first {
+        transform: translateX(100%);
+        opacity: 0;
+        transition: 0.4s;
+      }
+
+      path.second {
+        transform: translate(5px, -11px) rotate(45deg);
+        transition: 0.4s;
+      }
+
+      path.third {
+        transform: translate(0px, 13px) rotate(-45deg);
+        transition: 0.4s;
+      }
+    }
+  }
+
   /* Service Responsive 991px */
   .sec__service .sec__content {
     gap: 100px;
@@ -96,9 +224,11 @@
     flex-direction: column-reverse;
     flex-wrap: wrap;
   }
+
   .sec__service .service__banner__img img {
     width: 50%;
   }
+
   .sec__service .sec__text {
     padding-right: 0;
   }
@@ -115,14 +245,55 @@
   .sec__service .sec__text {
     width: 38%;
   }
-}
 
-// Section Best Solution 991px */
-.sec__best__solution .sec__heading {
-  font-size: 40px;
-  padding-bottom: 50px;
+  // === career Page start === //
+  .career__banner__sec {
+    .sec__content__inner {
+      flex-direction: column;
+      gap: 22px;
+
+      .sec__image {
+        width: 100%;
+        text-align: center;
+      }
+
+      .sec__text {
+        width: 100%;
+      }
+    }
+    // Section Best Solution 991px */
+    .sec__best__solution .sec__heading {
+      font-size: 40px;
+      padding-bottom: 50px;
+    }
+    // === RESPONSIVE CSS 991PX end === //
+    .breadcrums {
+      display: none;
+    }
+    // === RESPONSIVE CSS 991PX END === //
+  }
+
+  // === career Page end === //
+
+  // Partner Banner Section
+  .industrie__banner.sec--partner--banner .banner__inner {
+    gap: 50px;
+    display: block;
+    .banner__image {
+      width: 100% !important;
+      margin-bottom: 55px;
+      svg {
+        width: 585px;
+      }
+    }
+    .banner__text {
+      width: 100% !important;
+    }
+  }
+  .sec__submit__message .sec__content {
+    display: block;
+  }
 }
-// === RESPONSIVE CSS 991PX end === //
 
 // === RESPONSIVE CSS 767PX START === //
 @media only screen and (max-width: 767px) {
@@ -130,14 +301,17 @@
   .container {
     padding: 0 30px;
   }
+
   .copywrite__text {
     flex-direction: column-reverse;
   }
+
   .footer__text {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   .footer__text .footer__text__inner {
     display: flex;
     align-items: center;
@@ -148,12 +322,15 @@
   .sec__service .sec__content {
     gap: 50px;
   }
+
   .sec__service .sec__text {
     padding-right: 50px;
   }
+
   .sec__service .sec__content {
     display: block;
   }
+
   .sec__service .sec__text {
     border-right: none;
   }
@@ -165,12 +342,15 @@
   .sec__service .service__tabs.mobile__tabs .tabs__button {
     display: block !important;
   }
+
   .service__banner__img {
     display: none;
   }
+
   .tabs__button.active ~ .sec__img .tabs__content {
     display: block;
   }
+
   .sec__service .tabs__item {
     display: block;
   }
@@ -184,285 +364,438 @@
   }
   .tabs__button,
   .industries__tabs__button {
-    border-bottom: 1px solid #d4dbfc !important;
-    width: 100%;
-    padding-bottom: 25px;
-    position: relative;
-  }
-
-  .tabs__button::after,
-  .industries__tabs__button::before,
-  .industries__tabs__button::after,
-  .tabs__button::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: calc(50% - 12.5px);
-    transform: translateY(-50%);
-    height: 2px;
-    width: 16px;
-    background-color: #babfc5;
-  }
-  .tabs__button::before,
-  .industries__tabs__button::before {
-    transform: rotate(90deg);
-  }
-  .tabs__button.active::before,
-  .industries__tabs__button.active::before {
-    transform: rotate(0deg);
-  }
-
-  .tabs__item .sec__img,
-  .tabs__item .service__bottom__img,
-  .tabs__item .service__faq {
-    display: none;
-  }
-  .tabs__button.active ~ div {
-    display: block;
-  }
-
-  .service__bottom__img svg {
-    height: auto;
-    transform: scale(1.5);
-    padding-block: 50px;
-  }
-  .service__bottom__img {
-    width: calc(100% + 60px) !important;
-    margin-left: -30px;
-    overflow: hidden;
-  }
-  .sec__service .service__faq {
-    padding-top: 51px;
-  }
-  .sec__service .service__faq .container {
-    gap: 0px;
-  }
-  .service__faq {
-    padding-bottom: 30px;
-  }
-  .sec__service .tabs__button {
-    margin-bottom: 28px;
-  }
-  .sec__service .sec__heading {
-    margin-bottom: 30px;
-  }
-  .sec__service .tabs__content .sec__item li {
-    margin-bottom: 15px;
-  }
-  .sec__service .faq__ques {
-    padding: 10px 0;
-  }
-
-  // === Industries CSS 767PX end === //
-  .tabs__content.industries--tabs {
-    position: initial;
-    max-width: 100%;
-  }
-  .sec__service.sec--industries .sec__text {
-    width: 100%;
-  }
-
-  .sec__service.sec--industries .sec__text {
-    padding-right: 0;
-  }
-  .tabs__content.industries--tabs {
-    margin-bottom: 40px;
-  }
-  .sec__why__edge {
-    padding-top: 60px;
-  }
-  .sec__why__edge .edge__features ul li {
-    margin-bottom: 20px;
-  }
-
-  .sec__service .sec__item ul {
-    margin-left: 10px;
-  }
-  .sec__service .sec__content {
-    padding-top: 150px;
-  }
-
-  .sec__why__edge {
-    padding-bottom: 100px;
-  }
-  .sec__service .tabs__button,
-  .sec__service .industries__tabs__button {
-    font-size: 20px;
-  }
-  .sec__service.sec--industries .sec__content {
-    padding-top: 100px;
-  }
-  .sec__service .tabs__content .sec__heading,
-  .sec__service .tabs__content .sec__brief {
-    font-size: 30px;
-  }
-  .sec__service .tabs__content .sec__item li {
-    font-size: 20px;
-    font-weight: 500;
-  }
-
-  .faq__ques {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 30px;
-  }
-  .faq__ans {
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 400;
-  }
-  .sec__service .faq__heading {
-    font-size: 45px;
-  }
-  .sec__why__edge .sec__heading {
-    padding-bottom: 50px;
-  }
-  .sec__why__edge .edge__features ul {
-    margin-top: 60px;
-  }
-  .sec__why__edge .edge__features ul li {
-    font-size: 20px;
-  }
-  .sec__service .tabs__content {
-    max-width: 100%;
-  }
-  .tabs__content.industries--tabs .tabs__heading {
-    font-size: 25px;
-  }
-  .sec__service .sec__text {
-    width: 100%;
-    padding-right: 0;
-  }
-  // Section Best Solution 767px */
-  .sec__best__solution .sec__heading {
-    font-size: 30px;
-    padding-bottom: 30px;
-  }
-  .sec__best__solution .sec__best__solution__items {
-    padding-top: 100px;
-  }
-  .sec__best__solution .sec__best__solution__items li {
-    margin-bottom: 30px;
-    font-size: 20px;
-  }
-  .sec__best__solution {
-    padding-bottom: 100px;
-  }
-}
-// === RESPONSIVE CSS 767PX end === //
-
-// === RESPONSIVE CSS 575PX START === //
-@media only screen and (max-width: 575px) {
-  // Service responsive css 575px
-  .header__logo img {
-    width: 138px;
-    height: 28px;
-  }
-  nav.nav__list {
-    top: 72px;
-  }
-  .sec__why__edge {
-    padding-bottom: 57px;
-  }
-  .sec__service .tabs__button,
-  .sec__service .industries__tabs__button {
-    font-size: 16px;
-  }
-  .sec__service .tabs__content .sec__heading,
-  .sec__service .tabs__content .sec__brief {
-    font-size: 25px;
-    line-height: 35px;
-  }
-  .sec__service .tabs__content .sec__item li {
-    font-size: 16px;
-  }
-  .faq__ques,
-  .faq__ans {
-    font-size: 16px !important;
-    font-weight: 700;
-    line-height: 20px;
-  }
-  .sec__service .faq__heading {
-    font-size: 41px;
-  }
-  .sec__why__edge .sec__heading {
-    padding-bottom: 40px;
-  }
-  .sec__why__edge .edge__features ul {
-    margin-top: 50px;
-  }
-  .sec__why__edge .edge__features ul li {
-    font-size: 16px;
-    font-weight: 700;
-  }
-  .tabs__content.industries--tabs .tabs__heading {
-    font-size: 20px;
-    line-height: 35px;
-    font-weight: 500;
-  }
-  .tabs__content.industries--tabs .read__more__service {
-    margin-top: 40px;
-  }
-
-  .tabs__content.industries--tabs .read__more__service {
-    font-size: 20px;
-  }
-  // Section Best Solution 767px */
-  .sec__best__solution .sec__heading {
-    font-size: 25px;
-    padding-bottom: 20px;
-    line-height: 35px;
-  }
-  .sec__best__solution .sec__best__solution__items {
-    padding-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    justify-content: space-between;
-  }
-  .sec__best__solution .sec__best__solution__items li {
-    margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 20px;
-    width: 50%;
-  }
-  .sec__best__solution {
-    padding-bottom: 50px;
-  }
-}
-// === RESPONSIVE CSS 575PX End === //
-
-// === RESPONSIVE CSS 480PX START === //
-@media only screen and (max-width: 480px) {
-  //footer responsive css 480px
-  .footer__text {
-    svg {
-      width: 71px;
-      height: 15px;
-    }
-  }
-  .footer__form {
-    border-radius: 4px;
-    .form__group {
-      border-radius: 4px;
-    }
-    input {
-      padding: 10px;
-    }
-    .submit__btn {
-      max-width: 27%;
+    .tabs__button {
+      border-bottom: 1px solid #d4dbfc !important;
       width: 100%;
-      button {
-        padding: 8px 15px;
-        border-radius: 4px;
-        margin: 2px 2px 2px -2px;
+      padding-bottom: 25px;
+      position: relative;
+    }
+
+    .tabs__button::after,
+    .industries__tabs__button::before,
+    .industries__tabs__button::after,
+    .tabs__button::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: calc(50% - 12.5px);
+      transform: translateY(-50%);
+      height: 2px;
+      width: 16px;
+      background-color: #babfc5;
+    }
+    .tabs__button::before,
+    .industries__tabs__button::before {
+      .tabs__button.active::before {
+        transform: rotate(90deg);
+      }
+      .tabs__button.active::before,
+      .industries__tabs__button.active::before {
+        transform: rotate(0deg);
+      }
+
+      .tabs__item .sec__img,
+      .tabs__item .service__bottom__img,
+      .tabs__item .service__faq {
+        display: none;
+      }
+
+      .tabs__button.active ~ div {
+        display: block;
+      }
+
+      .service__bottom__img svg {
+        height: auto;
+        transform: scale(1.5);
+        padding-block: 50px;
+      }
+      .service__bottom__img {
+        width: calc(100% + 60px) !important;
+        margin-left: -30px;
+        overflow: hidden;
+      }
+
+      .sec__service .service__faq {
+        padding-top: 51px;
+      }
+
+      .sec__service .service__faq .container {
+        gap: 0px;
+      }
+
+      .service__faq {
+        padding-bottom: 30px;
+      }
+
+      .sec__service .tabs__button {
+        margin-bottom: 28px;
+      }
+
+      .sec__service .sec__heading {
+        margin-bottom: 30px;
+      }
+
+      .sec__service .tabs__content .sec__item li {
+        margin-bottom: 15px;
+      }
+
+      .sec__service .faq__ques {
+        padding: 10px 0;
+      }
+
+      // === Industries CSS 767PX end === //
+      .tabs__content.industries--tabs {
+        position: initial;
+        max-width: 100%;
+      }
+      .sec__service.sec--industries .sec__text {
+        width: 100%;
+      }
+
+      .sec__service.sec--industries .sec__text {
+        padding-right: 0;
+      }
+      .tabs__content.industries--tabs {
+        margin-bottom: 40px;
+      }
+      .sec__why__edge {
+        padding-top: 60px;
+      }
+      .sec__why__edge .edge__features ul li {
+        margin-bottom: 20px;
+      }
+
+      .sec__service .sec__item ul {
+        margin-left: 10px;
+      }
+      .sec__service .sec__content {
+        padding-top: 150px;
+      }
+
+      .sec__why__edge {
+        padding-bottom: 100px;
+      }
+      .sec__service .tabs__button,
+      .sec__service .industries__tabs__button {
+        font-size: 20px;
+      }
+      .sec__service.sec--industries .sec__content {
+        padding-top: 100px;
+      }
+      .sec__service .tabs__content .sec__heading,
+      .sec__service .tabs__content .sec__brief {
+        font-size: 30px;
+      }
+      .sec__service .tabs__content .sec__item li {
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .faq__ques {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+      }
+      .faq__ans {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+      }
+      .sec__service .faq__heading {
+        font-size: 45px;
+      }
+      .sec__why__edge .sec__heading {
+        padding-bottom: 50px;
+      }
+      .sec__why__edge .edge__features ul {
+        margin-top: 60px;
+      }
+      .sec__why__edge .edge__features ul li {
+        font-size: 20px;
+      }
+      .sec__service .tabs__content {
+        max-width: 100%;
+      }
+      .tabs__content.industries--tabs .tabs__heading {
+        font-size: 25px;
+      }
+      .sec__service .sec__text {
+        width: 100%;
+        padding-right: 0;
+      }
+      // Section Best Solution 767px */
+      .sec__best__solution .sec__heading {
+        font-size: 30px;
+        padding-bottom: 30px;
+      }
+      .sec__best__solution .sec__best__solution__items {
+        padding-top: 100px;
+      }
+      .sec__best__solution .sec__best__solution__items li {
+        margin-bottom: 30px;
+        font-size: 20px;
+      }
+      .sec__best__solution {
+        padding-bottom: 100px;
       }
     }
   }
-  .tabs__content.industries--tabs .read__more__service {
-    margin-top: 30px;
+  // === RESPONSIVE CSS 767PX end === //
+
+  // === RESPONSIVE CSS 575PX START === //
+  // === RESPONSIVE CSS 576PX START === //
+  @media only screen and (max-width: 576px) {
+    // header responsive css start
+    .header__logo img {
+      width: 138px;
+      height: 28px;
+    }
+    nav.nav__list {
+      top: 72px;
+    }
+    .sec__why__edge {
+      padding-bottom: 57px;
+    }
+    .sec__service .tabs__button,
+    .sec__service .industries__tabs__button {
+      font-size: 16px;
+    }
+    .sec__service .tabs__content .sec__heading,
+    .sec__service .tabs__content .sec__brief {
+      font-size: 25px;
+      line-height: 35px;
+    }
+    .sec__service .tabs__content .sec__item li {
+      font-size: 16px;
+    }
+    .faq__ques,
+    .faq__ans {
+      font-size: 16px !important;
+      font-weight: 700;
+      line-height: 20px;
+    }
+    .sec__service .faq__heading {
+      font-size: 41px;
+    }
+    .sec__why__edge .sec__heading {
+      padding-bottom: 40px;
+    }
+    .sec__why__edge .edge__features ul {
+      margin-top: 50px;
+    }
+    .sec__why__edge .edge__features ul li {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .tabs__content.industries--tabs .tabs__heading {
+      font-size: 20px;
+      line-height: 35px;
+      font-weight: 500;
+    }
+    .tabs__content.industries--tabs .read__more__service {
+      margin-top: 40px;
+    }
+
+    .tabs__content.industries--tabs .read__more__service {
+      font-size: 20px;
+    }
+    // Section Best Solution 767px */
+    .sec__best__solution .sec__heading {
+      font-size: 25px;
+      padding-bottom: 20px;
+      line-height: 35px;
+    }
+    .sec__best__solution .sec__best__solution__items {
+      padding-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 100%;
+      justify-content: space-between;
+    }
+    .sec__best__solution .sec__best__solution__items li {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 20px;
+      width: 50%;
+    }
+    .sec__best__solution {
+      padding-bottom: 50px;
+    }
   }
-  .tabs__content.industries--tabs .read__more__service {
-    font-size: 16px;
+  // === RESPONSIVE CSS 575PX End === //
+
+  // === RESPONSIVE CSS 480PX START === //
+  @media only screen and (max-width: 480px) {
+    //footer responsive css 480px
+
+    nav.nav__list {
+      top: 72px;
+    }
+
+    // header responsive css end
+  }
+
+  // === RESPONSIVE CSS 576PX END === //
+
+  // === RESPONSIVE CSS 480PX START === //
+  @media only screen and (max-width: 480px) {
+    // common responsive css start
+    .sec__brief {
+      font-weight: 500;
+    }
+
+    // common responsive css end
+
+    //footer responsive css 480px start
+    .footer__text {
+      svg {
+        width: 71px;
+        height: 15px;
+      }
+    }
+    .footer__form {
+      border-radius: 4px;
+      .form__group {
+        border-radius: 4px;
+      }
+      input {
+        padding: 10px;
+      }
+      .submit__btn {
+        max-width: 27%;
+        width: 100%;
+      }
+    }
+
+    .footer__form {
+      border-radius: 4px;
+
+      .form__group {
+        border-radius: 4px;
+      }
+
+      input {
+        padding: 10px;
+      }
+
+      .submit__btn {
+        max-width: 27%;
+        width: 100%;
+
+        button {
+          padding: 8px 15px;
+          border-radius: 4px;
+          margin: 2px 2px 2px -2px;
+        }
+      }
+    }
+    .tabs__content.industries--tabs .read__more__service {
+      margin-top: 30px;
+    }
+    .tabs__content.industries--tabs .read__more__service {
+      font-size: 16px;
+    }
   }
 }
+
+//footer responsive css 480px end
+
+// === industrie Page start === //
+.industrie__banner {
+  padding: 123px 0 50px;
+
+  .banner__inner {
+    .banner__image {
+      svg {
+        padding: 0 21px;
+      }
+    }
+  }
+}
+
+.how__its__work__sec {
+  padding: 50px 0 77px;
+
+  .sec__head {
+    .sec__heading {
+      font-weight: 700;
+    }
+  }
+
+  .sec__content {
+    padding: 0;
+
+    ul {
+      li {
+        align-items: flex-start;
+        padding: 20px 0 30px;
+
+        .info,
+        .sec__brief {
+          color: #d4dbfc;
+        }
+      }
+    }
+  }
+}
+
+.contact__our__team__sec {
+  padding: 50px 0;
+
+  .sec__head {
+    .sec__brief {
+      padding: 0;
+      font-size: 25px;
+      line-height: 36px;
+    }
+  }
+
+  .sec__content {
+    .contact__btn {
+      .primary-btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.faq__sec {
+  padding: 50px 0;
+}
+
+// === industrie Page end === //
+
+// === career Page start === //
+.career__banner__sec {
+  padding: 123px 0 50px;
+
+  .sec__content__inner {
+    .sec__image {
+      svg {
+        max-width: calc(100% + 60px);
+        margin-left: -30px;
+      }
+    }
+  }
+}
+
+// === career Page end === //
+// === RESPONSIVE CSS 480PX END === //
+
+// === RESPONSIVE CSS 340PX START === //
+@media only screen and (max-width: 340px) {
+  .how__its__work__sec {
+    padding: 50px 0 77px;
+
+    .sec__head {
+      .sec__heading {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// === RESPONSIVE CSS 340PX end === //

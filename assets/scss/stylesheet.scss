@@ -1,8 +1,11 @@
-/* Common Css Code  */
+// common css
 @import "common";
 
 /* Header Css Code  */
 @import "header";
+
+// index scss
+@import "index";
 
 /* Service Page Css Code  */
 @import "service";
@@ -14,8 +17,11 @@
 // header
 @import "industrie-blockchain";
 
-// footer
+// career page css
+@import "career";
+
+// footer css
 @import "footer";
 
-/* Responsive Css Code  */
+// responsive css
 @import "responsive";

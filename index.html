@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index Page</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edgevana</title>
     <!-- stylesheets -->
-    <link rel="stylesheet" href="assets/css/stylesheet.css" />
-    <link rel="stylesheet" href="assets/font/stylesheet.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="assets/font/stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+
+
+</head>
+
+<body>
     <!-- ==== header start ==== -->
     <header class="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
-                    <img src="assets/svg/edgevana-logo.svg" alt="image-description">
+                    <a href="index.html">
+                        <img src="assets/svg/edgevana-logo.svg" alt="image-description">
+                    </a>
                 </div>
                 <nav class="nav__list">
                     <ul>
@@ -28,7 +35,7 @@
                         <li>
                             <a class="nav__item" href="#">Resources</a>
                         </li>
-                        <li class="col-lg-hide"> 
+                        <li class="col-lg-hide">
                             <a class="nav__item" href="#">Contact us</a>
                         </li>
                     </ul>
@@ -39,9 +46,15 @@
             </div>
             <div class="toggle__btn">
                 <svg width="39" height="24" viewBox="0 0 39 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="first" d="M34.25 19H17.75C17.3358 19 17 19.4029 17 19.9C17 20.3971 17.3358 20.8 17.75 20.8H34.25C34.6642 20.8 35 20.3971 35 19.9C35 19.4029 34.6642 19 34.25 19Z" fill="white"/>
-                    <path class="second" d="M37.875 3H13.125C12.5037 3 12 3.40294 12 3.9C12 4.39706 12.5037 4.8 13.125 4.8H37.875C38.4963 4.8 39 4.39706 39 3.9C39 3.40294 38.4963 3 37.875 3Z" fill="white"/>
-                    <path class="third" d="M29.875 11.0002H5.125C4.50368 11.0002 4 11.4032 4 11.9002C4 12.3973 4.50368 12.8002 5.125 12.8002H29.875C30.4963 12.8002 31 12.3973 31 11.9002C31 11.4032 30.4963 11.0002 29.875 11.0002Z" fill="white"/>
+                    <path class="first"
+                        d="M34.25 19H17.75C17.3358 19 17 19.4029 17 19.9C17 20.3971 17.3358 20.8 17.75 20.8H34.25C34.6642 20.8 35 20.3971 35 19.9C35 19.4029 34.6642 19 34.25 19Z"
+                        fill="white" />
+                    <path class="second"
+                        d="M37.875 3H13.125C12.5037 3 12 3.40294 12 3.9C12 4.39706 12.5037 4.8 13.125 4.8H37.875C38.4963 4.8 39 4.39706 39 3.9C39 3.40294 38.4963 3 37.875 3Z"
+                        fill="white" />
+                    <path class="third"
+                        d="M29.875 11.0002H5.125C4.50368 11.0002 4 11.4032 4 11.9002C4 12.3973 4.50368 12.8002 5.125 12.8002H29.875C30.4963 12.8002 31 12.3973 31 11.9002C31 11.4032 30.4963 11.0002 29.875 11.0002Z"
+                        fill="white" />
                 </svg>
             </div>
         </div>
@@ -49,6 +62,256 @@
     </header>
     <!-- ==== header end ==== -->
 
+    <main>
+        <!-- ==== Hero Section Start ==== -->
+        <section class="tmb__hero__sec">
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__txt">
+                        <!-- Hero Heading -->
+                        <h2 class="hero__heading">
+                            Custom Infrastructure
+                        </h2>
+                        <!-- Btn -->
+                        <button class="hero__btn primary-btn">
+                            Explore More
+                        </button>
+                    </div>
+                    <!-- Hero Image -->
+                    <div class="hero__img">
+                        <img src="assets/svg/index-hero.svg" alt="">
+                    </div>
+                </div>
+                <!-- Logo List -->
+                <ul class="logo__list">
+                    <li><img src="assets/image/logo1.png" alt=""></li>
+                    <li><img src="assets/image/logo2.png" alt=""></li>
+                    <li><img src="assets/image/logo3.png" alt=""></li>
+                    <li><img src="assets/image/logo4.png" alt=""></li>
+                    <li><img src="assets/image/logo5.png" alt=""></li>
+                    <li><img src="assets/image/logo6.png" alt=""></li>
+                    <li><img src="assets/image/logo7.png" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        <!-- ==== Hero Section End ==== -->
+
+
+
+        <!-- === Globel Section Start === -->
+        <section class="tmb__globel__sec">
+            <div class="container">
+                <div class="globel__sec__content">
+                    <div class="globel__sec__img">
+                        <img src="assets/svg/global.svg" alt="">
+                    </div>
+                    <div class="globel__sec__txt">
+                        <h2 class="sec__heading">
+                            We Are Global
+                        </h2>
+                        <ul class="globel__point__list">
+                            <li class="globel__point__item">
+                                <p class="sec__brief">Edgevana is at the forefront of helping companies create new
+                                    business opportunities and improve customer engagement through the effective use of
+                                    global Edge solutions.</p>
+                            </li>
+                            <li class="globel__point__item">
+                                <p class="sec__brief">Regardless of size or complexity.</p>
+                            </li>
+                            <li class="globel__point__item">
+                                <p class="sec__brief">Edgevana is dedicated to building the solution that best fits your
+                                    enterprise needs atand the most effective cost.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- === Globel Section End === -->
+
+
+        <!-- === Deploy Section Start === -->
+        <section class="tmb__deploy__sec">
+            <div class="container">
+                <div class="deploy__sec__content">
+                    <div class="deploy__sec__txt">
+                        <!-- heading -->
+                        <h2 class="sec__heading">
+                            Faster than anything you’ve seen before.
+                        </h2>
+                        <div class="deploy__detail">
+                            <h3>Deploy Edge in</h3>
+                            <p><span class="gradient-text">30,000+</span>&nbsp;<span
+                                    class="normal-text">Locations</span></p>
+                            <p><span class="gradient-text">107+</span>&nbsp;<span class="normal-text">Countries</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Section Image -->
+                    <div class="deploy__sec__img">
+                        <img src="assets/svg/map.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- === Deploy Section End === -->
+
+
+        <!-- === Trusted Section Start === -->
+        <section class="trusted__sec">
+            <div class="container">
+                <div class="trusted__sec__txt">
+                    <!-- heading -->
+                    <h2 class="sec__heading">TRUSTED BY</h2>
+                    <!-- Sub text -->
+                    <span class="trusted__txt__subheading">gradiant flash</span>
+                </div>
+                <div class="trusted__sec__map">
+                    <!-- Background map -->
+                    <img src="assets/svg/line-map.svg" alt="">
+                    <!-- Logo List -->
+                    <div class="trusted__logo__list">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="assets/svg/trusted-logo1.svg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/svg/trusted-logo2.svg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/svg/trusted-logo3.svg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/svg/trusted-logo4.svg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/svg/trusted-logo5.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- === Trusted Section End === -->
+
+
+        <!-- === Info Cards Section Start === -->
+        <section class="info__crd__sec">
+            <div class="container">
+                <!-- Grid card -->
+                <ul class="crd__grid">
+                    <!-- card item -->
+                    <li class="crd__grid__item">
+                        <div class="crd__content">
+                            <h3 class="info__crd__heading sec__heading">
+                                Market Intelligence
+                            </h3>
+                            <p class="info__crd__txt">
+                                We integrate our platform with suppliers for real time access to capacity and service
+                                options/capabilities. This detail will allow Edgevana to create intelligence on the
+                                industry while at the same time reducing time to value for quotes and solution
+                                development.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- card item -->
+                    <li class="crd__grid__item">
+                        <div class="crd__content">
+                            <h3 class="info__crd__heading sec__heading">
+                                AI and ML
+                            </h3>
+                            <p class="info__crd__txt">
+                                We are employing a proprietary AI and ML solution in our platform that will provide
+                                greater insight into opportunities with suppliers and customers and become a sales
+                                opportunity to suppliers for capacity management and trend analysis in their
+                                environments.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- card item -->
+                    <li class="crd__grid__item">
+                        <div class="crd__content">
+                            <h3 class="info__crd__heading sec__heading">
+                                Data Driven
+                            </h3>
+                            <p class="info__crd__txt">
+                                We will create solution opportunities for our suppliers that make them more efficient
+                                and sustainable, in effect making them more competitive.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- card item -->
+                    <li class="crd__grid__item">
+                        <div class="crd__content">
+                            <h3 class="info__crd__heading sec__heading">
+                                Partner Ecosystem
+                            </h3>
+                            <p class="info__crd__txt">
+                                Our development of a community with our data center suppliers means we have a stickier
+                                relationship, allowing us to work on higher value sector improvement opportunities
+                                further widening the moat between Edgevana and any potential followers.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- === Info Cards Section End === -->
+
+
+        <!-- === Testimonial Section Start === -->
+        <section class="testimonial">
+            <div class="container">
+                <!-- Testmonial List -->
+                <h2 class="sec__heading">
+                    From Our Valuable Clients
+                </h2>
+                <div class="testimonial__list">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="testimonial__grid">
+                                <div class="testimonial__text">
+                                    <span>
+                                        <svg width="68" height="150" viewBox="0 0 68 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22.302 40.179H4.248L21.24 0H32.745L22.302 40.179ZM50.976 40.179H32.922L49.914 0H61.419L50.976 40.179Z" fill="#82868C" />
+                                            <path d="M0 141.069H67.26V149.919H0V141.069Z" fill="#82868C" />
+                                        </svg>
+                                    </span>
+                                    <div >
+                                        <p class="sec__brief">
+                                            What I am primarily looking for with new projects is a fit on both a visual and aesthetic level as well as on a personal level with the client.
+                                        </p>
+                                        <div class="user__info">
+                                                <div class="profile__detail">
+                                                    <span class="user__company">
+                                                        It Company
+                                                    </span>
+                                                    <span class="profile__post">
+                                                        CEO
+                                                    </span>
+                                                </div>
+                                                <div class="profile__img">
+                                                    <img src="assets/image/profile-img.png" alt="">
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial__img">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- === Testimonial Section End === -->
+    </main>
     <!-- === footer start === -->
     <footer class="footer">
       <div class="container">
@@ -167,5 +430,13 @@
 
     <!-- === script files === -->
     <script src="assets/js/common.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.trusted__logo__list', {
+            slidesPerView: 5,
+            centeredSlides: true,
+            spaceBetween: 30,
+            loop: true,
+        });
+    </script>
 </body>
-</html>
