@@ -7,7 +7,9 @@
   .sec__content {
     padding-top: 200px;
   }
-
+  .sec__content.service__content {
+    position: relative;
+  }
   .tabs__content .sec__heading {
     font-size: 41px;
   }
@@ -45,16 +47,16 @@
   }
 
   .tabs__content {
-    max-width: 1035px;
+    max-width: 55%;
     margin: 0 0 0 auto;
   }
   .sec__heading {
     color: #fff;
-    font-size: 67px;
     font-weight: 500;
     margin-bottom: 55px;
   }
-  .tabs__button {
+  .tabs__button,
+  .industries__tabs__button {
     background-color: transparent;
     border: none;
     color: #fff;
@@ -100,7 +102,8 @@
     }
   }
 
-  .tabs__button.active {
+  .tabs__button.active,
+  .industries__tabs__button.active {
     background: linear-gradient(
       to right,
       #d177a5 0%,
@@ -124,11 +127,12 @@
   .faq__ques {
     font-size: 25px;
     font-weight: 800;
-    color: #fff;
+    color: #d4dbfc;
     position: relative;
+    line-height: 30px;
     padding: 25px 30px 25px 0;
     display: flex;
-    align-items: center;
+    align-items: start;
   }
   .faq__ans {
     transition: 0.3s;
@@ -136,10 +140,14 @@
     font-weight: 500;
     overflow: hidden;
     font-size: 25px;
-    color: #91929a;
+    color: #6f6f6f;
+    line-height: 36px;
     margin-left: 34px;
   }
 
+  .service__faq .container {
+    padding-inline: 0;
+  }
   .faq__ques span {
     color: #6f6f6f;
     margin-right: 15px;
@@ -187,25 +195,39 @@
     margin-top: 75px;
   }
 }
+.industries__tabs__button.active + div {
+  display: block;
+}
+.industries--tabs {
+  display: none;
+}
 
+.sec__service.sec--industries {
+  position: relative;
+}
+
+.tabs__content.industries--tabs {
+  position: absolute;
+  right: 120px;
+  top: 200px;
+  max-width: 50%;
+}
 /* Section Why Edge Css Code */
 .sec__why__edge {
   padding: 203px 0 244px;
 
   .sec__heading {
     color: #fff;
-    font-size: 67px;
-    font-weight: 800;
     border-bottom: 2px solid #d4dbfc;
     padding-bottom: 77px;
   }
   .edge__features ul {
     max-width: 650px;
-    margin: 66px auto 0 645px;
+    margin: 66px auto 0 715px;
 
     li {
       font-size: 25px;
-      color: #fff;
+      color: #d4dbfc;
       margin-bottom: 40px;
       font-weight: 800;
     }

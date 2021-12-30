@@ -54,12 +54,84 @@
 
 }
 
+// featured tabs css
+.featured__tabs{
+    padding: 265px 0 262px;
+    background-color: #000;
+
+    .sec__content__inner{
+        .tabs{
+            display: flex;
+            align-items: center;
+            .tab__btn{
+                width: 35%;
+                ul{
+                    li:not(:last-child){
+                        margin-bottom: clamp(30px,3vw,35px);
+                    }
+                }
+                .btn{
+                    font-size: clamp(16px,2vw,25px);
+                    line-height: clamp(20px,2vw,30px);
+                    color: #FFFFFF;
+                    text-align: start;
+                    position: relative;
+                    width: 100%;
+                    &::after{
+                        content: '';
+                        background-color: #6F6F6F;
+                        position: absolute;
+                        top:50%;
+                        transform: translateY(-50%);
+                        right: 0;
+                        width: 20px;
+                        height: 2px;
+                    }
+                }
+            }
+            .tab__content{
+                width: 65%;
+                .tab__content__inner{
+                    margin: auto;
+                    max-width: 720px;
+                }    
+                .sec__brief{
+                    line-height: clamp(20px, 6vw, 51px);
+                    margin-bottom: clamp(10px,2vw,30px);
+                }
+                .sec__info{
+                    font-weight: 500;
+                    font-size: clamp(16px,2vw,25px);
+                    line-height: clamp(20px,3vw,36px);
+                    margin-bottom: clamp(40px,4vw,53px);
+                    padding-top: clamp(20px,7vw,103px);
+                    color: #BABFC5;
+                    position: relative;
+
+                    &::after{
+                        content: '';
+                        background-color: #D4DBFC;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 60%;
+                        height: 1px;
+                    }
+                }
+                .apply__btn{
+                    text-align: end;
+                }
+            }
+        }
+    }
+}
 // grow sec css 
 .grow__sec{
+    padding: 135px 0;
     .sec__content__inner {
         display: flex;
         align-items: center;
-
+        gap: 80px;
         .sec__img {
             width: 50%;
         }
@@ -75,6 +147,20 @@
                 max-width: 530px;
                 margin: 0 0 0 auto;
                 margin-top: clamp(50px,8vw,134px);
+                padding-top: clamp(15px,3vw,48px);
+                border-top: 0.8px solid #D4DBFC;
+                font-weight: 500;
+                font-size: clamp(16px,2vw,25px);
+                line-height: clamp(20px,3vw,36px);
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                color: #BABFC5;
+                .mail__us{
+                    background: linear-gradient(to right, #d177a5 0%, #7a70e1 48%, #7ea9c2 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
             }
         }
     }
