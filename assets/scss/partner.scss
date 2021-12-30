@@ -1,0 +1,122 @@
+.sec__best__solution {
+  padding: 123px 0 237px;
+  .sec__heading {
+    border-bottom: 1px solid #d4dbfc;
+    padding-bottom: 77px;
+    text-align: center;
+  }
+  .sec__best__solution__items {
+    padding-top: 173px;
+    text-align: center;
+    max-width: 191px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: start;
+  }
+  .sec__best__solution__items li {
+    color: #82868c;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 40px;
+    transition: 0.3s;
+  }
+  .sec__best__solution__items li:hover {
+    color: #d4dbfc;
+  }
+  .sec__best__solution__items li:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+/* Submit Section Css Code */
+.sec__submit__message .sec__content {
+  display: flex;
+  justify-content: space-between;
+  .sec__text {
+    max-width: 602px;
+    width: 100%;
+    .sec__heading {
+      font-size: 41px;
+      font-weight: 700;
+      line-height: clamp(35px, 6vw, 51px);
+    }
+    .sec__brief {
+      font-size: 25px;
+      font-weight: 500;
+      margin-top: 78px;
+    }
+  }
+  .sec__message__box {
+    max-width: 838px;
+    width: 100%;
+    .sec__heading {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 35px;
+      margin-bottom: 71px;
+      span {
+        margin: 0 24px 0 10px;
+      }
+    }
+    ::placeholder {
+      font-size: 41px;
+      font-weight: 400;
+    }
+    input {
+      background: transparent;
+      outline: 0;
+      border-width: 0 0 1px;
+      border-color: #82868c;
+      padding-bottom: 10px;
+      padding-top: 20px;
+      display: block;
+      width: 100%;
+      color: #fff;
+      font-size: 41px;
+      font-weight: 400;
+    }
+    button {
+      border: none;
+      display: flex;
+      gap: 10px;
+      padding: 6px 10px 3px;
+      align-items: center;
+      background: linear-gradient(
+        89.66deg,
+        #d177a5 0.38%,
+        #7a70e1 48.89%,
+        #7ea9c2 99.8%
+      );
+      border-radius: 10px;
+      input {
+        padding-bottom: 0;
+        border: none;
+        font-size: 41px;
+        font-weight: 700;
+        color: #fff;
+      }
+    }
+    .submit__button {
+      gap: 20px;
+      margin-top: 68px;
+      input {
+        padding-top: 0;
+      }
+    }
+    .submit__button,
+    .press__enter {
+      display: flex;
+      align-items: center;
+    }
+    .press__enter {
+      gap: 5px;
+      .sec__brief {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #babfc5;
+      }
+    }
+  }
+}
