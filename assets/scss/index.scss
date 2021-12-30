@@ -1,0 +1,220 @@
+/* Index Hero Start */
+.hero__content{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.hero__heading{
+    font-style: normal;
+    font-size: clamp(109px,5vw,41px);
+    color: #FFFFFF;
+}
+
+
+.hero__btn{
+    margin-top: 80px;
+}
+
+.hero__img{
+    filter: drop-shadow(0px 0px 100px red);
+}
+
+.logo__list{
+    margin-top: 250px;
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    justify-content: space-between;
+}
+
+/* Index Hero End */
+
+/* Globel Sec Start */
+.tmb__globel__sec{
+    padding: 287px 0 150px;
+}
+.globel__sec__content{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    gap: 50px;
+}
+.globel__point__list{
+    margin-top: 40px;
+}
+
+.globel__point__item{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    span{
+        line-height: clamp(20px, 6vw, 70px);
+    }
+}
+
+.globel__point__item:not(:last-child){
+    margin-bottom: 20px;
+}
+
+/* Globel Sec End */
+
+
+/* Deploy Sec Start */
+.tmb__deploy__sec{
+    padding: 141px 0 215px;
+}
+.deploy__sec__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.deploy__detail {
+    margin-top: 43px;
+    h3{
+        font-weight: 500;
+        font-size: 40px;
+        color: #C8C8C8;
+        margin-bottom: 7px;
+    }
+    .normal-text{
+        color: #C8C8C8;
+        font-weight: 700;
+        font-size: 32px;
+        text-decoration: underline;
+    }
+
+    .gradient-text{
+        background: linear-gradient(to right, #D177A5, #7A70E1, #7EA9C2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 800;
+        font-size: 46px;
+    }
+}
+/* Deploy Sec End */
+
+/* Trusted Sec Start */
+.trusted__sec{
+    padding-top: 76px;
+}
+.trusted__sec__txt{
+    text-align : center;
+    margin-bottom: 54px;
+}
+
+.trusted__txt__subheading{
+    font-weight: 500;
+    font-size: 25px;
+    color: #BABFC5;
+    margin-top: 40px;
+    display: inline-block;
+}
+.trusted__sec__map{
+    position: relative;
+}
+
+.trusted__logo__list{
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 100%;
+    overflow: hidden;
+    .swiper-wrapper{
+        align-items: center;
+    }
+}
+
+
+/* Trusted Sec End */
+
+.info__crd__sec{
+    padding: 70px 0;
+}
+
+.crd__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 44px 40px;
+}
+
+
+.crd__grid__item{
+    background-image: none;
+    border-radius: 6px;
+    padding: 2px;
+    .crd__content{
+        height: 100%;
+        padding: 110px 40px;
+        background: linear-gradient(139.23deg, #121625 0%, #2A2E37 100%);
+        border-radius: inherit;
+    }
+    &:hover {
+        background-image: linear-gradient(89.66deg, #D177A5 0.38%, #7A70E1 48.89%, #7EA9C2 99.8%);
+        .info__crd__heading{
+            background: linear-gradient(89.66deg, #D177A5 0.38%, #7A70E1 48.89%, #7EA9C2 99.8%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+    }
+}
+
+.info__crd__txt{
+    margin-top: 20px;
+    font-size: 25px;
+    color: #BABFC5;
+}
+
+
+/* Testimonial Start */ 
+.testimonial{
+    padding: 203px 0 257px;
+}
+.testimonial__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.testimonial__list{
+    margin-top: 77px;
+}
+.testimonial__text{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 51px;
+}
+.user__info{
+    margin-top: 36px;
+}
+.user__info{
+    display: flex;
+    gap: 34px;
+}
+.profile__detail span{
+    display: block;
+}
+.user__company{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 41px;
+    text-decoration-line: underline;
+}
+.profile__post{
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 25px;
+    color: #6F6F6F;
+}
+.profile__img img{
+    border-radius: 50%;
+}
+.testimonial__img{
+    text-align: right;
+    img{
+        border-radius: 50%;
+        max-width: 450px;
+        max-height: 450px;
+    }
+}
+/* Testimonial Start */ 

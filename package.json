@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "scss" : "node-sass -w assets/scss/stylesheet.scss  assets/css/stylesheet.css --output-style compressed"
+    "scss": "node-sass -w assets/scss/stylesheet.scss  assets/css/stylesheet.css --output-style compressed"
   },
   "dependencies": {
     "node-sass": "^7.0.1"
