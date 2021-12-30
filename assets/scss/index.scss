@@ -43,6 +43,16 @@
 .globel__point__list{
     margin-top: 40px;
 }
+
+.globel__point__item{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    span{
+        line-height: clamp(20px, 6vw, 70px);
+    }
+}
+
 .globel__point__item:not(:last-child){
     margin-bottom: 20px;
 }
@@ -170,7 +180,8 @@
     margin-top: 77px;
 }
 .testimonial__text{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     gap: 51px;
 }
 .user__info{
@@ -197,5 +208,13 @@
 }
 .profile__img img{
     border-radius: 50%;
+}
+.testimonial__img{
+    text-align: right;
+    img{
+        border-radius: 50%;
+        max-width: 450px;
+        max-height: 450px;
+    }
 }
 /* Testimonial Start */ 
