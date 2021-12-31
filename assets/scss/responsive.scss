@@ -33,6 +33,16 @@
       width: 45% !important;
     }
   }
+
+  // Index Responsive 1440px
+  .tmb__hero__sec .hero__content {
+    grid-template-columns: 60% 40%;
+  }
+
+  .globel__sec__content {
+    grid-template-columns: 35% 62%;
+    gap: 40px;
+  }
 }
 // === RESPONSIVE CSS 1440PX end === //
 
@@ -150,6 +160,60 @@
     }
   }
   // sustainable page css end
+  // Hero Section Css 1200px
+  .tmb__hero__sec .hero__content {
+    grid-template-columns: 70% 30%;
+  }
+
+  .globel__sec__content {
+    grid-template-columns: 1fr;
+    .globel__sec__img {
+      text-align: center;
+    }
+  }
+  .deploy__sec__content {
+    grid-template-columns: 1fr;
+    .deploy__sec__txt {
+      grid-row: 2;
+    }
+  }
+  .crd__grid {
+    grid-template-columns: 1fr;
+  }
+  .crd__grid__item .crd__content {
+    padding: 60px 30px;
+  }
+  .testimonial__img {
+    grid-row: 1;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .testimonial__grid {
+    grid-template-columns: 1fr;
+  }
+  .testimonial__grid .profile__img {
+    height: 56px;
+    width: 56px;
+  }
+  .user__info {
+    gap: 28px;
+  }
+  .testimonial__text svg {
+    width: 16px;
+    height: 25px;
+  }
+  .testimonial__text {
+    gap: 5px;
+  }
+  .info__crd__sec {
+    padding: 70px 0;
+    .swiper-wrapper {
+      display: flex;
+    }
+    .crd__content {
+      text-align: start;
+    }
+  }
 }
 // === RESPONSIVE CSS 1200PX END === //
 
@@ -290,7 +354,6 @@
     .sec__best__solution .sec__heading {
       font-size: 40px;
       padding-bottom: 50px;
-      padding-top: 57px;
     }
     // === RESPONSIVE CSS 991PX end === //
     .breadcrums {
@@ -344,6 +407,30 @@
     }
   }
   // career page responsive end
+
+  // Submit Section Massege 767px
+  .sec__submit__message .sec__content .sec__text {
+    margin-bottom: 40px;
+  }
+  // Hero Section Css 1200px
+  .tmb__hero__sec .hero__content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    .hero__txt {
+      grid-row: 2;
+    }
+  }
+  .crd__grid__item .crd__content {
+    padding: 40px 30px;
+  }
+
+  .hero__txt {
+    margin-top: 57px;
+  }
+
+  .tmb__globel__sec .sec__heading {
+    font-weight: 700;
+  }
 }
 // === RESPONSIVE CSS 991PX END === //
 
@@ -660,6 +747,27 @@
       }
     }
   // policy pages responsive end
+
+  //  Partner Section Css 767px
+  .industrie__banner.sec--partner--banner .banner__inner .banner__image svg {
+    width: 450px;
+  }
+  .crd__grid__item .crd__content {
+    padding: 25px 25px;
+  }
+  .globel__point__item svg {
+    width: 12px;
+    height: 12px;
+  }
+  .globel__point__item {
+    gap: 8px;
+  }
+  .tmb__deploy__sec {
+    padding: 100px 0 100px;
+  }
+  .testimonial {
+    padding: 100px 0 100px;
+  }
 }
 // === RESPONSIVE CSS 767PX end === //
 
@@ -739,7 +847,100 @@
     width: 50%;
   }
   .sec__best__solution {
-    padding-bottom: 50px;
+    padding: 57px 0 50px;
+  }
+  .sec__submit__message .sec__content .sec__message__box input {
+    padding-top: 0;
+  }
+  //  Partner Section Css 767px
+  .industrie__banner.sec--partner--banner .banner__inner .banner__image svg {
+    width: 350px;
+    height: 300px;
+    padding: 0;
+  }
+  .industrie__banner.sec--partner--banner .banner__inner .banner__image {
+    display: flex;
+    justify-content: center;
+  }
+  .sec__submit__message .sec__content .sec__message__box .sec__heading span {
+    margin: 0 0px 0 3px;
+  }
+
+  /* Index  Page Responsive 575px */
+  .crd__grid__item .crd__content {
+    padding: 16px 20px;
+  }
+  .globel__sec__content {
+    gap: 10px;
+  }
+  .tmb__deploy__sec {
+    padding: 0px 0 0px;
+  }
+
+  .trusted__sec {
+    padding-top: 41px;
+  }
+
+  .tmb__deploy__sec .sec__heading {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .deploy__detail h3,
+  .deploy__detail .normal-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .deploy__detail .gradient-text {
+    font-size: 41px;
+  }
+  .deploy__detail {
+    margin-top: 20px;
+  }
+  .trusted__sec .sec__heading {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .trusted__txt__subheading {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .info__crd__sec {
+    padding: 0 0 52px;
+  }
+
+  .info__crd__sec {
+    .sec__heading {
+      font-size: 25px;
+      line-height: 35px;
+    }
+    .info__crd__txt {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  .testimonial {
+    padding: 0px 0 50px;
+  }
+  .testimonial .sec__heading {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .testimonial__grid .sec__brief {
+    font-weight: 400;
+  }
+  .testimonial__img img {
+    max-width: 140px;
+    height: 140px;
+  }
+  .testimonial__list {
+    margin-top: 30px;
   }
 }
 // === RESPONSIVE CSS 575PX End === //
@@ -933,7 +1134,12 @@
     padding: 50px 0;
   }
   // === sustain Page end === //
+  //  Partner Section Css 767px
+  .industrie__banner.sec--partner--banner .banner__inner .banner__image svg {
+    width: 300px;
+  }
 }
+
 // === RESPONSIVE CSS 480PX END === //
 
 // === RESPONSIVE CSS 340PX START === //
@@ -951,3 +1157,5 @@
   }
 }
 // === RESPONSIVE CSS 340PX end === //
+
+////////////////////////////////////////////////////////////////////// TMB - SUNNY //////////////////////////////////////////////////////////////////////////////////////////

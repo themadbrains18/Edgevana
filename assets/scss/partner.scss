@@ -74,21 +74,21 @@
     max-width: 602px;
     width: 100%;
     .sec__heading {
-      font-size: 41px;
+      font-size: clamp(25px, 6vw, 41px);
       font-weight: 700;
       line-height: clamp(35px, 6vw, 51px);
     }
     .sec__brief {
-      font-size: 25px;
       font-weight: 500;
-      margin-top: 78px;
+      margin-top: clamp(20px, 5vw, 78px);
+      font-size: clamp(16px, 6vw, 25px);
     }
   }
   .sec__message__box {
     max-width: 838px;
     width: 100%;
     .sec__heading {
-      font-size: 25px;
+      font-size: clamp(16px, 5vw, 25px);
       font-weight: 700;
       line-height: 35px;
       margin-bottom: clamp(30px, 5vw, 71px);
@@ -96,7 +96,7 @@
       }
     }
     ::placeholder {
-      font-size: 41px;
+      font-size: clamp(16px, 5vw, 41px);
       font-weight: 400;
     }
     input {
@@ -109,7 +109,7 @@
       display: block;
       width: 100%;
       color: #fff;
-      font-size: 41px;
+      font-size: clamp(16px, 5vw, 41px);
       font-weight: 400;
       text-overflow: ellipsis;
     }
@@ -129,7 +129,7 @@
       input {
         padding-bottom: 0;
         border: none;
-        font-size: 41px;
+        font-size: clamp(16px, 5vw, 41px);
         font-weight: 700;
         color: #fff;
       }
