@@ -1,8 +1,7 @@
 // banner sec css start
 .industrie__banner {
-    background-color: #000;
     position: relative;
-    padding: 243px 0 249px;
+    padding: 93px 0 249px;
 
     .breadcrums {
         margin-bottom: 62px;
@@ -55,7 +54,7 @@
 // how its work sec start
 .how__its__work__sec {
     padding: 48px 0 167px;
-    background-color: #000;
+    
 
     .sec__head {
         margin-bottom: clamp(40px, 8vw, 142px);
@@ -145,13 +144,20 @@
     display: flex;
     align-items: flex-start;
     cursor: pointer;
+    transition: 0.4s;
 }
 
+.faq__ques.active + .faq__ans{
+    height: auto;
+    opacity: 1;
+    overflow: visible;
+}
 
 .faq__ans {
     font-size: clamp(16px,2vw,25px);
     line-height: clamp(20px,3vw,36px);
-    transition: 0.3s;
+    
+    transition: 0.4s;
     height: 0;
     font-weight: 500;
     overflow: hidden;
@@ -195,7 +201,6 @@
 // faq sec css start
 // Contact our team sec start 
 .contact__our__team__sec {
-    background-color: #000;
     padding: 98px 0 270px;
 
     .sec__head {

@@ -136,6 +136,30 @@
   .industrie__banner.sec--partner--banner .banner__text {
     width: 50% !important;
   }
+
+  // sustainable page css start
+  .sustainable__banner {
+
+    .sec__content__inner {
+        flex-direction: column-reverse;
+        gap: 10px;
+
+        .sec__text,
+        .sec__image{
+          width: 100%;
+        }
+        .sec__text{
+          .sec__info{
+            max-width: 100%;
+          }
+        }
+        .sec__image{
+          text-align: center;
+        }
+
+    }
+  }
+  // sustainable page css end
   // Hero Section Css 1200px
   .tmb__hero__sec .hero__content {
     grid-template-columns: 70% 30%;
@@ -205,6 +229,9 @@
 // === RESPONSIVE CSS 991PX START === //
 @media only screen and (max-width: 991px) {
   // header responsive css 991px start
+  main{
+    padding-top: 110px;
+  }
   .toggle__btn {
     svg {
       display: block;
@@ -223,16 +250,16 @@
 
   .header {
     top: 0;
-    padding: 20px 0;
-    background-color: #000;
+    padding: 30px 0;
+    background-color: #0b0e1e;
   }
 
   nav.nav__list {
     position: absolute;
-    background-color: #000;
+    background-color: #0b0e1e;
     width: 100%;
     right: 0;
-    top: 90px;
+    top: 110px;
     height: 100%;
     min-height: 100vh;
     z-index: 9;
@@ -330,7 +357,7 @@
     }
     // === RESPONSIVE CSS 991PX end === //
     .breadcrums {
-      display: none;
+      display: none !important;
     }
     // === RESPONSIVE CSS 991PX END === //
   }
@@ -357,7 +384,7 @@
   }
 
   .breadcrums {
-    display: none;
+    display: none !important;
   }
   // career page responsive start
   .grow__sec {
@@ -413,7 +440,32 @@
   .container {
     padding: 0 30px;
   }
+  .career__banner__sec{
+    overflow: hidden;
+    .bg-element {
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%)scale(3);
+  }
+} 
+.sec__content__wrapper{
+  .sec__content{
+    .sec__content__inner{
+      .sec__heading{
+        font-weight: 700;
+        width: calc(100% + 12px);
+        margin-left: -6px;
+      }
 
+      .policy__sub__heading.mt-70{
+        font-weight: 500;
+      }
+    }
+  }
+}
+.sec__content__wrapper.wrapper-modifier{
+  padding-top: 0;
+}
   .copywrite__text {
     flex-direction: column-reverse;
   }
@@ -652,6 +704,67 @@
       }
     }
   }
+  // career page responsive css start
+  .featured__tabs{
+    .sec__content__inner{
+      max-width: 100%;
+     .tabs{
+      .tab__btn{
+        width: 100%;
+      }
+      .tab__content {
+        position: static;
+        transform: none;
+        width: 100%;
+        .tab__content__inner{
+          padding: 0;
+          max-width: 100%;
+        }
+     }
+     .btn.active + div{
+      margin-top: 35px;
+     }
+    }
+   }
+  }
+  // career page responsive css end
+
+  // sustain page responsive css start
+  .sustainable__banner .bg-element {
+    top: 3%;
+    transform: scale(1.5);
+  }
+  .initiatives__sec{
+    .sec__head{
+      .sec__heading{
+        padding: 0;
+      }
+    }
+    .sec__content{
+      .sec__content__inner{
+        flex-direction: column;
+        gap: 40px;
+
+        .numbring__text{
+          .numbring{
+              margin: 0;            
+          }
+        } 
+      }
+    } 
+  } 
+  // sustain page responsive css end
+
+
+  // policy pages responsive start
+    .sec__content__wrapper{
+      padding: 25px 0;
+
+      .policy__text{
+        padding: 0;
+      }
+    }
+  // policy pages responsive end
 
   //  Partner Section Css 767px
   .industrie__banner.sec--partner--banner .banner__inner .banner__image svg {
@@ -684,7 +797,7 @@
     height: 28px;
   }
   nav.nav__list {
-    top: 72px;
+    top: 93px;
   }
   .sec__why__edge {
     padding-bottom: 57px;
@@ -853,9 +966,11 @@
 // === RESPONSIVE CSS 480PX START === //
 @media only screen and (max-width: 480px) {
   //footer responsive css 480px
-
+  main{
+    padding-top:93px ;    
+  }
   nav.nav__list {
-    top: 72px;
+    top: 93px;
   }
   // common responsive css start
   .sec__brief {
@@ -917,7 +1032,7 @@
 
   // === industrie Page start === //
   .industrie__banner {
-    padding: 123px 0 50px;
+    padding: 50px 0;
 
     .banner__inner {
       .banner__image {
@@ -983,7 +1098,7 @@
 
   // === career Page start === //
   .career__banner__sec {
-    padding: 123px 0 50px;
+    padding: 50px 0 50px;
 
     .sec__content__inner {
       .sec__image {
@@ -993,21 +1108,50 @@
         }
       }
     }
-    .grow__sec {
-      padding: 50px 0;
-      .sec__content__inner {
-        .sec__text {
-          .email__resume {
-            flex-direction: column;
-            align-items: flex-start !important  ;
-            gap: 0;
-          }
+    
+  }
+  .grow__sec {
+    padding: 50px 0;
+    .sec__content__inner {
+      .sec__text {
+        .email__resume {
+          flex-direction: column;
+          align-items: flex-start !important  ;
+          gap: 0;
         }
       }
     }
-
-    // === career Page end === //
   }
+  .featured__tabs{
+    padding:50px 0;
+    .sec__content__inner{
+      .tabs {
+        .tab__content{
+          .sec__info{
+            &::after{
+              width: 100%;
+            }
+          }
+        } 
+      }
+      .apply__btn{
+        .primary-btn{
+          width: 100%;
+          text-align: center;
+        }
+      }
+   }
+  }
+  // === career Page end === //
+
+  // === sustain Page start === //
+  .sustainable__banner{
+    padding: 50px 0;
+  }
+  .initiatives__sec{
+    padding: 50px 0;
+  }
+  // === sustain Page end === //
   //  Partner Section Css 767px
   .industrie__banner.sec--partner--banner .banner__inner .banner__image svg {
     width: 300px;
