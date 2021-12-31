@@ -447,7 +447,25 @@
       left: 50%;
       transform: translateX(-50%)scale(3);
   }
-  } 
+} 
+.sec__content__wrapper{
+  .sec__content{
+    .sec__content__inner{
+      .sec__heading{
+        font-weight: 700;
+        width: calc(100% + 12px);
+        margin-left: -6px;
+      }
+
+      .policy__sub__heading.mt-70{
+        font-weight: 500;
+      }
+    }
+  }
+}
+.sec__content__wrapper.wrapper-modifier{
+  padding-top: 0;
+}
   .copywrite__text {
     flex-direction: column-reverse;
   }
@@ -740,7 +758,7 @@
 
   // policy pages responsive start
     .sec__content__wrapper{
-      padding: 50px 0;
+      padding: 25px 0;
 
       .policy__text{
         padding: 0;
@@ -1157,5 +1175,3 @@
   }
 }
 // === RESPONSIVE CSS 340PX end === //
-
-////////////////////////////////////////////////////////////////////// TMB - SUNNY //////////////////////////////////////////////////////////////////////////////////////////
