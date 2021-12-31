@@ -224,27 +224,38 @@
 }
 /* Testimonial Start */ 
 
-.hero__img_svg>path{opacity: 0;}
+// Banner svg image annimate
+
+// .hero__img_svg>path{opacity: 0;}
 
 @keyframes HeroSnake {
-    30%{ opacity: 0.2;}
-    50%{ opacity: 0.5;}
-    100% {
-      opacity: 1;
-      -webkit-transform: rotate(10deg);
+    // 30%{ opacity: 0.2;}
+    // 50%{ opacity: 0.5;}
+    // 100% {
+    //   opacity: 1;
+    //   -webkit-transform: rotate(10deg);
+    // }
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
     }
 }
 
-// .hero__img_svg  path {
-//     animation: HeroSnake 5s linear 0s  forwards infinite;
+.hero__img_svg {
+  animation: HeroSnake 40s linear forwards infinite;
+}
+
+// @for $i from 1 through 1000 {
+//     .hero__img_svg  path:nth-child(#{$i}) {
+//       animation: HeroSnake 10s linear ($i * 0.01)+s  forwards infinite;
+//     }
 // }
+// Banner svg image annimate end
 
-@for $i from 1 through 1000 {
-    .hero__img_svg  path:nth-child(#{$i}) {
-      animation: HeroSnake 10s linear ($i * 0.01)+s  forwards infinite;
-    }
-}
 
+// global map annimate rotate 
 @keyframes HeroGlobal {
     100% {
       opacity: 1;
@@ -263,31 +274,26 @@
     animation: HeroGlobal 20s linear forwards infinite;
 }
 
-// @for $i from 1 through 2000 {
-//     // .index__img_global  path:nth-child(#{$i}) {
-//     //   animation: HeroGlobal 10s linear ($i * 0.01)+s  forwards infinite;
-//     // }
+// global map annimate rotate end
 
-//     // .index__img_global  g:nth-child(#{$i}) {
-//     //     animation: HeroGlobal 10s linear ($i * 0.01)+s  forwards infinite;
-//     // }
+// annimate map dotted pulsed 
+@keyframes pulse {
+	100% {transform: scale(1.1)}
+}
 
-//     // .country{
-//     //     animation: HeroGlobal 10s linear ($i * 0.01)+s  forwards infinite;
-//     // }
-//     .index__img_global{
-//         animation: HeroGlobal 10s linear ($i * 0.01)+s  forwards infinite;
-//     }
-// }
+@for $i from 1 through 1000 {
+    .svg_map_dot  path:nth-child(#{$i}) {
+      animation: pulse 1s linear infinite alternate;
+    }
+}
+// annimate map dotted pulsed end
 
-.global__line_map path:hover {fill : #FFFFFF; opacity: 1;}
+// map annimate when hover on any element eg: Dell, Lenovo
 
-// @keyframes pulse {
-// 	10% {transform: translate(-50 -50)}
-// }
+.global__line__map path {stroke : #0FF; opacity: 1; stroke-width: 2;}
 
-// @for $i from 1 through 1000 {
-//     .svg_map_dot  path:nth-child(#{$i}) {
-//       animation: pulse 1s linear infinite;
-//     }
-// }
+.nav__item:hover {
+  .global__line__map path {stroke : #FF0; opacity: 1; stroke-width: 2;}
+}
+
+// map annimate when hover on any element eg: Dell, Lenovo end
