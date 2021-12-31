@@ -1,6 +1,11 @@
 
 'use strict';
 
+window.addEventListener('load', () => {
+  let bannerSvg = document.querySelector(".service__banner__img svg");
+  bannerSvg.classList.add('active');
+});
+
 /* Service Tabs Js */
 let tabs = document.querySelectorAll(".tabs__button");
 
