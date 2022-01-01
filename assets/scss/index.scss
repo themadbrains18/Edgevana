@@ -1,4 +1,5 @@
 /* Index Hero Start */
+
 .hero__content {
   display: grid;
   grid-template-columns: auto auto;
@@ -35,6 +36,16 @@
 .tmb__globel__sec {
   padding-top: clamp(50px, 5vw, 287px);
   padding-bottom: clamp(50px, 5vw, 150px);
+  position: relative;
+  // overflow-x: hidden;
+
+  .bg__lines{
+    position: absolute;
+    top: 72%;
+    left: 48%;
+    transform: translateX(-50%)scale(1.6)rotate(-4deg);
+
+  }
 }
 
 .tmb__globel__sec .sec__heading {
@@ -234,81 +245,90 @@
     max-height: 450px;
   }
 }
-/* Testimonial Start */ 
+/* Testimonial Start */
 
 // Banner svg image annimate
 
-// .hero__img_svg>path{opacity: 0;}
+@keyframes HeroGlobalimg {
+  100% {
+    opacity: 1;
+    // -webkit-transform: rotate(-40deg);
+  }
 
-@keyframes HeroSnake {
-    // 30%{ opacity: 0.2;}
-    // 50%{ opacity: 0.5;}
-    // 100% {
-    //   opacity: 1;
-    //   -webkit-transform: rotate(10deg);
-    // }
-    from {
-      -webkit-transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(359deg);
-    }
+  from {
+    -webkit-transform: rotate(0deg) skew(-5deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg) skew(5deg);
+  }
 }
 
 .hero__img_svg {
-  animation: HeroSnake 40s linear forwards infinite;
+  animation: HeroGlobalimg 40s linear forwards infinite;
 }
 
-// @for $i from 1 through 1000 {
-//     .hero__img_svg  path:nth-child(#{$i}) {
-//       animation: HeroSnake 10s linear ($i * 0.01)+s  forwards infinite;
-//     }
-// }
 // Banner svg image annimate end
 
-
-// global map annimate rotate 
+// global map annimate rotate
 @keyframes HeroGlobal {
-    100% {
-      opacity: 1;
-      -webkit-transform: rotate(-40deg);
-    }
+  100% {
+    opacity: 1;
+    // -webkit-transform: rotate(-40deg);
+  }
 
-    from {
-        -webkit-transform: rotate(0deg);
-    }
-    to {
-            -webkit-transform: rotate(-359deg);
-    }
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-359deg);
+  }
 }
-
-.index__img_global{
-    animation: HeroGlobal 20s linear forwards infinite;
+.is-visible .index__img_global {
+  animation: HeroGlobal 20s linear forwards;
 }
 
 // global map annimate rotate end
 
-// annimate map dotted pulsed 
-@keyframes pulse {
-	100% {transform: scale(1.1)}
+// annimate map dotted pulsed--------------------
+
+@keyframes dotpulse {
+  // 100% {transform: rotate(45deg)}
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
-@for $i from 1 through 1000 {
-    .svg_map_dot  path:nth-child(#{$i}) {
-      animation: pulse 1s linear infinite alternate;
-    }
-}
-// annimate map dotted pulsed end
-
-// map annimate when hover on any element eg: Dell, Lenovo
-
-.global__line__map path {stroke : #0FF; opacity: 1; stroke-width: 2;}
-
-.nav__item:hover {
-  .global__line__map path {stroke : #FF0; opacity: 1; stroke-width: 2;}
+.is-connect-visible .connectdot {
+  animation: dotpulse 1s linear infinite;
 }
 
-// map annimate when hover on any element eg: Dell, Lenovo end
+@keyframes linemove {
+  // from {
+  //   stroke-dashoffset: 450;
+  // }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.is-connect-visible .connectline {
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: linemove 5s linear infinite alternate;
+}
+
+// @for $i from 1 through 1000 {
+//     .svg_map_dot  path:nth-child(#{$i}) {
+//       animation: pulse 1s linear infinite alternate;
+//     }
+// }
+
+// annimate map dotted pulsed end--------------------
+
 /* Testimonial Start */
 
 .mouseenter .cursor {
@@ -359,5 +379,121 @@
   }
   to {
     transform: scale(0.9);
+  }
+}
+
+//  /// ////////////////////////////////////////
+
+.hero__heading {
+  overflow: hidden;
+  height: 120px;
+  span {
+    display: inline-block;
+  }
+  > span {
+    opacity: 0;
+    transition: 0.7s linear;
+  }
+  > span.active {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(-20px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(20px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.hero__heading .active .fspan,
+.hero__heading .active .lspan {
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.hero__heading .active .fadeInDown {
+  animation-name: fadeInDown;
+  animation-duration: 0.5s;
+  animation-delay: 2.5s;
+  opacity: 1;
+}
+
+.hero__heading .active .fadeInLeft {
+  animation-name: fadeInLeft;
+  opacity: 0;
+}
+
+.hero__heading .active .fadeInRight {
+  animation-name: fadeInRight;
+  opacity: 0;
+}
+.hero__heading .active .fadeInUp {
+  animation-name: fadeInUp;
+  opacity: 0;
+}
+
+.logo__list li:hover {
+
+  background-color: rgba(201, 199, 199, 0.2);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.tmb__hero__sec{
+  position: relative;
+  // overflow-x: hidden;
+  .connect_hero_global_map{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform:translateX(-50%) rotate(10deg) scale(1.25);
+    z-index: -1;
   }
 }
