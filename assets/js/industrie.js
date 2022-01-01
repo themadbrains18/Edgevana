@@ -16,3 +16,22 @@ window.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// faq svg js start
+// let svgElement = document.querySelector(".faq__sec .sec__image svg");
+// let svgElementPath = document.querySelectorAll(".faq__sec .sec__image svg g path[fill='white']");
+
+// console.log(svgElementPath);
+// svgElement.addEventListener("mouseover",()=>{
+//     for(let i of svgElementPath){
+//         i.classList.add("active")
+//     }
+// });
+// svgElement.addEventListener("mouseleave",()=>{
+//     for(let i of svgElementPath){
+//         i.classList.remove("active")
+//     }
+// });
+
+
+// faq svg js end
