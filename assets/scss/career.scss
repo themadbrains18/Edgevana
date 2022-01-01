@@ -1,6 +1,13 @@
 // banner css 
 .career__banner__sec{
-    padding: 243px 0 160px;
+    padding: 93px 0 160px;
+    position: relative;
+    .bg-element{
+        position: absolute;
+        top: -17%;
+        left: 0;
+        z-index: -1;
+      }
     .breadcrums {
         margin-bottom: 81px;
         a,
@@ -57,20 +64,26 @@
 // featured tabs css
 .featured__tabs{
     padding: 265px 0 262px;
-    background-color: #000;
-
     .sec__content__inner{
         .tabs{
             display: flex;
-            // align-items: center;
+            align-items: center;
+            position: relative;
             .tab__btn{
-                width: 50%;
+                width: 35%;
+                ul{
+                    li:not(:last-child){
+                        margin-bottom: clamp(30px,3vw,35px);
+                    }
+                }
                 .btn{
                     font-size: clamp(16px,2vw,25px);
                     line-height: clamp(20px,2vw,30px);
+                    font-weight: 500;
                     color: #FFFFFF;
                     text-align: start;
                     position: relative;
+                    width: 100%;
                     &::after{
                         content: '';
                         background-color: #6F6F6F;
@@ -84,11 +97,24 @@
                 }
             }
             .tab__content{
-                width: 50%;
-                padding-right: clamp(20px,9vw,120px);
+                width: 65%;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(0,-50%);
+                height: 0;
+                overflow: hidden;
+                opacity: 0;
+                transition: 0.3s;
+                .tab__content__inner{
+                    margin: auto;
+                    max-width: 800px;
+                    padding: 0 40px;
+                }    
                 .sec__brief{
                     line-height: clamp(20px, 6vw, 51px);
                     margin-bottom: clamp(10px,2vw,30px);
+                    color: #FFFFFF;
                 }
                 .sec__info{
                     font-weight: 500;
@@ -112,6 +138,19 @@
                 .apply__btn{
                     text-align: end;
                 }
+            }
+            .btn.active{
+                background: linear-gradient(to right, #d177a5 0%, #7a70e1 48%, #7ea9c2 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                &:after{
+                    background: linear-gradient(to right, #d177a5 0%, #7a70e1 48%, #7ea9c2 100%);    
+                }
+            }
+            .btn.active + .tab__content{
+                opacity: 1;
+                height: auto;
+                overflow: visible;
             }
         }
     }

@@ -1,4 +1,5 @@
 /* Index Hero Start */
+html {scroll-behavior:smooth}
 .hero__content {
   display: grid;
   grid-template-columns: auto auto;
@@ -234,6 +235,103 @@
     max-height: 450px;
   }
 }
+/* Testimonial Start */ 
+
+
+// Banner svg image annimate
+
+@keyframes HeroGlobalimg {
+  100% {
+    opacity: 1;
+    // -webkit-transform: rotate(-40deg);
+  }
+
+  from {
+      -webkit-transform: rotate(0deg) skew(-5deg);
+  }
+  to {
+          -webkit-transform: rotate(359deg) skew(5deg);
+  }
+}
+
+.hero__img_svg {
+  animation: HeroGlobalimg 40s linear forwards infinite;
+}
+
+// Banner svg image annimate end
+
+// global map annimate rotate 
+@keyframes HeroGlobal {
+    100% {
+      opacity: 1;
+      // -webkit-transform: rotate(-40deg);
+    }
+
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(-359deg);
+    }
+}
+.is-visible .index__img_global{
+    animation: HeroGlobal 20s linear forwards ;
+}
+
+// global map annimate rotate end
+
+// annimate map dotted pulsed--------------------
+
+@keyframes dotpulse {
+	// 100% {transform: rotate(45deg)}
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  
+}
+
+@keyframes linemove {
+	
+  0% {
+    stroke-dasharray: 20;
+    stroke-dashoffset: 20;
+}
+30% {
+    stroke-dasharray: 20;
+    stroke-dashoffset: 200;
+}
+50% {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 400;
+}
+80% {
+    stroke-dasharray: 30;
+    stroke-dashoffset: 200;
+}
+100% {
+    stroke-dasharray: 20;
+    stroke-dashoffset: 20;
+}
+  
+}
+
+
+
+.is-connect-visible .connectdot{animation: dotpulse 1s linear infinite;}
+
+.is-connect-visible .connectline{ animation: linemove 5s linear infinite;}
+
+// @for $i from 1 through 1000 {
+//     .svg_map_dot  path:nth-child(#{$i}) {
+//       animation: pulse 1s linear infinite alternate;
+//     }
+// }
+
+// annimate map dotted pulsed end--------------------
+
 /* Testimonial Start */
 
 .mouseenter .cursor {

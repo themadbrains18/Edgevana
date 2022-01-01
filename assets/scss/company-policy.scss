@@ -1,0 +1,126 @@
+.policy__text{
+    padding-left: clamp(20px,8vw,120px);
+    padding-right: clamp(20px,8vw,120px);
+    margin-bottom: clamp(30px,4vw,50px);
+}
+.policy__heading{
+    font-weight: 600;
+    font-size: clamp(25px,3vw,40px);
+    line-height:clamp(35px,4vw,60px);
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: clamp(20px,4vw,50px);
+}
+.policy__sub__heading{
+    font-weight: 800;
+    font-size:clamp(16px,2vw,25px);
+    line-height: clamp(20px,2vw,30px);
+    color: #BABFC5;
+    margin-bottom: clamp(20px,2vw,30px);
+
+}
+.policy__brief{
+    font-weight: normal;
+    font-size:clamp(16px,2vw,25px);
+    line-height: clamp(20px,2vw,31px);
+    color:#82868C;
+
+    a{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #E3E6EB;
+        word-break: break-all;
+    }
+}
+.sec__content__wrapper{
+    padding: 60px 0;
+}
+.text-grey{
+    color: #E3E6EB;
+}
+.policy__text{
+    &:last-child{
+        margin-bottom: 0;
+    }
+    ul{
+        padding-left: clamp(20px,4vw,40px);
+        li{
+            list-style: disc;
+            &::marker {
+                color: #82868c;
+                font-size: 24px;
+                vertical-align: middle;
+            }
+        }
+    } 
+} 
+.contact__information{
+    margin-top: clamp(33px,9vw,133px);
+    .contact__information__inner{
+        max-width: 1031px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        .policy__brief{
+            margin: 20px 0 29px;        
+        }
+        .policy__brief.mailto{
+            margin: 0;
+            color: #E3E6EB;
+            font-size: 25px;
+        }
+        .sec__heading.text-center{
+            font-size: clamp(25px, 5vw, 67px);
+            line-height: clamp(35px, 6vw, 80px);
+        }
+    }
+}
+// banner sec start
+.sec__content__wrapper{
+    padding: 93px 0 133px;
+
+    .breadcrums {
+        margin-bottom: clamp(20px,9vw,145px);
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 30px;
+
+
+        a,
+        span {
+
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 36px;
+            color: #fff;
+            transition: 0.4s;
+
+            &:hover {
+                background: linear-gradient(to right, #D177A5, #7A70E1, #7EA9C2);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .active__link {
+            font-weight: 800;
+            background: linear-gradient(to right, #D177A5, #7A70E1, #7EA9C2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .sec__content{
+        .sec__heading{
+            margin-bottom: 10px;
+        }
+        .sec__text{
+            margin-top: clamp(20px,5vw,70px);
+        }
+    }
+}
+
+
+// banner sec end
