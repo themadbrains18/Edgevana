@@ -1,4 +1,11 @@
 /* Service Banner Css Code */
+
+.tabs__content.industries--tabs {
+  transition: 0.3s;
+  height: 0;
+  overflow: hidden;
+}
+
 .sec__service {
   .service__tabs.mobile__tabs .tabs__button {
     display: none;
@@ -80,8 +87,10 @@
 
   .service__banner__img {
     text-align: end;
+    overflow: hidden;
+    padding-block: 30px;
   }
-  .service__banner__img img {
+  .service__banner__img svg {
     width: 682px;
     height: 678px;
   }
@@ -204,6 +213,7 @@
 
 .sec__service.sec--industries {
   position: relative;
+  overflow: hidden;
 }
 
 .tabs__content.industries--tabs {
@@ -245,4 +255,34 @@
 
 .global__network {
   margin-top: 150px !important;
+}
+
+.service__banner__img svg #Layer_1-2 path {
+  opacity: 0;
+}
+
+@keyframes HeroSnake {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes HeroSnakeSvg {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.service__banner__img svg {
+  animation: HeroSnakeSvg 30s linear infinite forwards;
+}
+@for $i from 1 through 204 {
+  .service__banner__img svg.active #Layer_1-2 path:nth-child(#{$i}) {
+    animation: HeroSnake 1s linear ($i * 0.01) + s forwards;
+  }
 }

@@ -236,6 +236,90 @@
 }
 /* Testimonial Start */
 
+// Banner svg image annimate
+
+// .hero__img_svg>path{opacity: 0;}
+
+@keyframes HeroSnake {
+  // 30%{ opacity: 0.2;}
+  // 50%{ opacity: 0.5;}
+  // 100% {
+  //   opacity: 1;
+  //   -webkit-transform: rotate(10deg);
+  // }
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+.hero__img_svg {
+  animation: HeroSnake 40s linear forwards infinite;
+}
+
+// @for $i from 1 through 1000 {
+//     .hero__img_svg  path:nth-child(#{$i}) {
+//       animation: HeroSnake 10s linear ($i * 0.01)+s  forwards infinite;
+//     }
+// }
+// Banner svg image annimate end
+
+// global map annimate rotate
+@keyframes HeroGlobal {
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(-40deg);
+  }
+
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-359deg);
+  }
+}
+
+.index__img_global {
+  animation: HeroGlobal 20s linear forwards infinite;
+}
+
+// global map annimate rotate end
+
+// annimate map dotted pulsed
+@keyframes pulse {
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@for $i from 1 through 1000 {
+  .svg_map_dot path:nth-child(#{$i}) {
+    animation: pulse 1s linear infinite alternate;
+  }
+}
+// annimate map dotted pulsed end
+
+// map annimate when hover on any element eg: Dell, Lenovo
+
+.global__line__map path {
+  stroke: #0ff;
+  opacity: 1;
+  stroke-width: 2;
+}
+
+.nav__item:hover {
+  .global__line__map path {
+    stroke: #ff0;
+    opacity: 1;
+    stroke-width: 2;
+  }
+}
+
+// map annimate when hover on any element eg: Dell, Lenovo end
+/* Testimonial Start */
+
 .mouseenter .cursor {
   display: block;
 }
