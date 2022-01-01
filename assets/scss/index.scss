@@ -293,36 +293,26 @@ html {scroll-behavior:smooth}
   
 }
 
+.is-connect-visible .connectdot{animation: dotpulse 1s linear infinite;}
+
 @keyframes linemove {
 	
-  0% {
-    stroke-dasharray: 20;
-    stroke-dashoffset: 20;
-}
-30% {
-    stroke-dasharray: 20;
-    stroke-dashoffset: 200;
-}
-50% {
-    stroke-dasharray: 60;
-    stroke-dashoffset: 400;
-}
-80% {
-    stroke-dasharray: 30;
-    stroke-dashoffset: 200;
-}
-100% {
-    stroke-dasharray: 20;
-    stroke-dashoffset: 20;
-}
+  // from {
+  //   stroke-dashoffset: 450;
+  // }
+  to {
+    stroke-dashoffset: 0;
+  }
   
 }
 
+.is-connect-visible .connectline{ 
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450; 
+  stroke-miterlimit:10;
+  animation: linemove 2s linear alternate infinite;
+}
 
-
-.is-connect-visible .connectdot{animation: dotpulse 1s linear infinite;}
-
-.is-connect-visible .connectline{ animation: linemove 5s linear infinite;}
 
 // @for $i from 1 through 1000 {
 //     .svg_map_dot  path:nth-child(#{$i}) {
