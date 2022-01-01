@@ -1,5 +1,7 @@
 /* Index Hero Start */
-html {scroll-behavior:smooth}
+html {
+  scroll-behavior: smooth;
+}
 .hero__content {
   display: grid;
   grid-template-columns: auto auto;
@@ -235,8 +237,7 @@ html {scroll-behavior:smooth}
     max-height: 450px;
   }
 }
-/* Testimonial Start */ 
-
+/* Testimonial Start */
 
 // Banner svg image annimate
 
@@ -247,10 +248,10 @@ html {scroll-behavior:smooth}
   }
 
   from {
-      -webkit-transform: rotate(0deg) skew(-5deg);
+    -webkit-transform: rotate(0deg) skew(-5deg);
   }
   to {
-          -webkit-transform: rotate(359deg) skew(5deg);
+    -webkit-transform: rotate(359deg) skew(5deg);
   }
 }
 
@@ -260,22 +261,22 @@ html {scroll-behavior:smooth}
 
 // Banner svg image annimate end
 
-// global map annimate rotate 
+// global map annimate rotate
 @keyframes HeroGlobal {
-    100% {
-      opacity: 1;
-      // -webkit-transform: rotate(-40deg);
-    }
+  100% {
+    opacity: 1;
+    // -webkit-transform: rotate(-40deg);
+  }
 
-    from {
-        -webkit-transform: rotate(0deg);
-    }
-    to {
-            -webkit-transform: rotate(-359deg);
-    }
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-359deg);
+  }
 }
-.is-visible .index__img_global{
-    animation: HeroGlobal 20s linear forwards ;
+.is-visible .index__img_global {
+  animation: HeroGlobal 20s linear forwards;
 }
 
 // global map annimate rotate end
@@ -283,36 +284,35 @@ html {scroll-behavior:smooth}
 // annimate map dotted pulsed--------------------
 
 @keyframes dotpulse {
-	// 100% {transform: rotate(45deg)}
-  from, to {
+  // 100% {transform: rotate(45deg)}
+  from,
+  to {
     opacity: 0;
   }
   50% {
     opacity: 1;
   }
-  
 }
 
-.is-connect-visible .connectdot{animation: dotpulse 1s linear infinite;}
+.is-connect-visible .connectdot {
+  animation: dotpulse 1s linear infinite;
+}
 
 @keyframes linemove {
-	
   // from {
   //   stroke-dashoffset: 450;
   // }
   to {
     stroke-dashoffset: 0;
   }
-  
 }
 
-.is-connect-visible .connectline{ 
+.is-connect-visible .connectline {
   stroke-dasharray: 450;
-  stroke-dashoffset: 450; 
-  stroke-miterlimit:10;
+  stroke-dashoffset: 450;
+  stroke-miterlimit: 10;
   animation: linemove 2s linear alternate infinite;
 }
-
 
 // @for $i from 1 through 1000 {
 //     .svg_map_dot  path:nth-child(#{$i}) {
@@ -375,32 +375,28 @@ html {scroll-behavior:smooth}
   }
 }
 
-
-
-
 //  /// ////////////////////////////////////////
 
-.hero__heading{
+.hero__heading {
   overflow: hidden;
   height: 120px;
-  span{
+  span {
     display: inline-block;
   }
   > span {
     opacity: 0;
     transition: 0.7s linear;
   }
-  > span.active{
+  > span.active {
     opacity: 1;
   }
 }
 
-
 @keyframes fadeInUp {
-  0%{
+  0% {
     transform: translateY(20px);
   }
-  50%{
+  50% {
     opacity: 0.5;
   }
   100% {
@@ -410,10 +406,10 @@ html {scroll-behavior:smooth}
 }
 
 @keyframes fadeInDown {
-  0%{
+  0% {
     transform: translateY(0);
   }
-  80%{
+  80% {
     opacity: 0.5;
   }
   100% {
@@ -422,31 +418,30 @@ html {scroll-behavior:smooth}
   }
 }
 @keyframes fadeInLeft {
-  0%{
+  0% {
     transform: translateX(-20px);
   }
-  50%{
+  50% {
     opacity: 0.5;
   }
   100% {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
 @keyframes fadeInRight {
-  0%{
+  0% {
     transform: translateX(20px);
   }
-  50%{
+  50% {
     opacity: 0.5;
   }
   100% {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
-
 
 .hero__heading .active .fspan,
 .hero__heading .active .lspan {
@@ -457,26 +452,23 @@ html {scroll-behavior:smooth}
   opacity: 0;
 }
 
-
-
-.hero__heading .active .fadeInDown{
-  animation-name: fadeInDown; 
+.hero__heading .active .fadeInDown {
+  animation-name: fadeInDown;
   animation-duration: 0.5s;
   animation-delay: 2.5s;
   opacity: 1;
 }
 
-.hero__heading .active .fadeInLeft{
-  animation-name: fadeInLeft; 
+.hero__heading .active .fadeInLeft {
+  animation-name: fadeInLeft;
   opacity: 0;
 }
 
-.hero__heading .active .fadeInRight{
-  animation-name: fadeInRight; 
+.hero__heading .active .fadeInRight {
+  animation-name: fadeInRight;
   opacity: 0;
-
 }
-.hero__heading .active .fadeInUp{
-  animation-name: fadeInUp; 
+.hero__heading .active .fadeInUp {
+  animation-name: fadeInUp;
   opacity: 0;
 }

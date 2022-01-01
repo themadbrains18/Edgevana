@@ -20,6 +20,7 @@ for(let i in tabs){
         let activeTab = document.querySelector(".tabs__button.active");
         if(activeTab){
           activeTab.classList.remove("active");  
+          
         }
         tabs[i].classList.add("active");
         let tabSelected = tabs[i].getAttribute("value");
@@ -57,15 +58,26 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 
-/* Industries Section Js Code */
-let industriesTabs = document.querySelectorAll(".industries__tabs__button");
-
-for( let p of industriesTabs){
-  p.addEventListener("click",()=>{
-
-    for(let q of industriesTabs){
-      q.classList.remove("active")    
+/* Industries Tabs */ 
+window.addEventListener('DOMContentLoaded', function() {
+  let industriesTabs = document.querySelectorAll(".industries__tabs__button");
+  
+  function removeClass(){
+    for (let i of industriesTabs) {
+        i.classList.remove("active");
+        i.nextElementSibling.setAttribute("style", `height: 0px;opacity:0;`);
     }
-    p.classList.add("active")
-  });
 }
+for (let i of industriesTabs) {
+    i.addEventListener('click', ()=>{
+        if(i.classList.contains("active")){
+            removeClass();    
+        }else{
+            removeClass();    
+            i.classList.add("active");
+            let height = i.nextElementSibling.scrollHeight;
+            i.nextElementSibling.setAttribute("style", `height: ${height}px;opacity:1;`);
+        }
+    });
+}
+});
