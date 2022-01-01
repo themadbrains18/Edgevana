@@ -9,12 +9,11 @@ window.addEventListener('load', () => {
     let height = 0;
     var animationClass = [
         "fadeInUp",
-        "fadeInRight",
         "fadeInLeft",
     ];
     let inerval = setInterval(() => {
         if(heroTxt){
-            for (let i = 0; i < heroHeading.children[childrenCount].children.length; i++) {
+            for (let i = 1; i < heroHeading.children[childrenCount].children.length; i++) {
                 var randomItem = animationClass[Math.floor(Math.random() * animationClass.length)];
                 heroHeading.children[childrenCount].children[i].classList.add(randomItem);
             }
