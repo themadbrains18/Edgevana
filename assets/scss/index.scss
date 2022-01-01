@@ -36,6 +36,16 @@
 .tmb__globel__sec {
   padding-top: clamp(50px, 5vw, 287px);
   padding-bottom: clamp(50px, 5vw, 150px);
+  position: relative;
+  // overflow-x: hidden;
+
+  .bg__lines{
+    position: absolute;
+    top: 72%;
+    left: 48%;
+    transform: translateX(-50%)scale(1.6)rotate(-4deg);
+
+  }
 }
 
 .tmb__globel__sec .sec__heading {
@@ -526,4 +536,16 @@
   background-color: rgba(201, 199, 199, 0.2);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
+}
+
+.tmb__hero__sec{
+  position: relative;
+  // overflow-x: hidden;
+  .connect_hero_global_map{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform:translateX(-50%) rotate(10deg) scale(1.25);
+    z-index: -1;
+  }
 }
