@@ -310,8 +310,7 @@ html {
 .is-connect-visible .connectline {
   stroke-dasharray: 450;
   stroke-dashoffset: 450;
-  stroke-miterlimit: 10;
-  animation: linemove 2s linear alternate infinite;
+  animation: linemove 2s linear  infinite alternate;
 }
 
 // @for $i from 1 through 1000 {
