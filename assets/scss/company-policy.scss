@@ -23,12 +23,36 @@
   font-size: clamp(16px, 2vw, 25px);
   line-height: clamp(20px, 2vw, 31px);
   color: #82868c;
+
+  a {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #e3e6eb;
+    word-break: break-all;
+  }
 }
 .sec__content__wrapper {
   padding: 60px 0;
 }
 .text-grey {
   color: #e3e6eb;
+}
+.policy__text {
+  &:last-child {
+    margin-bottom: 0;
+  }
+  ul {
+    padding-left: clamp(20px, 4vw, 40px);
+    li {
+      list-style: disc;
+      &::marker {
+        color: #82868c;
+        font-size: 24px;
+        vertical-align: middle;
+      }
+    }
+  }
 }
 .contact__information {
   margin-top: clamp(33px, 9vw, 133px);
@@ -84,10 +108,13 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-  }
-  .sec__content {
-    .sec__heading {
-      margin-bottom: 10px;
+    .sec__content {
+      .sec__heading {
+        margin-bottom: 10px;
+      }
+      .sec__text {
+        margin-top: clamp(20px, 5vw, 70px);
+      }
     }
     .sec__text {
       margin-top: clamp(50px, 5vw, 70px);

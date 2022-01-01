@@ -9,14 +9,10 @@ window.addEventListener('DOMContentLoaded', function() {
     }
     for (let i of faqQues) {
         i.addEventListener('click', ()=>{
-            if(i.classList.contains("active")){
-                removeClass();    
-            }else{
-                removeClass();    
-                let height = i.nextElementSibling.scrollHeight;
-                i.classList.add("active");
-                i.nextElementSibling.setAttribute("style", `height: ${height}px;opacity:1;`);
-            }
+            removeClass();    
+            let height = i.nextElementSibling.scrollHeight;
+            i.classList.add("active");
+            i.nextElementSibling.setAttribute("style", `height: ${height}px;opacity:1;`);
         });
     }
 });
