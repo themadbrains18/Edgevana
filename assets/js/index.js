@@ -13,9 +13,11 @@ window.addEventListener('load', () => {
         "fadeInLeft",
     ];
     let inerval = setInterval(() => {
-        for (let i = 0; i < heroHeading.children[childrenCount].children.length; i++) {
-            var randomItem = animationClass[Math.floor(Math.random() * animationClass.length)];
-            heroHeading.children[childrenCount].children[i].classList.add(randomItem);
+        if(heroTxt){
+            for (let i = 0; i < heroHeading.children[childrenCount].children.length; i++) {
+                var randomItem = animationClass[Math.floor(Math.random() * animationClass.length)];
+                heroHeading.children[childrenCount].children[i].classList.add(randomItem);
+            }
         }
         heroHeading.children[childrenCount - 1].classList.remove('active');
         heroHeading.children[childrenCount - 1].setAttribute('style', `transform: translateY(-${childrenCount}00%);`);
@@ -74,47 +76,3 @@ window.addEventListener("scroll", function (event) {
     // .is-connect-visible
 }, false);
 
-
-// Slider Js
-const swiper = new Swiper('.trusted__logo__list', {
-    slidesPerView: 5,
-    centeredSlides: true,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: true,
-    breakpoints: {
-        320: {
-            slidesPerView: 3,
-        },
-        640: {
-            slidesPerView: 3,
-
-        },
-        768: {
-            slidesPerView: 4,
-        },
-        1024: {
-            slidesPerView: 5,
-        },
-    },
-});
-
-const swipertestimonial = new Swiper('.testimonial__list', {
-    slidesPerView: 1,
-    centeredSlides: true,
-    spaceBetween: 300,
-    loop: true,
-    autoplay: true
-
-});
-
-// Mobile Responsive Slider
-const mediaQuery = window.matchMedia('(max-width: 1200px)')
-// Check if the media query is true
-if (mediaQuery.matches) {
-    var mobileSlider = new Swiper(".mySwiper", {
-        centeredSlides: true,
-        slidesPerView: 1,
-        loop: true,
-    });
-}

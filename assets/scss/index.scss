@@ -1,7 +1,5 @@
 /* Index Hero Start */
-html {
-  scroll-behavior: smooth;
-}
+
 .hero__content {
   display: grid;
   grid-template-columns: auto auto;
@@ -448,7 +446,6 @@ html {
   animation-delay: 1s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-  opacity: 0;
 }
 
 .hero__heading .active .fadeInDown {
