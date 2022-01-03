@@ -44,7 +44,7 @@
     top: 72%;
     left: 48%;
     transform: translateX(-50%)scale(1.6)rotate(-4deg);
-
+    z-index: -1;
   }
 }
 
@@ -321,56 +321,129 @@
   animation: linemove 2s linear infinite alternate;
 }
 
-.Vector-17 {
-  width:50px;
-  height: 5px;
-  offset-distance: 0%;
-  background-color: rgb(54, 54, 189);
-  offset-path: path('M210.501 903C231 554 863.5 608.5 915.999 106.5');
-  animation: dash 10s linear infinite;
-}
-
-.Vector-19 {
-  width:50px;
-  height: 5px;
-  offset-distance: 0%;
-  background-color: rgb(54, 54, 189);
-  offset-path: path('M210 901.5C210 534 791.999 543.5 881.499 110');
-  animation: dash 15s linear infinite;
-}
-
-.Vector-20 {
-  width:50px;
-  height: 5px;
-  offset-distance: 0%;
-  background-color: rgb(54, 54, 189);
-  offset-path: path('M209.999 903C196.499 522.5 772.999 481.5 861 26.4999');
-  animation: dash 20s linear infinite;
-}
-
-
-@keyframes dash {
-  from {
-    offset-distance: 100%;
-  }
-  to {
-    offset-distance: 0%;
-  }
-}
-
-// @keyframes dash2 {
+// @keyframes vectordash {
 //   from {
-//     stroke-dashoffset: 0;
+//     stroke-dashoffset: 100;
 //   }
 //   to {
-//     stroke-dashoffset: 1800;
+//     stroke-dashoffset: -50;
 //   }
 // }
 
-// .Vector-19{
-//   stroke-dasharray: 1800;
-//   stroke-dashoffset: 1800;
-//   animation: linemove 2s linear infinite alternate;
+// .is-vector-visible .Vector20{
+//   stroke-dasharray: 100;
+//   stroke-dashoffset: 100;
+//   animation: vectordash 1.5s alternate infinite;
+// }
+
+
+.line1 {
+  stroke-dasharray: 1340;
+  stroke-dashoffset: 140;
+  animation: dash 2s linear alternate infinite;
+}
+
+.line2 {
+  stroke-dasharray: 1320;
+  stroke-dashoffset: 1320;
+  animation: dash2 2s linear alternate infinite;
+}
+
+.Vector20 {
+  stroke-dasharray: 1340;
+  stroke-dashoffset: 140;
+  animation: dash 4s linear alternate infinite;
+}
+
+.Vector21 {
+  stroke-dasharray: 1320;
+  stroke-dashoffset: 1320;
+  animation: dash2 4s linear alternate infinite;
+}
+
+.Vector22 {
+  stroke-dasharray: 1340;
+  stroke-dashoffset: 140;
+  animation: dash 6s linear alternate infinite;
+}
+
+.Vector23 {
+  stroke-dasharray: 1320;
+  stroke-dashoffset: 1320;
+  animation: dash2 6s linear alternate infinite;
+}
+
+// bg_line class path
+.Vector24 {
+  stroke-dasharray: 1340;
+  stroke-dashoffset: 140;
+  animation: dash 2s linear alternate infinite;
+}
+
+.Vector25 {
+  stroke-dasharray: 1320;
+  stroke-dashoffset: 1320;
+  animation: dash2 2s linear alternate infinite;
+}
+
+.Vector26 {
+  stroke-dasharray: 1340;
+  stroke-dashoffset: 140;
+  animation: dash 4s linear alternate infinite;
+}
+
+.Vector27 {
+  stroke-dasharray: 1320;
+  stroke-dashoffset: 1320;
+  animation: dash2 4s linear alternate infinite;
+}
+
+.Vector28 {
+  stroke-dasharray: 1340;
+  stroke-dashoffset: 140;
+  animation: dash 6s linear alternate infinite;
+}
+
+.Vector29 {
+  stroke-dasharray: 1320;
+  stroke-dashoffset: 1320;
+  animation: dash2 6s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1360;
+  }
+  to {
+    stroke-dashoffset: 140;
+  }
+}
+
+@keyframes dash2 {
+  from {
+    stroke-dashoffset: 1280;
+  }
+  to {
+    stroke-dashoffset: -140;
+  }
+}
+
+// .Vector17 {
+//   width:50px;
+//   height: 5px;
+//   offset-distance: 0%;
+//   background-color: rgb(206, 22, 32);
+//   offset-path: path('M1276.33 810.102C1204.18 449.754 635.375 573.335 462.506 165.844');
+//   animation: dash 5s linear infinite alternate;
+// }
+
+// @keyframes dashoffset {
+//   from {
+//     offset-distance: 100%;
+//   }
+//   to {
+//     offset-distance: 0%;
+//   }
 // }
 
 // @for $i from 1 through 1000 {
@@ -553,5 +626,42 @@
     left: 50%;
     transform:translateX(-50%) rotate(10deg) scale(1.25);
     z-index: -1;
+    
   }
+}
+
+.profilecircle1{
+  background: radial-gradient(50% 50% at 50% 50%, #7D90D0 0%, rgba(212, 219, 252, 0.5) 33.85%, rgba(212, 219, 252, 0.15) 71.88%, rgba(212, 219, 252, 0) 100%);
+  opacity: 0.7;
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+.profilecircle2{
+  background: radial-gradient(50% 50% at 50% 50%, #7D90D0 0%, rgba(212, 219, 252, 0.5) 33.85%, rgba(212, 219, 252, 0.15) 71.88%, rgba(212, 219, 252, 0) 100%);
+  opacity: 0.7;
+  width: 30px;
+  height: 30px;
+  float: right;
+}
+.profilecircle3{
+  background: radial-gradient(50% 50% at 50% 50%, #7D90D0 0%, rgba(212, 219, 252, 0.5) 33.85%, rgba(212, 219, 252, 0.15) 71.88%, rgba(212, 219, 252, 0) 100%);
+  opacity: 0.7;
+  width: 50px;
+  height: 50px;
+  float: right;
+}
+.profilecircle4{
+  background: radial-gradient(50% 50% at 50% 50%, #7D90D0 0%, rgba(212, 219, 252, 0.5) 33.85%, rgba(212, 219, 252, 0.15) 71.88%, rgba(212, 219, 252, 0) 100%);
+  opacity: 0.7;
+  width: 80px;
+  height: 80px;
+  float: right;
+}
+.profilecircle5{
+  background: radial-gradient(50% 50% at 50% 50%, #7D90D0 0%, rgba(212, 219, 252, 0.5) 33.85%, rgba(212, 219, 252, 0.15) 71.88%, rgba(212, 219, 252, 0) 100%);
+  opacity: 0.7;
+  width: 100px;
+  height: 100px;
+  float: right;
 }

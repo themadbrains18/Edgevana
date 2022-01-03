@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "ABC Diatype Trial";
+  scroll-behavior: smooth;
 }
 body {
   background: #0b0e1e;
@@ -34,7 +35,7 @@ body {
 button {
   cursor: pointer;
 }
-img ,svg{
+img {
   max-width: 100%;
   height: auto;
 }
