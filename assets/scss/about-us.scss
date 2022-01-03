@@ -54,6 +54,9 @@
 // founders sec 
 .founders__sec{
     padding:270px 0 292px ;
+    position: relative;
+    
+    
     .sec__content{
         .sec__content__inner{
             display: flex;
@@ -138,6 +141,12 @@
             }
         }
     }
+    .about__bg__ele{
+        position: absolute;
+        top: 40%;
+        left: 0;
+        z-index: -1;
+    }
 }
 .card__text{
     margin-top: clamp(20px,4vw,71px);
@@ -182,6 +191,13 @@
 // team sec start
 .team__sec{
     padding: 216px 0 211px;
+    position: relative;
+    .bg__element{
+        position: absolute;
+        top: -30%;
+        left: 0;
+        display: none;
+    }
     .member__info{
         opacity: 0;
         visibility: hidden;
@@ -217,5 +233,43 @@
             transform: scale(1);
         }
     }
+
 }
 // team sec end
+
+.counter__sec{
+    padding: 338px 0 360px;
+    .sec__content{
+        .counter__grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: clamp(16px,5vw,80px);
+            .grid__item{
+                border-bottom: 1px solid #82868C;
+                &:hover{
+                    border-color: #D4DBFC; 
+                    .grid__number,
+                    .grid__brief{
+                        background: linear-gradient(to right, #d177a5 0%, #7a70e1 48%, #7ea9c2 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+                .grid__number{
+                    font-weight: 500;
+                    font-size:clamp(41px,7vw,109px) ;
+                    line-height:clamp(51px,8vw,136px);
+                    color: #FFFFFF;
+                    margin-bottom: clamp(20px,4vw,50px);
+                }
+                .grid__brief{
+                    font-weight: bold;
+                    font-size: clamp(16px,2vw,25px);
+                    line-height: clamp(20px,3vw,35px);
+                    color: #E3E6EB;
+                    padding-bottom: clamp(30px,9vw,135px);
+                }
+            }
+        }
+    }
+}
