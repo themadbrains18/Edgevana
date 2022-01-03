@@ -630,38 +630,34 @@
   }
 }
 
-.profilecircle1{
+.dots{
   background: radial-gradient(50% 50% at 50% 50%, #7D90D0 0%, rgba(212, 219, 252, 0.5) 33.85%, rgba(212, 219, 252, 0.15) 71.88%, rgba(212, 219, 252, 0) 100%);
   opacity: 0.7;
+}
+.profilecircle1{
   width: 20px;
   height: 20px;
-  float: right;
+  margin-left: 10px;
 }
 .profilecircle2{
-  background: radial-gradient(50% 50% at 50% 50%, #7D90D0 0%, rgba(212, 219, 252, 0.5) 33.85%, rgba(212, 219, 252, 0.15) 71.88%, rgba(212, 219, 252, 0) 100%);
-  opacity: 0.7;
   width: 30px;
   height: 30px;
-  float: right;
+  
+  margin-left: 37px;
+
 }
 .profilecircle3{
-  background: radial-gradient(50% 50% at 50% 50%, #7D90D0 0%, rgba(212, 219, 252, 0.5) 33.85%, rgba(212, 219, 252, 0.15) 71.88%, rgba(212, 219, 252, 0) 100%);
-  opacity: 0.7;
   width: 50px;
   height: 50px;
-  float: right;
+  margin-left: 68px;
 }
 .profilecircle4{
-  background: radial-gradient(50% 50% at 50% 50%, #7D90D0 0%, rgba(212, 219, 252, 0.5) 33.85%, rgba(212, 219, 252, 0.15) 71.88%, rgba(212, 219, 252, 0) 100%);
-  opacity: 0.7;
   width: 80px;
   height: 80px;
-  float: right;
+  margin-left: 60px;
 }
 .profilecircle5{
-  background: radial-gradient(50% 50% at 50% 50%, #7D90D0 0%, rgba(212, 219, 252, 0.5) 33.85%, rgba(212, 219, 252, 0.15) 71.88%, rgba(212, 219, 252, 0) 100%);
-  opacity: 0.7;
   width: 100px;
   height: 100px;
-  float: right;
+  margin-left: 30px;
 }
