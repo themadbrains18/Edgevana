@@ -204,11 +204,8 @@
     margin-top: 75px;
   }
 }
-.industries__tabs__button.active + div {
-  display: block;
-}
 .industries--tabs {
-  display: none;
+  opacity: 0;
 }
 
 .sec__service.sec--industries {
@@ -224,7 +221,8 @@
 }
 /* Section Why Edge Css Code */
 .sec__why__edge {
-  padding: 203px 0 244px;
+  padding-top: clamp(50px, vw, 203px);
+  padding-bottom: clamp(77px, vw, 244px);
 
   .sec__heading {
     color: #fff;
@@ -250,6 +248,7 @@
   }
   .sec__content {
     display: flex;
+    padding-bottom: 300px;
   }
 }
 
@@ -285,4 +284,8 @@
   .service__banner__img svg.active #Layer_1-2 path:nth-child(#{$i}) {
     animation: HeroSnake 1s linear ($i * 0.01) + s forwards;
   }
+}
+
+.tabs__button.ative ~ div {
+  display: block;
 }
