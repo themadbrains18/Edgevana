@@ -110,21 +110,45 @@ window.addEventListener('load', () => {
 
 
 window.addEventListener("scroll", function (event) {
+
+    var vectorline = document.getElementsByClassName("connect_hero_global_map");
+    var vectorlineelement = vectorline[0];
+    var elementPositionVector = vectorlineelement.getBoundingClientRect().top;
+    console.log("vector top position : " + elementPositionVector);
+    if (elementPositionVector < 100 && elementPositionVector > -400) {
+        vectorlineelement.classList.add('is-vector-visible');
+    }
+    else {
+        vectorlineelement.classList.remove('is-vector-visible');
+    }
+
     var d = document.getElementsByClassName("globel__sec__img");
     var element = d[0];
     var elementPosition = element.getBoundingClientRect().top;
     console.log(elementPosition);
-    if (elementPosition < 300 && elementPosition > 0) {
+    if (elementPositionVector < -100 && elementPosition > 0) {
         element.classList.add('is-visible');
     }
     else {
         element.classList.remove('is-visible');
     }
+    // bg__lines
+    var belowvectorline = document.getElementsByClassName("bg__lines");
+    var belowvectorlineelement = belowvectorline[0];
+    var elementPositionBelowVector = belowvectorlineelement.getBoundingClientRect().top;
+    console.log("below vector top position : " + elementPositionBelowVector);
+    if (elementPositionBelowVector < 100 && elementPositionBelowVector > -400) {
+        belowvectorlineelement.classList.add('is-vector-visible');
+    }
+    else {
+        belowvectorlineelement.classList.remove('is-vector-visible');
+    }
+
     var dcon = document.getElementsByClassName("deploy__sec__img");
     var elementCon = dcon[0];
     var elementPositionCon = elementCon.getBoundingClientRect().top;
     console.log(elementPositionCon);
-    if (elementPositionCon < 300 && elementPositionCon > 0) {
+    if (elementPositionBelowVector < -60 && elementPositionCon > 0) {
         var linewidth = document.getElementsByClassName("connectline");
         console.log("Get Line width :  " + linewidth[0]);
         elementCon.classList.add('is-connect-visible');
@@ -133,5 +157,6 @@ window.addEventListener("scroll", function (event) {
         elementCon.classList.remove('is-connect-visible');
     }
     // .is-connect-visible
+
 }, false);
 

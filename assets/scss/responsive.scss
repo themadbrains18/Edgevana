@@ -51,12 +51,25 @@
     left: 49%;
     transform: translateX(-50%) scale(1.8) rotate(1deg);
   }
+  .founders__sec .about__bg__ele {
+    left: -20%;
+  }
 }
 
 // === RESPONSIVE CSS 1440PX end === //
 
 // === RESPONSIVE CSS 1200PX START === //
 @media only screen and (max-width: 1200px) {
+
+  // common responsive css start
+  .cursor__wrapper{
+    display: none;
+  }
+  .founders__sec{
+    .about__bg__ele{
+      display: none;
+    }
+  }
   // footer responsive max-width 1200px
   .footer {
     padding: 50px 0;
@@ -368,6 +381,16 @@
     max-width: 100%;
     margin-bottom: 40px;
   }
+  // about us page start
+  .counter__sec{
+    padding: 180px 0;
+    .sec__content{
+      .counter__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    } 
+  } 
+  // about us page end
   .sec__service.sec--industries {
     .sec__content {
       padding-bottom: 0px;
@@ -1587,6 +1610,9 @@
   }
 
   // about us page responsive start
+  .about__banner {
+    padding: 50px 0 50px;
+  }
   .founders__sec {
     padding: 50px 0;
 
@@ -1635,7 +1661,9 @@
       padding-right: 0;
       overflow: hidden;
     }
-
+    .bg__element{
+      display: block;
+    }
     .swiper-slide.swiper-slide-next {
       .member__info {
         opacity: 1;
@@ -1648,7 +1676,14 @@
       transform: scale(1) !important;
     }
   }
-
+  .counter__sec{
+    padding: 50px 0;
+    .sec__content{
+      .counter__grid {
+        grid-template-columns:1fr;
+      }
+    } 
+  } 
   // about us page responsive end
 }
 
