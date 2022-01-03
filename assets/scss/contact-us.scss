@@ -1,0 +1,40 @@
+/* Contact Us Css Code */
+.contact--us--sec {
+  padding-top: 133px;
+  h2.sec__heading {
+    margin: 61px 0 94px;
+    font-weight: 800;
+    font-size: clamp(41px, 5vw, 67px) !important;
+    line-height: clamp(51px, 6vw, 80px);
+
+    span {
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 36px;
+      color: #babfc5;
+    }
+  }
+  .input__text::placeholder {
+    color: #babfc5;
+  }
+  .active__link {
+    font-weight: 800;
+    background: linear-gradient(to right, #d177a5, #7a70e1, #7ea9c2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  a,
+  span {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 36px;
+    color: #fff;
+    transition: 0.4s;
+
+    &:hover {
+      background: linear-gradient(to right, #d177a5, #7a70e1, #7ea9c2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
