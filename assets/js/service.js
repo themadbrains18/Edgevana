@@ -37,9 +37,7 @@ let tabs = document.querySelectorAll(".tabs__button");
 // // 
 
 
-
 // if( window.innerWidth>1024){
-
     let ServiceBannerImg = document.querySelector(".service__banner__img");
     for(let i in tabs){
       if(tabs.length >= i){
@@ -49,7 +47,6 @@ let tabs = document.querySelectorAll(".tabs__button");
             let activeTab = document.querySelector(".tabs__button.active");
             if(activeTab){
               activeTab.classList.remove("active");  
-              
             }
             tabs[i].classList.add("active");
             let tabSelected = tabs[i].getAttribute("value");
@@ -65,61 +62,38 @@ let tabs = document.querySelectorAll(".tabs__button");
 // }
 
 
-
-
-
-
-// /* Faq Js */
-// window.addEventListener('DOMContentLoaded', function() {
-//     let faqQues = document.querySelectorAll('.faq__ques');
-//     function removeClass(){
-//         for (let i of faqQues) {
-//             i.classList.remove("active");
-//             i.nextElementSibling.setAttribute("style", `height: 0px;opacity:0;`);
-//         }
-//     }
-//     for (let i of faqQues) {
-//         i.addEventListener('click', ()=>{
-//             if(i.classList.contains("active")){
-//                 removeClass();    
-//             }else{
-//                 removeClass();    
-//                 let height = i.nextElementSibling.scrollHeight;
-//                 i.classList.add("active");
-//                 i.nextElementSibling.setAttribute("style", `height: ${height}px;opacity:1;`);
-//             }
-//         });
-//     }
-// });
-
-
-/* Industries Tabs */ 
-//   let industriesTabs = document.querySelectorAll(".industries__tabs__button");
-//     window.addEventListener('DOMContentLoaded', function() {
-//         let industriesTabs = document.querySelectorAll(".industries__tabs__button");
-//         function removeClass(){
-//             for (let i of industriesTabs) {
-//                 i.classList.remove("active");
-//                 i.nextElementSibling.setAttribute("style", `height: 0px;opacity:0;`);
-//             }
-//         }
-//         for (let i of industriesTabs) {
-//             i.addEventListener('click', ()=>{
-//                 if(i.classList.contains("active")){
-//                     removeClass();    
-//                 }else{
-//                     removeClass();    
-//                     i.classList.add("active");
-//                     let height = i.nextElementSibling.scrollHeight;
-//                     i.nextElementSibling.setAttribute("style", `height: ${height}px;opacity:1;`);
-//                 }
-//             });
-//         }
-//         });
-
+/* Faq Js */
+window.addEventListener('DOMContentLoaded', function() {
+    let faqQues = document.querySelectorAll('.faq__ques');
+    function removeClass(){
+        for (let i of faqQues) {
+            i.classList.remove("active");
+            i.nextElementSibling.setAttribute("style", `height: 0px;opacity:0;`);
+        }
+    }
+    for (let i of faqQues) {
+        i.addEventListener('click', ()=>{
+            if(i.classList.contains("active")){
+                removeClass();    
+            }else{
+                removeClass();    
+                let height = i.nextElementSibling.scrollHeight;
+                i.classList.add("active");
+                i.nextElementSibling.setAttribute("style", `height: ${height}px;opacity:1;`);
+            }
+        });
+    }
+});
 
         window.addEventListener('DOMContentLoaded', function() {
             let industriesTabs = document.querySelectorAll(".industries__tabs__button");
+            // Active Tabs
+            let industriesTabsActive = document.querySelector(".industries__tabs__button.active");
+            let heightactive =industriesTabsActive.nextElementSibling.scrollHeight;
+            // industriesTabsActive.setAttribute("style",`height ${heightactive}px;`)
+            industriesTabsActive.nextElementSibling.setAttribute("style", `height: ${heightactive}px;opacity:1;`);
+            console.log(industriesTabsActive);
+
             function removeClass(){
                 for (let i of industriesTabs) {
                     i.classList.remove("active");

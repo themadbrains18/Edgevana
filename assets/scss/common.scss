@@ -7,6 +7,7 @@
 }
 body {
   background: #0b0e1e;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1720px;
@@ -83,6 +84,9 @@ main {
 }
 .text-center{
   text-align: center;
+}
+.mb-30{
+  margin-bottom: clamp(15px,2vw,30px);
 }
 .mb-40{
   margin-bottom: clamp(20px,3vw,40px);

@@ -221,7 +221,8 @@
 }
 /* Section Why Edge Css Code */
 .sec__why__edge {
-  padding: 203px 0 244px;
+  padding-top: clamp(50px, vw, 203px);
+  padding-bottom: clamp(77px, vw, 244px);
 
   .sec__heading {
     color: #fff;
