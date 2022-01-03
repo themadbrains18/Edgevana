@@ -316,10 +316,62 @@
 }
 
 .is-connect-visible .connectline {
-  stroke-dasharray: 450;
-  stroke-dashoffset: 450;
-  animation: linemove 5s linear infinite alternate;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  animation: linemove 2s linear infinite alternate;
 }
+
+.Vector-17 {
+  width:50px;
+  height: 5px;
+  offset-distance: 0%;
+  background-color: rgb(54, 54, 189);
+  offset-path: path('M210.501 903C231 554 863.5 608.5 915.999 106.5');
+  animation: dash 10s linear infinite;
+}
+
+.Vector-19 {
+  width:50px;
+  height: 5px;
+  offset-distance: 0%;
+  background-color: rgb(54, 54, 189);
+  offset-path: path('M210 901.5C210 534 791.999 543.5 881.499 110');
+  animation: dash 15s linear infinite;
+}
+
+.Vector-20 {
+  width:50px;
+  height: 5px;
+  offset-distance: 0%;
+  background-color: rgb(54, 54, 189);
+  offset-path: path('M209.999 903C196.499 522.5 772.999 481.5 861 26.4999');
+  animation: dash 20s linear infinite;
+}
+
+
+@keyframes dash {
+  from {
+    offset-distance: 100%;
+  }
+  to {
+    offset-distance: 0%;
+  }
+}
+
+// @keyframes dash2 {
+//   from {
+//     stroke-dashoffset: 0;
+//   }
+//   to {
+//     stroke-dashoffset: 1800;
+//   }
+// }
+
+// .Vector-19{
+//   stroke-dasharray: 1800;
+//   stroke-dashoffset: 1800;
+//   animation: linemove 2s linear infinite alternate;
+// }
 
 // @for $i from 1 through 1000 {
 //     .svg_map_dot  path:nth-child(#{$i}) {

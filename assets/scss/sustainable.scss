@@ -25,7 +25,6 @@
         -webkit-text-fill-color: transparent;
       }
     }
-
     .active__link {
       font-weight: 800;
       background: linear-gradient(to right, #d177a5, #7a70e1, #7ea9c2);
@@ -35,9 +34,7 @@
   }
   .sec__content__inner {
     display: flex;
-    // align-items: center;
     gap: 47px;
-
     .sec__image {
       width: 37%;
       svg {
