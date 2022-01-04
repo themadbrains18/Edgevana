@@ -1,11 +1,11 @@
 /* Podcast Js */
 'use strict';
 
-let podcastBtndetail = document.querySelector(".watch-now");
-podcastBtndetail.addEventListener("click",()=>{
-    podcastBtndetail.classList.toggle("active");
-})
-
+// let podcastBtndetail = document.querySelector(".watch-now");
+// podcastBtndetail.addEventListener("click",()=>{
+//     podcastBtndetail.classList.toggle("active");
+// })
+// filter button js start
 if(window.innerWidth <= 767){
 
     let jpToggle = document.querySelector(".jp-toggles");
@@ -18,3 +18,14 @@ if(window.innerWidth <= 767){
         }
     });
 }
+
+// load more btn js start
+let loadBtn  = document.querySelector("#loadMoreBtn");
+let showCards  = document.querySelectorAll(".episode__inner.episode__modifier");
+
+
+loadBtn.addEventListener("click",()=>{
+    for(let i of showCards){
+        i.style.display="flex";
+    }
+});

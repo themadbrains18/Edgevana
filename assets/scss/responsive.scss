@@ -700,6 +700,26 @@
   .sec__podcast__about .sec__content {
     gap: 40px;
   }
+
+  // podcast responsive css 
+  .recent__episodes{
+    .sec__head{
+      .sec__heading{
+        text-align: start;
+      }
+    }
+    .sec__content{
+      .sec__content__inner {
+        flex-direction: column;
+        .episodes__wrapper,
+        .form__wrapper
+        {
+          width: 100%;
+        }
+      }
+    } 
+  } 
+
 }
 
 // === RESPONSIVE CSS 991PX END === //
@@ -1411,6 +1431,68 @@
       width: 100%;
       margin: 0;
     }
+  }
+  .recent__episodes{
+    padding: 50px 0;
+  }
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .load__more__btn .primary-btn{
+    width: 100%;
+  }
+  .recent__episodes .sec__content .sec__content__inner .form__wrapper .podcast__form{
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__head .date{
+    color: #6F6F6F;
+  }
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner{
+    padding: 20px 0;  
+  }
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__head .episode__heading{
+    font-weight: 400;
+  }
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner:not(:last-child){
+    margin-bottom: 0;
+  }
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner{
+    position: relative;
+    &::after{
+      content: '';
+      background-color: #1D212E;
+      width: calc(100% + 60px);
+      height: 1px;
+      margin-left: -30px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .info,
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__text .jp__time,
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__text .jp-seek-bar
+  {
+    display: none;
+  }
+  .recent__episodes .sec__content .sec__content__inner .form__wrapper .podcast__form .podcast__form__group .input__feild input{
+    padding: 10px;
+  }
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__head{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .recent__episodes .sec__content .sec__content__inner{
+    gap: 128px;
+  }
+  .recent__episodes .sec__content .sec__content__inner .timing.timing-modifier{
+    display: block;
+  }
+  .date__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
   }
   // podcast page responsive end
 }
