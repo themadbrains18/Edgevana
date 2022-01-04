@@ -466,15 +466,11 @@
 
     <!-- === script files === -->
     <script>
-          let draw = (qwe)=>{
-            console.log("pankaj",qwe);
-        }
-        window.requestAnimationFrame(draw);
-
-      
         const canvas = document.createElement('canvas');
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
         const ctx = canvas.getContext("2d");
-        let mouseX, mouseY = 0;
+        let mouseX, mouseY ,numberCounte = 0;
         const colursArry = [
             "#78F0FF",
             "#3C82FF",
@@ -493,19 +489,86 @@
                 )
             }
         }
-        
-        setInterval(() => {
-            ctx.font = `${Math.random() * 20} Arial`;
-            ctx.fillStyle = colursArry[Math.floor(Math.random() *colursArry.length)];
-            ctx.fillText(Math.floor(Math.random() * 700), random("x"), random("y"));
-        }, 100);
-        window.addEventListener('mousemove', (e) => {
-            mouseX = e.x;
-            mouseY = e.y;
-            // canvas.setAttribute('style', `position: fixed;top:900px;left:900px;z-index:-1;height:300px;width:300px;background-color: ; transform:translate(-50%,-50%); border-radius: 50%;`);
 
-            canvas.setAttribute('style', `position: fixed;top:${mouseY}px;left:${mouseX}px;z-index:-1;height:900px;width:900px;background-color: red; transform:translate(-50%,-50%);border-radius: 50%;`);
-        });
+
+
+
+        // for( let i = 0; i <=100; i ++){
+        //     ctx.font = `${(Math.random() * 10 )+5}px ABC Diatype Trial`;
+        //     ctx.fillStyle = colursArry[Math.floor(Math.random() *colursArry.length)];
+        //     ctx.fillText(Math.floor(Math.random() * 700), random("x"), random("y"));
+        // }
+        
+
+
+    
+        
+      
+        canvas.setAttribute('style', `position: fixed;top:0px;left:0px;z-index:-1;width:100%;height:100%;`);
+      
+   
+
+        function AddNumber(x,y,h,w,dx,dy,color){
+            this.x = x;
+            this.y = y;
+            this.h = h;
+            this.w = w;
+            this.dx = dx;
+            this.dy = dy;
+            this.color = color;
+            
+            this.draw = ()=>{
+                ctx.fillStyle = this.color;
+                ctx.fillRect(this.x, this.y, this.h, this.w);
+            }
+            this.update = ()=>{
+                if((this.y + this.h) > canvas.height || (this.y) < 0){
+                    this.dy = -this.dy;
+                }
+                if((this.x + this.w) > canvas.width || (this.x) < 0){
+                    this.dx = -this.dx;
+                }
+                this.x += this.dx;
+                this.y += this.dy;
+                this.draw();
+            }
+        }
+
+
+             
+        
+        
+        
+        let numberArr = [];
+
+
+        for(let i = 0; i < 500; i++){
+            
+            let h = (Math.random() * 30) + 20;
+            let w = (Math.random() * 30) + 20;
+            let y =  (Math.random() * (canvas.height - (h*2))) + h;
+            let x =  (Math.random() * (canvas.width - (w*2))) + w;
+            let dy = (Math.random()  -0.5) * 2;
+            let dx = (Math.random()  -0.5) * 2;
+            let color = colursArry[Math.floor(Math.random() * colursArry.length)];
+            let addNumber = new AddNumber(x,y,h,w,dx,dy,color);
+            numberArr.push(addNumber);
+        }
+        
+        
+        
+        const animation = ()=>{
+            requestAnimationFrame(animation);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            numberArr.forEach(elem =>{
+                elem.update();
+            })
+            
+        } 
+        animation();
+        window.addEventListener('resize',()=>{
+            animation();
+        })
         document.body.append(canvas);
     </script>
     <script src="assets/js/common.js"></script>

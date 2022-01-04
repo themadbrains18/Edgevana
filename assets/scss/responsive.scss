@@ -57,13 +57,25 @@
   // Brodcast banner Section 1400px
   .brodcast__detail__banner .sec__content {
     gap: 20px;
+    .founders__sec .about__bg__ele {
+      left: -20%;
+    }
   }
 }
 
 // === RESPONSIVE CSS 1440PX end === //
-
-// === RESPONSIVE CSS 1200PX START === //
 @media only screen and (max-width: 1200px) {
+  // === RESPONSIVE CSS 1200PX START === //
+
+  // common responsive css start
+  .cursor__wrapper {
+    display: none;
+  }
+  .founders__sec {
+    .about__bg__ele {
+      display: none;
+    }
+  }
   // footer responsive max-width 1200px
   .footer {
     padding: 50px 0;
@@ -268,6 +280,21 @@
   .sec__service .service__banner__img svg {
     margin-right: 100px;
   }
+
+  // Podacst responsive css start
+  .podcast__banner__sec {
+    .sec__content {
+      .jp-type-playlist {
+        padding: 20px;
+      }
+      .sec__content__inner {
+        .sec__text {
+          width: 70%;
+        }
+      }
+    }
+  }
+  // Podacst responsive css start
 }
 
 // === RESPONSIVE CSS 1200PX END === //
@@ -386,6 +413,16 @@
     max-width: 100%;
     margin-bottom: 40px;
   }
+  // about us page start
+  .counter__sec {
+    padding: 180px 0;
+    .sec__content {
+      .counter__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+  // about us page end
   .sec__service.sec--industries {
     .sec__content {
       padding-bottom: 0px;
@@ -1267,6 +1304,115 @@
   .sec__podcast__about .sec__heading {
     width: calc(100% - 100px);
   }
+
+  .jp-type-playlist {
+    position: relative !important;
+    padding: 50px 20px 20px !important;
+    width: calc(100% + 60px);
+    margin-left: -30px;
+  }
+  // podcast page responsive start
+  .podcast__banner__sec {
+    padding: 444px 0 0px;
+    padding-top: clamp(300px, 60vw, 495px);
+    .bg__waves {
+      img {
+        top: 30%;
+        transform: translateY(-50%) scale(0.7);
+      }
+    }
+    .sec__content {
+      .sec__content__inner {
+        .sec__text {
+          width: 100%;
+          .sec__heading,
+          .sec__info {
+            text-align: center;
+          }
+          .sec__heading {
+            width: calc(100% + 50px);
+            margin-left: -25px;
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-view {
+    display: block !important;
+    width: 100%;
+    opacity: 0.4;
+  }
+  .desktop-view {
+    display: none;
+  }
+  .jp-toggles {
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: 0.4s;
+  }
+  #filterBtn {
+    display: block !important;
+  }
+  .jp-toggles.show {
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+    overflow: visible;
+    padding-top: 8px !important;
+  }
+  .jp-progress {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    padding: 0 30px;
+  }
+  .jp-duration,
+  .jp-current-time {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    padding: 0 30px;
+  }
+  .jp-current-time {
+    right: auto;
+    left: 0;
+  }
+  .jp-controls-holder {
+    text-align: center;
+  }
+  .jp__jplayer__wrapper,
+  .seek__bar__wrapper,
+  .jp-gui {
+    width: auto !important;
+  }
+  .jp-type-playlist {
+    justify-content: space-between;
+  }
+  .jp-type-playlist .jp-controls {
+    gap: 10px;
+  }
+  .jp-type-playlist .jp__jplayer__wrapper {
+    gap: 8px;
+  }
+  .jp-type-playlist .jp-jplayer {
+    width: 50% !important;
+  }
+  .jp-type-playlist #jp_poster_0,
+  .jp-type-playlist #jp_video_0 {
+    width: 37px !important;
+    height: 37px !important;
+  }
+  .jp-state-full-screen {
+    .jp-type-playlist {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  // podcast page responsive end
 }
 // === RESPONSIVE CSS 767PX end === //
 
@@ -1715,6 +1861,9 @@
   }
 
   // about us page responsive start
+  .about__banner {
+    padding: 50px 0 50px;
+  }
   .founders__sec {
     padding: 50px 0;
 
@@ -1763,7 +1912,9 @@
       padding-right: 0;
       overflow: hidden;
     }
-
+    .bg__element {
+      display: block;
+    }
     .swiper-slide.swiper-slide-next {
       .member__info {
         opacity: 1;
@@ -1774,6 +1925,14 @@
 
     .swiper-slide img {
       transform: scale(1) !important;
+    }
+  }
+  .counter__sec {
+    padding: 50px 0;
+    .sec__content {
+      .counter__grid {
+        grid-template-columns: 1fr;
+      }
     }
   }
   // about us page responsive end
