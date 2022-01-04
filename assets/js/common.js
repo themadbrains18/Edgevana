@@ -29,15 +29,12 @@ window.addEventListener("scroll",()=>{
 });
 // header js end
 
-
-
-
-
 // /* Canvs */
 // const canvas = document.getElementById("canvas");
 // var particles = [];
 // var offset = 0;
-// var geometry = null;
+// // Onclick Multilple Design
+// // var geometry = null;
 // var cursor = {
 //   x: innerWidth/2,
 //   y: innerHeight/2
@@ -54,9 +51,10 @@ window.addEventListener("scroll",()=>{
 //   cursor.x = e.clientX;
 //   cursor.y = e.clientY;
 // });
-// addEventListener("click", () => {
-//   geometry = Math.floor(Math.random() * 20);
-// });
+// // Onclick Multilple Design
+//     // addEventListener("click", () => {
+//     //   geometry = Math.floor(Math.random() * 20);
+//     // });
 // addEventListener("touchmove", (e) => {
 //     e.preventDefault();
 //     cursor.x = e.touches[0].clientX;
@@ -78,7 +76,10 @@ window.addEventListener("scroll",()=>{
 //       x: this.x,
 //       y: this.y
 //     };
-//     this.speed = speed + (geometry ? x/geometry : 0);
+
+//     // Onclick Multilple Design
+//     // this.speed = speed + (geometry ? x/geometry : 0);
+
 //     this.angle += this.speed;
 //     this.x = cursor.x + Math.cos(this.angle) * this.t;
 //     this.y = cursor.y + Math.sin(this.angle) * this.t;
@@ -92,7 +93,7 @@ window.addEventListener("scroll",()=>{
 // }
 
 // function generateColor() {
-//   let hexSet = "0123456789ABCDEF";
+//   let hexSet = "01234567fsdfdF";
 //   let finalHexString = "#";
 //   for (let i = 0; i < 6; i++) {
 //     finalHexString += hexSet[Math.ceil(Math.random() * 15)];
@@ -101,8 +102,8 @@ window.addEventListener("scroll",()=>{
 // }
 
 // function generateParticles(n) {
-//   for(var i = 0; i < 180; i++) {
-//     particles[i] = new particle(canvas.width/2, canvas.height/2, 4, generateColor(), 0.02);
+//   for(var i = 0; i <10; i++) {
+//     particles[i] = new particle(canvas.width/2, canvas.height/2, 200, generateColor(), 0.02);
 //   }
 // }
 // generateParticles(0);
@@ -111,12 +112,56 @@ window.addEventListener("scroll",()=>{
 //   ctx = canvas.getContext('2d');
 //   ctx.save();
 //   offset++;
-//   if (offset > 16) {
-//     offset = 0;
-//   }
 //   ctx.fillStyle = "rgba(0,0,0,0.05)";
 //   ctx.fillRect(0, 0, canvas.width, canvas.height);
 //   particles.forEach((particle) => particle.rotate());
 //   requestAnimationFrame(animate);
 // }
 // requestAnimationFrame(animate);
+
+
+
+
+
+    
+    
+// Detect request animation frame
+var scroll = window.requestAnimationFrame ||
+             // IE Fallback
+             function(callback){ window.setTimeout(callback, 1000/60)};
+var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+
+function loop() {
+
+    Array.prototype.forEach.call(elementsToShow, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('is-visible');
+      } else {
+        element.classList.remove('is-visible');
+      }
+    });
+
+    scroll(loop);
+}
+
+// Call the loop for the first time
+loop();
+
+// Helper function from: http://stackoverflow.com/a/7557433/274826
+function isElementInViewport(el) {
+  // special bonus for those using jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+  var rect = el.getBoundingClientRect();
+  return (
+    (rect.top <= 0
+      && rect.bottom >= 0)
+    ||
+    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+    ||
+    (rect.top >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+  );
+}

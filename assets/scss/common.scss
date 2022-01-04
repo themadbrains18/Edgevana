@@ -115,6 +115,9 @@ main {
   margin-top: clamp(20px, 3vw, 40px);
 }
 
-// #canvas {
-//   position: fixed;
-// }
+#canvas {
+  position: fixed;
+}
+main {
+  position: relative;
+}
