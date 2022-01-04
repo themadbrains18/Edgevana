@@ -471,6 +471,8 @@
         canvas.width = window.innerWidth;
         const ctx = canvas.getContext("2d");
         let mouseX, mouseY ,numberCounte = 0;
+        const maxCursorArea = canvas.width / 3;
+        let numberArr = [];
         const colursArry = [
             "#78F0FF",
             "#3C82FF",
@@ -478,84 +480,87 @@
             "#A723DE",
             "#FF0C6F",
         ]
-        const random = (axis) => {
-            if(axis == "x"){
-                return (
-                    Math.random() * canvas.width
-                )
-            }else{
-                return (
-                    Math.random() * canvas.height
-                )
-            }
-        }
-
-
-
-
-        // for( let i = 0; i <=100; i ++){
-        //     ctx.font = `${(Math.random() * 10 )+5}px ABC Diatype Trial`;
-        //     ctx.fillStyle = colursArry[Math.floor(Math.random() *colursArry.length)];
-        //     ctx.fillText(Math.floor(Math.random() * 700), random("x"), random("y"));
-        // }
-        
-
-
-    
-        
-      
         canvas.setAttribute('style', `position: fixed;top:0px;left:0px;z-index:-1;width:100%;height:100%;`);
       
-   
-
-        function AddNumber(x,y,h,w,dx,dy,color){
+        for(let i = 0; i < 150; i++){
+            let h = (Math.random() * 30) + 20;
+            let w = (Math.random() * 30) + 20;
+            let y =  (Math.random() * (canvas.height - (h*2))) + h;
+            let x =  (Math.random() * (canvas.width - (w*2))) + w;
+            let dy = (Math.random() - 0.5) * 4;
+            let dx = (Math.random() - 0.5) * 4;
+            let addNumber = new AddNumber(x,y,h,w,dx,dy);
+            numberArr.push(addNumber);
+        }
+      
+        window.addEventListener('mousemove',(e)=>{
+            mouseX = e.x;
+            mouseY = e.y;
+        });
+        
+        function AddNumber(x,y,h,w,dx,dy){
             this.x = x;
             this.y = y;
             this.h = h;
             this.w = w;
             this.dx = dx;
             this.dy = dy;
-            this.color = color;
+            this.color = colursArry[Math.floor(Math.random() * colursArry.length)];
+            this.font = `${(Math.random() * 15) + 7}px ABC Diatype Trial`;
             
             this.draw = ()=>{
+                ctx.font = this.font;
                 ctx.fillStyle = this.color;
-                ctx.fillRect(this.x, this.y, this.h, this.w);
+                ctx.fillText(Math.floor(Math.random() * 300), this.x, this.y);
             }
             this.update = ()=>{
+               
                 if((this.y + this.h) > canvas.height || (this.y) < 0){
                     this.dy = -this.dy;
                 }
                 if((this.x + this.w) > canvas.width || (this.x) < 0){
                     this.dx = -this.dx;
                 }
-                this.x += this.dx;
-                this.y += this.dy;
+
+                if(mouseX - this.x < maxCursorArea && mouseX - this.x > -maxCursorArea && mouseY - this.y < maxCursorArea && mouseY - this.y > -maxCursorArea){
+                    if(mouseX > this.x ){
+                        if(this.dx < 0){
+                            this.x -= this.dx;
+                        }else{
+                            this.x += this.dx;
+                        }
+                    }
+                    else{
+                        if(this.dx > 0){
+                            this.x -= this.dx;
+                        }else{
+                            this.x += this.dx;
+                        }
+                    }
+                    
+                    if(mouseY > this.y ){
+                        if(this.dy < 0){
+                            this.y -= this.dy;
+                        }else{
+                            this.y += this.dy;
+                        }
+                    }
+                    else{
+                        if(this.dy > 0){
+                            this.y -= this.dy;
+                        }else{
+                            this.y += this.dy;
+                        }
+                    }
+
+                }else{
+                    this.x += this.dx;
+                    this.y += this.dy;
+                }
                 this.draw();
             }
+
         }
-
-
-             
-        
-        
-        
-        let numberArr = [];
-
-
-        for(let i = 0; i < 500; i++){
-            
-            let h = (Math.random() * 30) + 20;
-            let w = (Math.random() * 30) + 20;
-            let y =  (Math.random() * (canvas.height - (h*2))) + h;
-            let x =  (Math.random() * (canvas.width - (w*2))) + w;
-            let dy = (Math.random()  -0.5) * 2;
-            let dx = (Math.random()  -0.5) * 2;
-            let color = colursArry[Math.floor(Math.random() * colursArry.length)];
-            let addNumber = new AddNumber(x,y,h,w,dx,dy,color);
-            numberArr.push(addNumber);
-        }
-        
-        
         
         const animation = ()=>{
             requestAnimationFrame(animation);
@@ -565,6 +570,7 @@
             })
             
         } 
+
         animation();
         window.addEventListener('resize',()=>{
             animation();
