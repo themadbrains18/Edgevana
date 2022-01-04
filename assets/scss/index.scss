@@ -41,7 +41,7 @@
 
   .bg__lines{
     position: absolute;
-    top: 72%;
+    top: 75%;
     left: 48%;
     transform: translateX(-50%)scale(1.6)rotate(-4deg);
     z-index: -1;
@@ -280,13 +280,13 @@
   }
 
   from {
-    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(180deg);
   }
   to {
     -webkit-transform: rotate(-359deg);
   }
 }
-.is-visible .index__img_global {
+.is-visible .global_img {
   animation: HeroGlobal 20s linear forwards;
 }
 
@@ -340,74 +340,74 @@
 // }
 
 
-.line1 {
+.is-vector-visible .line1 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 2s linear alternate infinite;
 }
 
-.line2 {
+.is-vector-visible .line2 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 2s linear alternate infinite;
 }
 
-.Vector20 {
+.is-vector-visible .Vector20 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 4s linear alternate infinite;
 }
 
-.Vector21 {
+.is-vector-visible .Vector21 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 4s linear alternate infinite;
 }
 
-.Vector22 {
+.is-vector-visible .Vector22 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 6s linear alternate infinite;
 }
 
-.Vector23 {
+.is-vector-visible .Vector23 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 6s linear alternate infinite;
 }
 
 // bg_line class path
-.Vector24 {
+.is-bgvector-visible .Vector24 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 2s linear alternate infinite;
 }
 
-.Vector25 {
+.is-bgvector-visible .Vector25 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 2s linear alternate infinite;
 }
 
-.Vector26 {
+.is-bgvector-visible .Vector26 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 4s linear alternate infinite;
 }
 
-.Vector27 {
+.is-bgvector-visible .Vector27 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 4s linear alternate infinite;
 }
 
-.Vector28 {
+.is-bgvector-visible .Vector28 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 6s linear alternate infinite;
 }
 
-.Vector29 {
+.is-bgvector-visible .Vector29 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 6s linear alternate infinite;
@@ -646,31 +646,36 @@
   width: 20px;
   height: 20px;
   margin-left: 10px;
-  transition-delay: 2s;
 }
 .profilecircle2{
   width: 30px;
   height: 30px;
   margin-left: 37px;
-  transition-delay: 4s;
 }
 .profilecircle3{
   width: 50px;
   height: 50px;
   margin-left: 68px;
-  transition-delay: 6s;
 }
 .profilecircle4{
   width: 80px;
   height: 80px;
   margin-left: 60px;
-  transition-delay: 8s;
 }
 .profilecircle5{
   width: 100px;
   height: 100px;
   margin-left: 30px;
-  transition-delay: 10s;
+}
+.profilecircle6{
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+}
+.profilecircle7{
+  width: 100px;
+  height: 100px;
+  margin-left: 5px;
 }
 
 @keyframes fadeInDots {
@@ -683,11 +688,28 @@
   }
 }
 
-@for $i from 1 through 5 {
+@for $i from 1 through 7 {
     .dots__wrapper div:nth-child(#{$i}) {
       animation: fadeInDots $i+s linear forwards infinite;
     }
 }
-// .dots__wrapper .is-dot-visible .dots{
-//   animation: fadeInDots  3.5s  linear forwards;
-// }
+
+
+.deploy__sec__img {
+  position: relative;
+  display: inline-block; /* <= shrinks container to image size */
+  transition: transform 150ms ease-in-out;
+}
+
+.deploy__sec__img img { /* <= optional, for responsiveness */
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+.deploy__sec__img svg {
+  position: absolute;
+  top: 20px;
+  left: 90px;
+}
+
