@@ -4,12 +4,12 @@
 
 let testimonialSlider = document.querySelector(".testimonial__list");
 var cursor = document.querySelector(".cursor");
-testimonialSlider.addEventListener("mousemove",(e)=>{
+testimonialSlider.addEventListener("mousemove", (e) => {
     testimonialSlider.classList.add("mouseenter")
-    cursor.setAttribute("style", ` top: ${e.pageY - 42 }px; left: ${e.pageX - 49}px;`);
+    cursor.setAttribute("style", ` top: ${e.pageY - 42}px; left: ${e.pageX - 49}px;`);
 })
 
-testimonialSlider.addEventListener("mouseout",(e)=>{
+testimonialSlider.addEventListener("mouseout", (e) => {
     testimonialSlider.classList.remove("mouseenter")
 })
 // /* Testimonial Slider Cursor Js Code */
@@ -26,7 +26,7 @@ window.addEventListener('load', () => {
         "fadeInLeft",
     ];
     let inerval = setInterval(() => {
-        if(heroTxt){
+        if (heroTxt) {
             for (let i = 1; i < heroHeading.children[childrenCount].children.length; i++) {
                 var randomItem = animationClass[Math.floor(Math.random() * animationClass.length)];
                 heroHeading.children[childrenCount].children[i].classList.add(randomItem);
@@ -59,7 +59,7 @@ window.addEventListener('load', () => {
         cursor.setAttribute("style", ` top: ${e.pageY - 42}px; left: ${e.pageX - 49}px;`);
     })
 
-    testimonialSlider.addEventListener("mouseout", (e) => {
+    testimonialSlider.addEventListener("mouseleave", (e) => {
         testimonialSlider.classList.remove("mouseenter")
     })
 
@@ -91,10 +91,13 @@ window.addEventListener('load', () => {
         slidesPerView: 1,
         centeredSlides: true,
         spaceBetween: 300,
-        loop: true,
-        autoplay: true
-
+        loop: false,
+        autoplay: true,
+        mousewheel: {
+            releaseOnEdges: true,
+          },
     });
+
 
     // Mobile Responsive Slider
     const mediaQuery = window.matchMedia('(max-width: 1200px)')
@@ -106,57 +109,57 @@ window.addEventListener('load', () => {
             loop: true,
         });
     }
+
 })
 
 
 window.addEventListener("scroll", function (event) {
 
-    var vectorline = document.getElementsByClassName("connect_hero_global_map");
-    var vectorlineelement = vectorline[0];
-    var elementPositionVector = vectorlineelement.getBoundingClientRect().top;
-    console.log("vector top position : " + elementPositionVector);
-    if (elementPositionVector < 100 && elementPositionVector > -400) {
-        vectorlineelement.classList.add('is-vector-visible');
-    }
-    else {
-        vectorlineelement.classList.remove('is-vector-visible');
-    }
+    // var vectorline = document.getElementsByClassName("connect_hero_global_map");
+    // var vectorlineelement = vectorline[0];
+    // var elementPositionVector = vectorlineelement.getBoundingClientRect().top;
+    // if (elementPositionVector < 100 ) {
+    //     vectorlineelement.classList.add('is-vector-visible');
+    // }
+    // else {
+    //     vectorlineelement.classList.remove('is-vector-visible');
+    // }
 
-    var d = document.getElementsByClassName("globel__sec__img");
-    var element = d[0];
-    var elementPosition = element.getBoundingClientRect().top;
-    console.log(elementPosition);
-    if (elementPositionVector < -100 && elementPosition > 0) {
-        element.classList.add('is-visible');
-    }
-    else {
-        element.classList.remove('is-visible');
-    }
-    // bg__lines
-    var belowvectorline = document.getElementsByClassName("bg__lines");
-    var belowvectorlineelement = belowvectorline[0];
-    var elementPositionBelowVector = belowvectorlineelement.getBoundingClientRect().top;
-    console.log("below vector top position : " + elementPositionBelowVector);
-    if (elementPositionBelowVector < 100 && elementPositionBelowVector > -400) {
-        belowvectorlineelement.classList.add('is-vector-visible');
-    }
-    else {
-        belowvectorlineelement.classList.remove('is-vector-visible');
-    }
+    // var d = document.getElementsByClassName("globel__sec__img");
+    // var element = d[0];
+    // var elementPosition = element.getBoundingClientRect().top;
+    // console.log(elementPosition);
+    // if (elementPositionVector < -100 && elementPosition > 0) {
+    //     element.classList.add('is-visible');
+    // }
+    // else {
+    //     element.classList.remove('is-visible');
+    // }
+    // // bg__lines
+    // var belowvectorline = document.getElementsByClassName("bg__lines");
+    // var belowvectorlineelement = belowvectorline[0];
+    // var elementPositionBelowVector = belowvectorlineelement.getBoundingClientRect().top;
+    // if (elementPositionBelowVector < 100 && elementPositionBelowVector > -400) {
+    //     belowvectorlineelement.classList.add('is-bgvector-visible');
+    // }
+    // else {
+    //     belowvectorlineelement.classList.remove('is-bgvector-visible');
+    // }
 
-    var dcon = document.getElementsByClassName("deploy__sec__img");
-    var elementCon = dcon[0];
-    var elementPositionCon = elementCon.getBoundingClientRect().top;
-    console.log(elementPositionCon);
-    if (elementPositionBelowVector < -60 && elementPositionCon > 0) {
-        var linewidth = document.getElementsByClassName("connectline");
-        console.log("Get Line width :  " + linewidth[0]);
-        elementCon.classList.add('is-connect-visible');
-    }
-    else {
-        elementCon.classList.remove('is-connect-visible');
-    }
+    // var dcon = document.getElementsByClassName("deploy__sec__img");
+    // var elementCon = dcon[0];
+    // var elementPositionCon = elementCon.getBoundingClientRect().top;
+    // console.log(elementPositionCon);
+    // if (elementPositionBelowVector < -60 && elementPositionCon > 0) {
+    //     var linewidth = document.getElementsByClassName("connectline");
+    //     elementCon.classList.add('is-connect-visible');
+    // }
+    // else {
+    //     elementCon.classList.remove('is-connect-visible');
+    // }
     // .is-connect-visible
 
 }, false);
+
+
 

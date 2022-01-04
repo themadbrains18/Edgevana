@@ -39,11 +39,11 @@
   position: relative;
   // overflow-x: hidden;
 
-  .bg__lines{
+  .bg__lines {
     position: absolute;
-    top: 72%;
+    top: 75%;
     left: 48%;
-    transform: translateX(-50%)scale(1.6)rotate(-4deg);
+    transform: translateX(-50%) scale(1.6) rotate(-4deg);
     z-index: -1;
   }
 }
@@ -141,12 +141,27 @@
   .swiper-wrapper {
     align-items: center;
   }
+  .swiper-slide {
+    text-align: center;
+    img {
+      filter: grayscale(100%);
+    }
+  }
+  .swiper-slide.swiper-slide-active {
+    img {
+      // filter: grayscale(0%);
+      filter: drop-shadow(0px 0px 100px black);
+    }
+  }
 }
 
 /* Trusted Sec End */
 
 .info__crd__sec {
   padding: 70px 0;
+  .container {
+    position: relative;
+  }
   .swiper-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
@@ -277,13 +292,13 @@
   }
 
   from {
-    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(180deg);
   }
   to {
     -webkit-transform: rotate(-359deg);
   }
 }
-.is-visible .index__img_global {
+.is-visible .global_img {
   animation: HeroGlobal 20s linear forwards;
 }
 
@@ -302,7 +317,7 @@
   }
 }
 
-.is-connect-visible .connectdot {
+.is-visible .connectdot {
   animation: dotpulse 1s linear infinite;
 }
 
@@ -315,10 +330,37 @@
   }
 }
 
-.is-connect-visible .connectline {
+.is-visible .connectline {
   stroke-dasharray: 800;
   stroke-dashoffset: 800;
   animation: linemove 2s linear infinite alternate;
+}
+
+.is-visible .Vector-17 {
+  width: 50px;
+  height: 5px;
+  offset-distance: 0%;
+  background-color: rgb(54, 54, 189);
+  offset-path: path("M210.501 903C231 554 863.5 608.5 915.999 106.5");
+  animation: dash 10s linear infinite;
+}
+
+.is-visible .Vector-19 {
+  width: 50px;
+  height: 5px;
+  offset-distance: 0%;
+  background-color: rgb(54, 54, 189);
+  offset-path: path("M210 901.5C210 534 791.999 543.5 881.499 110");
+  animation: dash 15s linear infinite;
+}
+
+.is-visible .Vector-20 {
+  width: 50px;
+  height: 5px;
+  offset-distance: 0%;
+  background-color: rgb(54, 54, 189);
+  offset-path: path("M209.999 903C196.499 522.5 772.999 481.5 861 26.4999");
+  animation: dash 20s linear infinite;
 }
 
 // @keyframes vectordash {
@@ -337,74 +379,74 @@
 // }
 
 
-.line1 {
+.is-visible .line1 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 2s linear alternate infinite;
 }
 
-.line2 {
+.is-visible .line2 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 2s linear alternate infinite;
 }
 
-.Vector20 {
+.is-visible .Vector20 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 4s linear alternate infinite;
 }
 
-.Vector21 {
+.is-visible .Vector21 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 4s linear alternate infinite;
 }
 
-.Vector22 {
+.is-visible .Vector22 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 6s linear alternate infinite;
 }
 
-.Vector23 {
+.is-visible .Vector23 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 6s linear alternate infinite;
 }
 
 // bg_line class path
-.Vector24 {
+.is-visible .Vector24 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 2s linear alternate infinite;
 }
 
-.Vector25 {
+.is-visible .Vector25 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 2s linear alternate infinite;
 }
 
-.Vector26 {
+.is-visible .Vector26 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 4s linear alternate infinite;
 }
 
-.Vector27 {
+.is-visible .Vector27 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 4s linear alternate infinite;
 }
 
-.Vector28 {
+.is-visible .Vector28 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 6s linear alternate infinite;
 }
 
-.Vector29 {
+.is-visible .Vector29 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 6s linear alternate infinite;
@@ -459,7 +501,7 @@
 .mouseenter .cursor__wrapper {
   display: block;
 }
-.cursor__wrapper{
+.cursor__wrapper {
   position: fixed;
   padding: 5px;
   background: linear-gradient(to right, #d177a5 0%, #7a70e1 48%, #7ea9c2 100%);
@@ -474,7 +516,7 @@
   display: none;
 }
 .cursor {
-  background-color: #1C1F2D;
+  background-color: #1c1f2d;
   width: 100%;
   height: 100%;
   border-radius: inherit;
@@ -610,7 +652,12 @@
   opacity: 0;
 }
 
-.logo__list li{
+.logo__list li:hover {
+  background-color: rgba(201, 199, 199, 0.2);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.logo__list li {
   transition: 0.5s;
 }
 
@@ -618,46 +665,100 @@
   background-color: rgba(201, 199, 199, 0.2);
 }
 
-.tmb__hero__sec{
+.tmb__hero__sec {
   position: relative;
-  .connect_hero_global_map{
+  .connect_hero_global_map {
     position: absolute;
     top: 38%;
     left: 50%;
-    transform:translateX(-50%) rotate(10deg) scale(1.25);
+    transform: translateX(-50%) rotate(10deg) scale(1.25);
     z-index: -1;
-    
   }
 }
-
-.dots{
-  background: radial-gradient(50% 50% at 50% 50%, #7D90D0 0%, rgba(212, 219, 252, 0.5) 33.85%, rgba(212, 219, 252, 0.15) 71.88%, rgba(212, 219, 252, 0) 100%);
-  opacity: 0.7;
+.dots__wrapper {
+  position: absolute;
+  top: 95%;
+  z-index: 9;
+  right: 0;
 }
-.profilecircle1{
+.dots {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #7d90d0 0%,
+    rgba(212, 219, 252, 0.5) 33.85%,
+    rgba(212, 219, 252, 0.15) 71.88%,
+    rgba(212, 219, 252, 0) 100%
+  );
+  opacity: 0;
+}
+.profilecircle1 {
   width: 20px;
   height: 20px;
   margin-left: 10px;
 }
-.profilecircle2{
+.profilecircle2 {
   width: 30px;
   height: 30px;
-  
   margin-left: 37px;
-
 }
-.profilecircle3{
+.profilecircle3 {
   width: 50px;
   height: 50px;
   margin-left: 68px;
 }
-.profilecircle4{
+.profilecircle4 {
   width: 80px;
   height: 80px;
   margin-left: 60px;
 }
-.profilecircle5{
+.profilecircle5 {
   width: 100px;
   height: 100px;
   margin-left: 30px;
 }
+.profilecircle6{
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+}
+.profilecircle7{
+  width: 100px;
+  height: 100px;
+  margin-left: 5px;
+}
+
+@keyframes fadeInDots {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.7;
+  }
+}
+
+@for $i from 1 through 7 {
+    .dots__wrapper div:nth-child(#{$i}) {
+      animation: fadeInDots $i+s linear forwards infinite;
+    }
+}
+
+
+.deploy__sec__img {
+  position: relative;
+  display: inline-block; /* <= shrinks container to image size */
+  transition: transform 150ms ease-in-out;
+}
+
+.deploy__sec__img img { /* <= optional, for responsiveness */
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+.deploy__sec__img svg {
+  position: absolute;
+  top: 20px;
+  left: 90px;
+}
+

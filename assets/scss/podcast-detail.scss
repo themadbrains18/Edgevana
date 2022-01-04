@@ -1,0 +1,177 @@
+/* Brodcast Banner Css Code */
+
+.brodcast__detail__banner {
+  .sec__episode__date {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 36px;
+    color: #fff;
+  }
+  .sec__heading {
+    font-weight: 700;
+    line-height: clamp(35px, 8vw, 80px);
+    margin-top: clamp(10px, 5vw, 50px);
+    margin-bottom: clamp(20px, 5vw, 35px);
+    font-size: clamp(25px, 5vw, 67px);
+    span {
+      color: #b174bb;
+    }
+  }
+  .sec__brief {
+    line-height: clamp(12px, 6vw, 36px) !important;
+    font-size: clamp(10px, 4vw, 25px);
+    margin-bottom: clamp(24px, 5vw, 115px);
+  }
+
+  .social__media {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .social__icon {
+    gap: 10px;
+    display: flex;
+    align-items: start;
+  }
+  .sec__content {
+    justify-content: space-between;
+  }
+  .sec__text {
+    width: 62%;
+  }
+  .sec__content,
+  .social__media,
+  .social__inner {
+    display: flex;
+    align-items: center;
+  }
+  .social__inner {
+    border: 1px solid #2a2e37;
+    border-radius: 6px;
+    padding: 20px;
+    gap: 10px;
+    span {
+      font-weight: 500;
+      line-height: clamp(22px, 6vw, 36px);
+      font-size: clamp(16px, 4vw, 25px);
+      color: #fff;
+    }
+  }
+  .social__media {
+    width: 100%;
+  }
+  .watch-now {
+    display: none;
+  }
+  .social__inner.watch-now {
+    display: flex;
+    align-items: center;
+  }
+  .social__inner.watch-now {
+    display: none;
+  }
+  .social__inner.share__btn.desktop {
+    display: none;
+  }
+}
+
+/* Podcast About Us Section Css Code */
+.sec__podcast__about {
+  padding-top: clamp(54px, 10vw, 172px);
+  padding-bottom: clamp(55px, 10vw, 167px);
+  .sec__content {
+    display: flex;
+    align-items: center;
+    gap: 96px;
+  }
+  .sec__heading {
+    font-size: clamp(25px, 8vw, 67px);
+    line-height: clamp(35px, 10vw, 80px);
+  }
+  .sec__heading span {
+    color: #b174bb;
+  }
+  .sec__inner__brief {
+    font-weight: 700;
+    line-height: clamp(22px, 6vw, 36px);
+    font-size: clamp(16px, 4vw, 25px);
+    color: #babfc5;
+  }
+  .sec__img {
+    width: 100%;
+    max-width: 264px;
+  }
+  .sec__brief {
+    font-weight: 400;
+    line-height: clamp(20px, 6vw, 51px);
+    padding-top: clamp(16px, 8vw, 50px);
+    padding-bottom: clamp(16px, 8vw, 80px);
+  }
+  .sec__text {
+    width: 80%;
+  }
+}
+
+/* Section Podcast Summary */
+.sec__podcast__summary {
+  padding-top: 67px;
+}
+.sec__podcast__summary .sec__header {
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1d212e;
+  padding: 20px 30px;
+  .sec__heading {
+    font-weight: 800;
+    font-size: 25px;
+    line-height: clamp(36px, 6vw, 30px);
+  }
+  span {
+    display: flex;
+  }
+}
+.summary__info::-webkit-scrollbar {
+  background-color: #121625;
+  width: 10px;
+}
+.summary__info::-webkit-scrollbar-thumb {
+  background-color: #2a2e37;
+  border-radius: 6px;
+}
+.summary__info {
+  border: 1px solid #1d212e;
+  padding: 30px 20px;
+  max-height: 551px;
+  height: 100%;
+  overflow-y: scroll;
+  ul {
+    margin: 30px 0 50px;
+  }
+}
+.summary__info p.sec__info {
+  font-weight: 700;
+  font-size: clamp(16px, 5vw, 25px);
+  line-height: clamp(20px, 3vw, 35px);
+}
+.summary__info .sec__info {
+  font-weight: 500;
+  line-height: clamp(20px, 3vw, 35px);
+  color: #babfc5;
+  font-size: clamp(13px, 3vw, 25px);
+}
+.summary__notes {
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+// .podcast__main{
+//     background: linear-gradient(90deg, rgba(0, 0, 0, 0.94) 1.07%, rgba(0, 0, 0, 0.7898) 31.47%, rgba(0, 0, 0, 0.6004) 72.32%, rgba(0, 0, 0, 0.5) 105.99%);
+//     position: relative;
+//     z-index: -99;
+
+// }
+// banner sec
