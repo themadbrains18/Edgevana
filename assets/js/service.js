@@ -37,6 +37,8 @@ let tabs = document.querySelectorAll(".tabs__button");
 // // 
 
 
+
+
 // if( window.innerWidth>1024){
     let ServiceBannerImg = document.querySelector(".service__banner__img");
     for(let i in tabs){
@@ -60,7 +62,14 @@ let tabs = document.querySelectorAll(".tabs__button");
       }
     }
 // }
-
+// if(window.innerWidth<1024){
+//    let TabsSibling= document.querySelectorAll(".service__tabs.mobile__tabs .tabs__item");
+//    for(let s of TabsSibling ){
+//     let tabsChildren =s.children;
+//     console.log(tabsChildren[3].scrollHeight);
+//    }
+   
+// }
 
 /* Faq Js */
 window.addEventListener('DOMContentLoaded', function() {
@@ -89,10 +98,9 @@ window.addEventListener('DOMContentLoaded', function() {
             let industriesTabs = document.querySelectorAll(".industries__tabs__button");
             // Active Tabs
             let industriesTabsActive = document.querySelector(".industries__tabs__button.active");
-            let heightactive =industriesTabsActive.nextElementSibling.scrollHeight;
-            // industriesTabsActive.setAttribute("style",`height ${heightactive}px;`)
+            let heightactive =industriesTabsActive.nextElementSibling.scrollHeight+10;
+            
             industriesTabsActive.nextElementSibling.setAttribute("style", `height: ${heightactive}px;opacity:1;`);
-            console.log(industriesTabsActive);
 
             function removeClass(){
                 for (let i of industriesTabs) {

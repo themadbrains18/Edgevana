@@ -1,3 +1,11 @@
+/* Podcast Js */
+'use strict';
+
+let podcastBtndetail = document.querySelector(".watch-now");
+podcastBtndetail.addEventListener("click",()=>{
+    podcastBtndetail.classList.toggle("active");
+})
+
 if(window.innerWidth <= 767){
 
     let jpToggle = document.querySelector(".jp-toggles");
