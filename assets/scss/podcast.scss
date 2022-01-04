@@ -2,269 +2,202 @@
 //     background: linear-gradient(90deg, rgba(0, 0, 0, 0.94) 1.07%, rgba(0, 0, 0, 0.7898) 31.47%, rgba(0, 0, 0, 0.6004) 72.32%, rgba(0, 0, 0, 0.5) 105.99%);
 //     position: relative;
 //     z-index: -99;
-    
-// }
-// banner sec 
-.podcast__banner__sec{
-    padding:83px 0 30px;
-    position: relative;
-    .bg__waves{
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 0%;
-            z-index: -2;
-            width: 100%;
-            height: 100%;
-        img{
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%)scale(0.9);
-            right: 0%;
-            z-index: 0;
-            transform-origin: center right;
-        }
-        .mobile-view{
-            display: none;
-        }
-    }
-    .sec__content{
-        .sec__content__inner{
-            display: flex;
-            align-items: center;
-            gap: 50px;
-            .sec__text,
-            .sec__image
-            {
-                width: 50%;
-            }
-            .sec__text{
-                .sec__heading{
-                    font-weight: bold;
-                    font-size: clamp(41px,8vw,109px);
-                    line-height: clamp(51px,9vw,136px);
-                    background: linear-gradient(to right, #d177a5 0%, #7a70e1 48%, #7ea9c2 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    margin-bottom: clamp(25px,9vw,116px);
-                }
-                .sec__info{
-                    font-weight: normal;
-                    font-size: clamp(10px,2vw,25px);
-                    line-height: clamp(12px,2vw,31px);
-                    color: #C8C8C8;
-                }
-            }
-        }
-        .jp-type-playlist{
-            display: flex;
-            align-items: center;
-            gap: clamp(20px,5vw,67px);
-            background: linear-gradient(90.04deg, #1D30B5 0%, #A81EAB 100%);
-            border-radius: 6px;
-            z-index: 9;
-            position: relative;
-            padding: 30px 40px;
-            margin-top: clamp(38px,9vw,131px);
-            .jp-seek-bar{
-                height: 8px;
-                background-color: #121625;
-                border-radius:20px ;
-                cursor: pointer;
-                .jp-play-bar{
-                    background-color: #fff;
-                    height: inherit;
-                    border-radius: inherit;
-                }
-            }
-            #jp_poster_0,
-            #jp_video_0
-            {
-                width: 70px !important;
-                height: 70px !important;
-                object-fit: cover;
-                border-radius: 5px;
-            }
-            .jp-jplayer{
-                width: auto  !important;
-                height: auto !important;
-            }
-            
-            .jp__jplayer__wrapper{
-                width: 30%;
-                display: flex;
-                align-items: center;
-                gap: 20px;
-            }
-            .jp-details{
-                display: block !important;
-            }
-            .jp-title{
-                font-weight: 800;
-                font-size: clamp(10px,1vw,25px);
-                line-height:clamp(12px,2vw,30px);
-                color: #FFFFFF;
-                overflow: hidden;
-            }
-            .title__brief{
-                font-weight: normal;
-                font-size: clamp(10px,1vw,25px);
-                line-height:clamp(12px,2vw,30px);
-                color: #C8C8C8;
-                margin-top: clamp(4px,1vw,11px);
-                overflow: hidden;
-            }
-            .seek__bar__wrapper {
-                width: 50%;
-            }
-            .jp-gui {
-                width: 20%;
-            }
 
-            .jp-playlist{
-                display: none;
-            }
-            .jp-title{
-                display: block !important;
-            }
-            .jp-current-time,
-            .jp-duration
-            {
-                font-weight: normal;
-                font-size: clamp(10px,2vw,16px);
-                line-height: clamp(12px,1vw,20px);
-                color: rgba(245, 245, 247, 0.57);
-            }
-            .control__wrapper,
-            .jp-toggles
-            {
-                display: flex;
-                align-items: center;
-                gap: clamp(10px,3vw,50px);
-                justify-content: space-between;
-                margin-top: clamp(10px,1vw,20px);
-            }
-            .jp-toggles{
-                margin: 0;
-            }
-            #filterBtn{
-                display: none;
-            }
-            .jp-controls{
-                display: flex;
-                align-items: center;
-                gap: clamp(20px,3vw,40px);
-            }
-            #jp_video_0{
-                display: none !important;
-            }
-        }
+// }
+// banner sec
+.podcast__banner__sec {
+  padding: 83px 0 30px;
+  position: relative;
+  .bg__waves {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0%;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) scale(0.9);
+      right: 0%;
+      z-index: 0;
+      transform-origin: center right;
     }
+    .mobile-view {
+      display: none;
+    }
+  }
+  .sec__content {
+    .sec__content__inner {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      .sec__text,
+      .sec__image {
+        width: 50%;
+      }
+      .sec__text {
+        .sec__heading {
+          font-weight: bold;
+          font-size: clamp(41px, 8vw, 109px);
+          line-height: clamp(51px, 9vw, 136px);
+          background: linear-gradient(
+            to right,
+            #d177a5 0%,
+            #7a70e1 48%,
+            #7ea9c2 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin-bottom: clamp(25px, 9vw, 116px);
+        }
+        .sec__info {
+          font-weight: normal;
+          font-size: clamp(10px, 2vw, 25px);
+          line-height: clamp(12px, 2vw, 31px);
+          color: #c8c8c8;
+        }
+      }
+    }
+  }
 }
 
-
 // recent episods css
-.recent__episodes{
-    padding: 88px 0 111px;
+.recent__episodes {
+  padding: 88px 0 111px;
 
-    .sec__head{
-        .sec__heading{
-            margin-bottom: clamp(40px,7vw,98px);
-        }
+  .sec__head {
+    .sec__heading {
+      margin-bottom: clamp(40px, 7vw, 98px);
     }
-    .sec__content{
-        .sec__content__inner{
-            display: flex;
-            align-items: center;
-            gap: 50px;
-            .episodes__wrapper{
-                width: 60%;
+  }
+  .sec__content {
+    .sec__content__inner {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      .episodes__wrapper {
+        width: 60%;
+      }
+      .form__wrapper {
+        width: 40%;
+      }
+      .episodes__wrapper {
+        .episode__inner {
+          display: flex;
+          align-items: center;
+          gap: clamp(10px, 2vw, 30px);
+
+          .episode__image {
+            width: clamp(40px, 9vw, 120px);
+            img {
+              border-radius: 50%;
             }
-            .form__wrapper{
-                width: 40%;
-            }
-            .episodes__wrapper{
-                .episode__inner{
-                    display: flex;
-                    align-items: center;
-                    gap: clamp(10px,2vw,30px);
-                    padding: 40px 30px;
-                    background-color: #121625;
-                    border-radius:6px;
-
-                   
-                    .episode__image{
-                        width:15%;
-                        position: relative;
-
-                        .play-btn-wrapper{
-                            content: '';
-                            position: absolute;
-                            top: -2px;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                            z-index: 1;
-                            background-color: rgba(0, 0, 0, 0.5);
-                            border-radius: 50%;
-                            transition: 0.4s;
-                            opacity: 0;
-                        }
-
-                        .play-btn{
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform:translate(-50%,-35%);
-                            opacity: 0;
-                            transition: 0.4s;
-                        }
-                        img{
-                            border-radius: 50%;
-                            width: 100%;
-                        }
-                    }
-                    .episode__text {
-                        width: 85%;
-                    }
-                    .episode__head{
-                        display: flex;
-                        align-items: center;
-                        gap: 20px;
-                        justify-content: space-between;
-                        margin-bottom: 10px;
-
-                        .episode__heading{
-                            font-weight: 800;
-                            font-size: clamp(16px,2vw,25px);
-                            line-height:clamp( 20px,2vw,30px);
-                            color: #FFFFFF;
-                        }
-                        .date{
-                            font-weight: 500;
-                            font-size:clamp( 10px,1vw,16px);
-                            line-height:clamp(12px,1vw, 20px);
-                            text-align: right;
-                            color: #FFFFFF;
-                        }
-                    }
-                    .info{
-                        font-weight: normal;
-                        font-size:16px;
-                        line-height: 20px;
-                        color: #6F6F6F;
-                    }
-                    &:hover{
-                        .play-btn{
-                            opacity: 1;
-                            transform:translate(-50%,-50%);
-                        }
-                        .play-btn-wrapper{
-                           opacity: 1;
-                        }
-                    }
-                }
-            }
+          }
         }
+      }
     }
+  }
+}
+
+.jp-type-playlist {
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 5vw, 67px);
+  background: linear-gradient(90.04deg, #1d30b5 0%, #a81eab 100%);
+  border-radius: 6px;
+  z-index: 9;
+  position: relative;
+  padding: 30px 40px;
+  margin-top: clamp(38px, 9vw, 131px);
+  .jp-seek-bar {
+    height: 8px;
+    background-color: #121625;
+    border-radius: 20px;
+    cursor: pointer;
+    .jp-play-bar {
+      background-color: #fff;
+      height: inherit;
+      border-radius: inherit;
+    }
+  }
+  #jp_poster_0,
+  #jp_video_0 {
+    width: 70px !important;
+    height: 70px !important;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .jp-jplayer {
+    width: auto !important;
+    height: auto !important;
+  }
+
+  .jp__jplayer__wrapper {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .jp-details {
+    display: block !important;
+  }
+  .jp-title {
+    font-weight: 800;
+    font-size: clamp(10px, 1vw, 25px);
+    line-height: clamp(12px, 2vw, 30px);
+    color: #ffffff;
+    overflow: hidden;
+  }
+  .title__brief {
+    font-weight: normal;
+    font-size: clamp(10px, 1vw, 25px);
+    line-height: clamp(12px, 2vw, 30px);
+    color: #c8c8c8;
+    margin-top: clamp(4px, 1vw, 11px);
+    overflow: hidden;
+  }
+  .seek__bar__wrapper {
+    width: 50%;
+  }
+  .jp-gui {
+    width: 20%;
+  }
+
+  .jp-playlist {
+    display: none;
+  }
+  .jp-title {
+    display: block !important;
+  }
+  .jp-current-time,
+  .jp-duration {
+    font-weight: normal;
+    font-size: clamp(10px, 2vw, 16px);
+    line-height: clamp(12px, 1vw, 20px);
+    color: rgba(245, 245, 247, 0.57);
+  }
+  .control__wrapper,
+  .jp-toggles {
+    display: flex;
+    align-items: center;
+    gap: clamp(10px, 3vw, 50px);
+    justify-content: space-between;
+    margin-top: clamp(10px, 1vw, 20px);
+  }
+  .jp-toggles {
+    margin: 0;
+  }
+  #filterBtn {
+    display: none;
+  }
+  .jp-controls {
+    display: flex;
+    align-items: center;
+    gap: clamp(20px, 3vw, 40px);
+  }
+  #jp_video_0 {
+    display: none !important;
+  }
 }

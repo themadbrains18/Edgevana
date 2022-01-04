@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast-Detail</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="assets/font/stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+
+
+</head>
+
+<body>
+    <!-- <canvas id="canvas"></canvas> -->
+    <!-- ==== header start ==== -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="index.html">
+                        <img src="assets/svg/edgevana-logo.svg" alt="image-description">
+                    </a>
+                </div>
+                <nav class="nav__list">
+                    <ul>
+                        <li>
+                            <a class="nav__item" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav__item" href="service.html">Services</a>
+                        </li>
+                        <li>
+                            <a class="nav__item" href="#">Resources</a>
+                        </li>
+                        <li class="col-lg-hide">
+                            <a class="nav__item" href="contact-us.html">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="contact__btn">
+                    <a class="nav__item" href="contact-us.html">Contact us</a>
+                </div>
+            </div>
+            <div class="toggle__btn">
+                <svg width="39" height="24" viewBox="0 0 39 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="first"
+                        d="M34.25 19H17.75C17.3358 19 17 19.4029 17 19.9C17 20.3971 17.3358 20.8 17.75 20.8H34.25C34.6642 20.8 35 20.3971 35 19.9C35 19.4029 34.6642 19 34.25 19Z"
+                        fill="white" />
+                    <path class="second"
+                        d="M37.875 3H13.125C12.5037 3 12 3.40294 12 3.9C12 4.39706 12.5037 4.8 13.125 4.8H37.875C38.4963 4.8 39 4.39706 39 3.9C39 3.40294 38.4963 3 37.875 3Z"
+                        fill="white" />
+                    <path class="third"
+                        d="M29.875 11.0002H5.125C4.50368 11.0002 4 11.4032 4 11.9002C4 12.3973 4.50368 12.8002 5.125 12.8002H29.875C30.4963 12.8002 31 12.3973 31 11.9002C31 11.4032 30.4963 11.0002 29.875 11.0002Z"
+                        fill="white" />
+                </svg>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- ==== header end ==== -->
+
+    <main>
+        <!-- ==== Hero Section Start ==== -->
+        <section class="brodcast__detail__banner">
+            <div class="container">
+                <div class="sec__content">
+                    <div class="sec__text">
+                        <h3 class="sec__episode__date">
+                            Date : 12 December 2021
+                        </h3>
+                        <h2 class="sec__heading">
+                            <span>Ep #28:</span>  Rethinking The Name "IT"
+                        </h2>
+                        <p class="sec__brief">
+                            ZoomInfo CIO, Chetna Mahajan believes IT can be reimagined. Join Mark and Chetna as they discuss the importance of company transparency, time vs value, and how a name change helps with external and internal perception.
+                        </p>
+                        <div class="social__icon">
+                            <button class="social__inner share__btn desktop">
+                                <span>
+                                    Share
+                                </span>
+                                <img src="assets/svg/share-icon.svg" alt="">
+                            </button>
+                            <button class="social__inner watch-now">
+                                <span>
+                                    Watch on
+                                </span> 
+                                <img src="assets/svg/watch-now-icon.svg" alt="">
+                            </button>
+                            <div class="social__media mobile">
+                                <button class="social__inner share__btn">
+                                    <span>
+                                        Share
+                                    </span>
+                                    <img src="assets/svg/share-icon.svg" alt="">
+                                </button>
+                                <a href="https://www.youtube.com/channel/UCvXZPsY2_EV9AdNv4YpkQ6w?view_as=subscriber" class="social__inner">
+                                    <span>
+                                        Youtube
+                                    </span>
+                                    <img src="assets/svg/you-tube-icon.svg" alt="">
+                                </a>
+                                <a href="#" class="social__inner">
+                                    <span>
+                                        Spotify
+                                    </span>
+                                    <img src="assets/svg/spotify-icon.svg" alt="">
+                                </a>
+                                <a href="#" class="social__inner">
+                                    <span>
+                                        Apple Music
+                                    </span>
+                                    <img src="assets/svg/music-icon.svg" alt="">
+                                </a>
+                                <a href="https://soundcloud.com/edgevana" class="social__inner">
+                                    <span>
+                                        SoundCloud
+                                    </span>
+                                    <img src="assets/svg/soundcloud-icon.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec__img">
+                        <img src="assets/image/brodcast-detail-banner.png" alt="">
+                    </div>
+                </div>  
+                <div id="jp_container_1" class="jp-video jp-state-looped jp-video-270p jp-state-shuffled jp-state-playing" role="application" aria-label="media player">
+                    <div class="jp-type-playlist">
+                        <div class="jp__jplayer__wrapper">
+                            <div id="jquery_jplayer_1" class="jp-jplayer" style="width: 480px; height: 270px;"><img id="jp_poster_0" style="width: 480px; height: 270px; display: none;" src="http://www.jplayer.org/video/poster/Finding_Nemo_Teaser_640x352.png"><audio id="jp_audio_0" preload="metadata" src="http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg" title="Finding Nemo Teaser"></audio><video id="jp_video_0" preload="metadata" title="Finding Nemo Teaser" src="http://www.jplayer.org/video/webm/Finding_Nemo_Teaser.webm" style="width: 480px; height: 270px;"></video></div>
+                            <div class="jp-details" style="display: none;">
+                                <h3 class="jp-title" aria-label="title">Finding Nemo Teaser</h3>
+                                <p class="title__brief">Why should you challenge your.....</p>
+                            </div>
+                        </div>
+                        <div class="seek__bar__wrapper">
+                            <div class="jp-progress">
+                                <div class="jp-seek-bar" style="width: 100%;">
+                                    <div class="jp-play-bar" style="width: 41.6139%; overflow: hidden;"></div>
+                                </div>
+
+                            </div>
+                            <div class="control__wrapper">
+                                <div class="jp-current-time" role="timer" aria-label="time">00:19</div>
+                                <div class="jp-controls">
+                                    <button class="jp-previous" role="button" tabindex="0">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_63_940)">
+                                            <path d="M11.9999 24C11.8683 24.0008 11.7379 23.9755 11.616 23.9258C11.4942 23.876 11.3834 23.8027 11.2899 23.71L3.11994 15.54C2.65431 15.0755 2.28488 14.5238 2.03281 13.9163C1.78075 13.3089 1.651 12.6577 1.651 12C1.651 11.3423 1.78075 10.6911 2.03281 10.0837C2.28488 9.47621 2.65431 8.92446 3.11994 8.46L11.2899 0.290002C11.4782 0.101699 11.7336 -0.00408936 11.9999 -0.00408936C12.2662 -0.00408936 12.5216 0.101699 12.7099 0.290002C12.8982 0.478306 13.004 0.733701 13.004 1C13.004 1.2663 12.8982 1.5217 12.7099 1.71L4.53994 9.88C3.97814 10.4425 3.66258 11.205 3.66258 12C3.66258 12.795 3.97814 13.5575 4.53994 14.12L12.7099 22.29C12.8037 22.383 12.8781 22.4936 12.9288 22.6154C12.9796 22.7373 13.0057 22.868 13.0057 23C13.0057 23.132 12.9796 23.2627 12.9288 23.3846C12.8781 23.5064 12.8037 23.617 12.7099 23.71C12.6165 23.8027 12.5057 23.876 12.3838 23.9258C12.262 23.9755 12.1315 24.0008 11.9999 24Z" fill="#82868C"></path>
+                                            <path d="M22.0001 24C21.8685 24.0008 21.7381 23.9755 21.6162 23.9258C21.4944 23.876 21.3836 23.8027 21.2901 23.71L11.7101 14.12C11.1483 13.5575 10.8328 12.795 10.8328 12C10.8328 11.205 11.1483 10.4425 11.7101 9.88L21.2901 0.290002C21.4784 0.101699 21.7338 -0.00408936 22.0001 -0.00408936C22.2664 -0.00408936 22.5218 0.101699 22.7101 0.290002C22.8984 0.478306 23.0042 0.733701 23.0042 1C23.0042 1.2663 22.8984 1.5217 22.7101 1.71L13.1201 11.29C13.0264 11.383 12.952 11.4936 12.9012 11.6154C12.8505 11.7373 12.8243 11.868 12.8243 12C12.8243 12.132 12.8505 12.2627 12.9012 12.3846C12.952 12.5064 13.0264 12.617 13.1201 12.71L22.7101 22.29C22.8039 22.383 22.8782 22.4936 22.929 22.6154C22.9798 22.7373 23.0059 22.868 23.0059 23C23.0059 23.132 22.9798 23.2627 22.929 23.3846C22.8782 23.5064 22.8039 23.617 22.7101 23.71C22.6167 23.8027 22.5059 23.876 22.384 23.9258C22.2622 23.9755 22.1317 24.0008 22.0001 24Z" fill="#82868C"></path>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_63_940">
+                                            <rect width="24" height="24" fill="white"></rect>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                    <button class="jp-play" role="button" tabindex="0">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="24" cy="24" r="23" stroke="white" stroke-width="2"></circle>
+                                            <path d="M35.3684 24L18.3158 32.7514L18.3158 15.2486L35.3684 24Z" fill="white"></path>
+                                        </svg>
+                                    </button>
+                                    <button class="jp-next" role="button" tabindex="0">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_63_946)">
+                                            <path d="M11.8298 24C11.6982 24.0008 11.5677 23.9755 11.4459 23.9258C11.324 23.876 11.2132 23.8027 11.1198 23.71C11.026 23.617 10.9517 23.5064 10.9009 23.3846C10.8501 23.2627 10.824 23.132 10.824 23C10.824 22.868 10.8501 22.7373 10.9009 22.6154C10.9517 22.4936 11.026 22.383 11.1198 22.29L19.2898 14.12C19.8516 13.5575 20.1671 12.795 20.1671 12C20.1671 11.205 19.8516 10.4425 19.2898 9.88L11.1198 1.71C11.0265 1.61676 10.9526 1.50607 10.9021 1.38425C10.8517 1.26243 10.8257 1.13186 10.8257 1C10.8257 0.733701 10.9315 0.478306 11.1198 0.290002C11.3081 0.101699 11.5635 -0.00408936 11.8298 -0.00408936C12.0961 -0.00408936 12.3515 0.101699 12.5398 0.290002L20.7098 8.46C21.1754 8.92446 21.5448 9.47621 21.7969 10.0837C22.049 10.6911 22.1787 11.3423 22.1787 12C22.1787 12.6577 22.049 13.3089 21.7969 13.9163C21.5448 14.5238 21.1754 15.0755 20.7098 15.54L12.5398 23.71C12.4463 23.8027 12.3355 23.876 12.2137 23.9258C12.0918 23.9755 11.9614 24.0008 11.8298 24Z" fill="#82868C"></path>
+                                            <path d="M1.83002 24C1.69841 24.0008 1.56795 23.9755 1.44611 23.9258C1.32427 23.876 1.21346 23.8027 1.12002 23.71C1.02629 23.617 0.951894 23.5064 0.901126 23.3846C0.850357 23.2627 0.824219 23.132 0.824219 23C0.824219 22.868 0.850357 22.7373 0.901126 22.6154C0.951894 22.4936 1.02629 22.383 1.12002 22.29L10.71 12.71C10.8037 12.617 10.8781 12.5064 10.9289 12.3846C10.9797 12.2627 11.0058 12.132 11.0058 12C11.0058 11.868 10.9797 11.7373 10.9289 11.6154C10.8781 11.4936 10.8037 11.383 10.71 11.29L1.12002 1.71C0.931713 1.5217 0.825925 1.2663 0.825925 1C0.825925 0.733701 0.931713 0.478306 1.12002 0.290002C1.30832 0.101699 1.56372 -0.00408936 1.83002 -0.00408936C2.09632 -0.00408936 2.35171 0.101699 2.54002 0.290002L12.12 9.88C12.6818 10.4425 12.9974 11.205 12.9974 12C12.9974 12.795 12.6818 13.5575 12.12 14.12L2.54002 23.71C2.44658 23.8027 2.33576 23.876 2.21392 23.9258C2.09209 23.9755 1.96162 24.0008 1.83002 24Z" fill="#82868C"></path>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_63_946">
+                                            <rect width="24" height="24" fill="white"></rect>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="jp-duration" role="timer" aria-label="duration">00:45</div>
+                            </div>
+                        </div>
+                        <div class="jp-gui" style="">
+                            <div class="jp-video-play" style="display: none;">
+                                <button class="jp-video-play-icon" role="button" tabindex="0">play</button>
+                            </div>
+                            <div class="jp-interface">
+
+
+                                <div class="jp-controls-holder">
+                                    <button id="filterBtn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_63_1344)">
+                                            <path d="M1 4.75026H3.736C3.95064 5.53999 4.41917 6.23715 5.06933 6.73419C5.71948 7.23123 6.51512 7.50052 7.3335 7.50052C8.15188 7.50052 8.94752 7.23123 9.59767 6.73419C10.2478 6.23715 10.7164 5.53999 10.931 4.75026H23C23.2652 4.75026 23.5196 4.6449 23.7071 4.45737C23.8946 4.26983 24 4.01548 24 3.75026C24 3.48504 23.8946 3.23069 23.7071 3.04315C23.5196 2.85562 23.2652 2.75026 23 2.75026H10.931C10.7164 1.96053 10.2478 1.26336 9.59767 0.766328C8.94752 0.269291 8.15188 0 7.3335 0C6.51512 0 5.71948 0.269291 5.06933 0.766328C4.41917 1.26336 3.95064 1.96053 3.736 2.75026H1C0.734784 2.75026 0.48043 2.85562 0.292893 3.04315C0.105357 3.23069 0 3.48504 0 3.75026C0 4.01548 0.105357 4.26983 0.292893 4.45737C0.48043 4.6449 0.734784 4.75026 1 4.75026ZM7.333 2.00026C7.67912 2.00026 8.01746 2.10289 8.30525 2.29519C8.59303 2.48748 8.81734 2.76079 8.94979 3.08056C9.08224 3.40033 9.1169 3.7522 9.04937 4.09167C8.98185 4.43113 8.81518 4.74295 8.57044 4.9877C8.3257 5.23244 8.01388 5.39911 7.67441 5.46663C7.33494 5.53416 6.98307 5.4995 6.6633 5.36705C6.34353 5.23459 6.07022 5.01029 5.87793 4.72251C5.68564 4.43472 5.583 4.09638 5.583 3.75026C5.58353 3.28629 5.76807 2.84148 6.09615 2.51341C6.42422 2.18533 6.86903 2.00079 7.333 2.00026Z" fill="#BABFC5"></path>
+                                            <path d="M23 10.9992H20.264C20.0497 10.2092 19.5814 9.51183 18.9313 9.01458C18.2812 8.51734 17.4855 8.24792 16.667 8.24792C15.8485 8.24792 15.0528 8.51734 14.4027 9.01458C13.7526 9.51183 13.2843 10.2092 13.07 10.9992H1C0.734784 10.9992 0.48043 11.1045 0.292893 11.292C0.105357 11.4796 0 11.7339 0 11.9992C0 12.2644 0.105357 12.5187 0.292893 12.7063C0.48043 12.8938 0.734784 12.9991 1 12.9991H13.07C13.2843 13.7891 13.7526 14.4865 14.4027 14.9837C15.0528 15.481 15.8485 15.7504 16.667 15.7504C17.4855 15.7504 18.2812 15.481 18.9313 14.9837C19.5814 14.4865 20.0497 13.7891 20.264 12.9991H23C23.2652 12.9991 23.5196 12.8938 23.7071 12.7063C23.8946 12.5187 24 12.2644 24 11.9992C24 11.7339 23.8946 11.4796 23.7071 11.292C23.5196 11.1045 23.2652 10.9992 23 10.9992ZM16.667 13.7491C16.3209 13.7491 15.9825 13.6465 15.6948 13.4542C15.407 13.2619 15.1827 12.9886 15.0502 12.6688C14.9178 12.3491 14.8831 11.9972 14.9506 11.6577C15.0181 11.3183 15.1848 11.0065 15.4296 10.7617C15.6743 10.517 15.9861 10.3503 16.3256 10.2828C16.6651 10.2153 17.0169 10.2499 17.3367 10.3824C17.6565 10.5148 17.9298 10.7391 18.1221 11.0269C18.3144 11.3147 18.417 11.653 18.417 11.9992C18.4165 12.4631 18.2319 12.9079 17.9039 13.236C17.5758 13.5641 17.131 13.7486 16.667 13.7491Z" fill="#BABFC5"></path>
+                                            <path d="M23 19.2502H10.931C10.7164 18.4605 10.2478 17.7634 9.59767 17.2663C8.94752 16.7693 8.15188 16.5 7.3335 16.5C6.51512 16.5 5.71948 16.7693 5.06933 17.2663C4.41917 17.7634 3.95064 18.4605 3.736 19.2502H1C0.734784 19.2502 0.48043 19.3556 0.292893 19.5431C0.105357 19.7307 0 19.985 0 20.2502C0 20.5155 0.105357 20.7698 0.292893 20.9573C0.48043 21.1449 0.734784 21.2502 1 21.2502H3.736C3.95064 22.04 4.41917 22.7371 5.06933 23.2342C5.71948 23.7312 6.51512 24.0005 7.3335 24.0005C8.15188 24.0005 8.94752 23.7312 9.59767 23.2342C10.2478 22.7371 10.7164 22.04 10.931 21.2502H23C23.2652 21.2502 23.5196 21.1449 23.7071 20.9573C23.8946 20.7698 24 20.5155 24 20.2502C24 19.985 23.8946 19.7307 23.7071 19.5431C23.5196 19.3556 23.2652 19.2502 23 19.2502ZM7.333 22.0002C6.98688 22.0002 6.64854 21.8976 6.36075 21.7053C6.07297 21.513 5.84866 21.2397 5.71621 20.9199C5.58376 20.6002 5.5491 20.2483 5.61663 19.9088C5.68415 19.5694 5.85082 19.2576 6.09556 19.0128C6.3403 18.7681 6.65213 18.6014 6.99159 18.5339C7.33106 18.4664 7.68293 18.501 8.0027 18.6335C8.32247 18.7659 8.59578 18.9902 8.78807 19.278C8.98036 19.5658 9.083 19.9041 9.083 20.2502C9.08221 20.7141 8.89758 21.1588 8.56956 21.4868C8.24154 21.8148 7.79689 21.9994 7.333 22.0002Z" fill="#BABFC5"></path>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_63_1344">
+                                            <rect width="24" height="24" fill="white"></rect>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                    <div class="jp-toggles">
+                                        <button class="jp-repeat" role="button" tabindex="0">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_63_951)">
+                                            <path d="M12.0002 1.99997C13.3267 2.00432 14.6392 2.27171 15.8617 2.78666C17.0842 3.30161 18.1924 4.05389 19.1222 4.99997H16.0002C15.735 4.99997 15.4806 5.10533 15.2931 5.29286C15.1056 5.4804 15.0002 5.73476 15.0002 5.99997C15.0002 6.26519 15.1056 6.51954 15.2931 6.70708C15.4806 6.89461 15.735 6.99997 16.0002 6.99997H20.1432C20.6356 6.99971 21.1078 6.80397 21.456 6.45578C21.8042 6.10758 21.9999 5.6354 22.0002 5.14297V0.999971C22.0002 0.734754 21.8948 0.4804 21.7073 0.292864C21.5198 0.105328 21.2654 -2.92115e-05 21.0002 -2.92115e-05C20.735 -2.92115e-05 20.4806 0.105328 20.2931 0.292864C20.1056 0.4804 20.0002 0.734754 20.0002 0.999971V3.07797C18.3474 1.58942 16.3128 0.590381 14.1243 0.19272C11.9358 -0.204941 9.67983 0.0144827 7.60899 0.826418C5.53815 1.63835 3.73422 3.01074 2.39921 4.7899C1.06421 6.56905 0.250844 8.68471 0.0502025 10.9C0.0372859 11.0392 0.0535183 11.1797 0.0978654 11.3123C0.142213 11.4449 0.213702 11.5669 0.307779 11.6704C0.401856 11.7738 0.516457 11.8566 0.644281 11.9133C0.772104 11.9701 0.910348 11.9996 1.0502 12C1.29479 12.0031 1.53174 11.9148 1.71466 11.7524C1.89759 11.59 2.01332 11.3652 2.0392 11.122C2.26182 8.63272 3.40718 6.31667 5.25028 4.62881C7.09339 2.94094 9.50102 2.00326 12.0002 1.99997Z" fill="#F5F5F7" fill-opacity="0.57"></path>
+                                            <path d="M22.9512 12.0002C22.7067 11.9971 22.4697 12.0854 22.2868 12.2478C22.1039 12.4102 21.9881 12.635 21.9622 12.8782C21.7969 14.7814 21.0892 16.5973 19.9229 18.1104C18.7566 19.6235 17.1808 20.7703 15.3824 21.4148C13.584 22.0592 11.6384 22.1743 9.77659 21.7463C7.91475 21.3183 6.21474 20.3653 4.87824 19.0002H8.00024C8.26546 19.0002 8.51981 18.8949 8.70735 18.7073C8.89489 18.5198 9.00024 18.2654 9.00024 18.0002C9.00024 17.735 8.89489 17.4806 8.70735 17.2931C8.51981 17.1056 8.26546 17.0002 8.00024 17.0002H3.85724C3.61334 17.0001 3.37181 17.048 3.14645 17.1413C2.92108 17.2346 2.71632 17.3714 2.54385 17.5438C2.37139 17.7163 2.23461 17.9211 2.14133 18.1464C2.04806 18.3718 2.00011 18.6133 2.00024 18.8572V23.0002C2.00024 23.2654 2.1056 23.5198 2.29314 23.7073C2.48067 23.8949 2.73503 24.0002 3.00024 24.0002C3.26546 24.0002 3.51981 23.8949 3.70735 23.7073C3.89489 23.5198 4.00024 23.2654 4.00024 23.0002V20.9222C5.65307 22.4108 7.68766 23.4098 9.87615 23.8075C12.0646 24.2051 14.3206 23.9857 16.3915 23.1738C18.4623 22.3618 20.2662 20.9895 21.6012 19.2103C22.9362 17.4311 23.7496 15.3155 23.9502 13.1002C23.9632 12.9609 23.9469 12.8205 23.9026 12.6879C23.8582 12.5552 23.7867 12.4333 23.6927 12.3298C23.5986 12.2263 23.484 12.1436 23.3562 12.0868C23.2283 12.0301 23.0901 12.0006 22.9502 12.0002H22.9512Z" fill="#F5F5F7" fill-opacity="0.57"></path>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_63_951">
+                                            <rect width="24" height="24" fill="white"></rect>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                        </button>
+                                        <button class="jp-shuffle" role="button" tabindex="0">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_63_954)">
+                                                <path d="M23.4211 16.5822L20.1301 13.2912C20.0384 13.1935 19.928 13.1152 19.8054 13.0611C19.6829 13.0069 19.5507 12.9779 19.4167 12.9758C19.2827 12.9737 19.1497 12.9986 19.0255 13.049C18.9013 13.0993 18.7885 13.1741 18.6938 13.2689C18.5991 13.3636 18.5244 13.4765 18.4741 13.6007C18.4239 13.7249 18.3991 13.858 18.4013 13.9919C18.4035 14.1259 18.4325 14.2581 18.4868 14.3806C18.5411 14.5031 18.6194 14.6135 18.7171 14.7052L21.0071 16.9992C19.7623 17.002 18.5294 16.7557 17.3812 16.2748C16.2329 15.794 15.1925 15.0882 14.3211 14.1992C14.2244 14.1101 14.1107 14.0413 13.9868 13.997C13.863 13.9526 13.7315 13.9336 13.6002 13.9411C13.4689 13.9486 13.3404 13.9823 13.2224 14.0404C13.1043 14.0985 12.9992 14.1797 12.9131 14.2792L12.9001 14.2992C12.732 14.4947 12.6459 14.7477 12.6599 15.0052C12.6739 15.2628 12.7868 15.5049 12.9751 15.6812C14.0249 16.7429 15.2768 17.5835 16.6568 18.1533C18.0369 18.7232 19.5171 19.0108 21.0101 18.9992L18.7171 21.2922C18.6126 21.382 18.5279 21.4925 18.4681 21.6167C18.4083 21.7409 18.3749 21.8761 18.3699 22.0138C18.3649 22.1516 18.3884 22.2888 18.4389 22.4171C18.4894 22.5453 18.566 22.6617 18.6636 22.7589C18.7613 22.8562 18.878 22.9322 19.0064 22.9822C19.1348 23.0322 19.2722 23.0551 19.4099 23.0495C19.5476 23.0439 19.6827 23.0098 19.8066 22.9496C19.9306 22.8893 20.0407 22.804 20.1301 22.6992L23.4211 19.4082C23.7954 19.0332 24.0057 18.525 24.0057 17.9952C24.0057 17.4653 23.7954 16.9571 23.4211 16.5822V16.5822Z" fill="#F5F5F7" fill-opacity="0.57"></path>
+                                                <path d="M21.0071 6.99953L18.7171 9.28953C18.6976 9.31585 18.6796 9.34323 18.6631 9.37153C18.5017 9.56828 18.4221 9.81952 18.4408 10.0733C18.4594 10.3271 18.5749 10.564 18.7633 10.735C18.9516 10.9061 19.1986 10.9982 19.453 10.9924C19.7074 10.9865 19.9498 10.8831 20.1301 10.7035L21.8361 8.99953L23.4221 7.41453C23.6902 7.14429 23.8757 6.80313 23.9566 6.43113C24.0376 6.05914 24.0107 5.67177 23.8791 5.31453C23.7819 5.04108 23.6255 4.79248 23.4211 4.58653L20.1301 1.29953C20.0388 1.20034 19.9284 1.12063 19.8055 1.0652C19.6826 1.00977 19.5498 0.979753 19.415 0.97696C19.2802 0.974168 19.1463 0.998656 19.0212 1.04895C18.8961 1.09925 18.7825 1.17431 18.6872 1.26964C18.5919 1.36496 18.5168 1.47858 18.4665 1.60365C18.4162 1.72873 18.3917 1.86268 18.3945 1.99746C18.3973 2.13224 18.4273 2.26506 18.4827 2.38795C18.5382 2.51083 18.6179 2.62124 18.7171 2.71253L21.0101 5.00453C16.0771 5.01653 13.3731 7.67853 10.9211 10.4785C8.66909 7.93653 6.0001 5.39953 1.4871 5.04553L1.0061 4.99953C0.740886 4.99953 0.486533 5.10489 0.298996 5.29243C0.11146 5.47996 0.00610352 5.73432 0.00610352 5.99953C0.0112237 6.26315 0.118224 6.51454 0.304662 6.70097C0.4911 6.88741 0.742489 6.99441 1.0061 6.99953C1.0781 6.99953 1.2931 7.03253 1.2931 7.03253C5.1891 7.32753 7.4251 9.52153 9.60009 11.9995C7.4381 14.4655 5.2171 16.6995 1.3531 16.9595L0.953102 16.9805C0.689875 16.997 0.443961 17.1173 0.269459 17.3151C0.0949567 17.5128 0.00616009 17.7718 0.0226035 18.035C0.0390469 18.2983 0.159383 18.5442 0.35714 18.7187C0.554897 18.8932 0.813875 18.982 1.0771 18.9655C1.2331 18.9585 1.4871 18.9525 1.6121 18.9425C6.6321 18.5555 9.35509 15.3425 11.7831 12.5335C14.2351 9.69953 16.5511 7.01753 21.0071 6.99953Z" fill="#F5F5F7" fill-opacity="0.57"></path>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_63_954">
+                                                <rect width="24" height="24" fill="white"></rect>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </button>
+                                        <button class="jp-full-screen" role="button" tabindex="0">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" style="opacity: 0.6;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 1.5V0H0.75C0.335766 0 0 0.335766 0 0.75V6H1.5V2.5575L8.4675 9.525L9.525 8.4675L2.5575 1.5H6Z" fill="white"></path>
+                                                <path d="M23.25 0H18V1.5H21.4425L14.475 8.4675L15.5325 9.525L22.5 2.5575V6H24V0.75C24 0.335766 23.6642 0 23.25 0Z" fill="white"></path>
+                                                <path d="M22.5 21.4425L15.5325 14.475L14.475 15.5325L21.4425 22.5H18V24H23.25C23.6642 24 24 23.6642 24 23.25V18H22.5V21.4425Z" fill="white"></path>
+                                                <path d="M8.4675 14.4675L1.5 21.4425V18H0V23.25C0 23.6642 0.335766 24 0.75 24H6V22.5H2.5575L9.525 15.5325L8.4675 14.4675Z" fill="white"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jp-playlist">
+                            <ul style=""><li class="jp-playlist-current"><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item jp-playlist-current" tabindex="0">Finding Nemo Teaser <span class="jp-artist">by Pixar</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">Big Buck Bunny Trailer <span class="jp-artist">by Blender Foundation</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">Tempered Song <span class="jp-artist">by Miaow</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">Cyber Sonnet <span class="jp-artist">by The Stark Palace</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">Hidden <span class="jp-artist">by Miaow</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">Your Face <span class="jp-artist">by The Stark Palace</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">Incredibles Teaser <span class="jp-artist">by Pixar</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">Cro Magnon Man <span class="jp-artist">by The Stark Palace</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">Lentement <span class="jp-artist">by Miaow</span></a></div></li></ul>
+                        </div>
+                        <!-- <div class="jp-no-solution">
+                            <span>Update Required</span>
+                            To play the media you will need to either update your browser to a recent version or
+                            update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash
+                                plugin</a>.
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <!-- ==== Hero Section End ==== -->
+        
+        <!-- Podcast About Page Start -->
+        <section class="sec__podcast__about">
+            <div class="container">
+                <div class="sec__content">
+                    <div class="sec__img">
+                        <img src="assets/image/brodcast-detail-banner.png" alt="">
+                    </div>
+                    <div class="sec__text">
+                        <h2 class="sec__heading">
+                            <span>About</span> Chetna Mahajan
+                        </h2>
+                        <p class="sec__brief">
+                            Award-Winning IT executive recognized for transforming enterprises and driving global strategies with digital innovations, 
+                            seamless customer experiences, and world-class business solutions. Chetna has the ability to navigate evolving business needs, steer complex strategic programs,
+                             improve margins based on data insights, and continuously drive profitability to bolster shareholder value, prepare private equity firms for IPO, and meet meet diverse business demands.
+                        </p>
+                        <span class="sec__inner__brief">
+                            Award-Winning IT executive recognized for transforming enterprises and driving global strategies with digital innovations, seamless customer experiences, 
+                            and world-class business solutions. Chetna has the ability to navigate evolving business needs, steer complex strategic programs, 
+                            improve margins based on data insights, and continuously drive profitability to bolster shareholder value,
+                             prepare private equity firms for IPO, and meet meet diverse business demands.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Podcast About Page End -->
+
+        <!-- Podcast Summary Section Satrt -->
+        <section class="sec__podcast__summary">
+            <div class="container">
+                <div class="sec__content">
+                    <div class="sec__header">
+                        <h2 class="sec__heading">
+                            Summary
+                        </h2>
+                        <span>
+                            <img src="assets/svg/summary-arrow.svg" alt="">
+                        </span>
+                    </div>
+                        <div class="summary__info">
+                            <p class="sec__info">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <ul>
+                                <li class="sec__info">
+                                    00:10 - Intro
+
+                                </li>
+                                <li class="sec__info">
+                                    02:32 - Custodial vs. Non-custodial models for keys holding
+
+                                </li>
+                                <li class="sec__info">
+                                    07:11 - Education is key
+
+                                </li>
+                                <li class="sec__info">
+                                    11:37 - Building on top of user-controlled layers
+
+                                </li>
+                                <li class="sec__info"> 
+                                    16:48 - Unbundling Wallets
+
+                                </li>
+                                <li class="sec__info">
+                                    20:04 - Mobile vs. Desktop
+                                </li>
+                            </ul>
+                            <h3 class="summary__notes">
+                                Notes                                
+                            </h3>
+                            <p class="sec__info">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <ul>
+                                <li class="sec__info">
+                                    00:10 - Intro
+
+                                </li>
+                                <li class="sec__info">
+                                    02:32 - Custodial vs. Non-custodial models for keys holding
+
+                                </li>
+                                <li class="sec__info">
+                                    07:11 - Education is key
+
+                                </li>
+                                <li class="sec__info">
+                                    11:37 - Building on top of user-controlled layers
+
+                                </li>
+                                <li class="sec__info"> 
+                                    16:48 - Unbundling Wallets
+
+                                </li>
+                                <li class="sec__info">
+                                    20:04 - Mobile vs. Desktop
+                                </li>
+                            </ul>
+                            </div>
+                </div>
+            </div>
+        </section>
+        <!-- Podcast Summary Section End -->
+    </main>
+    <!-- === footer start === -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__content">
+                    <div class="footer__text">
+                        <div class="footer__text__inner">
+                            <svg width="180" height="38" viewBox="0 0 180 38" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.455 29.438C16.113 29.438 19.762 26.24 20.172 22.058H14.186C13.899 23.903 12.341 24.928 10.455 24.928C7.913 24.928 6.068 22.878 6.027 20.049H20.295V18.901C20.295 12.259 16.646 7.913 10.332 7.913C4.264 7.913 0 12.177 0 18.614C0 25.584 4.387 29.438 10.455 29.438ZM5.986 16.154C6.232 13.858 7.913 12.177 10.291 12.177C12.587 12.177 14.186 13.776 14.227 16.154H5.986Z"
+                                    fill="#D4DBFC" />
+                                <path
+                                    d="M31.9633 29.438C35.3663 29.438 37.2113 27.634 38.0313 26.158C37.9083 26.855 37.9083 27.347 37.9083 28.003V28.7H43.8533V0H37.9083V9.225C37.9083 9.881 37.9083 10.455 38.0313 11.234C36.9653 9.471 34.9973 7.913 31.9633 7.913C27.3713 7.913 22.9433 11.439 22.9433 18.696C22.9433 25.871 26.8383 29.438 31.9633 29.438ZM33.6443 24.846C30.9793 24.846 29.0113 22.427 29.0113 18.696C29.0113 15.006 30.9793 12.546 33.6443 12.546C36.3093 12.546 38.2363 14.924 38.2363 18.696C38.2363 22.345 36.3093 24.846 33.6443 24.846Z"
+                                    fill="#D4DBFC" />
+                                <path
+                                    d="M57.8203 37.761C63.9703 37.761 68.2342 34.481 68.2342 27.675V8.61H62.2892V9.225C62.2892 9.963 62.3302 10.496 62.4533 11.234C61.3463 9.348 59.4193 7.913 56.1393 7.913C51.7523 7.913 47.4883 11.521 47.4883 17.958C47.4883 24.436 51.1782 27.962 56.3442 27.962C59.2552 27.962 61.3052 26.527 62.4533 24.805C62.3302 25.584 62.2892 26.322 62.2892 27.142V29.069C62.2892 31.775 60.3622 33.21 57.9842 33.21C55.5243 33.21 54.2533 31.939 54.1712 29.807H48.1852C48.2262 34.481 51.6702 37.761 57.8203 37.761ZM58.1073 23.329C55.4012 23.329 53.5153 21.115 53.5153 17.958C53.5153 14.76 55.4012 12.546 58.1073 12.546C60.7723 12.546 62.6583 14.76 62.6583 17.958C62.6583 21.156 60.7723 23.329 58.1073 23.329Z"
+                                    fill="#D4DBFC" />
+                                <path
+                                    d="M82.245 29.438C87.903 29.438 91.552 26.24 91.962 22.058H85.976C85.689 23.903 84.131 24.928 82.245 24.928C79.703 24.928 77.858 22.878 77.817 20.049H92.085V18.901C92.085 12.259 88.436 7.913 82.122 7.913C76.054 7.913 71.79 12.177 71.79 18.614C71.79 25.584 76.177 29.438 82.245 29.438ZM77.776 16.154C78.022 13.858 79.703 12.177 82.081 12.177C84.377 12.177 85.976 13.776 86.017 16.154H77.776Z"
+                                    fill="#D4DBFC" />
+                                <path
+                                    d="M107.456 28.7L114.59 8.61H108.481L104.668 20.5C104.381 21.484 104.176 22.263 103.971 23.288C103.725 22.263 103.561 21.484 103.192 20.5L99.3789 8.61H92.9829L100.486 28.7H107.456Z"
+                                    fill="#D4DBFC" />
+                                <path
+                                    d="M122.604 29.438C125.884 29.438 127.975 28.085 129.041 26.117C128.918 26.732 128.877 27.347 128.877 27.962V28.7H134.371V16.851C134.371 11.193 131.788 7.913 125.474 7.913C120.021 7.913 116.454 10.947 116.126 15.129H122.153C122.358 13.284 123.67 12.177 125.679 12.177C127.565 12.177 128.59 13.243 128.59 14.473C128.59 15.375 128.057 15.908 126.458 16.113L123.588 16.441C119.324 16.974 115.675 18.532 115.675 23.042C115.675 27.142 119.078 29.438 122.604 29.438ZM124.449 25.215C122.85 25.215 121.661 24.313 121.661 22.755C121.661 21.238 123.014 20.5 125.064 20.131L126.458 19.885C127.647 19.639 128.303 19.434 128.713 19.065V20.951C128.713 23.493 126.868 25.215 124.449 25.215Z"
+                                    fill="#D4DBFC" />
+                                <path
+                                    d="M144.704 28.7V16.933C144.704 14.432 146.262 12.587 148.476 12.587C150.567 12.587 151.797 14.186 151.797 16.851V28.7H157.742V15.99C157.742 11.152 155.2 7.913 150.649 7.913C147.492 7.913 145.565 9.43 144.54 11.234C144.663 10.496 144.704 9.922 144.704 9.389V8.61H138.759V28.7H144.704Z"
+                                    fill="#D4DBFC" />
+                                <path
+                                    d="M168.168 29.438C171.448 29.438 173.539 28.085 174.605 26.117C174.482 26.732 174.441 27.347 174.441 27.962V28.7H179.935V16.851C179.935 11.193 177.352 7.913 171.038 7.913C165.585 7.913 162.018 10.947 161.69 15.129H167.717C167.922 13.284 169.234 12.177 171.243 12.177C173.129 12.177 174.154 13.243 174.154 14.473C174.154 15.375 173.621 15.908 172.022 16.113L169.152 16.441C164.888 16.974 161.239 18.532 161.239 23.042C161.239 27.142 164.642 29.438 168.168 29.438ZM170.013 25.215C168.414 25.215 167.225 24.313 167.225 22.755C167.225 21.238 168.578 20.5 170.628 20.131L172.022 19.885C173.211 19.639 173.867 19.434 174.277 19.065V20.951C174.277 23.493 172.432 25.215 170.013 25.215Z"
+                                    fill="#D4DBFC" />
+                            </svg>
+                            <h2 class="footer__hero__heading">
+                                <a href="#">Let’s Talk!</a>
+                            </h2>
+                        </div>
+                        <div class="footer__items__inner">
+                            <div class="items">
+                                <h3 class="item__heading">Explore</h3>
+                                <ul>
+                                    <li><a class="item" href="#">About us</a></li>
+                                    <li><a class="item" href="partner.html">Partner</a></li>
+                                    <li><a class="item" href="#">Sustainability</a></li>
+                                    <li><a class="item" href="career.html">Careers</a></li>
+                                </ul>
+                            </div>
+                            <div class="items">
+                                <h3 class="item__heading">Resources</h3>
+                                <ul>
+                                    <li><a class="item" href="#">Podcast</a></li>
+                                    <li><a class="item" href="#">News room</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__items__wrapper">
+                        <div class="footer__text__inner">
+                            <h3 class="footer__heading hide--md">
+                                Want Positive News in Your Inbox?
+                            </h3>
+                            <p class="footer__info hide--md">
+                                You'll receive occasional tips and resources to help you hack
+                                your startup growth, and news about what we've up to!
+                            </p>
+                        </div>
+                        <form action="" class="footer__form">
+                            <div class="form__group">
+                                <div class="email__input">
+                                    <input type="email" id="email" name="email" placeholder="Enter Your Email."
+                                        autocomplete="off" required />
+                                </div>
+                                <div class="submit__btn">
+                                    <button type="submit" id="submitBtn">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="copywrite__text">
+                    <div class="copywrite__info">
+                        <p>Copyright © 2021 Edgevana All Rights Reserved.</p>
+                    </div>
+                    <div class="copywrite__links">
+                        <ul>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-of-use.html">Terms of use</a></li>
+                            <li><a href="cookies.html">Cookies Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- === footer end === -->
+
+    <!-- === script files === -->
+    <script src="assets/js/podcast.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/podcast.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js"></script>
+    <script src="https://jplayer.org/latest/dist/add-on/jplayer.playlist.min.js"></script>
+    <script>
+        //<![CDATA[
+        $(document).ready(function () {
+
+            new jPlayerPlaylist({
+                jPlayer: "#jquery_jplayer_1",
+                cssSelectorAncestor: "#jp_container_1"
+            }, [{
+                    title: "Cro Magnon Man",
+                    artist: "The Stark Palace",
+                    mp3: "http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3",
+                    oga: "http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg",
+                    poster: "assets/image/edgvana-audio.png"
+                },
+                {
+                    title: "Your Face",
+                    artist: "The Stark Palace",
+                    mp3: "http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+                    oga: "http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg",
+                    poster: "assets/image/edgvana-audio.png"
+                },
+                {
+                    title: "Hidden",
+                    artist: "Miaow",
+                    mp3: "http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3",
+                    oga: "http://www.jplayer.org/audio/ogg/Miaow-02-Hidden.ogg",
+                    poster: "http://www.jplayer.org/audio/poster/Miaow_640x360.png"
+                },
+                {
+                    title: "Big Buck Bunny Trailer",
+                    artist: "Blender Foundation",
+                    m4v: "http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v",
+                    ogv: "http://www.jplayer.org/video/ogv/Big_Buck_Bunny_Trailer.ogv",
+                    webmv: "http://www.jplayer.org/video/webm/Big_Buck_Bunny_Trailer.webm",
+                    poster: "http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png"
+                },
+                {
+                    title: "Finding Nemo Teaser",
+                    artist: "Pixar",
+                    m4v: "http://www.jplayer.org/video/m4v/Finding_Nemo_Teaser.m4v",
+                    ogv: "http://www.jplayer.org/video/ogv/Finding_Nemo_Teaser.ogv",
+                    webmv: "http://www.jplayer.org/video/webm/Finding_Nemo_Teaser.webm",
+                    poster: "http://www.jplayer.org/video/poster/Finding_Nemo_Teaser_640x352.png"
+                },
+                {
+                    title: "Cyber Sonnet",
+                    artist: "The Stark Palace",
+                    mp3: "http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
+                    oga: "http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg",
+                    poster: "assets/image/edgvana-audio.png"
+                },
+                {
+                    title: "Incredibles Teaser",
+                    artist: "Pixar",
+                    m4v: "http://www.jplayer.org/video/m4v/Incredibles_Teaser.m4v",
+                    ogv: "http://www.jplayer.org/video/ogv/Incredibles_Teaser.ogv",
+                    webmv: "http://www.jplayer.org/video/webm/Incredibles_Teaser.webm",
+                    poster: "http://www.jplayer.org/video/poster/Incredibles_Teaser_640x272.png"
+                },
+                {
+                    title: "Tempered Song",
+                    artist: "Miaow",
+                    mp3: "http://www.jplayer.org/audio/mp3/Miaow-01-Tempered-song.mp3",
+                    oga: "http://www.jplayer.org/audio/ogg/Miaow-01-Tempered-song.ogg",
+                    poster: "http://www.jplayer.org/audio/poster/Miaow_640x360.png"
+                },
+                {
+                    title: "Lentement",
+                    artist: "Miaow",
+                    mp3: "http://www.jplayer.org/audio/mp3/Miaow-03-Lentement.mp3",
+                    oga: "http://www.jplayer.org/audio/ogg/Miaow-03-Lentement.ogg",
+                    poster: "http://www.jplayer.org/audio/poster/Miaow_640x360.png"
+                }
+            ], {
+                swfPath: "../dist/jplayer",
+                supplied: "webmv, ogv, m4v, oga, mp3",
+                useStateClassSkin: true,
+                autoBlur: false,
+                smoothPlayBar: true,
+                keyEnabled: true,
+                audioFullScreen: true
+            });
+
+            $("#jplayer_inspector_1").jPlayerInspector({
+                jPlayer: $("#jquery_jplayer_1")
+            });
+        });
+        //]]>
+    </script>
+</body> 
+</html>

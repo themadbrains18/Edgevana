@@ -35,7 +35,8 @@ body {
 button {
   cursor: pointer;
 }
-img,svg {
+img,
+svg {
   max-width: 100%;
   height: auto;
 }
@@ -83,33 +84,37 @@ main {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
-.text-center{
+.text-center {
   text-align: center;
 }
-.mb-30{
-  margin-bottom: clamp(15px,2vw,30px);
+.mb-30 {
+  margin-bottom: clamp(15px, 2vw, 30px);
 }
-.mb-40{
-  margin-bottom: clamp(20px,3vw,40px);
+.mb-40 {
+  margin-bottom: clamp(20px, 3vw, 40px);
 }
-.mb-50{
-  margin-bottom: clamp(20px,4vw,50px);
+.mb-50 {
+  margin-bottom: clamp(20px, 4vw, 50px);
 }
-.mb-30{
-  margin-bottom: clamp(10px,2vw,30px);
+.mb-30 {
+  margin-bottom: clamp(10px, 2vw, 30px);
 }
-.mb-70{
-  margin-bottom: clamp(20px,5vw,70px);
+.mb-70 {
+  margin-bottom: clamp(20px, 5vw, 70px);
 }
-.mt-80{
-  margin-top: clamp(20px,5vw,80px);
+.mt-80 {
+  margin-top: clamp(20px, 5vw, 80px);
 }
-.mt-70{
-  margin-top: clamp(30px,5vw,70px);
+.mt-70 {
+  margin-top: clamp(30px, 5vw, 70px);
 }
-.mt-50{
-  margin-top: clamp(20px,4vw,50px);
+.mt-50 {
+  margin-top: clamp(20px, 4vw, 50px);
 }
-.mt-40{
-  margin-top: clamp(20px,3vw,40px);
+.mt-40 {
+  margin-top: clamp(20px, 3vw, 40px);
 }
+
+// #canvas {
+//   position: fixed;
+// }

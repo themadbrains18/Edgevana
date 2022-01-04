@@ -8,6 +8,7 @@
     <title>Contact-us</title>
     <!-- stylesheets -->
     <link rel="stylesheet" href="assets/css/stylesheet.css" />
+    <!-- Font Link -->
     <link rel="stylesheet" href="assets/font/stylesheet.css" />
 </head>
 
@@ -80,36 +81,33 @@
                             </span>Please submit a short message.
                         </h3>
                         <form action="">
-                            <input class="input__text" type="text" placeholder="Type your answar here..." required>
-                            <div class="submit__button">
-                                <button>
-                                    <input type="submit" value="OK">
+                                    <input class="input__text" type="text" placeholder="Type your answar here..." required>
+                                    <div class="submit__button">
+                                        <button>
+                                            <input type="submit" value="OK">
 
-                                    <span>
-                                        <svg width="24" height="15" viewBox="0 0 24 15" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 7.33333L6.5 14L23 1" stroke="white" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
-                                </button>
-                                <div class="press__enter">
-                                    <p class="sec__brief">
-                                        press Enter
-                                    </p>
-                                    <span>
-                                        <svg width="8" height="10" viewBox="0 0 8 10" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M7.45476 6.71693L7.45477 7.11693L7.85487 7.11692L7.85476 6.71682L7.45476 6.71693ZM0.716761 6.43419C0.560553 6.5904 0.560557 6.84366 0.716769 6.99987L3.26239 9.54542C3.4186 9.70162 3.67187 9.70162 3.82808 9.54541C3.98429 9.3892 3.98428 9.13593 3.82807 8.97972L1.56529 6.71702L3.828 4.45424C3.98421 4.29803 3.9842 4.04476 3.82799 3.88855C3.67178 3.73235 3.41851 3.73235 3.26231 3.88856L0.716761 6.43419ZM7.05329 0.884095L7.05476 6.71703L7.85476 6.71682L7.85329 0.883893L7.05329 0.884095ZM7.45476 6.31693L0.999602 6.31702L0.999614 7.11702L7.45477 7.11693L7.45476 6.31693Z"
-                                                fill="white" />
-                                        </svg>
-                                    </span>
-                                </div>
-                            </div>
-
-
-
+                                            <span>  
+                                                <svg width="24" height="15" viewBox="0 0 24 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 7.33333L6.5 14L23 1" stroke="white" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <div class="press__enter">
+                                            <p class="sec__brief">
+                                                press Enter
+                                            </p>
+                                            <span>
+                                                <svg width="8" height="10" viewBox="0 0 8 10" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M7.45476 6.71693L7.45477 7.11693L7.85487 7.11692L7.85476 6.71682L7.45476 6.71693ZM0.716761 6.43419C0.560553 6.5904 0.560557 6.84366 0.716769 6.99987L3.26239 9.54542C3.4186 9.70162 3.67187 9.70162 3.82808 9.54541C3.98429 9.3892 3.98428 9.13593 3.82807 8.97972L1.56529 6.71702L3.828 4.45424C3.98421 4.29803 3.9842 4.04476 3.82799 3.88855C3.67178 3.73235 3.41851 3.73235 3.26231 3.88856L0.716761 6.43419ZM7.05329 0.884095L7.05476 6.71703L7.85476 6.71682L7.85329 0.883893L7.05329 0.884095ZM7.45476 6.31693L0.999602 6.31702L0.999614 7.11702L7.45477 7.11693L7.45476 6.31693Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
                         </form>
                     </div>
                     <div class="sec__img">
@@ -221,31 +219,7 @@
 
     <!-- === script files === -->
     <script src="assets/js/common.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.trusted__logo__list', {
-                slidesPerView: 5,
-                centeredSlides: true,
-                spaceBetween: 30,
-                loop: true,
-                autoplay:true,
-                breakpoints: {
-                320:{
-                    slidesPerView: 3,    
-                },
-            640: {
-                slidesPerView: 3,
-                
-            },
-            768: {
-                slidesPerView: 4,
-            },
-            1024: {
-                slidesPerView: 5,
-            },
-            },
-        });
-    </script>
+
 </body>
 
 </html>
