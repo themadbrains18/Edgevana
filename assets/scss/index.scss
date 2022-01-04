@@ -147,6 +147,9 @@
 
 .info__crd__sec {
   padding: 70px 0;
+  .container{
+    position: relative;
+  }
   .swiper-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
@@ -523,7 +526,7 @@
   }
   > span {
     opacity: 0;
-    transition: 0.7s linear;
+    transition: 1s linear;
   }
   > span.active {
     opacity: 1;
@@ -610,16 +613,16 @@
   opacity: 0;
 }
 
-.logo__list li:hover {
+.logo__list li{
+  transition: 0.5s;
+}
 
+.logo__list li:hover {
   background-color: rgba(201, 199, 199, 0.2);
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
 }
 
 .tmb__hero__sec{
   position: relative;
-  // overflow-x: hidden;
   .connect_hero_global_map{
     position: absolute;
     top: 38%;
@@ -629,35 +632,62 @@
     
   }
 }
-
+.dots__wrapper{
+  position: absolute;
+  top: 95%;
+  z-index: 9;
+  right: 0;
+}
 .dots{
   background: radial-gradient(50% 50% at 50% 50%, #7D90D0 0%, rgba(212, 219, 252, 0.5) 33.85%, rgba(212, 219, 252, 0.15) 71.88%, rgba(212, 219, 252, 0) 100%);
-  opacity: 0.7;
+  opacity: 0;
 }
 .profilecircle1{
   width: 20px;
   height: 20px;
   margin-left: 10px;
+  transition-delay: 2s;
 }
 .profilecircle2{
   width: 30px;
   height: 30px;
-  
   margin-left: 37px;
-
+  transition-delay: 4s;
 }
 .profilecircle3{
   width: 50px;
   height: 50px;
   margin-left: 68px;
+  transition-delay: 6s;
 }
 .profilecircle4{
   width: 80px;
   height: 80px;
   margin-left: 60px;
+  transition-delay: 8s;
 }
 .profilecircle5{
   width: 100px;
   height: 100px;
   margin-left: 30px;
+  transition-delay: 10s;
 }
+
+@keyframes fadeInDots {
+  0% {
+    opacity: 0;
+  }
+ 
+  100% {
+    opacity: 0.7;
+  }
+}
+
+@for $i from 1 through 5 {
+    .dots__wrapper div:nth-child(#{$i}) {
+      animation: fadeInDots $i+s linear forwards infinite;
+    }
+}
+// .dots__wrapper .is-dot-visible .dots{
+//   animation: fadeInDots  3.5s  linear forwards;
+// }
