@@ -39,12 +39,11 @@
   position: relative;
   // overflow-x: hidden;
 
-  .bg__lines{
+  .bg__lines {
     position: absolute;
     top: 72%;
     left: 48%;
-    transform: translateX(-50%)scale(1.6)rotate(-4deg);
-
+    transform: translateX(-50%) scale(1.6) rotate(-4deg);
   }
 }
 
@@ -140,6 +139,18 @@
   overflow: hidden;
   .swiper-wrapper {
     align-items: center;
+  }
+  .swiper-slide {
+    text-align: center;
+    img {
+      filter: grayscale(100%);
+    }
+  }
+  .swiper-slide.swiper-slide-active {
+    img {
+      // filter: grayscale(0%);
+      filter: drop-shadow(0px 0px 100px black);
+    }
   }
 }
 
@@ -322,32 +333,31 @@
 }
 
 .Vector-17 {
-  width:50px;
+  width: 50px;
   height: 5px;
   offset-distance: 0%;
   background-color: rgb(54, 54, 189);
-  offset-path: path('M210.501 903C231 554 863.5 608.5 915.999 106.5');
+  offset-path: path("M210.501 903C231 554 863.5 608.5 915.999 106.5");
   animation: dash 10s linear infinite;
 }
 
 .Vector-19 {
-  width:50px;
+  width: 50px;
   height: 5px;
   offset-distance: 0%;
   background-color: rgb(54, 54, 189);
-  offset-path: path('M210 901.5C210 534 791.999 543.5 881.499 110');
+  offset-path: path("M210 901.5C210 534 791.999 543.5 881.499 110");
   animation: dash 15s linear infinite;
 }
 
 .Vector-20 {
-  width:50px;
+  width: 50px;
   height: 5px;
   offset-distance: 0%;
   background-color: rgb(54, 54, 189);
-  offset-path: path('M209.999 903C196.499 522.5 772.999 481.5 861 26.4999');
+  offset-path: path("M209.999 903C196.499 522.5 772.999 481.5 861 26.4999");
   animation: dash 20s linear infinite;
 }
-
 
 @keyframes dash {
   from {
@@ -532,20 +542,19 @@
 }
 
 .logo__list li:hover {
-
   background-color: rgba(201, 199, 199, 0.2);
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.tmb__hero__sec{
+.tmb__hero__sec {
   position: relative;
   // overflow-x: hidden;
-  .connect_hero_global_map{
+  .connect_hero_global_map {
     position: absolute;
     top: 38%;
     left: 50%;
-    transform:translateX(-50%) rotate(10deg) scale(1.25);
+    transform: translateX(-50%) rotate(10deg) scale(1.25);
     z-index: -1;
   }
 }

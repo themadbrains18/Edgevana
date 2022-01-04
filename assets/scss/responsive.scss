@@ -51,6 +51,13 @@
     left: 49%;
     transform: translateX(-50%) scale(1.8) rotate(1deg);
   }
+  .sec__service .service__banner__img {
+    padding-right: 0;
+  }
+  // Brodcast banner Section 1400px
+  .brodcast__detail__banner .sec__content {
+    gap: 20px;
+  }
 }
 
 // === RESPONSIVE CSS 1440PX end === //
@@ -249,7 +256,18 @@
     }
   }
 
+  .contact--us--sec .sec__content {
+    flex-direction: column-reverse;
+    display: flex !important;
+  }
+
   // about us page responsive start
+  .sec__service .sec__text {
+    width: 40%;
+  }
+  .sec__service .service__banner__img svg {
+    margin-right: 100px;
+  }
 }
 
 // === RESPONSIVE CSS 1200PX END === //
@@ -372,6 +390,9 @@
     .sec__content {
       padding-bottom: 0px;
     }
+  }
+  .sec__service .service__tabs li:last-child .tabs__button {
+    margin-bottom: 41px;
   }
 }
 
@@ -638,6 +659,9 @@
   // === RESPONSIVE CSS 991PX END === //
   .sec__service .tabs__content {
     max-width: 100%;
+  }
+  .sec__podcast__about .sec__content {
+    gap: 40px;
   }
 }
 
@@ -1170,6 +1194,79 @@
   }
 
   // about us page end
+
+  // Brodcast banner Section 767px
+  .brodcast__detail__banner .sec__content {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    .sec__img {
+      order: 1;
+      text-align: center;
+    }
+    .sec__text {
+      order: 2;
+      width: 100%;
+    }
+  }
+  .social__media {
+    display: none !important;
+  }
+  .social__inner.watch-now {
+    display: block;
+  }
+  .social__icon {
+    justify-content: space-between;
+  }
+  .brodcast__detail__banner .social__inner {
+    border: none;
+    padding-inline: 0;
+  }
+  .social__inner.watch-now.active ~ .social__media {
+    display: block !important;
+    position: absolute;
+    right: 0;
+    transform: translateY(70px);
+    background: #000;
+    text-align: center;
+    max-width: 280px;
+    padding: 23px;
+    z-index: 2;
+    .social__inner {
+      justify-content: space-between;
+    }
+  }
+  .brodcast__detail__banner .social__inner.watch-now {
+    display: flex;
+  }
+  .social__media.mobile {
+    display: none;
+  }
+  .brodcast__detail__banner .social__inner.share__btn.desktop {
+    display: flex;
+  }
+
+  // About Us Podcast 991px
+  .sec__podcast__about .sec__content {
+    display: block;
+  }
+  .sec__podcast__about .sec__img {
+    max-width: 150px;
+  }
+  .sec__podcast__about .container {
+    position: relative;
+    .sec__img {
+      position: absolute;
+      right: 30px;
+      top: 20px;
+    }
+    .sec__text {
+      width: 100%;
+    }
+  }
+  .sec__podcast__about .sec__heading {
+    width: calc(100% - 100px);
+  }
 }
 // === RESPONSIVE CSS 767PX end === //
 
@@ -1373,8 +1470,39 @@
   .testimonial__list {
     margin-top: 30px;
   }
-  .sec__service .sec__content {
-    padding-top: 64px;
+  /* Contact-Form */
+  .contact--us--sec h2.sec__heading span {
+    display: block;
+    margin-top: 20px !important;
+  }
+
+  // .brodcast__detail__banner .social__inner {
+  //   max-width: 112px;
+  // }
+  .social__inner {
+    gap: 10px;
+    justify-content: initial;
+  }
+  .social__inner img {
+    width: 20px;
+  }
+  .sec__service.sec--industries .sec__content {
+    padding-top: 0;
+  }
+  .sec__podcast__about {
+    .sec__inner__brief {
+      font-weight: 400;
+    }
+  }
+  .sec__podcast__about .sec__img {
+    max-width: 77px;
+  }
+  .sec__podcast__about .sec__heading {
+    width: calc(100% - 50px);
+  }
+  /* Section Podcast Summary */
+  .sec__podcast__summary .sec__header .sec__heading {
+    font-weight: 500;
   }
 }
 
@@ -1648,8 +1776,39 @@
       transform: scale(1) !important;
     }
   }
-
   // about us page responsive end
+  .sec__podcast__summary .sec__header {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+  }
+  .summary__info {
+    padding: 0;
+    border: none;
+  }
+  .sec__podcast__summary::-webkit-scrollbar {
+    background-color: #121625;
+    width: 10px;
+  }
+  .sec__podcast__summary::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  .summary__info::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0px;
+  }
+  .summary__info::-webkit-scrollbar-thumb {
+    background-color: #2a2e37;
+    border-radius: 6px;
+  }
+  .summary__info {
+    margin-top: 30px;
+  }
+  .summary__info p.sec__info {
+    font-weight: 500;
+  }
+  .summary__info ul {
+    margin: 20px 0 30px;
+  }
 }
 
 // === RESPONSIVE CSS 480PX END === //
@@ -1666,6 +1825,10 @@
         text-align: center;
       }
     }
+  }
+  .social__inner.watch-now.active ~ .social__media {
+    right: 50%;
+    transform: translate(50%, 70px);
   }
 }
 // === RESPONSIVE CSS 340PX end === //

@@ -59,7 +59,7 @@ window.addEventListener('load', () => {
         cursor.setAttribute("style", ` top: ${e.pageY - 42}px; left: ${e.pageX - 49}px;`);
     })
 
-    testimonialSlider.addEventListener("mouseout", (e) => {
+    testimonialSlider.addEventListener("mouseleave", (e) => {
         testimonialSlider.classList.remove("mouseenter")
     })
 
