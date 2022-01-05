@@ -115,61 +115,49 @@ window.addEventListener('load', () => {
 
 window.addEventListener("scroll", function (event) {
 
-    var vectorline = document.getElementsByClassName("connect_hero_global_map");
-    var vectorlineelement = vectorline[0];
-    var elementPositionVector = vectorlineelement.getBoundingClientRect().top;
-    if (elementPositionVector < 100 && elementPositionVector > -400) {
-        vectorlineelement.classList.add('is-vector-visible');
-    }
-    else {
-        vectorlineelement.classList.remove('is-vector-visible');
-    }
+    // var vectorline = document.getElementsByClassName("connect_hero_global_map");
+    // var vectorlineelement = vectorline[0];
+    // var elementPositionVector = vectorlineelement.getBoundingClientRect().top;
+    // if (elementPositionVector < 100 ) {
+    //     vectorlineelement.classList.add('is-vector-visible');
+    // }
+    // else {
+    //     vectorlineelement.classList.remove('is-vector-visible');
+    // }
 
-    var d = document.getElementsByClassName("globel__sec__img");
-    var element = d[0];
-    var elementPosition = element.getBoundingClientRect().top;
-    console.log(elementPosition);
-    if (elementPositionVector < -100 && elementPosition > 0) {
-        element.classList.add('is-visible');
-    }
-    else {
-        element.classList.remove('is-visible');
-    }
-    // bg__lines
-    var belowvectorline = document.getElementsByClassName("bg__lines");
-    var belowvectorlineelement = belowvectorline[0];
-    var elementPositionBelowVector = belowvectorlineelement.getBoundingClientRect().top;
-    if (elementPositionBelowVector < 100 && elementPositionBelowVector > -400) {
-        belowvectorlineelement.classList.add('is-vector-visible');
-    }
-    else {
-        belowvectorlineelement.classList.remove('is-vector-visible');
-    }
+    // var d = document.getElementsByClassName("globel__sec__img");
+    // var element = d[0];
+    // var elementPosition = element.getBoundingClientRect().top;
+    // console.log(elementPosition);
+    // if (elementPositionVector < -100 && elementPosition > 0) {
+    //     element.classList.add('is-visible');
+    // }
+    // else {
+    //     element.classList.remove('is-visible');
+    // }
+    // // bg__lines
+    // var belowvectorline = document.getElementsByClassName("bg__lines");
+    // var belowvectorlineelement = belowvectorline[0];
+    // var elementPositionBelowVector = belowvectorlineelement.getBoundingClientRect().top;
+    // if (elementPositionBelowVector < 100 && elementPositionBelowVector > -400) {
+    //     belowvectorlineelement.classList.add('is-bgvector-visible');
+    // }
+    // else {
+    //     belowvectorlineelement.classList.remove('is-bgvector-visible');
+    // }
 
-    var dcon = document.getElementsByClassName("deploy__sec__img");
-    var elementCon = dcon[0];
-    var elementPositionCon = elementCon.getBoundingClientRect().top;
-    console.log(elementPositionCon);
-    if (elementPositionBelowVector < -60 && elementPositionCon > 0) {
-        var linewidth = document.getElementsByClassName("connectline");
-        elementCon.classList.add('is-connect-visible');
-    }
-    else {
-        elementCon.classList.remove('is-connect-visible');
-    }
+    // var dcon = document.getElementsByClassName("deploy__sec__img");
+    // var elementCon = dcon[0];
+    // var elementPositionCon = elementCon.getBoundingClientRect().top;
+    // console.log(elementPositionCon);
+    // if (elementPositionBelowVector < -60 && elementPositionCon > 0) {
+    //     var linewidth = document.getElementsByClassName("connectline");
+    //     elementCon.classList.add('is-connect-visible');
+    // }
+    // else {
+    //     elementCon.classList.remove('is-connect-visible');
+    // }
     // .is-connect-visible
-
-    // dots__wrapper
-    var dots = document.getElementsByClassName("dots__wrapper");
-    var elementDots = dots[0];
-    var elementPositionDot = elementDots.getBoundingClientRect().top;
-    console.log("dots : " + elementPositionDot);
-    // if(elementPositionDot<250){
-    //     elementDots.classList.add('is-dot-visible');
-    // }
-    // else{
-    //     elementDots.classList.remove('is-dot-visible');
-    // }
 
 }, false);
 
