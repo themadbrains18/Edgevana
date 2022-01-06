@@ -105,7 +105,7 @@ window.addEventListener('load', () => {
     if (mediaQuery.matches) {
         var mobileSlider = new Swiper(".mySwiper", {
             centeredSlides: true,
-            slidesPerView: 1,
+            slidesPerView: 1,   
             loop: true,
         });
     }
