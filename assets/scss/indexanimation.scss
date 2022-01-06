@@ -37,49 +37,22 @@
 
 @keyframes qwer {
   0%{
-    stroke-dashoffset: 450;  
+    stroke-dashoffset: 700;  
+  }
+
+  50%{
+    stroke-dashoffset: 0;  
   }
   
   100% {
-    stroke-dashoffset: -450;  
+    stroke-dashoffset: -700;  
   }
   
 }
-.qwe{
-  stroke-dasharray: 450;
-  animation: qwer 3s linear infinite forwards ;
+.isactive.connectline{
+  stroke-dasharray: 700;
+  animation: qwer 5s linear infinite forwards ;
 }
-
-//  #Vector_14_2 {
-//   stroke-dasharray: 340;
-//   stroke-dashoffset: 0;
-//   animation: linedash 3s linear alternate infinite;
-// }
-
-// #Vector_14_1 {
-//   stroke-dasharray: 320;
-//   stroke-dashoffset: 0;
-//   animation: linedash2 3s linear alternate infinite;
-// }
-
-// @keyframes linedash {
-//   from {
-//     stroke-dashoffset: 360;
-//   }
-//   to {
-//     stroke-dashoffset: 40;
-//   }
-// }
-
-// @keyframes linedash2 {
-//   from {
-//     stroke-dashoffset: 280;
-//   }
-//   to {
-//     stroke-dashoffset: -40;
-//   }
-// }
-
 
 .is-visible .Vector-17 {
   width: 50px;
