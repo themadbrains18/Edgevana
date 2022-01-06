@@ -534,8 +534,6 @@
                         this.color[this.color.length-2] = "9";
                         this.color = this.color.join("");
                     }
-                    // console.log(this.color[this.color.length-2] == this.textAlpha)
-                    
                     if(mouseX > this.x ){
                         if(this.dx < 0){
                             this.x -= this.dx;
@@ -571,7 +569,6 @@
                     this.color = Array.from(this.color);
                     this.color[this.color.length-2] = this.textAlpha;
                     this.color = this.color.join("");
-                    
                     this.x += this.dx;
                     this.y += this.dy;
                 }

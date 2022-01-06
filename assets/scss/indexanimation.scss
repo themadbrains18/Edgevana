@@ -1,0 +1,210 @@
+// global map annimate rotate
+@keyframes HeroGlobal {
+  100% {
+    opacity: 1;
+    // -webkit-transform: rotate(-40deg);
+  }
+
+  from {
+    -webkit-transform: rotate(180deg);
+  }
+  to {
+    -webkit-transform: rotate(-359deg);
+  }
+}
+.is-visible .global_img {
+  animation: HeroGlobal 20s linear forwards;
+}
+
+// global map annimate rotate end
+
+// annimate map dotted pulsed--------------------
+
+@keyframes dotpulse {
+  // 100% {transform: rotate(45deg)}
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.is-visible .connectdot {
+  animation: dotpulse 1s linear infinite;
+}
+
+@keyframes linemove {
+  // from {
+  //   stroke-dashoffset: 450;
+  // }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.is-visible .connectline {
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  animation: linemove 2s linear infinite alternate;
+}
+
+.is-visible .Vector-17 {
+  width: 50px;
+  height: 5px;
+  offset-distance: 0%;
+  background-color: rgb(54, 54, 189);
+  offset-path: path("M210.501 903C231 554 863.5 608.5 915.999 106.5");
+  animation: dash 10s linear infinite;
+}
+
+.is-visible .Vector-19 {
+  width: 50px;
+  height: 5px;
+  offset-distance: 0%;
+  background-color: rgb(54, 54, 189);
+  offset-path: path("M210 901.5C210 534 791.999 543.5 881.499 110");
+  animation: dash 15s linear infinite;
+}
+
+.is-visible .Vector-20 {
+  width: 50px;
+  height: 5px;
+  offset-distance: 0%;
+  background-color: rgb(54, 54, 189);
+  offset-path: path("M209.999 903C196.499 522.5 772.999 481.5 861 26.4999");
+  animation: dash 20s linear infinite;
+}
+
+// @keyframes vectordash {
+//   from {
+//     stroke-dashoffset: 100;
+//   }
+//   to {
+//     stroke-dashoffset: -50;
+//   }
+// }
+
+// .is-vector-visible .Vector20{
+//   stroke-dasharray: 100;
+//   stroke-dashoffset: 100;
+//   animation: vectordash 1.5s alternate infinite;
+// }
+
+.is-visible .line1 {
+  stroke-dasharray: 1340;
+  stroke-dashoffset: 140;
+  animation: dash 2s linear alternate infinite;
+}
+
+.is-visible .line2 {
+  stroke-dasharray: 1320;
+  stroke-dashoffset: 1320;
+  animation: dash2 2s linear alternate infinite;
+}
+
+.is-visible .Vector20 {
+  stroke-dasharray: 1340;
+  stroke-dashoffset: 140;
+  animation: dash 4s linear alternate infinite;
+}
+
+.is-visible .Vector21 {
+  stroke-dasharray: 1320;
+  stroke-dashoffset: 1320;
+  animation: dash2 4s linear alternate infinite;
+}
+
+.is-visible .Vector22 {
+  stroke-dasharray: 1340;
+  stroke-dashoffset: 140;
+  animation: dash 6s linear alternate infinite;
+}
+
+.is-visible .Vector23 {
+  stroke-dasharray: 1320;
+  stroke-dashoffset: 1320;
+  animation: dash2 6s linear alternate infinite;
+}
+
+// bg_line class path
+.is-visible .Vector24 {
+  stroke-dasharray: 1340;
+  stroke-dashoffset: 140;
+  animation: dash 2s linear alternate infinite;
+}
+
+.is-visible .Vector25 {
+  stroke-dasharray: 1320;
+  stroke-dashoffset: 1320;
+  animation: dash2 2s linear alternate infinite;
+}
+
+.is-visible .Vector26 {
+  stroke-dasharray: 1340;
+  stroke-dashoffset: 140;
+  animation: dash 4s linear alternate infinite;
+}
+
+.is-visible .Vector27 {
+  stroke-dasharray: 1320;
+  stroke-dashoffset: 1320;
+  animation: dash2 4s linear alternate infinite;
+}
+
+.is-visible .Vector28 {
+  stroke-dasharray: 1340;
+  stroke-dashoffset: 140;
+  animation: dash 6s linear alternate infinite;
+}
+
+.is-visible .Vector29 {
+  stroke-dasharray: 1320;
+  stroke-dashoffset: 1320;
+  animation: dash2 6s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1360;
+  }
+  to {
+    stroke-dashoffset: 140;
+  }
+}
+
+@keyframes dash2 {
+  from {
+    stroke-dashoffset: 1280;
+  }
+  to {
+    stroke-dashoffset: -140;
+  }
+}
+
+// .Vector17 {
+//   width:50px;
+//   height: 5px;
+//   offset-distance: 0%;
+//   background-color: rgb(206, 22, 32);
+//   offset-path: path('M1276.33 810.102C1204.18 449.754 635.375 573.335 462.506 165.844');
+//   animation: dash 5s linear infinite alternate;
+// }
+
+// @keyframes dashoffset {
+//   from {
+//     offset-distance: 100%;
+//   }
+//   to {
+//     offset-distance: 0%;
+//   }
+// }
+
+// @for $i from 1 through 1000 {
+//     .svg_map_dot  path:nth-child(#{$i}) {
+//       animation: pulse 1s linear infinite alternate;
+//     }
+// }
+
+// annimate map dotted pulsed end--------------------
