@@ -264,7 +264,7 @@
 
 // Banner svg image annimate
 
-@keyframes HeroGlobalimg {
+ @keyframes HeroGlobalimg {
   100% {
     opacity: 1;
     // -webkit-transform: rotate(-40deg);
@@ -278,7 +278,7 @@
   }
 }
 
-.hero__img_svg {
+.is-visible .hero__img_svg {
   animation: HeroGlobalimg 40s linear forwards infinite;
 }
 

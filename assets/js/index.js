@@ -23,7 +23,7 @@ window.addEventListener('load', () => {
     let height = 0;
     var animationClass = [
         "fadeInUp",
-        "fadeInLeft",
+        "fadeInRight",
     ];
     let inerval = setInterval(() => {
         if (heroTxt) {
