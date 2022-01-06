@@ -368,7 +368,6 @@
 //   animation: vectordash 1.5s alternate infinite;
 // }
 
-
 .is-visible .line1 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
@@ -706,12 +705,12 @@
   height: 100px;
   margin-left: 30px;
 }
-.profilecircle6{
+.profilecircle6 {
   width: 100px;
   height: 100px;
   margin-left: 10px;
 }
-.profilecircle7{
+.profilecircle7 {
   width: 100px;
   height: 100px;
   margin-left: 5px;
@@ -728,11 +727,10 @@
 }
 
 @for $i from 1 through 7 {
-    .dots__wrapper div:nth-child(#{$i}) {
-      animation: fadeInDots $i+s linear forwards infinite;
-    }
+  .dots__wrapper div:nth-child(#{$i}) {
+    animation: fadeInDots $i + s linear forwards infinite;
+  }
 }
-
 
 .deploy__sec__img {
   position: relative;
@@ -740,10 +738,11 @@
   transition: transform 150ms ease-in-out;
 }
 
-.deploy__sec__img img { /* <= optional, for responsiveness */
-   display: block;
-   max-width: 100%;
-   height: auto;
+.deploy__sec__img img {
+  /* <= optional, for responsiveness */
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .deploy__sec__img svg {
@@ -751,4 +750,3 @@
   top: 20px;
   left: 90px;
 }
-
