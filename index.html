@@ -69,12 +69,11 @@
         <section class="tmb__hero__sec">
             <div class="container">
                 <div class="hero__content">
-                    <div class="hero__txt">
+                    <div class="hero__txt show-on-scroll">
                         <!-- Hero Heading -->
                         <h2 class="hero__heading">
-                            <span class="active">
-                                <span class="fspan fadeInUp">Custom</span> <span class="lspan fadeInRight">
-                                    Infrastructure</span>
+                            <span>
+                                <span class="fspan">Custom</span> <span class="lspan">Infrastructure</span>
                             </span>
                             <span>
                                 <span class="fspan">Colocation</span> <span class="lspan"> Data Centers</span>
@@ -89,6 +88,37 @@
                                 <span class="fspan">Sustainable</span> <span class="lspan"> Deployment</span>
                             </span>
                         </h2>
+                        <script>
+                            let heroHeading = document.querySelector('.hero__heading');
+                            let fspan = heroHeading.querySelectorAll('.fspan');
+                            let lspan = heroHeading.querySelectorAll('.lspan');
+                            let parentSpan = heroHeading.querySelectorAll('.hero__heading > span');
+                            let fspanCount = 1;
+                            heroHeading.setAttribute('style', `height:${parentSpan[fspanCount - 1].offsetHeight}px;`);
+                            fspan.forEach((elem, index) => {
+                                elem.setAttribute('style', `transform: translateY(${index}00%);`);
+                            });
+                            lspan.forEach((elem, index) => {
+                                elem.setAttribute('style', `transform: translateY(${index * -2}00%);`);
+                            });
+                            let inerval = setInterval(() => {
+                                heroHeading.setAttribute('style', `height:${parentSpan[fspanCount - 1].offsetHeight}px;`);
+                                heroHeading.classList.add('active');
+                                fspan.forEach((elem, index) => {
+                                    elem.setAttribute('style', `transform: translateY(-${fspanCount}00%);`);
+                                })
+                                fspan[fspanCount - 1].style.opacity = "0";
+                                lspan.forEach((elem, index) => {
+                                    elem.setAttribute('style', `transform: translateY(${(index * -2) + fspanCount}00%);`);
+                                });
+                                lspan[fspanCount - 1].style.opacity = "0";
+                                fspanCount++;
+                                if (fspan.length == fspanCount) {
+                                    clearInterval(inerval);
+                                }
+
+                            }, 3000);
+                        </script>
                         <!-- Btn -->
                         <button class="hero__btn primary-btn">
                             Explore More
@@ -99,7 +129,7 @@
                         <img class="hero__img_svg" width="495" height="586" src="assets/image/indexHero.png" alt="">
                     </div>
                 </div>
-                <div class="connect_hero_global_map">
+                <div class="connect_hero_global_map show-on-scroll">
                     <!-- <img class="cox_svg" src="assets/svg/Line.svg" alt=""> -->
 
                     <svg class="cox_svg" width="1093" height="1000" viewBox="0 0 1093 929" fill="none"
@@ -296,13 +326,13 @@
                 </div>
                 <!-- Logo List -->
                 <ul class="logo__list">
-                    <li><img src="assets/image/logo1.png" alt=""></li>
-                    <li><img src="assets/image/CIO.png" alt=""></li>
-                    <li><img src="assets/image/logo3.png" alt=""></li>
-                    <li><img src="assets/image/logo4.png" alt=""></li>
-                    <li><img src="assets/image/logo5.png" alt=""></li>
-                    <li><img src="assets/image/logo6.png" alt=""></li>
-                    <li><img src="assets/image/logo7.png" alt=""></li>
+                    <li class="show-on-scroll"><img src="assets/image/logo1.png" alt=""></li>
+                    <li class="show-on-scroll"><img src="assets/image/CIO.png" alt=""></li>
+                    <li class="show-on-scroll"><img src="assets/image/logo3.png" alt=""></li>
+                    <li class="show-on-scroll"><img src="assets/image/logo4.png" alt=""></li>
+                    <li class="show-on-scroll"><img src="assets/image/logo5.png" alt=""></li>
+                    <li class="show-on-scroll"><img src="assets/image/logo6.png" alt=""></li>
+                    <li class="show-on-scroll"><img src="assets/image/logo7.png" alt=""></li>
                 </ul>
 
                 <!-- <svg width="300px" height="175px" version="1.1">
@@ -324,11 +354,11 @@
                         <img class="global_img" src="assets/image/global.png" alt="">
                     </div>
                     <div class="globel__sec__txt">
-                        <h2 class="sec__heading">
+                        <h2 class="sec__heading show-on-scroll">
                             We Are Global
                         </h2>
                         <ul class="globel__point__list">
-                            <li class="globel__point__item">
+                            <li class="globel__point__item show-on-scroll">
                                 <span>
                                     <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -341,7 +371,7 @@
                                     business opportunities and improve customer engagement through the effective use of
                                     global Edge solutions.</p>
                             </li>
-                            <li class="globel__point__item">
+                            <li class="globel__point__item show-on-scroll">
                                 <span>
                                     <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -352,7 +382,7 @@
                                 </span>
                                 <p class="sec__brief">Regardless of size or complexity.</p>
                             </li>
-                            <li class="globel__point__item">
+                            <li class="globel__point__item show-on-scroll">
                                 <span>
                                     <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -366,220 +396,240 @@
                             </li>
                         </ul>
                     </div>
-
                 </div>
-                <div class="bg__lines">
+                <div class="bg__lines show-on-scroll">
 
                     <svg width="1672" height="1300" viewBox="0 0 1672 1357" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M1535.35 998.267C1420.81 1149.47 1212.64 1187.67 1070.41 1083.59C928.181 979.506 905.729 772.55 1020.26 621.347C1134.8 470.141 1342.97 431.941 1485.2 536.025C1627.43 640.127 1649.88 847.083 1535.35 998.267Z"
                             fill="url(#paint0_radial_1_177775)" />
-                        <g filter="url(#filter0_dd_1_177775)">
-                            <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
-                                d="M1276.33 810.102C1204.18 449.754 635.375 573.335 462.506 165.844" class="path"
-                                stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path fill="transparent" stroke="blue" stroke-width="4"
-                                d="M1276.33 810.102C1204.18 449.754 635.375 573.335 462.506 165.844" class="Vector25">
-                            </path>
-                            <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
-                                d="M1276.33 810.102C1204.18 449.754 635.375 573.335 462.506 165.844" class="Vector24">
-                            </path>
+                        <div class="bg__lines">
 
-                        </g>
-                        <!-- <g filter="url(#filter1_dd_1_177775)">
+                            <svg width="1672" height="1300" viewBox="0 0 1672 1357" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1535.35 998.267C1420.81 1149.47 1212.64 1187.67 1070.41 1083.59C928.181 979.506 905.729 772.55 1020.26 621.347C1134.8 470.141 1342.97 431.941 1485.2 536.025C1627.43 640.127 1649.88 847.083 1535.35 998.267Z"
+                                    fill="url(#paint0_radial_1_177775)" />
+                                <g filter="url(#filter0_dd_1_177775)">
+                                    <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
+                                        d="M1276.33 810.102C1204.18 449.754 635.375 573.335 462.506 165.844"
+                                        class="path" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path fill="transparent" stroke="blue" stroke-width="4"
+                                        d="M1276.33 810.102C1204.18 449.754 635.375 573.335 462.506 165.844"
+                                        class="Vector25">
+                                    </path>
+                                    <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
+                                        d="M1276.33 810.102C1204.18 449.754 635.375 573.335 462.506 165.844"
+                                        class="Vector24">
+                                    </path>
+
+                                </g>
+                                <!-- <g filter="url(#filter1_dd_1_177775)">
                         <path d="M609.511 355.952C639.209 380.535 668.304 399.56 702.673 417.024" stroke="url(#paint2_linear_1_177775)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                         </g> -->
-                        <g filter="url(#filter2_dd_1_177775)">
-                            <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
-                                d="M1276.14 811.671C1187.52 473.488 578.027 651.108 427.99 169.186" class="path"
-                                stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path fill="transparent" stroke="blue" stroke-width="4"
-                                d="M1276.14 811.671C1187.52 473.488 578.027 651.108 427.99 169.186" class="Vector27">
-                            </path>
-                            <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
-                                d="M1276.14 811.671C1187.52 473.488 578.027 651.108 427.99 169.186" class="Vector26">
-                            </path>
+                                <g filter="url(#filter2_dd_1_177775)">
+                                    <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
+                                        d="M1276.14 811.671C1187.52 473.488 578.027 651.108 427.99 169.186" class="path"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path fill="transparent" stroke="blue" stroke-width="4"
+                                        d="M1276.14 811.671C1187.52 473.488 578.027 651.108 427.99 169.186"
+                                        class="Vector27">
+                                    </path>
+                                    <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
+                                        d="M1276.14 811.671C1187.52 473.488 578.027 651.108 427.99 169.186"
+                                        class="Vector26">
+                                    </path>
 
-                        </g>
-                        <g filter="url(#filter3_dd_1_177775)">
-                            <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
-                                d="M1276.63 811.572C1215.16 435.828 641.832 508.811 466.212 79.9445" class="path"
-                                stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path fill="transparent" stroke="blue" stroke-width="4"
-                                d="M1276.63 811.572C1215.16 435.828 641.832 508.811 466.212 79.9445" class="Vector29">
-                            </path>
-                            <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
-                                d="M1276.63 811.572C1215.16 435.828 641.832 508.811 466.212 79.9445" class="Vector28">
-                            </path>
+                                </g>
+                                <g filter="url(#filter3_dd_1_177775)">
+                                    <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
+                                        d="M1276.63 811.572C1215.16 435.828 641.832 508.811 466.212 79.9445"
+                                        class="path" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path fill="transparent" stroke="blue" stroke-width="4"
+                                        d="M1276.63 811.572C1215.16 435.828 641.832 508.811 466.212 79.9445"
+                                        class="Vector29">
+                                    </path>
+                                    <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
+                                        d="M1276.63 811.572C1215.16 435.828 641.832 508.811 466.212 79.9445"
+                                        class="Vector28">
+                                    </path>
 
-                        </g>
-                        <defs>
-                            <filter id="filter0_dd_1_177775" x="451.506" y="139.844" width="835.828" height="696.258"
-                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                <feOffset dy="15" />
-                                <feGaussianBlur stdDeviation="5" />
-                                <feComposite in2="hardAlpha" operator="out" />
-                                <feColorMatrix type="matrix"
-                                    values="0 0 0 0 0.560784 0 0 0 0 0.756863 0 0 0 0 0.992157 0 0 0 0.15 0" />
-                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_177775" />
-                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                <feOffset dy="-15" />
-                                <feGaussianBlur stdDeviation="5" />
-                                <feComposite in2="hardAlpha" operator="out" />
-                                <feColorMatrix type="matrix"
-                                    values="0 0 0 0 0.556863 0 0 0 0 0.752941 0 0 0 0 0.992157 0 0 0 0.08 0" />
-                                <feBlend mode="normal" in2="effect1_dropShadow_1_177775"
-                                    result="effect2_dropShadow_1_177775" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_177775"
-                                    result="shape" />
-                            </filter>
-                            <filter id="filter1_dd_1_177775" x="591.511" y="327.952" width="137.163" height="107.073"
-                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                <feOffset dx="14" dy="6" />
-                                <feGaussianBlur stdDeviation="5" />
-                                <feComposite in2="hardAlpha" operator="out" />
-                                <feColorMatrix type="matrix"
-                                    values="0 0 0 0 0.560784 0 0 0 0 0.756863 0 0 0 0 0.992157 0 0 0 0.55 0" />
-                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_177775" />
-                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                <feOffset dx="-6" dy="-16" />
-                                <feGaussianBlur stdDeviation="5" />
-                                <feComposite in2="hardAlpha" operator="out" />
-                                <feColorMatrix type="matrix"
-                                    values="0 0 0 0 0.556863 0 0 0 0 0.752941 0 0 0 0 0.992157 0 0 0 0.48 0" />
-                                <feBlend mode="normal" in2="effect1_dropShadow_1_177775"
-                                    result="effect2_dropShadow_1_177775" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_177775"
-                                    result="shape" />
-                            </filter>
-                            <filter id="filter2_dd_1_177775" x="416.99" y="143.185" width="870.147" height="694.486"
-                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                <feOffset dy="15" />
-                                <feGaussianBlur stdDeviation="5" />
-                                <feComposite in2="hardAlpha" operator="out" />
-                                <feColorMatrix type="matrix"
-                                    values="0 0 0 0 0.560784 0 0 0 0 0.756863 0 0 0 0 0.992157 0 0 0 0.15 0" />
-                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_177775" />
-                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                <feOffset dy="-15" />
-                                <feGaussianBlur stdDeviation="5" />
-                                <feComposite in2="hardAlpha" operator="out" />
-                                <feColorMatrix type="matrix"
-                                    values="0 0 0 0 0.556863 0 0 0 0 0.752941 0 0 0 0 0.992157 0 0 0 0.08 0" />
-                                <feBlend mode="normal" in2="effect1_dropShadow_1_177775"
-                                    result="effect2_dropShadow_1_177775" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_177775"
-                                    result="shape" />
-                            </filter>
-                            <filter id="filter3_dd_1_177775" x="455.212" y="53.9442" width="832.417" height="783.628"
-                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                <feOffset dy="15" />
-                                <feGaussianBlur stdDeviation="5" />
-                                <feComposite in2="hardAlpha" operator="out" />
-                                <feColorMatrix type="matrix"
-                                    values="0 0 0 0 0.560784 0 0 0 0 0.756863 0 0 0 0 0.992157 0 0 0 0.15 0" />
-                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_177775" />
-                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                <feOffset dy="-15" />
-                                <feGaussianBlur stdDeviation="5" />
-                                <feComposite in2="hardAlpha" operator="out" />
-                                <feColorMatrix type="matrix"
-                                    values="0 0 0 0 0.556863 0 0 0 0 0.752941 0 0 0 0 0.992157 0 0 0 0.08 0" />
-                                <feBlend mode="normal" in2="effect1_dropShadow_1_177775"
-                                    result="effect2_dropShadow_1_177775" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_177775"
-                                    result="shape" />
-                            </filter>
-                            <radialGradient id="paint0_radial_1_177775" cx="0" cy="0" r="1"
-                                gradientUnits="userSpaceOnUse"
-                                gradientTransform="translate(1277.8 809.817) rotate(36.2024) scale(248.84 267.801)">
-                                <stop stop-color="#F5F5F7" />
-                                <stop offset="0.0827449" stop-color="#7C90F1" stop-opacity="0.5" />
-                                <stop offset="0.202679" stop-color="#7C90F1" stop-opacity="0.1869" />
-                                <stop offset="0.441507" stop-color="#A9B8FA" stop-opacity="0.04" />
-                                <stop offset="0.949802" stop-color="#D4DBFC" stop-opacity="0" />
-                            </radialGradient>
-                            <linearGradient id="paint1_linear_1_177775" x1="307.876" y1="391.543" x2="1415.15"
-                                y2="596.499" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#3F85F6" />
-                                <stop offset="0.144168" stop-color="#468AF7" />
-                                <stop offset="0.23419" stop-color="#5898F9" />
-                                <stop offset="0.333461" stop-color="#6FA9FA" />
-                                <stop offset="0.431079" stop-color="#82B7FB" />
-                                <stop offset="0.528723" stop-color="#99C8FE" />
-                                <stop offset="0.613917" stop-color="#A6CFFD" />
-                                <stop offset="0.707065" stop-color="#B6D8FE" />
-                                <stop offset="0.782805" stop-color="#C4DFFD" />
-                                <stop offset="0.844903" stop-color="#D0E5FD" />
-                                <stop offset="0.894577" stop-color="#D8E9FE" />
-                                <stop offset="1" stop-color="#D9E9FE" />
-                            </linearGradient>
-                            <linearGradient id="paint2_linear_1_177775" x1="615.126" y1="400.15" x2="696.247" y2="373.6"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#3F85F6" />
-                                <stop offset="0.144168" stop-color="#468AF7" />
-                                <stop offset="0.23419" stop-color="#5898F9" />
-                                <stop offset="0.333461" stop-color="#6FA9FA" />
-                                <stop offset="0.431079" stop-color="#82B7FB" />
-                                <stop offset="0.528723" stop-color="#99C8FE" />
-                                <stop offset="0.613917" stop-color="#A6CFFD" />
-                                <stop offset="0.707065" stop-color="#B6D8FE" />
-                                <stop offset="0.782805" stop-color="#C4DFFD" />
-                                <stop offset="0.844903" stop-color="#D0E5FD" />
-                                <stop offset="0.894577" stop-color="#D8E9FE" />
-                                <stop offset="1" stop-color="#D9E9FE" />
-                            </linearGradient>
-                            <linearGradient id="paint3_linear_1_177775" x1="378.622" y1="467.144" x2="1394.69"
-                                y2="658.021" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#3F85F6" />
-                                <stop offset="0.144168" stop-color="#468AF7" />
-                                <stop offset="0.23419" stop-color="#5898F9" />
-                                <stop offset="0.333461" stop-color="#6FA9FA" />
-                                <stop offset="0.431079" stop-color="#82B7FB" />
-                                <stop offset="0.528723" stop-color="#99C8FE" />
-                                <stop offset="0.613917" stop-color="#A6CFFD" />
-                                <stop offset="0.707065" stop-color="#B6D8FE" />
-                                <stop offset="0.782805" stop-color="#C4DFFD" />
-                                <stop offset="0.844903" stop-color="#D0E5FD" />
-                                <stop offset="0.894577" stop-color="#D8E9FE" />
-                                <stop offset="1" stop-color="#D9E9FE" />
-                            </linearGradient>
-                            <linearGradient id="paint4_linear_1_177775" x1="384.681" y1="408.649" x2="1410.45"
-                                y2="597.738" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#3F85F6" />
-                                <stop offset="0.144168" stop-color="#468AF7" />
-                                <stop offset="0.23419" stop-color="#5898F9" />
-                                <stop offset="0.333461" stop-color="#6FA9FA" />
-                                <stop offset="0.431079" stop-color="#82B7FB" />
-                                <stop offset="0.528723" stop-color="#99C8FE" />
-                                <stop offset="0.613917" stop-color="#A6CFFD" />
-                                <stop offset="0.707065" stop-color="#B6D8FE" />
-                                <stop offset="0.782805" stop-color="#C4DFFD" />
-                                <stop offset="0.844903" stop-color="#D0E5FD" />
-                                <stop offset="0.894577" stop-color="#D8E9FE" />
-                                <stop offset="1" stop-color="#D9E9FE" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
+                                </g>
+                                <defs>
+                                    <filter id="filter0_dd_1_177775" x="451.506" y="139.844" width="835.828"
+                                        height="696.258" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="15" />
+                                        <feGaussianBlur stdDeviation="5" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.560784 0 0 0 0 0.756863 0 0 0 0 0.992157 0 0 0 0.15 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_1_177775" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="-15" />
+                                        <feGaussianBlur stdDeviation="5" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.556863 0 0 0 0 0.752941 0 0 0 0 0.992157 0 0 0 0.08 0" />
+                                        <feBlend mode="normal" in2="effect1_dropShadow_1_177775"
+                                            result="effect2_dropShadow_1_177775" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_177775"
+                                            result="shape" />
+                                    </filter>
+                                    <filter id="filter1_dd_1_177775" x="591.511" y="327.952" width="137.163"
+                                        height="107.073" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="14" dy="6" />
+                                        <feGaussianBlur stdDeviation="5" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.560784 0 0 0 0 0.756863 0 0 0 0 0.992157 0 0 0 0.55 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_1_177775" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="-6" dy="-16" />
+                                        <feGaussianBlur stdDeviation="5" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.556863 0 0 0 0 0.752941 0 0 0 0 0.992157 0 0 0 0.48 0" />
+                                        <feBlend mode="normal" in2="effect1_dropShadow_1_177775"
+                                            result="effect2_dropShadow_1_177775" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_177775"
+                                            result="shape" />
+                                    </filter>
+                                    <filter id="filter2_dd_1_177775" x="416.99" y="143.185" width="870.147"
+                                        height="694.486" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="15" />
+                                        <feGaussianBlur stdDeviation="5" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.560784 0 0 0 0 0.756863 0 0 0 0 0.992157 0 0 0 0.15 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_1_177775" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="-15" />
+                                        <feGaussianBlur stdDeviation="5" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.556863 0 0 0 0 0.752941 0 0 0 0 0.992157 0 0 0 0.08 0" />
+                                        <feBlend mode="normal" in2="effect1_dropShadow_1_177775"
+                                            result="effect2_dropShadow_1_177775" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_177775"
+                                            result="shape" />
+                                    </filter>
+                                    <filter id="filter3_dd_1_177775" x="455.212" y="53.9442" width="832.417"
+                                        height="783.628" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="15" />
+                                        <feGaussianBlur stdDeviation="5" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.560784 0 0 0 0 0.756863 0 0 0 0 0.992157 0 0 0 0.15 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_1_177775" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="-15" />
+                                        <feGaussianBlur stdDeviation="5" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.556863 0 0 0 0 0.752941 0 0 0 0 0.992157 0 0 0 0.08 0" />
+                                        <feBlend mode="normal" in2="effect1_dropShadow_1_177775"
+                                            result="effect2_dropShadow_1_177775" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_177775"
+                                            result="shape" />
+                                    </filter>
+                                    <radialGradient id="paint0_radial_1_177775" cx="0" cy="0" r="1"
+                                        gradientUnits="userSpaceOnUse"
+                                        gradientTransform="translate(1277.8 809.817) rotate(36.2024) scale(248.84 267.801)">
+                                        <stop stop-color="#F5F5F7" />
+                                        <stop offset="0.0827449" stop-color="#7C90F1" stop-opacity="0.5" />
+                                        <stop offset="0.202679" stop-color="#7C90F1" stop-opacity="0.1869" />
+                                        <stop offset="0.441507" stop-color="#A9B8FA" stop-opacity="0.04" />
+                                        <stop offset="0.949802" stop-color="#D4DBFC" stop-opacity="0" />
+                                    </radialGradient>
+                                    <linearGradient id="paint1_linear_1_177775" x1="307.876" y1="391.543" x2="1415.15"
+                                        y2="596.499" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#3F85F6" />
+                                        <stop offset="0.144168" stop-color="#468AF7" />
+                                        <stop offset="0.23419" stop-color="#5898F9" />
+                                        <stop offset="0.333461" stop-color="#6FA9FA" />
+                                        <stop offset="0.431079" stop-color="#82B7FB" />
+                                        <stop offset="0.528723" stop-color="#99C8FE" />
+                                        <stop offset="0.613917" stop-color="#A6CFFD" />
+                                        <stop offset="0.707065" stop-color="#B6D8FE" />
+                                        <stop offset="0.782805" stop-color="#C4DFFD" />
+                                        <stop offset="0.844903" stop-color="#D0E5FD" />
+                                        <stop offset="0.894577" stop-color="#D8E9FE" />
+                                        <stop offset="1" stop-color="#D9E9FE" />
+                                    </linearGradient>
+                                    <linearGradient id="paint2_linear_1_177775" x1="615.126" y1="400.15" x2="696.247"
+                                        y2="373.6" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#3F85F6" />
+                                        <stop offset="0.144168" stop-color="#468AF7" />
+                                        <stop offset="0.23419" stop-color="#5898F9" />
+                                        <stop offset="0.333461" stop-color="#6FA9FA" />
+                                        <stop offset="0.431079" stop-color="#82B7FB" />
+                                        <stop offset="0.528723" stop-color="#99C8FE" />
+                                        <stop offset="0.613917" stop-color="#A6CFFD" />
+                                        <stop offset="0.707065" stop-color="#B6D8FE" />
+                                        <stop offset="0.782805" stop-color="#C4DFFD" />
+                                        <stop offset="0.844903" stop-color="#D0E5FD" />
+                                        <stop offset="0.894577" stop-color="#D8E9FE" />
+                                        <stop offset="1" stop-color="#D9E9FE" />
+                                    </linearGradient>
+                                    <linearGradient id="paint3_linear_1_177775" x1="378.622" y1="467.144" x2="1394.69"
+                                        y2="658.021" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#3F85F6" />
+                                        <stop offset="0.144168" stop-color="#468AF7" />
+                                        <stop offset="0.23419" stop-color="#5898F9" />
+                                        <stop offset="0.333461" stop-color="#6FA9FA" />
+                                        <stop offset="0.431079" stop-color="#82B7FB" />
+                                        <stop offset="0.528723" stop-color="#99C8FE" />
+                                        <stop offset="0.613917" stop-color="#A6CFFD" />
+                                        <stop offset="0.707065" stop-color="#B6D8FE" />
+                                        <stop offset="0.782805" stop-color="#C4DFFD" />
+                                        <stop offset="0.844903" stop-color="#D0E5FD" />
+                                        <stop offset="0.894577" stop-color="#D8E9FE" />
+                                        <stop offset="1" stop-color="#D9E9FE" />
+                                    </linearGradient>
+                                    <linearGradient id="paint4_linear_1_177775" x1="384.681" y1="408.649" x2="1410.45"
+                                        y2="597.738" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#3F85F6" />
+                                        <stop offset="0.144168" stop-color="#468AF7" />
+                                        <stop offset="0.23419" stop-color="#5898F9" />
+                                        <stop offset="0.333461" stop-color="#6FA9FA" />
+                                        <stop offset="0.431079" stop-color="#82B7FB" />
+                                        <stop offset="0.528723" stop-color="#99C8FE" />
+                                        <stop offset="0.613917" stop-color="#A6CFFD" />
+                                        <stop offset="0.707065" stop-color="#B6D8FE" />
+                                        <stop offset="0.782805" stop-color="#C4DFFD" />
+                                        <stop offset="0.844903" stop-color="#D0E5FD" />
+                                        <stop offset="0.894577" stop-color="#D8E9FE" />
+                                        <stop offset="1" stop-color="#D9E9FE" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
                 </div>
-            </div>
         </section>
         <!-- === Globel Section End === -->
 
@@ -590,21 +640,20 @@
                 <div class="deploy__sec__content">
                     <div class="deploy__sec__txt">
                         <!-- heading -->
-                        <h2 class="sec__heading">
+                        <h2 class="sec__heading show-on-scroll">
                             Faster than anything you’ve seen before.
                         </h2>
                         <div class="deploy__detail">
-                            <h3>Deploy Edge in</h3>
-                            <p><span class="gradient-text">30,000+</span>&nbsp;<span
+                            <h3 class="show-on-scroll">Deploy Edge in</h3>
+                            <p class="show-on-scroll"><span class="gradient-text">30,000+</span>&nbsp;<span
                                     class="normal-text">Locations</span></p>
-                            <p><span class="gradient-text">107+</span>&nbsp;<span class="normal-text">Countries</span>
+                            <p class="show-on-scroll"><span class="gradient-text">107+</span>&nbsp;<span
+                                    class="normal-text">Countries</span>
                             </p>
                         </div>
                     </div>
                     <!-- Section Image -->
-                    <div class="deploy__sec__img">
-                        <img src="assets/image/connectivitymap.png" alt="">
-
+                    <div class="deploy__sec__img show-on-scroll">
                         <svg width="1022" height="600" viewBox="0 0 1022 600" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g id="Map Elements">
@@ -934,9 +983,9 @@
             <div class="container">
                 <div class="trusted__sec__txt">
                     <!-- heading -->
-                    <h2 class="sec__heading">TRUSTED BY</h2>
+                    <h2 class="sec__heading show-on-scroll">TRUSTED BY</h2>
                     <!-- Sub text -->
-                    <span class="trusted__txt__subheading">gradiant flash</span>
+                    <span class="trusted__txt__subheading show-on-scroll">gradiant flash</span>
                 </div>
                 <div class="trusted__sec__map">
                     <!-- Background map -->
@@ -953,19 +1002,19 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide">
-                                <img class="cox_svg" src="assets/image/trusted-logo1-with-bg.png" alt="">
+                            <div class="swiper-slide show-on-scroll">
+                                <img class="cox_svg show-on-scroll" src="assets/image/trusted-logo1-with-bg.png" alt="">
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide show-on-scroll">
                                 <img class="cox_svg" src="assets/image/trusted-logo2-with-bg.png" alt="">
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide show-on-scroll">
                                 <img class="cox_svg" src="assets/image/trusted-logo3-with-bg.png" alt="">
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide show-on-scroll">
                                 <img class="cox_svg" src="assets/image/trusted-logo4-with-bg.png" alt="">
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide show-on-scroll">
                                 <img class="cox_svg" src="assets/image/trusted-logo5-with-bg.png" alt="">
                             </div>
                         </div>
@@ -988,10 +1037,10 @@
                         <div class="swiper-slide">
                             <li class="crd__grid__item">
                                 <div class="crd__content">
-                                    <h3 class="info__crd__heading sec__heading">
+                                    <h3 class="info__crd__heading sec__heading show-on-scroll">
                                         Market Intelligence
                                     </h3>
-                                    <p class="info__crd__txt">
+                                    <p class="info__crd__txt show-on-scroll">
                                         We integrate our platform with suppliers for real time access to capacity and
                                         service
                                         options/capabilities. This detail will allow Edgevana to create intelligence on
@@ -1008,10 +1057,10 @@
 
                             <li class="crd__grid__item">
                                 <div class="crd__content">
-                                    <h3 class="info__crd__heading sec__heading">
+                                    <h3 class="info__crd__heading sec__heading show-on-scroll">
                                         AI and ML
                                     </h3>
-                                    <p class="info__crd__txt">
+                                    <p class="info__crd__txt show-on-scroll">
                                         We are employing a proprietary AI and ML solution in our platform that will
                                         provide
                                         greater insight into opportunities with suppliers and customers and become a
@@ -1027,10 +1076,10 @@
 
                             <li class="crd__grid__item">
                                 <div class="crd__content">
-                                    <h3 class="info__crd__heading sec__heading">
+                                    <h3 class="info__crd__heading sec__heading show-on-scroll">
                                         Data Driven
                                     </h3>
-                                    <p class="info__crd__txt">
+                                    <p class="info__crd__txt show-on-scroll">
                                         We will create solution opportunities for our suppliers that make them more
                                         efficient
                                         and sustainable, in effect making them more competitive.
@@ -1043,10 +1092,10 @@
 
                             <li class="crd__grid__item">
                                 <div class="crd__content">
-                                    <h3 class="info__crd__heading sec__heading">
+                                    <h3 class="info__crd__heading sec__heading show-on-scroll">
                                         Partner Ecosystem
                                     </h3>
-                                    <p class="info__crd__txt">
+                                    <p class="info__crd__txt show-on-scroll">
                                         Our development of a community with our data center suppliers means we have a
                                         stickier
                                         relationship, allowing us to work on higher value sector improvement
@@ -1059,32 +1108,22 @@
                     </ul>
                 </div>
                 <div class="dots__wrapper">
-                    <div class="profilecircle1 dots"></div>
-                    <div class="profilecircle2 dots"></div>
-                    <div class="profilecircle3 dots"></div>
-                    <div class="profilecircle4 dots"></div>
-                    <div class="profilecircle5 dots"></div>
-                    <div class="profilecircle6 dots"></div>
-
+                    <div class="profilecircle1 dots show-on-scroll"></div>
+                    <div class="profilecircle2 dots show-on-scroll"></div>
+                    <div class="profilecircle3 dots show-on-scroll"></div>
+                    <div class="profilecircle4 dots show-on-scroll"></div>
+                    <div class="profilecircle5 dots show-on-scroll"></div>
+                    <div class="profilecircle6 dots show-on-scroll"></div>
                 </div>
             </div>
         </section>
         <!-- === Info Cards Section End === -->
 
-        <!-- == Testinomial profile animation start  == -->
-
-        <section>
-            <div class="container">
-
-            </div>
-        </section>
-        <!-- == Testinomial profile animation End == -->
-
         <!-- === Testimonial Section Start === -->
         <section class="testimonial">
             <div class="container">
                 <!-- Testmonial List -->
-                <h2 class="sec__heading">
+                <h2 class="sec__heading show-on-scroll">
                     From Our Valuable Clients
                 </h2>
                 <div class="testimonial__list">
@@ -1096,7 +1135,7 @@
                         <div class="swiper-slide">
                             <div class="testimonial__grid">
                                 <div class="testimonial__text">
-                                    <span>
+                                    <span class="show-on-scroll">
                                         <svg width="68" height="150" viewBox="0 0 68 150" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -1106,26 +1145,26 @@
                                         </svg>
                                     </span>
                                     <div>
-                                        <p class="sec__brief">
+                                        <p class="sec__brief show-on-scroll">
                                             What I am primarily looking for with new projects is a fit on both a visual
                                             and aesthetic level as well as on a personal level with the client.
                                         </p>
                                         <div class="user__info">
                                             <div class="profile__detail">
-                                                <span class="user__company">
+                                                <span class="user__company show-on-scroll">
                                                     It Company
                                                 </span>
-                                                <span class="profile__post">
+                                                <span class="profile__post show-on-scroll">
                                                     CEO
                                                 </span>
                                             </div>
-                                            <div class="profile__img">
+                                            <div class="profile__img show-on-scroll">
                                                 <img src="assets/image/profile-img.png" alt="">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="testimonial__img">
+                                <div class="testimonial__img show-on-scroll">
                                     <img src="assets/image/testimonial-img.png" alt="">
                                 </div>
                             </div>
@@ -1133,7 +1172,7 @@
                         <div class="swiper-slide">
                             <div class="testimonial__grid">
                                 <div class="testimonial__text">
-                                    <span>
+                                    <span class="show-on-scroll">
                                         <svg width="68" height="150" viewBox="0 0 68 150" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -1143,26 +1182,26 @@
                                         </svg>
                                     </span>
                                     <div>
-                                        <p class="sec__brief">
+                                        <p class="sec__brief show-on-scroll">
                                             What I am primarily looking for with new projects is a fit on both a visual
                                             and aesthetic level as well as on a personal level with the client.
                                         </p>
                                         <div class="user__info">
                                             <div class="profile__detail">
-                                                <span class="user__company">
+                                                <span class="user__company show-on-scroll">
                                                     It Company
                                                 </span>
-                                                <span class="profile__post">
+                                                <span class="profile__post show-on-scroll">
                                                     CEO
                                                 </span>
                                             </div>
-                                            <div class="profile__img">
+                                            <div class="profile__img show-on-scroll">
                                                 <img src="assets/image/profile-img.png" alt="">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="testimonial__img">
+                                <div class="testimonial__img show-on-scroll">
                                     <img src="assets/image/testimonial-img.png" alt="">
                                 </div>
                             </div>
@@ -1170,7 +1209,7 @@
                         <div class="swiper-slide">
                             <div class="testimonial__grid">
                                 <div class="testimonial__text">
-                                    <span>
+                                    <span class="show-on-scroll">
                                         <svg width="68" height="150" viewBox="0 0 68 150" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -1180,26 +1219,26 @@
                                         </svg>
                                     </span>
                                     <div>
-                                        <p class="sec__brief">
+                                        <p class="sec__brief show-on-scroll">
                                             What I am primarily looking for with new projects is a fit on both a visual
                                             and aesthetic level as well as on a personal level with the client.
                                         </p>
                                         <div class="user__info">
                                             <div class="profile__detail">
-                                                <span class="user__company">
+                                                <span class="user__company show-on-scroll">
                                                     It Company
                                                 </span>
-                                                <span class="profile__post">
+                                                <span class="profile__post show-on-scroll">
                                                     CEO
                                                 </span>
                                             </div>
-                                            <div class="profile__img">
+                                            <div class="profile__img show-on-scroll">
                                                 <img src="assets/image/profile-img.png" alt="">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="testimonial__img">
+                                <div class="testimonial__img show-on-scroll">
                                     <img src="assets/image/testimonial-img.png" alt="">
                                 </div>
                             </div>
@@ -1207,7 +1246,7 @@
                         <div class="swiper-slide">
                             <div class="testimonial__grid">
                                 <div class="testimonial__text">
-                                    <span>
+                                    <span class="show-on-scroll">
                                         <svg width="68" height="150" viewBox="0 0 68 150" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -1217,26 +1256,26 @@
                                         </svg>
                                     </span>
                                     <div>
-                                        <p class="sec__brief">
+                                        <p class="sec__brief show-on-scroll">
                                             What I am primarily looking for with new projects is a fit on both a visual
                                             and aesthetic level as well as on a personal level with the client.
                                         </p>
                                         <div class="user__info">
                                             <div class="profile__detail">
-                                                <span class="user__company">
+                                                <span class="user__company show-on-scroll">
                                                     It Company
                                                 </span>
-                                                <span class="profile__post">
+                                                <span class="profile__post show-on-scroll">
                                                     CEO
                                                 </span>
                                             </div>
-                                            <div class="profile__img">
+                                            <div class="profile__img show-on-scroll">
                                                 <img src="assets/image/profile-img.png" alt="">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="testimonial__img">
+                                <div class="testimonial__img show-on-scroll">
                                     <img src="assets/image/testimonial-img.png" alt="">
                                 </div>
                             </div>
@@ -1244,7 +1283,7 @@
                         <div class="swiper-slide">
                             <div class="testimonial__grid">
                                 <div class="testimonial__text">
-                                    <span>
+                                    <span class="show-on-scroll">
                                         <svg width="68" height="150" viewBox="0 0 68 150" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -1254,26 +1293,26 @@
                                         </svg>
                                     </span>
                                     <div>
-                                        <p class="sec__brief">
+                                        <p class="sec__brief show-on-scroll">
                                             What I am primarily looking for with new projects is a fit on both a visual
                                             and aesthetic level as well as on a personal level with the client.
                                         </p>
                                         <div class="user__info">
                                             <div class="profile__detail">
-                                                <span class="user__company">
+                                                <span class="user__company show-on-scroll">
                                                     It Company
                                                 </span>
-                                                <span class="profile__post">
+                                                <span class="profile__post show-on-scroll">
                                                     CEO
                                                 </span>
                                             </div>
-                                            <div class="profile__img">
+                                            <div class="profile__img show-on-scroll">
                                                 <img src="assets/image/profile-img.png" alt="">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="testimonial__img">
+                                <div class="testimonial__img show-on-scroll">
                                     <img src="assets/image/testimonial-img.png" alt="">
                                 </div>
                             </div>
@@ -1292,7 +1331,7 @@
                 <div class="footer__content">
                     <div class="footer__text">
                         <div class="footer__text__inner">
-                            <svg width="180" height="38" viewBox="0 0 180 38" fill="none"
+                            <svg class="show-on-scroll" width="180" height="38" viewBox="0 0 180 38" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M10.455 29.438C16.113 29.438 19.762 26.24 20.172 22.058H14.186C13.899 23.903 12.341 24.928 10.455 24.928C7.913 24.928 6.068 22.878 6.027 20.049H20.295V18.901C20.295 12.259 16.646 7.913 10.332 7.913C4.264 7.913 0 12.177 0 18.614C0 25.584 4.387 29.438 10.455 29.438ZM5.986 16.154C6.232 13.858 7.913 12.177 10.291 12.177C12.587 12.177 14.186 13.776 14.227 16.154H5.986Z"
@@ -1319,46 +1358,51 @@
                                     d="M168.168 29.438C171.448 29.438 173.539 28.085 174.605 26.117C174.482 26.732 174.441 27.347 174.441 27.962V28.7H179.935V16.851C179.935 11.193 177.352 7.913 171.038 7.913C165.585 7.913 162.018 10.947 161.69 15.129H167.717C167.922 13.284 169.234 12.177 171.243 12.177C173.129 12.177 174.154 13.243 174.154 14.473C174.154 15.375 173.621 15.908 172.022 16.113L169.152 16.441C164.888 16.974 161.239 18.532 161.239 23.042C161.239 27.142 164.642 29.438 168.168 29.438ZM170.013 25.215C168.414 25.215 167.225 24.313 167.225 22.755C167.225 21.238 168.578 20.5 170.628 20.131L172.022 19.885C173.211 19.639 173.867 19.434 174.277 19.065V20.951C174.277 23.493 172.432 25.215 170.013 25.215Z"
                                     fill="#D4DBFC" />
                             </svg>
+
                             <h2 class="footer__hero__heading">
                                 <a href="contact-us.html">Let’s Talk!</a>
                             </h2>
                         </div>
                         <div class="footer__items__inner">
                             <div class="items">
-                                <h3 class="item__heading">Explore</h3>
+                                <h3 class="item__heading show-on-scroll">Explore</h3>
                                 <ul>
-                                    <li><a class="item" href="about-us.html">About us</a></li>
-                                    <li><a class="item" href="partner.html">Partner</a></li>
-                                    <li><a class="item" href="sustainable.html">Sustainability</a></li>
-                                    <li><a class="item" href="career.html">Careers</a></li>
+
+                                    <li class="show-on-scroll"><a class="item" href="about-us.html">About us</a></li>
+                                    <li class="show-on-scroll"><a class="item" href="partner.html">Partner</a></li>
+                                    <li class="show-on-scroll"><a class="item"
+                                            href="sustainable.html">Sustainability</a></li>
+                                    <li class="show-on-scroll"><a class="item" href="career.html">Careers</a></li>
                                 </ul>
                             </div>
                             <div class="items">
-                                <h3 class="item__heading">Resources</h3>
+                                <h3 class="item__heading show-on-scroll">Resources</h3>
                                 <ul>
-                                    <li><a class="item" href="podcast.html">Podcast</a></li>
-                                    <li><a class="item" href="#">News room</a></li>
+                                    <li class="show-on-scroll"><a class="item " href="#">Podcast</a></li>
+                                    <li class="show-on-scroll"><a class="item " href="#">News room</a></li>
+                                    <li class="show-on-scroll"><a class="item" href="podcast.html">Podcast</a></li>
+                                    <li class="show-on-scroll"><a class="item" href="#">News room</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="footer__items__wrapper">
                         <div class="footer__text__inner">
-                            <h3 class="footer__heading hide--md">
+                            <h3 class="footer__heading hide--md show-on-scroll">
                                 Want Positive News in Your Inbox?
                             </h3>
-                            <p class="footer__info hide--md">
+                            <p class="footer__info hide--md show-on-scroll">
                                 You'll receive occasional tips and resources to help you hack
                                 your startup growth, and news about what we've up to!
                             </p>
                         </div>
                         <form action="" class="footer__form">
                             <div class="form__group">
-                                <div class="email__input">
+                                <div class="email__input show-on-scroll">
                                     <input type="email" id="email" name="email" placeholder="Enter Your Email."
                                         autocomplete="off" required />
                                 </div>
-                                <div class="submit__btn">
+                                <div class="submit__btn show-on-scroll">
                                     <button type="submit" id="submitBtn">Send</button>
                                 </div>
                             </div>
@@ -1366,14 +1410,14 @@
                     </div>
                 </div>
                 <div class="copywrite__text">
-                    <div class="copywrite__info">
+                    <div class="copywrite__info show-on-scroll">
                         <p>Copyright © 2021 Edgevana All Rights Reserved.</p>
                     </div>
                     <div class="copywrite__links">
                         <ul>
-                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                            <li><a href="terms-of-use.html">Terms of use</a></li>
-                            <li><a href="cookies.html">Cookies Policy</a></li>
+                            <li class="show-on-scroll"><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li class="show-on-scroll"><a href="terms-of-use.html">Terms of use</a></li>
+                            <li class="show-on-scroll"><a href="cookies.html">Cookies Policy</a></li>
                         </ul>
                     </div>
                 </div>

@@ -15,41 +15,6 @@ testimonialSlider.addEventListener("mouseout", (e) => {
 // /* Testimonial Slider Cursor Js Code */
 
 window.addEventListener('load', () => {
-    // hero Section Text animation
-    let heroHeading = document.querySelector('.hero__heading');
-    let heroTxt = document.querySelectorAll('.hero__heading > span');
-    let totalChildren = heroHeading.children.length;
-    let childrenCount = 1;
-    let height = 0;
-    var animationClass = [
-        "fadeInUp",
-        "fadeInRight",
-    ];
-    let inerval = setInterval(() => {
-        if (heroTxt) {
-            for (let i = 1; i < heroHeading.children[childrenCount].children.length; i++) {
-                var randomItem = animationClass[Math.floor(Math.random() * animationClass.length)];
-                heroHeading.children[childrenCount].children[i].classList.add(randomItem);
-            }
-        }
-        heroHeading.children[childrenCount - 1].classList.remove('active');
-        heroHeading.children[childrenCount - 1].setAttribute('style', `transform: translateY(-${childrenCount}00%);`);
-        heroHeading.children[childrenCount].classList.add('active');
-        heroHeading.children[childrenCount].setAttribute('style', `transform: translateY(-${childrenCount}00%); `);
-        childrenCount++;
-        if (childrenCount == totalChildren) {
-            clearInterval(inerval);
-        }
-    }, 3000);
-    heroTxt.forEach(element => {
-        if (height <= element.offsetHeight) {
-            height = element.offsetHeight;
-        }
-    });
-    heroHeading.setAttribute('style', `height: ${height}px;`);
-
-
-
     /* Testimonial Slider Cursor Js Code */
 
     let testimonialSlider = document.querySelector(".testimonial__list");

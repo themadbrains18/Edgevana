@@ -2,7 +2,7 @@
 
 .hero__content {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr auto;
   align-items: center;
 }
 
@@ -346,100 +346,86 @@
 
 //  /// ////////////////////////////////////////
 
-.hero__heading {
-  overflow: hidden;
-  height: 120px;
-  span {
-    display: inline-block;
-  }
-  > span {
-    opacity: 0;
-    transition: 1s linear;
-  }
-  > span.active {
-    opacity: 1;
-  }
-}
 
-@keyframes fadeInUp {
-  0% {
-    transform: translateY(20px);
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+// @keyframes fadeInUp {
+//   0% {
+//     transform: translateY(20px);
+//   }
+//   50% {
+//     opacity: 0.5;
+//   }
+//   100% {
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
+// }
 
-@keyframes fadeInDown {
-  0% {
-    transform: translateY(0);
-  }
-  80% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-}
-@keyframes fadeInLeft {
-  0% {
-    transform: translateX(-20px);
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
+// @keyframes fadeInDown {
+//   0% {
+//     transform: translateY(0);
+//   }
+//   80% {
+//     opacity: 0.5;
+//   }
+//   100% {
+//     transform: translateY(-100%);
+//     opacity: 0;
+//   }
+// }
+// @keyframes fadeInLeft {
+//   0% {
+//     transform: translateX(-20px);
+//   }
+//   50% {
+//     opacity: 0.5;
+//   }
+//   100% {
+//     transform: translateX(0);
+//     opacity: 1;
+//   }
+// }
 
-@keyframes fadeInRight {
-  0% {
-    transform: translateX(20px);
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
+// @keyframes fadeInRight {
+//   0% {
+//     transform: translateX(20px);
+//   }
+//   50% {
+//     opacity: 0.5;
+//   }
+//   100% {
+//     transform: translateX(0);
+//     opacity: 1;
+//   }
+// }
 
-.hero__heading .active .fspan,
-.hero__heading .active .lspan {
-  animation-duration: 0.5s;
-  animation-delay: 1s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
+// .hero__heading .active .fspan,
+// .hero__heading .active .lspan {
+//   animation-duration: 0.5s;
+//   animation-delay: 1s;
+//   animation-timing-function: linear;
+//   animation-fill-mode: forwards;
+// }
 
-.hero__heading .active .fadeInDown {
-  animation-name: fadeInDown;
-  animation-duration: 0.5s;
-  animation-delay: 2.5s;
-  opacity: 1;
-}
+// .hero__heading .active .fadeInDown {
+//   animation-name: fadeInDown;
+//   animation-duration: 0.5s;
+//   animation-delay: 2.5s;
+//   opacity: 1;
+// }
 
-.hero__heading .active .fadeInLeft {
-  animation-name: fadeInLeft;
-  opacity: 0;
-}
+// .hero__heading .active .fadeInLeft {
+//   animation-name: fadeInLeft;
+//   opacity: 0;
+// }
 
-.hero__heading .active .fadeInRight {
-  animation-name: fadeInRight;
-  opacity: 0;
-}
-.hero__heading .active .fadeInUp {
-  animation-name: fadeInUp;
-  opacity: 0;
-}
+// .hero__heading .active .fadeInRight {
+//   animation-name: fadeInRight;
+//   opacity: 0;
+// }
+// .hero__heading .active .fadeInUp {
+//   animation-name: fadeInUp;
+//   opacity: 0;
+// }
 
 .logo__list li:hover {
   background-color: rgba(201, 199, 199, 0.2);
@@ -553,3 +539,18 @@
 
 
 @import 'indexanimation';
+
+
+
+.hero__heading {
+  overflow: hidden;
+  height: 140px;
+  .lspan,.fspan{
+    display: inline-block; 
+  }
+}
+.hero__heading.active{
+  .lspan,.fspan{
+    transition: transform 2s,opacity 1s;
+  }
+}
