@@ -35,19 +35,19 @@
   animation: dotpulse 1s linear infinite;
 }
 
-@keyframes linemove {
-  // from {
-  //   stroke-dashoffset: 300;
-  // }
-  to {
-    stroke-dashoffset: 0;
+@keyframes qwer {
+  0%{
+    stroke-dashoffset: 450;  
   }
+  
+  100% {
+    stroke-dashoffset: -450;  
+  }
+  
 }
-
-.connectline {
-  stroke-dasharray: 1500;
-  stroke-dashoffset: 1500;
-  animation: linemove 3s linear infinite alternate;
+.qwe{
+  stroke-dasharray: 450;
+  animation: qwer 3s linear infinite forwards ;
 }
 
 //  #Vector_14_2 {
