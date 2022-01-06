@@ -317,7 +317,7 @@
   }
 }
 
-.is-connect-visible .connectdot {
+.is-visible .connectdot {
   animation: dotpulse 1s linear infinite;
 }
 
@@ -330,13 +330,13 @@
   }
 }
 
-.is-connect-visible .connectline {
+.is-visible .connectline {
   stroke-dasharray: 800;
   stroke-dashoffset: 800;
   animation: linemove 2s linear infinite alternate;
 }
 
-.Vector-17 {
+.is-visible .Vector-17 {
   width: 50px;
   height: 5px;
   offset-distance: 0%;
@@ -345,7 +345,7 @@
   animation: dash 10s linear infinite;
 }
 
-.Vector-19 {
+.is-visible .Vector-19 {
   width: 50px;
   height: 5px;
   offset-distance: 0%;
@@ -354,7 +354,7 @@
   animation: dash 15s linear infinite;
 }
 
-.Vector-20 {
+.is-visible .Vector-20 {
   width: 50px;
   height: 5px;
   offset-distance: 0%;
@@ -378,74 +378,74 @@
 //   animation: vectordash 1.5s alternate infinite;
 // }
 
-.is-vector-visible .line1 {
+.is-visible .line1 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 2s linear alternate infinite;
 }
 
-.is-vector-visible .line2 {
+.is-visible .line2 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 2s linear alternate infinite;
 }
 
-.is-vector-visible .Vector20 {
+.is-visible .Vector20 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 4s linear alternate infinite;
 }
 
-.is-vector-visible .Vector21 {
+.is-visible .Vector21 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 4s linear alternate infinite;
 }
 
-.is-vector-visible .Vector22 {
+.is-visible .Vector22 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 6s linear alternate infinite;
 }
 
-.is-vector-visible .Vector23 {
+.is-visible .Vector23 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 6s linear alternate infinite;
 }
 
 // bg_line class path
-.is-bgvector-visible .Vector24 {
+.is-visible .Vector24 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 2s linear alternate infinite;
 }
 
-.is-bgvector-visible .Vector25 {
+.is-visible .Vector25 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 2s linear alternate infinite;
 }
 
-.is-bgvector-visible .Vector26 {
+.is-visible .Vector26 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 4s linear alternate infinite;
 }
 
-.is-bgvector-visible .Vector27 {
+.is-visible .Vector27 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 4s linear alternate infinite;
 }
 
-.is-bgvector-visible .Vector28 {
+.is-visible .Vector28 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 6s linear alternate infinite;
 }
 
-.is-bgvector-visible .Vector29 {
+.is-visible .Vector29 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 6s linear alternate infinite;

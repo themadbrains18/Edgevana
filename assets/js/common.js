@@ -70,7 +70,7 @@ window.addEventListener("scroll",()=>{
 //   this.color = color;
 //   this.speed = speed;
 //   this.angle = Math.random() * Math.PI * 2;
-//   this.t = Math.random() * 150;
+//   this.t = Math.random() * 20 0;
 //   this.rotate = () => {
 //     const initialPoint = {
 //       x: this.x,
@@ -120,10 +120,6 @@ window.addEventListener("scroll",()=>{
 // requestAnimationFrame(animate);
 
 
-
-
-
-    
     
 // Detect request animation frame
 var scroll = window.requestAnimationFrame ||
@@ -136,8 +132,6 @@ function loop() {
     Array.prototype.forEach.call(elementsToShow, function(element){
       if (isElementInViewport(element)) {
         element.classList.add('is-visible');
-      } else {
-        element.classList.remove('is-visible');
       }
     });
 
