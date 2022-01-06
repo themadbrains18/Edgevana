@@ -31,24 +31,55 @@
   }
 }
 
-.is-visible .connectdot {
+ .connectdot {
   animation: dotpulse 1s linear infinite;
 }
 
 @keyframes linemove {
   // from {
-  //   stroke-dashoffset: 450;
+  //   stroke-dashoffset: 300;
   // }
   to {
     stroke-dashoffset: 0;
   }
 }
 
-.is-visible .connectline {
-  stroke-dasharray: 800;
-  stroke-dashoffset: 800;
-  animation: linemove 2s linear infinite alternate;
+.connectline {
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  animation: linemove 3s linear infinite alternate;
 }
+
+//  #Vector_14_2 {
+//   stroke-dasharray: 340;
+//   stroke-dashoffset: 0;
+//   animation: linedash 3s linear alternate infinite;
+// }
+
+// #Vector_14_1 {
+//   stroke-dasharray: 320;
+//   stroke-dashoffset: 0;
+//   animation: linedash2 3s linear alternate infinite;
+// }
+
+// @keyframes linedash {
+//   from {
+//     stroke-dashoffset: 360;
+//   }
+//   to {
+//     stroke-dashoffset: 40;
+//   }
+// }
+
+// @keyframes linedash2 {
+//   from {
+//     stroke-dashoffset: 280;
+//   }
+//   to {
+//     stroke-dashoffset: -40;
+//   }
+// }
+
 
 .is-visible .Vector-17 {
   width: 50px;
