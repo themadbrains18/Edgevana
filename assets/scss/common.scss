@@ -115,6 +115,27 @@ main {
   margin-top: clamp(20px, 3vw, 40px);
 }
 
-// #canvas {
-//   position: fixed;
-// }
+#canvas {
+  position: fixed;
+}
+main {
+  position: relative;
+}
+
+/* On Scroll Animation */
+.show-on-scroll {
+  transform: translateY(-30px);
+  opacity: 0;
+  transition: 0.8s linear;
+}
+.show-on-scroll.is-visible {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+// Index Globel Point Item Loop
+@for $i from 1 through 7 {
+  .show-on-scroll:nth-child(#{$i}) {
+    transition: 0.5s ($i * 0.2) + s;
+  }
+}
