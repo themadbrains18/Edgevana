@@ -12,7 +12,7 @@
     -webkit-transform: rotate(-359deg);
   }
 }
-.is-visible .global_img {
+.is-visible.global_img {
   animation: HeroGlobal 20s linear forwards;
 }
 
@@ -31,7 +31,7 @@
   }
 }
 
- .connectdot {
+.connectdot {
   animation: dotpulse 1s linear infinite;
 }
 
@@ -54,7 +54,7 @@
   animation: qwer 5s linear infinite forwards ;
 }
 
-.is-visible .Vector-17 {
+.is-visible.Vector-17 {
   width: 50px;
   height: 5px;
   offset-distance: 0%;
@@ -63,7 +63,7 @@
   animation: dash 10s linear infinite;
 }
 
-.is-visible .Vector-19 {
+.is-visible.Vector-19 {
   width: 50px;
   height: 5px;
   offset-distance: 0%;
@@ -72,7 +72,7 @@
   animation: dash 15s linear infinite;
 }
 
-.is-visible .Vector-20 {
+.is-visible.Vector-20 {
   width: 50px;
   height: 5px;
   offset-distance: 0%;
@@ -81,89 +81,74 @@
   animation: dash 20s linear infinite;
 }
 
-// @keyframes vectordash {
-//   from {
-//     stroke-dashoffset: 100;
-//   }
-//   to {
-//     stroke-dashoffset: -50;
-//   }
-// }
-
-// .is-vector-visible .Vector20{
-//   stroke-dasharray: 100;
-//   stroke-dashoffset: 100;
-//   animation: vectordash 1.5s alternate infinite;
-// }
-
-.is-visible .line1 {
+.is-visible.line1 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 2s linear alternate infinite;
 }
 
-.is-visible .line2 {
+.is-visible.line2 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 2s linear alternate infinite;
 }
 
-.is-visible .Vector20 {
+.is-visible.Vector20 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 4s linear alternate infinite;
 }
 
-.is-visible .Vector21 {
+.is-visible.Vector21 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 4s linear alternate infinite;
 }
 
-.is-visible .Vector22 {
+.is-visible.Vector22 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 6s linear alternate infinite;
 }
 
-.is-visible .Vector23 {
+.is-visible.Vector23 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 6s linear alternate infinite;
 }
 
 // bg_line class path
-.is-visible .Vector24 {
+.is-visible.Vector24 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 2s linear alternate infinite;
 }
 
-.is-visible .Vector25 {
+.is-visible.Vector25 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 2s linear alternate infinite;
 }
 
-.is-visible .Vector26 {
+.is-visible.Vector26 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 4s linear alternate infinite;
 }
 
-.is-visible .Vector27 {
+.is-visible.Vector27 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 4s linear alternate infinite;
 }
 
-.is-visible .Vector28 {
+.is-visible.Vector28 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
   animation: dash 6s linear alternate infinite;
 }
 
-.is-visible .Vector29 {
+.is-visible.Vector29 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
   animation: dash2 6s linear alternate infinite;
@@ -209,6 +194,22 @@
 //     .svg_map_dot  path:nth-child(#{$i}) {
 //       animation: pulse 1s linear infinite alternate;
 //     }
+// }
+
+
+// @keyframes vectordash {
+//   from {
+//     stroke-dashoffset: 100;
+//   }
+//   to {
+//     stroke-dashoffset: -50;
+//   }
+// }
+
+// .is-vector-visible .Vector20{
+//   stroke-dasharray: 100;
+//   stroke-dashoffset: 100;
+//   animation: vectordash 1.5s alternate infinite;
 // }
 
 // annimate map dotted pulsed end--------------------
