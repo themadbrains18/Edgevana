@@ -44,7 +44,8 @@
   }
 
   .tmb__hero__sec .connect_hero_global_map {
-    top: 58%;
+    top: 52%;
+    transform: translateX(-50%) rotate(-1deg) scale(1.25);
   }
   .tmb__globel__sec .bg__lines {
     top: 78%;
@@ -59,6 +60,17 @@
     gap: 20px;
     .founders__sec .about__bg__ele {
       left: -20%;
+    }
+  }
+
+
+  // index banner animation
+  @keyframes HeroGlobalimg {
+    from {
+      -webkit-transform: rotate(0deg) skew(-5deg) scale(0.8);
+    }
+    to {
+      -webkit-transform: rotate(359deg) skew(5deg) scale(0.8);
     }
   }
 }
@@ -295,6 +307,21 @@
     }
   }
   // Podacst responsive css start
+
+  .connect_hero_global_map{
+    display: none;
+  }
+  .tmb__globel__sec{
+    .bg__lines{
+      display: none;  
+    }
+  }
+  .cursor__wrapper{
+    display: none !important;
+  }
+  .testimonial__list{
+    min-height: auto; 
+  }
 }
 
 // === RESPONSIVE CSS 1200PX END === //
@@ -467,7 +494,7 @@
   nav.nav__list {
     position: absolute;
     background-color: #0b0e1e;
-    width: 100%;
+    width: 320px;
     right: 0;
     top: 110px;
     height: 100%;
@@ -478,7 +505,16 @@
     transform: translateX(100%);
     transition: 0.4s;
   }
-
+  .dropdown{
+    .dropdown__item{
+      a{
+        img{
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+  }
   .nav__list.show {
     transform: translateX(0);
   }
@@ -486,7 +522,7 @@
   .nav__list ul {
     flex-direction: column;
     align-items: flex-start;
-    gap: 50px;
+    gap: 20px;
   }
   .toggle__btn {
     svg {
@@ -515,7 +551,42 @@
       }
     }
   }
-
+  .dropdown{
+    position: static;
+    background: none;
+    height: 0;
+    overflow: hidden;
+    margin-top:0;
+    padding: 0;
+    transition:all 0.4s;
+    transform: translateY(0px);
+  }
+  .nav-modifier{
+    color: #fff;
+    background: none !important;
+    -webkit-background-clip: none  !important;
+    -webkit-text-fill-color: #fff !important;
+  }
+  .nav-modifier::after, .nav-modifier::before{
+    left: 95%;
+  }
+  .nav-modifier:hover::after, .nav-modifier:hover::before {
+    background:#fff;
+  }
+  .social__icons{
+    display: block;
+    position: absolute;
+    bottom: 110px;
+    right: 30px;
+  }
+  .informational__pages{
+    display: block;
+    margin-top: 66px;
+    .copywrite__info, .copywrite__links a{
+      font-weight: 700;
+      color: #BABFC5;
+    }
+  }
   /* Service Responsive 991px */
   .sec__service .sec__content {
     gap: 100px;
@@ -701,31 +772,60 @@
     gap: 40px;
   }
 
-  // podcast responsive css 
-  .recent__episodes{
-    .sec__head{
-      .sec__heading{
+  // podcast responsive css
+  .recent__episodes {
+    .sec__head {
+      .sec__heading {
         text-align: start;
       }
     }
-    .sec__content{
+    .sec__content {
       .sec__content__inner {
         flex-direction: column;
         .episodes__wrapper,
-        .form__wrapper
-        {
+        .form__wrapper {
           width: 100%;
         }
       }
-    } 
-  } 
+    }
+  }
 
+  /* News Room Responsive 991px */
+  .sec__news__room__tabs .news__room__tabs__Content .sec__text {
+    position: initial;
+  }
+  .news-shadow,
+  .social__link {
+    display: none !important;
+  }
+  .sec__news__room__tabs .sec__header {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .news__blog__content {
+    background-color: #121625;
+    border-radius: 10px;
+  }
+  .sec__news__room__tabs .grid__tabs {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 // === RESPONSIVE CSS 991PX END === //
 
 // === RESPONSIVE CSS 767PX START === //
 @media only screen and (max-width: 767px) {
+  .image__wrapper {
+    padding: 0 8px;
+  } 
+  .trusted__logo__list .swiper-slide{
+    width: 86px !important;
+  }
+  .trusted__logo__list{
+    margin: 0;
+  }
   // footer responsive css 767px
   .container {
     padding: 0 30px;
@@ -1432,34 +1532,67 @@
       margin: 0;
     }
   }
-  .recent__episodes{
+  .recent__episodes {
     padding: 50px 0;
   }
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .load__more__btn .primary-btn{
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .load__more__btn
+    .primary-btn {
     width: 100%;
   }
-  .recent__episodes .sec__content .sec__content__inner .form__wrapper .podcast__form{
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .form__wrapper
+    .podcast__form {
     padding: 0;
     background-color: transparent;
     border: none;
   }
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__head .date{
-    color: #6F6F6F;
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .episode__inner
+    .episode__head
+    .date {
+    color: #6f6f6f;
   }
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner{
-    padding: 20px 0;  
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .episode__inner {
+    padding: 20px 0;
   }
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__head .episode__heading{
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .episode__inner
+    .episode__head
+    .episode__heading {
     font-weight: 400;
   }
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner:not(:last-child){
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .episode__inner:not(:last-child) {
     margin-bottom: 0;
   }
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner{
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .episode__inner {
     position: relative;
-    &::after{
-      content: '';
-      background-color: #1D212E;
+    &::after {
+      content: "";
+      background-color: #1d212e;
       width: calc(100% + 60px);
       height: 1px;
       margin-left: -30px;
@@ -1468,23 +1601,51 @@
       left: 0;
     }
   }
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .info,
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__text .jp__time,
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__text .jp-seek-bar
-  {
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .episode__inner
+    .info,
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .episode__inner
+    .episode__text
+    .jp__time,
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .episode__inner
+    .episode__text
+    .jp-seek-bar {
     display: none;
   }
-  .recent__episodes .sec__content .sec__content__inner .form__wrapper .podcast__form .podcast__form__group .input__feild input{
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .form__wrapper
+    .podcast__form
+    .podcast__form__group
+    .input__feild
+    input {
     padding: 10px;
   }
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__head{
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .episode__inner
+    .episode__head {
     flex-direction: column;
     align-items: flex-start;
   }
-  .recent__episodes .sec__content .sec__content__inner{
+  .recent__episodes .sec__content .sec__content__inner {
     gap: 128px;
   }
-  .recent__episodes .sec__content .sec__content__inner .timing.timing-modifier{
+  .recent__episodes .sec__content .sec__content__inner .timing.timing-modifier {
     display: block;
   }
   .date__wrapper {
@@ -1495,7 +1656,30 @@
     width: 100%;
   }
   // podcast page responsive end
+  .sec__news__room__tabs .sec__header .sec__news_room__tabs {
+    gap: 10px;
+  }
+  .sec__news__room__tabs {
+    .news__room__tabs__Content .sec__text {
+      padding: 20px 15px;
+      .sec__heading__text {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
+.sec__news__room__tabs {
+  .profile img {
+    width: 24px;
+  }
+  .date img {
+    width: 18px;
+  }
+}
+.sec__news__room__tabs .news__room__tabs__Content .sec__text .tabs__date {
+  gap: 40px;
+}
+
 // === RESPONSIVE CSS 767PX end === //
 
 // === RESPONSIVE CSS 576PX START === //
@@ -1661,9 +1845,11 @@
   }
 
   .info__crd__sec {
-    padding: 0 0 52px;
+    padding: 50px 0 25px;
   }
-
+  .testimonial__list{
+    margin-top: 0 !important;
+  }
   .info__crd__sec {
     .sec__heading {
       font-size: 25px;
@@ -1731,6 +1917,11 @@
   /* Section Podcast Summary */
   .sec__podcast__summary .sec__header .sec__heading {
     font-weight: 500;
+  }
+  .deploy__sec__img svg {
+    position: absolute;
+    top: 10px;
+    left: 54px;
   }
 }
 
@@ -2050,6 +2241,12 @@
   .summary__info ul {
     margin: 20px 0 30px;
   }
+  .testimonial__list{
+    padding: 25px 0 25px;
+  }
+  .trusted__logo__list{
+    top: 70%;
+  }
 }
 
 // === RESPONSIVE CSS 480PX END === //
@@ -2070,6 +2267,13 @@
   .social__inner.watch-now.active ~ .social__media {
     right: 50%;
     transform: translate(50%, 70px);
+  }
+  .logo__swiper{
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+  .deploy__sec__img svg {
+    left: 24px;
   }
 }
 // === RESPONSIVE CSS 340PX end === //
