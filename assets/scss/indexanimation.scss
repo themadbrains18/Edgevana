@@ -1,22 +1,39 @@
 // global map annimate rotate
 
-@keyframes HeroGlobal {
-  100% {
-    opacity: 1;
-  }
+// @keyframes HeroGlobal {
+//   100% {
+//     opacity: 1;
+//   }
 
-  from {
-    transform: rotateY(0deg) rotateY(25deg);
-  }
-  to {
-    transform: rotateY(-359deg) rotateY(25deg);
+//   from {
+//     transform: rotateY(0deg) rotateX(40deg);
+//   }
+//   to {
+//     transform: rotateY(-359deg) rotateX(-40deg);
+//   }
+// }
+// .global_img {
+//   // transform: rotateY(45deg);
+//   animation: HeroGlobal 10s linear forwards infinite;
+// }
+
+@keyframes global {
+  100%{
+    background-position: 100%;
   }
 }
-.global_img {
-  // transform: rotateY(45deg);
-  animation: HeroGlobal 10s linear forwards infinite;
-}
 
+.globel__sec__img{
+  height: 500px;
+  width: 500px;
+  background-image: url(../image/Map2.png);
+  background-position: -50%;
+  background-size: auto 450px;
+  background-repeat: repeat no-repeat;
+  box-shadow: 0 0 50px #000, 0 0 100px #303031, inset 0 0 30px #555557;
+  border-radius: 50%;
+  animation: global 50s linear infinite;
+}
 
 // global map annimate rotate end
 
