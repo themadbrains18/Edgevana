@@ -44,7 +44,8 @@
   }
 
   .tmb__hero__sec .connect_hero_global_map {
-    top: 58%;
+    top: 52%;
+    transform: translateX(-50%) rotate(-1deg) scale(1.25);
   }
   .tmb__globel__sec .bg__lines {
     top: 78%;
@@ -59,6 +60,17 @@
     gap: 20px;
     .founders__sec .about__bg__ele {
       left: -20%;
+    }
+  }
+
+
+  // index banner animation
+  @keyframes HeroGlobalimg {
+    from {
+      -webkit-transform: rotate(0deg) skew(-5deg) scale(0.8);
+    }
+    to {
+      -webkit-transform: rotate(359deg) skew(5deg) scale(0.8);
     }
   }
 }
@@ -295,6 +307,21 @@
     }
   }
   // Podacst responsive css start
+
+  .connect_hero_global_map{
+    display: none;
+  }
+  .tmb__globel__sec{
+    .bg__lines{
+      display: none;  
+    }
+  }
+  .cursor__wrapper{
+    display: none !important;
+  }
+  .testimonial__list{
+    min-height: auto; 
+  }
 }
 
 // === RESPONSIVE CSS 1200PX END === //
@@ -726,6 +753,15 @@
 
 // === RESPONSIVE CSS 767PX START === //
 @media only screen and (max-width: 767px) {
+  .image__wrapper {
+    padding: 0 8px;
+  } 
+  .trusted__logo__list .swiper-slide{
+    width: 86px !important;
+  }
+  .trusted__logo__list{
+    margin: 0;
+  }
   // footer responsive css 767px
   .container {
     padding: 0 30px;
@@ -1661,9 +1697,11 @@
   }
 
   .info__crd__sec {
-    padding: 0 0 52px;
+    padding: 50px 0 25px;
   }
-
+  .testimonial__list{
+    margin-top: 0 !important;
+  }
   .info__crd__sec {
     .sec__heading {
       font-size: 25px;
@@ -1731,6 +1769,11 @@
   /* Section Podcast Summary */
   .sec__podcast__summary .sec__header .sec__heading {
     font-weight: 500;
+  }
+  .deploy__sec__img svg {
+    position: absolute;
+    top: 10px;
+    left: 54px;
   }
 }
 
@@ -2050,6 +2093,12 @@
   .summary__info ul {
     margin: 20px 0 30px;
   }
+  .testimonial__list{
+    padding: 25px 0 25px;
+  }
+  .trusted__logo__list{
+    top: 70%;
+  }
 }
 
 // === RESPONSIVE CSS 480PX END === //
@@ -2070,6 +2119,13 @@
   .social__inner.watch-now.active ~ .social__media {
     right: 50%;
     transform: translate(50%, 70px);
+  }
+  .logo__swiper{
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+  .deploy__sec__img svg {
+    left: 24px;
   }
 }
 // === RESPONSIVE CSS 340PX end === //

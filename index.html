@@ -35,7 +35,15 @@
                             <a class="nav__item" href="service.html">Services</a>
                         </li>
                         <li>
-                            <a class="nav__item" href="#">Resources</a>
+                            <a class="nav__item nav-modifier" href="#">Resources</a>
+                            <div class="dropdown">
+                                <div class="dropdown__item">
+                                    <a href="#"><img src="assets/svg/news.svg" alt="image-description"> Newsroom</a>
+                                </div>
+                                <div class="dropdown__item">
+                                    <a href="#"><img src="assets/svg/podcast.svg" alt="image-description"> Podcast</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="col-lg-hide">
                             <a class="nav__item" href="contact-us.html">Contact us</a>
@@ -96,11 +104,12 @@
                     </div>
                     <!-- Hero Image -->
                     <div class="hero__img">
-                        <img class="hero__img_svg" width="495" height="586" src="assets/image/Layer1.png" alt="">
+                        <img class="hero__img_svg" width="495" height="586" src="assets/image/Layer1.png"
+                            alt="image-description">
                     </div>
                 </div>
                 <div class="connect_hero_global_map">
-                    <!-- <img class="cox_svg" src="assets/svg/Line.svg" alt=""> -->
+                    <!-- <img class="cox_svg" src="assets/svg/Line.svg" alt="image-description"> -->
 
                     <svg class="cox_svg" width="1093" height="1000" viewBox="0 0 1093 929" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -295,15 +304,40 @@
                     </svg>
                 </div>
                 <!-- Logo List -->
-                <ul class="logo__list">
-                    <li><img src="assets/image/logo1.png" alt=""></li>
-                    <li><img src="assets/image/CIO.png" alt=""></li>
-                    <li><img src="assets/image/logo3.png" alt=""></li>
-                    <li><img src="assets/image/logo4.png" alt=""></li>
-                    <li><img src="assets/image/logo5.png" alt=""></li>
-                    <li><img src="assets/image/logo6.png" alt=""></li>
-                    <li><img src="assets/image/logo7.png" alt=""></li>
-                </ul>
+                <!-- <ul class="logo__list">
+                    <li><img src="assets/image/logo1.png" alt="image-description"></li>
+                    <li><img src="assets/image/CIO.png" alt="image-description"></li>
+                    <li><img src="assets/image/logo3.png" alt="image-description"></li>
+                    <li><img src="assets/image/logo4.png" alt="image-description"></li>
+                    <li><img src="assets/image/logo5.png" alt="image-description"></li>
+                    <li><img src="assets/image/logo6.png" alt="image-description"></li>
+                    <li><img src="assets/image/logo7.png" alt="image-description"></li>
+                </ul> -->
+                <div class="swiper logo__swiper">
+                    <div class="swiper-wrapper logo__list">
+                        <div class="swiper-slide">
+                            <img src="assets/image/logo1.png" alt="image-description">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/image/CIO.png" alt="image-description">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/image/logo3.png" alt="image-description">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/image/logo4.png" alt="image-description">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/image/logo5.png" alt="image-description">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/image/logo6.png" alt="image-description">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/image/logo7.png" alt="image-description">
+                        </div>
+                    </div>
+                </div>
 
                 <!-- <svg width="300px" height="175px" version="1.1">
                     <path fill="transparent" stroke="#000000" stroke-width="4" d="M210 901.5C210 534 791.999 543.5 881.499 110" class="path"></path>
@@ -321,7 +355,7 @@
             <div class="container">
                 <div class="globel__sec__content">
                     <div class="globel__sec__img show-on-scroll">
-                        <img class="global_img" src="assets/image/global.png" alt="">
+                        <img class="global_img" src="assets/image/global.png" alt="image-description">
                     </div>
                     <div class="globel__sec__txt">
                         <h2 class="sec__heading">
@@ -595,15 +629,16 @@
                         </h2>
                         <div class="deploy__detail">
                             <h3>Deploy Edge in</h3>
-                            <p><span class="gradient-text">30,000+</span>&nbsp;<span
-                                    class="normal-text">Locations</span></p>
-                            <p><span class="gradient-text">107+</span>&nbsp;<span class="normal-text">Countries</span>
+                            <p><span class="gradient-text" id="count1">0</span><span
+                                    class="gradient-text">+</span>&nbsp;<span class="normal-text">Locations</span></p>
+                            <p><span class="gradient-text" id="count2">0</span><span
+                                    class="gradient-text">+</span>&nbsp;<span class="normal-text">Countries</span>
                             </p>
                         </div>
                     </div>
                     <!-- Section Image -->
                     <div class="deploy__sec__img">
-                        <img src="assets/image/connectivitymap.png" alt="">
+                        <img src="assets/image/connectivitymap.png" alt="image-description">
 
                         <svg width="1022" height="600" viewBox="0 0 1022 600" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -935,7 +970,7 @@
                 </div>
                 <div class="trusted__sec__map">
                     <!-- Background map -->
-                    <img src="assets/svg/line-map.svg" alt="">
+                    <img src="assets/svg/line-map.svg" alt="image-description">
                     <!-- <svg height="807.5106987115958" version="1.1" width="1887" xmlns="http://www.w3.org/2000/svg"
                         style="overflow: hidden; position: relative; top: -0.875px;"
                         viewBox="0.9340733399403078 0.9340733399405352 1904.0000000000002 814.7855698711597"
@@ -2310,25 +2345,35 @@
                             style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1; cursor: pointer;"></rect>
                     </svg> -->
                     <!-- Logo List -->
-                    <div class="trusted__logo__list">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <img class="cox_svg" src="assets/image/trusted-logo1-with-bg.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="cox_svg" src="assets/image/trusted-logo2-with-bg.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="cox_svg" src="assets/image/trusted-logo3-with-bg.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="cox_svg" src="assets/image/trusted-logo4-with-bg.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="cox_svg" src="assets/image/trusted-logo5-with-bg.png" alt="">
-                            </div>
+                </div>
+            </div>
+            <div class="trusted__logo__list">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="image__wrapper">
+                            <img class="cox_svg" src="assets/image/trusted-logo1-with-bg.png" alt="image-description">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image__wrapper">
+                            <img class="cox_svg" src="assets/image/trusted-logo2-with-bg.png" alt="image-description">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image__wrapper">
+                            <img class="cox_svg" src="assets/image/trusted-logo3-with-bg.png" alt="image-description">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image__wrapper">
+                            <img class="cox_svg" src="assets/image/trusted-logo4-with-bg.png" alt="image-description">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image__wrapper">
+                            <img class="cox_svg" src="assets/image/trusted-logo5-with-bg.png" alt="image-description">
                         </div>
                     </div>
                 </div>
@@ -2341,9 +2386,9 @@
         <section class="info__crd__sec">
             <div class="container ">
                 <!-- Grid card -->
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiperInfocard">
 
-                    <ul class=" swiper-wrapper">
+                    <ul class="swiper-wrapper">
                         <!-- card item -->
 
                         <div class="swiper-slide">
@@ -2445,13 +2490,12 @@
         <section class="testimonial">
             <div class="container">
                 <!-- Testmonial List -->
-                <h2 class="sec__heading">
-                    From Our Valuable Clients
-                </h2>
                 <div class="testimonial__list">
-
-                    <div class="cursor">
-                        <span></span>
+                    <h2 class="sec__heading">From Our Valuable Clients</h2>
+                    <div class="cursor__wrapper">
+                        <div class="cursor">
+                            <span></span>
+                        </div>
                     </div>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -2481,13 +2525,23 @@
                                                 </span>
                                             </div>
                                             <div class="profile__img">
-                                                <img src="assets/image/profile-img.png" alt="">
+                                                <img src="assets/image/profile-img.png" alt="image-description">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="testimonial__img">
-                                    <img src="assets/image/testimonial-img.png" alt="">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front gradient-border">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <img src="assets/image/testimonial-img.png" alt="image-description"> -->
                                 </div>
                             </div>
                         </div>
@@ -2518,13 +2572,23 @@
                                                 </span>
                                             </div>
                                             <div class="profile__img">
-                                                <img src="assets/image/profile-img.png" alt="">
+                                                <img src="assets/image/profile-img.png" alt="image-description">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="testimonial__img">
-                                    <img src="assets/image/testimonial-img.png" alt="">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front gradient-border">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <img src="assets/image/testimonial-img.png" alt="image-description"> -->
                                 </div>
                             </div>
                         </div>
@@ -2555,13 +2619,23 @@
                                                 </span>
                                             </div>
                                             <div class="profile__img">
-                                                <img src="assets/image/profile-img.png" alt="">
+                                                <img src="assets/image/profile-img.png" alt="image-description">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="testimonial__img">
-                                    <img src="assets/image/testimonial-img.png" alt="">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front gradient-border">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <img src="assets/image/testimonial-img.png" alt="image-description"> -->
                                 </div>
                             </div>
                         </div>
@@ -2592,13 +2666,23 @@
                                                 </span>
                                             </div>
                                             <div class="profile__img">
-                                                <img src="assets/image/profile-img.png" alt="">
+                                                <img src="assets/image/profile-img.png" alt="image-description">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="testimonial__img">
-                                    <img src="assets/image/testimonial-img.png" alt="">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front gradient-border">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <img src="assets/image/testimonial-img.png" alt="image-description"> -->
                                 </div>
                             </div>
                         </div>
@@ -2629,13 +2713,23 @@
                                                 </span>
                                             </div>
                                             <div class="profile__img">
-                                                <img src="assets/image/profile-img.png" alt="">
+                                                <img src="assets/image/profile-img.png" alt="image-description">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="testimonial__img">
-                                    <img src="assets/image/testimonial-img.png" alt="">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front gradient-border">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <img src="assets/image/testimonial-img.png" alt="image-description"> -->
                                 </div>
                             </div>
                         </div>
@@ -2744,12 +2838,11 @@
     <!-- === footer end === -->
 
     <!-- === script files === -->
-
     <script src="assets/js/common.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="assets/js/index.js" defer></script>
-    
-   <!-- <script>
+    <script src="assets/js/index.js"></script>
+
+    <!-- <script>
         // Slider Js
         window.addEventListener('load', () => {
             const swiper = new Swiper('.trusted__logo__list', {

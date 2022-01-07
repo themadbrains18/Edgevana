@@ -27,6 +27,18 @@ window.addEventListener("scroll",()=>{
         }
     }
 });
+
+// resource dropdown js start
+let dropdown = document.querySelector(".nav__item.nav-modifier");
+
+dropdown.addEventListener("click",()=>{
+    dropdown.classList.toggle("show");
+});
+
+// resource dropdown js end
+
+
+
 // header js end
 
 

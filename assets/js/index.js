@@ -2,6 +2,9 @@
 
 // /* Testimonial Slider Cursor Js Code */
 
+
+
+
 let testimonialSlider = document.querySelector(".testimonial__list");
 var cursor = document.querySelector(".cursor");
 testimonialSlider.addEventListener("mousemove", (e) => {
@@ -50,31 +53,31 @@ window.addEventListener('load', () => {
 
 
 
-    /* Testimonial Slider Cursor Js Code */
-
     let testimonialSlider = document.querySelector(".testimonial__list");
-    var cursor = document.querySelector(".cursor");
+    var cursor = document.querySelector(".cursor__wrapper");
     testimonialSlider.addEventListener("mousemove", (e) => {
         testimonialSlider.classList.add("mouseenter")
-        cursor.setAttribute("style", ` top: ${e.pageY - 42}px; left: ${e.pageX - 49}px;`);
+        // console.log(e.x);
+        cursor.setAttribute("style", ` top: ${e.y - 42}px; left: ${e.x - 49}px;`);
     })
-
+    
     testimonialSlider.addEventListener("mouseleave", (e) => {
         testimonialSlider.classList.remove("mouseenter")
     })
 
     //slider swipe
+    
     const swiper = new Swiper('.trusted__logo__list', {
         slidesPerView: 5,
-        centeredSlides: true,
-        spaceBetween: 30,
+        speed: 800,
+        autoplay:true,
+        grabCursor:true,
         loop: true,
-        autoplay: true,
+        resizeReInit: true,
+        slidesPerView: 'auto',
+        centeredSlides  : true,
         breakpoints: {
-            320: {
-                slidesPerView: 3,
-            },
-            640: {
+            310: {
                 slidesPerView: 3,
 
             },
@@ -90,12 +93,16 @@ window.addEventListener('load', () => {
     const swipertestimonial = new Swiper('.testimonial__list', {
         slidesPerView: 1,
         centeredSlides: true,
+        autoHeight: true,
         spaceBetween: 300,
         loop: false,
-        autoplay: true,
+        // autoplay: true,
+        parallax: true,
         mousewheel: {
             releaseOnEdges: true,
-          },
+        },
+        speed: 800,
+        // autoplay: true,
     });
 
 
@@ -103,14 +110,42 @@ window.addEventListener('load', () => {
     const mediaQuery = window.matchMedia('(max-width: 1200px)')
     // Check if the media query is true
     if (mediaQuery.matches) {
-        var mobileSlider = new Swiper(".mySwiper", {
+        var mobileSlider = new Swiper(".mySwiperInfocard", {
             centeredSlides: true,
+            freeMode: true,
             slidesPerView: 1,
             loop: true,
         });
     }
 
 })
+
+// banner logo slider
+var swiper = new Swiper(".logo__swiper", {
+    slidesPerView: 8,
+    autoplay: {
+      delay: 1500,
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        // when window width is >= 575px
+        575: {
+          slidesPerView: 4,
+          loop:true,
+        },
+        // when window width is >= 1200px
+        1200: {
+            slidesPerView: 8,
+        }
+    }
+});
+
+
+
 
 
 window.addEventListener("scroll", function (event) {
@@ -162,4 +197,33 @@ window.addEventListener("scroll", function (event) {
 }, false);
 
 
+// counter js start
+// counter js start
+function counter(id, start, end, duration) {
+    let obj = document.getElementById(id),
+     current = start,
+     range = end - start,
+     increment = end > start ? 1 : -1,
+     step = Math.abs(Math.floor(duration / range)),
+     timer = setInterval(() => {
+      current += increment;
+      obj.textContent = current;
+      if (current == end) {
+       clearInterval(timer);
+      }
+     }, step);
+   }
 
+let counterFlag = true;
+window.addEventListener("scroll",()=>{
+    let counterSec = document.querySelector(".tmb__deploy__sec");
+    let rect = counterSec.getBoundingClientRect();
+    if(rect.top <= 150){
+            if(counterFlag){
+            counter("count1", 29500, 30000, 2000);
+            counter("count2", 0, 107, 2500);
+            counterFlag = false;
+        }
+    }
+});
+   
