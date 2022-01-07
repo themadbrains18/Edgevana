@@ -16,7 +16,6 @@
 
 <body>
 
-    <!-- <canvas id="canvas"></canvas> -->
     <!-- ==== header start ==== -->
     <header class="header">
         <div class="container">
@@ -35,12 +34,44 @@
                             <a class="nav__item" href="service.html">Services</a>
                         </li>
                         <li>
-                            <a class="nav__item" href="#">Resources</a>
+                            <a class="nav__item nav-modifier">Resources</a>
+                            <div class="dropdown">
+                                <div class="dropdown__item">
+                                    <a href="newsroom.html"><img src="assets/svg/news.svg" alt="image-description"> Newsroom</a>
+                                </div>
+                                <div class="dropdown__item">
+                                    <a href="podcast.html"><img src="assets/svg/podcast.svg" alt="image-description"> Podcast</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="col-lg-hide">
                             <a class="nav__item" href="contact-us.html">Contact us</a>
                         </li>
                     </ul>
+
+                    <div class="informational__pages">
+                        <div class="copywrite__links">
+                            <ul>
+                                <li class="show-on-scroll"><a href="privacy-policy.html">Privacy Policy</a></li>
+                                <li class="show-on-scroll"><a href="terms-of-use.html">Terms of use</a></li>
+                                <li class="show-on-scroll"><a href="cookies.html">Cookies Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="social__icons">
+                        <a href="https://twitter.com/edgevana">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M26 26H20C18.3455 26 17 24.6545 17 23V21.5H26C27.656 21.5 29 20.156 29 18.5C29 16.844 27.656 15.5 26 15.5H17V11C17 9.344 15.656 8 14 8C12.344 8 11 9.344 11 11V23C11 27.9635 15.0365 32 20 32H26C27.656 32 29 30.656 29 29C29 27.344 27.656 26 26 26Z" fill="white"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/edgevana/"> 
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32.0009 31.9999V23.21C32.0009 18.89 31.0709 15.59 26.0309 15.59C23.6009 15.59 21.9809 16.91 21.3209 18.17H21.2609V15.98H16.4909V31.9999H21.4709V24.05C21.4709 21.95 21.8609 19.94 24.4409 19.94C26.9909 19.94 27.0209 22.31 27.0209 24.17V31.9699H32.0009V31.9999Z" fill="white"></path>
+                                <path d="M8.38812 15.98H13.3681V32H8.38812V15.98Z" fill="white"></path>
+                                <path d="M10.88 8C9.29 8 8 9.29 8 10.88C8 12.47 9.29 13.79 10.88 13.79C12.47 13.79 13.76 12.47 13.76 10.88C13.76 9.29 12.47 8 10.88 8V8Z" fill="white"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </nav>
                 <div class="contact__btn">
                     <a class="nav__item" href="contact-us.html">Contact us</a>
@@ -171,20 +202,20 @@
                     </div>
                     <!-- Hero Image -->
                     <div class="hero__img show-on-scroll">
-                        <img class="hero__img_svg" width="495" height="586" src="assets/image/indexHero.png" alt="">
+                        <img class="hero__img_svg" width="495" height="586" src="assets/image/indexHero.png" alt="image-description">
                     </div>
                 </div>
                 <div class="connect_hero_global_map show-on-scroll">
-                    <!-- <img class="cox_svg" src="assets/svg/Line.svg" alt=""> -->
+                    <!-- <img class="cox_svg" src="assets/svg/Line.svg" alt="image-description"> -->
 
-                    <svg class="cox_svg" width="1093" height="1000" viewBox="0 0 1093 929" fill="none"
+                    <svg class="cox_svg" width="1093" height="825" viewBox="0 0 1093 875" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g id="Line">
                             <g id="Vector 17" filter="url(#filter0_dd_86_1293)">
                                 <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
                                     d="M210 901.5C210 534 791.999 543.5 881.499 110" class="path" stroke-linecap="round"
                                     stroke-linejoin="round"></path>
-                                <path fill="transparent" stroke="blue" stroke-width="4"
+                                <path fill="transparent" stroke="url(#filter1_dd_86_1293)" stroke-width="6"
                                     d="M210 901.5C210 534 791.999 543.5 881.499 110" class="line2"></path>
                                 <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
                                     d="M210 901.5C210 534 791.999 543.5 881.499 110" class="line1"></path>
@@ -370,15 +401,31 @@
                     </svg>
                 </div>
                 <!-- Logo List -->
-                <ul class="logo__list">
-                    <li class="show-on-scroll"><img src="assets/image/logo1.png" alt=""></li>
-                    <li class="show-on-scroll"><img src="assets/image/CIO.png" alt=""></li>
-                    <li class="show-on-scroll"><img src="assets/image/logo3.png" alt=""></li>
-                    <li class="show-on-scroll"><img src="assets/image/logo4.png" alt=""></li>
-                    <li class="show-on-scroll"><img src="assets/image/logo5.png" alt=""></li>
-                    <li class="show-on-scroll"><img src="assets/image/logo6.png" alt=""></li>
-                    <li class="show-on-scroll"><img src="assets/image/logo7.png" alt=""></li>
-                </ul>
+                <div class="swiper logo__swiper">
+                    <div class="swiper-wrapper logo__list">
+                        <div class="swiper-slide">
+                            <img src="assets/image/logo1.png" alt="image-description">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/image/CIO.png" alt="image-description">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/image/logo3.png" alt="image-description">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/image/logo4.png" alt="image-description">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/image/logo5.png" alt="image-description">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/image/logo6.png" alt="image-description">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/image/logo7.png" alt="image-description">
+                        </div>
+                    </div>
+                </div>
 
                 <!-- <svg width="300px" height="175px" version="1.1">
                     <path fill="transparent" stroke="#000000" stroke-width="4" d="M210 901.5C210 534 791.999 543.5 881.499 110" class="path"></path>
@@ -396,7 +443,34 @@
             <div class="container">
                 <div class="globel__sec__content">
                     <div class="globel__sec__img show-on-scroll">
-                        <img class="global_img" src="assets/image/global.png" alt="">
+                        <!-- <img class="global_img" src="assets/image/global.png" alt=""> -->
+                        <div class="globe js-globe">
+                            <div class="svg-wrapper">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 984 984" width="984" height="984" style="enable-background:new 0 0 984 984;" xml:space="preserve">
+                                    <style type="text/css">
+                                        .st0{fill:#FFFFFF;}
+                                    </style>
+                                    <g>
+                                        <path class="st0" d="M968.5,492c0,31.2-3.1,62.4-9.2,93c-6.1,30.6-15.2,60.6-27.2,89.4c-23.9,57.6-59.3,110.4-103.5,154.4
+                                            c-44.1,44.1-96.9,79.4-154.5,103.2c-28.8,11.9-58.8,21-89.3,27c-30.6,6-61.7,9-92.9,9c-31.1,0-62.3-3.1-92.8-9.2
+                                            c-30.5-6.1-60.5-15.2-89.2-27.1c-57.5-23.9-110.2-59.3-154.2-103.3c-44-44.1-79.3-96.8-103-154.3c-11.9-28.8-20.9-58.7-26.9-89.2
+                                            c-6-30.5-9-61.6-9-92.7c0-31.1,3.1-62.2,9.1-92.7C32,368.8,41,338.9,53,310.2c23.8-57.5,59.2-110.1,103.2-154
+                                            c44-43.9,96.7-79.2,154.1-102.9c28.7-11.9,58.6-20.9,89.1-26.9c30.5-6,61.6-9,92.6-9c31.1,0,62.1,3.1,92.6,9.1
+                                            c30.5,6.1,60.3,15.1,89,27c57.4,23.8,109.9,59.1,153.8,103.1c43.9,43.9,79.1,96.5,102.8,153.9c11.9,28.7,20.9,58.5,26.9,89
+                                            c6,30.4,9,61.5,9,92.5H968.5z M966,492c0-31-3.1-62-9.1-92.5c-6-30.4-15.1-60.2-27-88.9c-23.8-57.3-59-109.8-102.9-153.6
+                                            c-43.9-43.8-96.4-79-153.7-102.6c-28.6-11.8-58.5-20.9-88.9-26.8c-30.4-6-61.4-9-92.4-9c-31,0-62,3.1-92.4,9.1
+                                            c-30.4,6-60.2,15.1-88.8,27c-57.2,23.7-109.6,58.9-153.4,102.8C113.7,201.3,78.6,253.8,55,311c-11.8,28.6-20.8,58.4-26.8,88.7
+                                            c-6,30.4-9,61.3-8.9,92.3c0,30.9,3.1,61.9,9.1,92.2c6,30.3,15.1,60.1,26.9,88.7C79,730,114.2,782.4,157.9,826.1
+                                            c43.8,43.7,96.1,78.8,153.3,102.4c28.6,11.8,58.3,20.8,88.6,26.8c30.3,6,61.2,8.9,92.1,8.9c30.9,0,61.8-3.1,92.1-9.1
+                                            c30.3-6,60-15,88.5-26.9c57.1-23.7,109.3-58.8,153-102.5c43.7-43.7,78.6-96,102.2-153.1c11.8-28.5,20.8-58.2,26.7-88.5
+                                            c6-30.3,8.9-61.2,8.9-92H966z"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <ul class="globe-list js-list"></ul>
+                            <canvas class="globe-canvas js-canvas"></canvas>
+                        </div>
                     </div>
                     <div class="globel__sec__txt">
                         <h2 class="sec__heading show-on-scroll">
@@ -443,230 +517,216 @@
                     </div>
                 </div>
                 <div class="bg__lines show-on-scroll">
-                    <svg width="1672" height="1300" viewBox="0 0 1672 1357" fill="none"
+
+                    <svg width="1672" height="1250" viewBox="0 0 1672 1357" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M1535.35 998.267C1420.81 1149.47 1212.64 1187.67 1070.41 1083.59C928.181 979.506 905.729 772.55 1020.26 621.347C1134.8 470.141 1342.97 431.941 1485.2 536.025C1627.43 640.127 1649.88 847.083 1535.35 998.267Z"
                             fill="url(#paint0_radial_1_177775)" />
-                                <g filter="url(#filter0_dd_1_177775)">
-                                    <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
-                                        d="M1276.33 810.102C1204.18 449.754 635.375 573.335 462.506 165.844"
-                                        class="path" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <path fill="transparent" stroke="blue" stroke-width="4"
-                                        d="M1276.33 810.102C1204.18 449.754 635.375 573.335 462.506 165.844"
-                                        class="Vector25">
-                                    </path>
-                                    <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
-                                        d="M1276.33 810.102C1204.18 449.754 635.375 573.335 462.506 165.844"
-                                        class="Vector24">
-                                    </path>
+                        <g filter="url(#filter0_dd_1_177775)">
+                            <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
+                                d="M1276.33 810.102C1204.18 449.754 635.375 573.335 462.506 165.844" class="path"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path fill="transparent" stroke="blue" stroke-width="4"
+                                d="M1276.33 810.102C1204.18 449.754 635.375 573.335 462.506 165.844" class="Vector25">
+                            </path>
+                            <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
+                                d="M1276.33 810.102C1204.18 449.754 635.375 573.335 462.506 165.844" class="Vector24">
+                            </path>
 
-                                </g>
-                                <g filter="url(#filter2_dd_1_177775)">
-                                    <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
-                                        d="M1276.14 811.671C1187.52 473.488 578.027 651.108 427.99 169.186" class="path"
-                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <path fill="transparent" stroke="blue" stroke-width="4"
-                                        d="M1276.14 811.671C1187.52 473.488 578.027 651.108 427.99 169.186"
-                                        class="Vector27">
-                                    </path>
-                                    <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
-                                        d="M1276.14 811.671C1187.52 473.488 578.027 651.108 427.99 169.186"
-                                        class="Vector26">
-                                    </path>
+                        </g>
+                        <g filter="url(#filter2_dd_1_177775)">
+                            <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
+                                d="M1276.14 811.671C1187.52 473.488 578.027 651.108 427.99 169.186" class="path"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path fill="transparent" stroke="blue" stroke-width="4"
+                                d="M1276.14 811.671C1187.52 473.488 578.027 651.108 427.99 169.186" class="Vector27">
+                            </path>
+                            <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
+                                d="M1276.14 811.671C1187.52 473.488 578.027 651.108 427.99 169.186" class="Vector26">
+                            </path>
 
-                                </g>
-                                <g filter="url(#filter3_dd_1_177775)">
-                                    <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
-                                        d="M1276.63 811.572C1215.16 435.828 641.832 508.811 466.212 79.9445"
-                                        class="path" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <path fill="transparent" stroke="blue" stroke-width="4"
-                                        d="M1276.63 811.572C1215.16 435.828 641.832 508.811 466.212 79.9445"
-                                        class="Vector29">
-                                    </path>
-                                    <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
-                                        d="M1276.63 811.572C1215.16 435.828 641.832 508.811 466.212 79.9445"
-                                        class="Vector28">
-                                    </path>
+                        </g>
+                        <g filter="url(#filter3_dd_1_177775)">
+                            <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
+                                d="M1276.63 811.572C1215.16 435.828 641.832 508.811 466.212 79.9445" class="path"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path fill="transparent" stroke="blue" stroke-width="4"
+                                d="M1276.63 811.572C1215.16 435.828 641.832 508.811 466.212 79.9445" class="Vector29">
+                            </path>
+                            <path fill="transparent" stroke="url(#paint0_linear_86_1293)" stroke-width="4"
+                                d="M1276.63 811.572C1215.16 435.828 641.832 508.811 466.212 79.9445" class="Vector28">
+                            </path>
 
-                                </g>
-                                <defs>
-                                    <filter id="filter0_dd_1_177775" x="451.506" y="139.844" width="835.828"
-                                        height="696.258" filterUnits="userSpaceOnUse"
-                                        color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                        <feColorMatrix in="SourceAlpha" type="matrix"
-                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                        <feOffset dy="15" />
-                                        <feGaussianBlur stdDeviation="5" />
-                                        <feComposite in2="hardAlpha" operator="out" />
-                                        <feColorMatrix type="matrix"
-                                            values="0 0 0 0 0.560784 0 0 0 0 0.756863 0 0 0 0 0.992157 0 0 0 0.15 0" />
-                                        <feBlend mode="normal" in2="BackgroundImageFix"
-                                            result="effect1_dropShadow_1_177775" />
-                                        <feColorMatrix in="SourceAlpha" type="matrix"
-                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                        <feOffset dy="-15" />
-                                        <feGaussianBlur stdDeviation="5" />
-                                        <feComposite in2="hardAlpha" operator="out" />
-                                        <feColorMatrix type="matrix"
-                                            values="0 0 0 0 0.556863 0 0 0 0 0.752941 0 0 0 0 0.992157 0 0 0 0.08 0" />
-                                        <feBlend mode="normal" in2="effect1_dropShadow_1_177775"
-                                            result="effect2_dropShadow_1_177775" />
-                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_177775"
-                                            result="shape" />
-                                    </filter>
-                                    <filter id="filter1_dd_1_177775" x="591.511" y="327.952" width="137.163"
-                                        height="107.073" filterUnits="userSpaceOnUse"
-                                        color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                        <feColorMatrix in="SourceAlpha" type="matrix"
-                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                        <feOffset dx="14" dy="6" />
-                                        <feGaussianBlur stdDeviation="5" />
-                                        <feComposite in2="hardAlpha" operator="out" />
-                                        <feColorMatrix type="matrix"
-                                            values="0 0 0 0 0.560784 0 0 0 0 0.756863 0 0 0 0 0.992157 0 0 0 0.55 0" />
-                                        <feBlend mode="normal" in2="BackgroundImageFix"
-                                            result="effect1_dropShadow_1_177775" />
-                                        <feColorMatrix in="SourceAlpha" type="matrix"
-                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                        <feOffset dx="-6" dy="-16" />
-                                        <feGaussianBlur stdDeviation="5" />
-                                        <feComposite in2="hardAlpha" operator="out" />
-                                        <feColorMatrix type="matrix"
-                                            values="0 0 0 0 0.556863 0 0 0 0 0.752941 0 0 0 0 0.992157 0 0 0 0.48 0" />
-                                        <feBlend mode="normal" in2="effect1_dropShadow_1_177775"
-                                            result="effect2_dropShadow_1_177775" />
-                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_177775"
-                                            result="shape" />
-                                    </filter>
-                                    <filter id="filter2_dd_1_177775" x="416.99" y="143.185" width="870.147"
-                                        height="694.486" filterUnits="userSpaceOnUse"
-                                        color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                        <feColorMatrix in="SourceAlpha" type="matrix"
-                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                        <feOffset dy="15" />
-                                        <feGaussianBlur stdDeviation="5" />
-                                        <feComposite in2="hardAlpha" operator="out" />
-                                        <feColorMatrix type="matrix"
-                                            values="0 0 0 0 0.560784 0 0 0 0 0.756863 0 0 0 0 0.992157 0 0 0 0.15 0" />
-                                        <feBlend mode="normal" in2="BackgroundImageFix"
-                                            result="effect1_dropShadow_1_177775" />
-                                        <feColorMatrix in="SourceAlpha" type="matrix"
-                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                        <feOffset dy="-15" />
-                                        <feGaussianBlur stdDeviation="5" />
-                                        <feComposite in2="hardAlpha" operator="out" />
-                                        <feColorMatrix type="matrix"
-                                            values="0 0 0 0 0.556863 0 0 0 0 0.752941 0 0 0 0 0.992157 0 0 0 0.08 0" />
-                                        <feBlend mode="normal" in2="effect1_dropShadow_1_177775"
-                                            result="effect2_dropShadow_1_177775" />
-                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_177775"
-                                            result="shape" />
-                                    </filter>
-                                    <filter id="filter3_dd_1_177775" x="455.212" y="53.9442" width="832.417"
-                                        height="783.628" filterUnits="userSpaceOnUse"
-                                        color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                        <feColorMatrix in="SourceAlpha" type="matrix"
-                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                        <feOffset dy="15" />
-                                        <feGaussianBlur stdDeviation="5" />
-                                        <feComposite in2="hardAlpha" operator="out" />
-                                        <feColorMatrix type="matrix"
-                                            values="0 0 0 0 0.560784 0 0 0 0 0.756863 0 0 0 0 0.992157 0 0 0 0.15 0" />
-                                        <feBlend mode="normal" in2="BackgroundImageFix"
-                                            result="effect1_dropShadow_1_177775" />
-                                        <feColorMatrix in="SourceAlpha" type="matrix"
-                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                        <feOffset dy="-15" />
-                                        <feGaussianBlur stdDeviation="5" />
-                                        <feComposite in2="hardAlpha" operator="out" />
-                                        <feColorMatrix type="matrix"
-                                            values="0 0 0 0 0.556863 0 0 0 0 0.752941 0 0 0 0 0.992157 0 0 0 0.08 0" />
-                                        <feBlend mode="normal" in2="effect1_dropShadow_1_177775"
-                                            result="effect2_dropShadow_1_177775" />
-                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_177775"
-                                            result="shape" />
-                                    </filter>
-                                    <radialGradient id="paint0_radial_1_177775" cx="0" cy="0" r="1"
-                                        gradientUnits="userSpaceOnUse"
-                                        gradientTransform="translate(1277.8 809.817) rotate(36.2024) scale(248.84 267.801)">
-                                        <stop stop-color="#F5F5F7" />
-                                        <stop offset="0.0827449" stop-color="#7C90F1" stop-opacity="0.5" />
-                                        <stop offset="0.202679" stop-color="#7C90F1" stop-opacity="0.1869" />
-                                        <stop offset="0.441507" stop-color="#A9B8FA" stop-opacity="0.04" />
-                                        <stop offset="0.949802" stop-color="#D4DBFC" stop-opacity="0" />
-                                    </radialGradient>
-                                    <linearGradient id="paint1_linear_1_177775" x1="307.876" y1="391.543" x2="1415.15"
-                                        y2="596.499" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#3F85F6" />
-                                        <stop offset="0.144168" stop-color="#468AF7" />
-                                        <stop offset="0.23419" stop-color="#5898F9" />
-                                        <stop offset="0.333461" stop-color="#6FA9FA" />
-                                        <stop offset="0.431079" stop-color="#82B7FB" />
-                                        <stop offset="0.528723" stop-color="#99C8FE" />
-                                        <stop offset="0.613917" stop-color="#A6CFFD" />
-                                        <stop offset="0.707065" stop-color="#B6D8FE" />
-                                        <stop offset="0.782805" stop-color="#C4DFFD" />
-                                        <stop offset="0.844903" stop-color="#D0E5FD" />
-                                        <stop offset="0.894577" stop-color="#D8E9FE" />
-                                        <stop offset="1" stop-color="#D9E9FE" />
-                                    </linearGradient>
-                                    <linearGradient id="paint2_linear_1_177775" x1="615.126" y1="400.15" x2="696.247"
-                                        y2="373.6" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#3F85F6" />
-                                        <stop offset="0.144168" stop-color="#468AF7" />
-                                        <stop offset="0.23419" stop-color="#5898F9" />
-                                        <stop offset="0.333461" stop-color="#6FA9FA" />
-                                        <stop offset="0.431079" stop-color="#82B7FB" />
-                                        <stop offset="0.528723" stop-color="#99C8FE" />
-                                        <stop offset="0.613917" stop-color="#A6CFFD" />
-                                        <stop offset="0.707065" stop-color="#B6D8FE" />
-                                        <stop offset="0.782805" stop-color="#C4DFFD" />
-                                        <stop offset="0.844903" stop-color="#D0E5FD" />
-                                        <stop offset="0.894577" stop-color="#D8E9FE" />
-                                        <stop offset="1" stop-color="#D9E9FE" />
-                                    </linearGradient>
-                                    <linearGradient id="paint3_linear_1_177775" x1="378.622" y1="467.144" x2="1394.69"
-                                        y2="658.021" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#3F85F6" />
-                                        <stop offset="0.144168" stop-color="#468AF7" />
-                                        <stop offset="0.23419" stop-color="#5898F9" />
-                                        <stop offset="0.333461" stop-color="#6FA9FA" />
-                                        <stop offset="0.431079" stop-color="#82B7FB" />
-                                        <stop offset="0.528723" stop-color="#99C8FE" />
-                                        <stop offset="0.613917" stop-color="#A6CFFD" />
-                                        <stop offset="0.707065" stop-color="#B6D8FE" />
-                                        <stop offset="0.782805" stop-color="#C4DFFD" />
-                                        <stop offset="0.844903" stop-color="#D0E5FD" />
-                                        <stop offset="0.894577" stop-color="#D8E9FE" />
-                                        <stop offset="1" stop-color="#D9E9FE" />
-                                    </linearGradient>
-                                    <linearGradient id="paint4_linear_1_177775" x1="384.681" y1="408.649" x2="1410.45"
-                                        y2="597.738" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#3F85F6" />
-                                        <stop offset="0.144168" stop-color="#468AF7" />
-                                        <stop offset="0.23419" stop-color="#5898F9" />
-                                        <stop offset="0.333461" stop-color="#6FA9FA" />
-                                        <stop offset="0.431079" stop-color="#82B7FB" />
-                                        <stop offset="0.528723" stop-color="#99C8FE" />
-                                        <stop offset="0.613917" stop-color="#A6CFFD" />
-                                        <stop offset="0.707065" stop-color="#B6D8FE" />
-                                        <stop offset="0.782805" stop-color="#C4DFFD" />
-                                        <stop offset="0.844903" stop-color="#D0E5FD" />
-                                        <stop offset="0.894577" stop-color="#D8E9FE" />
-                                        <stop offset="1" stop-color="#D9E9FE" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
+                        </g>
+                        <defs>
+                            <filter id="filter0_dd_1_177775" x="451.506" y="139.844" width="835.828" height="696.258"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dy="15" />
+                                <feGaussianBlur stdDeviation="5" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.560784 0 0 0 0 0.756863 0 0 0 0 0.992157 0 0 0 0.15 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_177775" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dy="-15" />
+                                <feGaussianBlur stdDeviation="5" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.556863 0 0 0 0 0.752941 0 0 0 0 0.992157 0 0 0 0.08 0" />
+                                <feBlend mode="normal" in2="effect1_dropShadow_1_177775"
+                                    result="effect2_dropShadow_1_177775" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_177775"
+                                    result="shape" />
+                            </filter>
+                            <filter id="filter1_dd_1_177775" x="591.511" y="327.952" width="137.163" height="107.073"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dx="14" dy="6" />
+                                <feGaussianBlur stdDeviation="5" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.560784 0 0 0 0 0.756863 0 0 0 0 0.992157 0 0 0 0.55 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_177775" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dx="-6" dy="-16" />
+                                <feGaussianBlur stdDeviation="5" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.556863 0 0 0 0 0.752941 0 0 0 0 0.992157 0 0 0 0.48 0" />
+                                <feBlend mode="normal" in2="effect1_dropShadow_1_177775"
+                                    result="effect2_dropShadow_1_177775" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_177775"
+                                    result="shape" />
+                            </filter>
+                            <filter id="filter2_dd_1_177775" x="416.99" y="143.185" width="870.147" height="694.486"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dy="15" />
+                                <feGaussianBlur stdDeviation="5" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.560784 0 0 0 0 0.756863 0 0 0 0 0.992157 0 0 0 0.15 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_177775" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dy="-15" />
+                                <feGaussianBlur stdDeviation="5" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.556863 0 0 0 0 0.752941 0 0 0 0 0.992157 0 0 0 0.08 0" />
+                                <feBlend mode="normal" in2="effect1_dropShadow_1_177775"
+                                    result="effect2_dropShadow_1_177775" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_177775"
+                                    result="shape" />
+                            </filter>
+                            <filter id="filter3_dd_1_177775" x="455.212" y="53.9442" width="832.417" height="783.628"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dy="15" />
+                                <feGaussianBlur stdDeviation="5" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.560784 0 0 0 0 0.756863 0 0 0 0 0.992157 0 0 0 0.15 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_177775" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dy="-15" />
+                                <feGaussianBlur stdDeviation="5" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.556863 0 0 0 0 0.752941 0 0 0 0 0.992157 0 0 0 0.08 0" />
+                                <feBlend mode="normal" in2="effect1_dropShadow_1_177775"
+                                    result="effect2_dropShadow_1_177775" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_177775"
+                                    result="shape" />
+                            </filter>
+                            <radialGradient id="paint0_radial_1_177775" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(1277.8 809.817) rotate(36.2024) scale(248.84 267.801)">
+                                <stop stop-color="#F5F5F7" />
+                                <stop offset="0.0827449" stop-color="#7C90F1" stop-opacity="0.5" />
+                                <stop offset="0.202679" stop-color="#7C90F1" stop-opacity="0.1869" />
+                                <stop offset="0.441507" stop-color="#A9B8FA" stop-opacity="0.04" />
+                                <stop offset="0.949802" stop-color="#D4DBFC" stop-opacity="0" />
+                            </radialGradient>
+                            <linearGradient id="paint1_linear_1_177775" x1="307.876" y1="391.543" x2="1415.15"
+                                y2="596.499" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#3F85F6" />
+                                <stop offset="0.144168" stop-color="#468AF7" />
+                                <stop offset="0.23419" stop-color="#5898F9" />
+                                <stop offset="0.333461" stop-color="#6FA9FA" />
+                                <stop offset="0.431079" stop-color="#82B7FB" />
+                                <stop offset="0.528723" stop-color="#99C8FE" />
+                                <stop offset="0.613917" stop-color="#A6CFFD" />
+                                <stop offset="0.707065" stop-color="#B6D8FE" />
+                                <stop offset="0.782805" stop-color="#C4DFFD" />
+                                <stop offset="0.844903" stop-color="#D0E5FD" />
+                                <stop offset="0.894577" stop-color="#D8E9FE" />
+                                <stop offset="1" stop-color="#D9E9FE" />
+                            </linearGradient>
+                            <linearGradient id="paint2_linear_1_177775" x1="615.126" y1="400.15" x2="696.247" y2="373.6"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#3F85F6" />
+                                <stop offset="0.144168" stop-color="#468AF7" />
+                                <stop offset="0.23419" stop-color="#5898F9" />
+                                <stop offset="0.333461" stop-color="#6FA9FA" />
+                                <stop offset="0.431079" stop-color="#82B7FB" />
+                                <stop offset="0.528723" stop-color="#99C8FE" />
+                                <stop offset="0.613917" stop-color="#A6CFFD" />
+                                <stop offset="0.707065" stop-color="#B6D8FE" />
+                                <stop offset="0.782805" stop-color="#C4DFFD" />
+                                <stop offset="0.844903" stop-color="#D0E5FD" />
+                                <stop offset="0.894577" stop-color="#D8E9FE" />
+                                <stop offset="1" stop-color="#D9E9FE" />
+                            </linearGradient>
+                            <linearGradient id="paint3_linear_1_177775" x1="378.622" y1="467.144" x2="1394.69"
+                                y2="658.021" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#3F85F6" />
+                                <stop offset="0.144168" stop-color="#468AF7" />
+                                <stop offset="0.23419" stop-color="#5898F9" />
+                                <stop offset="0.333461" stop-color="#6FA9FA" />
+                                <stop offset="0.431079" stop-color="#82B7FB" />
+                                <stop offset="0.528723" stop-color="#99C8FE" />
+                                <stop offset="0.613917" stop-color="#A6CFFD" />
+                                <stop offset="0.707065" stop-color="#B6D8FE" />
+                                <stop offset="0.782805" stop-color="#C4DFFD" />
+                                <stop offset="0.844903" stop-color="#D0E5FD" />
+                                <stop offset="0.894577" stop-color="#D8E9FE" />
+                                <stop offset="1" stop-color="#D9E9FE" />
+                            </linearGradient>
+                            <linearGradient id="paint4_linear_1_177775" x1="384.681" y1="408.649" x2="1410.45"
+                                y2="597.738" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#3F85F6" />
+                                <stop offset="0.144168" stop-color="#468AF7" />
+                                <stop offset="0.23419" stop-color="#5898F9" />
+                                <stop offset="0.333461" stop-color="#6FA9FA" />
+                                <stop offset="0.431079" stop-color="#82B7FB" />
+                                <stop offset="0.528723" stop-color="#99C8FE" />
+                                <stop offset="0.613917" stop-color="#A6CFFD" />
+                                <stop offset="0.707065" stop-color="#B6D8FE" />
+                                <stop offset="0.782805" stop-color="#C4DFFD" />
+                                <stop offset="0.844903" stop-color="#D0E5FD" />
+                                <stop offset="0.894577" stop-color="#D8E9FE" />
+                                <stop offset="1" stop-color="#D9E9FE" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
                 </div>
+            </div>
         </section>
         <!-- === Globel Section End === -->
-
 
         <!-- === Deploy Section Start === -->
         <section class="tmb__deploy__sec">
@@ -704,44 +764,44 @@
                             <circle class="connectdot" cx="253" cy="594" r="138" fill="url(#paint11_radial_1100_36059)"/>
                             <circle class="connectdot" cx="469" cy="275" r="138" fill="url(#paint12_radial_1100_36059)"/>
                             <g filter="url(#filter0_dd_1100_36059)">
-                                <path d="M818.012 282.501C857.512 222.001 928.013 306.001 906.512 516.001" stroke="url(#paint13_linear_1100_36059)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M818.012 282.501C857.512 222.001 928.013 306.001 906.512 516.001" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>
+                                <path d="M818.012 282.501C857.512 222.001 928.013 306.001 906.512 516.001" stroke="url(#paint13_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M818.012 282.501C857.512 222.001 928.013 306.001 906.512 516.001" stroke="url(#paint14_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>
                             </g>
                             <g filter="url(#filter1_dd_1100_36059)">
-                            <path d="M468.514 273.501C482.514 170.001 572.013 197.501 609.514 294.001" stroke="url(#paint14_linear_1100_36059)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M468.514 273.501C482.514 170.001 572.013 197.501 609.514 294.001" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>
+                            <path d="M468.514 273.501C482.514 170.001 572.013 197.501 609.514 294.001" stroke="url(#paint14_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M468.514 273.501C482.514 170.001 572.013 197.501 609.514 294.001" stroke="url(#paint14_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>
                             </g>
                             <g filter="url(#filter2_dd_1100_36059)">
-                            <path d="M532.431 426.271C534.432 327.001 625.012 284.501 718.512 354.501" stroke="url(#paint15_linear_1100_36059)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M532.431 426.271C534.432 327.001 625.012 284.501 718.512 354.501" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>
+                            <path d="M532.431 426.271C534.432 327.001 625.012 284.501 718.512 354.501" stroke="url(#paint15_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M532.431 426.271C534.432 327.001 625.012 284.501 718.512 354.501" stroke="url(#paint14_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>
                             </g>
                             <g filter="url(#filter3_dd_1100_36059)">
-                            <path d="M817.156 283.665C819.156 184.395 857.737 56.3954 895.238 152.895" stroke="url(#paint16_linear_1100_36059)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M817.156 283.665C819.156 184.395 857.737 56.3954 895.238 152.895" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>
+                            <path d="M817.156 283.665C819.156 184.395 857.737 56.3954 895.238 152.895" stroke="url(#paint16_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M817.156 283.665C819.156 184.395 857.737 56.3954 895.238 152.895" stroke="url(#paint14_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>
                             </g>
                             <g filter="url(#filter4_dd_1100_36059)">
-                            <path d="M468.514 274.501C440.015 104.501 369.515 65.001 381.015 141.501" stroke="url(#paint17_linear_1100_36059)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M468.514 274.501C440.015 104.501 369.515 65.001 381.015 141.501" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>
+                            <path d="M468.514 274.501C440.015 104.501 369.515 65.001 381.015 141.501" stroke="url(#paint17_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M468.514 274.501C440.015 104.501 369.515 65.001 381.015 141.501" stroke="url(#paint14_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>
                             </g>
                             <g filter="url(#filter5_dd_1100_36059)">
-                            <path d="M253.514 591.501C247.515 493.001 276.014 414.501 309.238 475.896" stroke="url(#paint18_linear_1100_36059)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M253.514 591.501C247.515 493.001 276.014 414.501 309.238 475.896" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>
+                            <path d="M253.514 591.501C247.515 493.001 276.014 414.501 309.238 475.896" stroke="url(#paint18_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M253.514 591.501C247.515 493.001 276.014 414.501 309.238 475.896" stroke="url(#paint14_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>
                             </g>
                             <g filter="url(#filter6_dd_1100_36059)">
-                            <path d="M308.014 475.001C302.014 376.501 218.014 354.501 191.514 408.501" stroke="url(#paint19_linear_1100_36059)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M308.014 475.001C302.014 376.501 218.014 354.501 191.514 408.501" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>
+                            <path d="M308.014 475.001C302.014 376.501 218.014 354.501 191.514 408.501" stroke="url(#paint19_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M308.014 475.001C302.014 376.501 218.014 354.501 191.514 408.501" stroke="url(#paint14_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>
                             </g>
                             <g filter="url(#filter7_dd_1100_36059)">
-                            <path d="M531.014 427.501C363.513 241.001 295.514 427.501 309.515 474.501" stroke="url(#paint20_linear_1100_36059)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M531.014 427.501C363.513 241.001 295.514 427.501 309.515 474.501" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>
+                            <path d="M531.014 427.501C363.513 241.001 295.514 427.501 309.515 474.501" stroke="url(#paint20_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M531.014 427.501C363.513 241.001 295.514 427.501 309.515 474.501" stroke="url(#paint14_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>
                             </g>
                             <g filter="url(#filter8_dd_1100_36059)">
-                            <path d="M142.012 294.001C144.512 196.001 237.513 124.501 378.014 140.501" stroke="url(#paint21_linear_1100_36059)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M142.012 294.001C144.512 196.001 237.513 124.501 378.014 140.501" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>
+                            <path d="M142.012 294.001C144.512 196.001 237.513 124.501 378.014 140.501" stroke="url(#paint21_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M142.012 294.001C144.512 196.001 237.513 124.501 378.014 140.501" stroke="url(#paint14_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>
                             </g>
                             <g filter="url(#filter9_dd_1100_36059)">
-                            <path d="M136.513 195.501C131.513 42.5012 330.013 98.0012 380.013 139.501" stroke="url(#paint22_linear_1100_36059)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M136.513 195.501C131.513 42.5012 330.013 98.0012 380.013 139.501" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>    
+                            <path d="M136.513 195.501C131.513 42.5012 330.013 98.0012 380.013 139.501" stroke="url(#paint22_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M136.513 195.501C131.513 42.5012 330.013 98.0012 380.013 139.501" stroke="url(#paint14_linear_1100_36059)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="connectline"/>    
                         </g>
                             <defs>
                             <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -1148,7 +1208,6 @@
         </section>
         <!-- === Deploy Section End === -->
 
-
         <!-- === Trusted Section Start === -->
         <section class="trusted__sec">
             <div class="container">
@@ -1160,6 +1219,7 @@
                 </div>
                 <div class="trusted__sec__map">
                     <!-- Background map -->
+<<<<<<< HEAD
                     <!-- <img src="assets/image/02Map.png" alt=""> -->
 
                     <img src="assets/image/02Map.png" usemap="#image-map" class="map">
@@ -1174,26 +1234,47 @@
                             coords="1321,134,1297,178,1349,171,1350,173,1321,134" shape="poly">
                     </map>
 
+=======
+                    <!-- <img src="assets/svg/line-map.svg" alt="image-description"> -->
+                    <!-- <img src="assets/image/02Map.png" alt="image-description"> -->
+                        <img src="assets/image/02Map.png" usemap="#image-map" class="map">
+                            <map name="image-map" class="map-area">
+                                <area id="squidusa" id="area1" target="" alt="image-description" title="COX" href=""
+                                    coords="223,238,212,280,251,272,247,274" shape="poly">
+                                <area id="squidchina" target="" alt="image-description" title="Lenovo" href=""
+                                    coords="1321,134,1297,178,1349,171,1350,173,1321,134" shape="poly">
+                            </map>
+>>>>>>> 12019f06bc1fadf0a09c7acc4d8df046673fa770
                     <!-- Logo List -->
-                    <div class="trusted__logo__list">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide show-on-scroll">
-                                <img class="cox_svg coxusa show-on-scroll" src="assets/image/trusted-logo1-with-bg.png" alt="">
-                            </div>
-                            <div class="swiper-slide show-on-scroll">
-                                <img class="cox_svg coxusa" src="assets/image/trusted-logo2-with-bg.png" alt="">
-                            </div>
-                            <div class="swiper-slide show-on-scroll">
-                                <img class="cox_svg lenovo" src="assets/image/trusted-logo3-with-bg.png" alt="">
-                            </div>
-                            <div class="swiper-slide show-on-scroll">
-                                <img class="cox_svg coxusa" src="assets/image/trusted-logo4-with-bg.png" alt="">
-                            </div>
-                            <div class="swiper-slide show-on-scroll">
-                                <img class="cox_svg coxusa" src="assets/image/trusted-logo5-with-bg.png" alt="">
-                            </div>
+                </div>
+            </div>
+            <div class="trusted__logo__list">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="image__wrapper">
+                            <img class="cox_svg coxusa" src="assets/image/trusted-logo1-with-bg.png" alt="image-description">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image__wrapper">
+                            <img class="cox_svg coxusa" src="assets/image/trusted-logo2-with-bg.png" alt="image-description">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image__wrapper">
+                            <img class="cox_svg lenovo" src="assets/image/trusted-logo3-with-bg.png" alt="image-description">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image__wrapper">
+                            <img class="cox_svg coxusa" src="assets/image/trusted-logo4-with-bg.png" alt="image-description">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image__wrapper">
+                            <img class="cox_svg coxusa" src="assets/image/trusted-logo5-with-bg.png" alt="image-description">
                         </div>
                     </div>
                 </div>
@@ -1201,14 +1282,13 @@
         </section>
         <!-- === Trusted Section End === -->
 
-
         <!-- === Info Cards Section Start === -->
         <section class="info__crd__sec">
             <div class="container ">
                 <!-- Grid card -->
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiperInfocard">
 
-                    <ul class=" swiper-wrapper">
+                    <ul class="swiper-wrapper">
                         <!-- card item -->
 
                         <div class="swiper-slide">
@@ -1300,18 +1380,18 @@
         <section class="testimonial">
             <div class="container">
                 <!-- Testmonial List -->
-                <h2 class="sec__heading show-on-scroll">
-                    From Our Valuable Clients
-                </h2>
                 <div class="testimonial__list">
-                    <div class="cursor">
-                        <span></span>
+                    <h2 class="sec__heading">From Our Valuable Clients</h2>
+                    <div class="cursor__wrapper">
+                        <div class="cursor">
+                            <span></span>
+                        </div>
                     </div>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="testimonial__grid">
                                 <div class="testimonial__text">
-                                    <span class="show-on-scroll">
+                                    <span>
                                         <svg width="68" height="150" viewBox="0 0 68 150" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -1321,34 +1401,44 @@
                                         </svg>
                                     </span>
                                     <div>
-                                        <p class="sec__brief show-on-scroll">
+                                        <p class="sec__brief">
                                             What I am primarily looking for with new projects is a fit on both a visual
                                             and aesthetic level as well as on a personal level with the client.
                                         </p>
                                         <div class="user__info">
                                             <div class="profile__detail">
-                                                <span class="user__company show-on-scroll">
+                                                <span class="user__company">
                                                     It Company
                                                 </span>
-                                                <span class="profile__post show-on-scroll">
+                                                <span class="profile__post">
                                                     CEO
                                                 </span>
                                             </div>
-                                            <div class="profile__img show-on-scroll">
-                                                <img src="assets/image/profile-img.png" alt="">
+                                            <div class="profile__img">
+                                                <img src="assets/image/profile-img.png" alt="image-description">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="testimonial__img show-on-scroll">
-                                    <img src="assets/image/testimonial-img.png" alt="">
+                                <div class="testimonial__img">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front gradient-border">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <img src="assets/image/testimonial-img.png" alt="image-description"> -->
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="testimonial__grid">
                                 <div class="testimonial__text">
-                                    <span class="show-on-scroll">
+                                    <span>
                                         <svg width="68" height="150" viewBox="0 0 68 150" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -1358,34 +1448,44 @@
                                         </svg>
                                     </span>
                                     <div>
-                                        <p class="sec__brief show-on-scroll">
+                                        <p class="sec__brief">
                                             What I am primarily looking for with new projects is a fit on both a visual
                                             and aesthetic level as well as on a personal level with the client.
                                         </p>
                                         <div class="user__info">
                                             <div class="profile__detail">
-                                                <span class="user__company show-on-scroll">
+                                                <span class="user__company">
                                                     It Company
                                                 </span>
-                                                <span class="profile__post show-on-scroll">
+                                                <span class="profile__post">
                                                     CEO
                                                 </span>
                                             </div>
-                                            <div class="profile__img show-on-scroll">
-                                                <img src="assets/image/profile-img.png" alt="">
+                                            <div class="profile__img">
+                                                <img src="assets/image/profile-img.png" alt="image-description">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="testimonial__img show-on-scroll">
-                                    <img src="assets/image/testimonial-img.png" alt="">
+                                <div class="testimonial__img">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front gradient-border">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <img src="assets/image/testimonial-img.png" alt="image-description"> -->
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="testimonial__grid">
                                 <div class="testimonial__text">
-                                    <span class="show-on-scroll">
+                                    <span>
                                         <svg width="68" height="150" viewBox="0 0 68 150" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -1395,34 +1495,44 @@
                                         </svg>
                                     </span>
                                     <div>
-                                        <p class="sec__brief show-on-scroll">
+                                        <p class="sec__brief">
                                             What I am primarily looking for with new projects is a fit on both a visual
                                             and aesthetic level as well as on a personal level with the client.
                                         </p>
                                         <div class="user__info">
                                             <div class="profile__detail">
-                                                <span class="user__company show-on-scroll">
+                                                <span class="user__company">
                                                     It Company
                                                 </span>
-                                                <span class="profile__post show-on-scroll">
+                                                <span class="profile__post">
                                                     CEO
                                                 </span>
                                             </div>
-                                            <div class="profile__img show-on-scroll">
-                                                <img src="assets/image/profile-img.png" alt="">
+                                            <div class="profile__img">
+                                                <img src="assets/image/profile-img.png" alt="image-description">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="testimonial__img show-on-scroll">
-                                    <img src="assets/image/testimonial-img.png" alt="">
+                                <div class="testimonial__img">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front gradient-border">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <img src="assets/image/testimonial-img.png" alt="image-description"> -->
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="testimonial__grid">
                                 <div class="testimonial__text">
-                                    <span class="show-on-scroll">
+                                    <span>
                                         <svg width="68" height="150" viewBox="0 0 68 150" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -1432,34 +1542,44 @@
                                         </svg>
                                     </span>
                                     <div>
-                                        <p class="sec__brief show-on-scroll">
+                                        <p class="sec__brief">
                                             What I am primarily looking for with new projects is a fit on both a visual
                                             and aesthetic level as well as on a personal level with the client.
                                         </p>
                                         <div class="user__info">
                                             <div class="profile__detail">
-                                                <span class="user__company show-on-scroll">
+                                                <span class="user__company">
                                                     It Company
                                                 </span>
-                                                <span class="profile__post show-on-scroll">
+                                                <span class="profile__post">
                                                     CEO
                                                 </span>
                                             </div>
-                                            <div class="profile__img show-on-scroll">
-                                                <img src="assets/image/profile-img.png" alt="">
+                                            <div class="profile__img">
+                                                <img src="assets/image/profile-img.png" alt="image-description">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="testimonial__img show-on-scroll">
-                                    <img src="assets/image/testimonial-img.png" alt="">
+                                <div class="testimonial__img">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front gradient-border">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <img src="assets/image/testimonial-img.png" alt="image-description"> -->
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="testimonial__grid">
                                 <div class="testimonial__text">
-                                    <span class="show-on-scroll">
+                                    <span>
                                         <svg width="68" height="150" viewBox="0 0 68 150" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -1469,27 +1589,37 @@
                                         </svg>
                                     </span>
                                     <div>
-                                        <p class="sec__brief show-on-scroll">
+                                        <p class="sec__brief">
                                             What I am primarily looking for with new projects is a fit on both a visual
                                             and aesthetic level as well as on a personal level with the client.
                                         </p>
                                         <div class="user__info">
                                             <div class="profile__detail">
-                                                <span class="user__company show-on-scroll">
+                                                <span class="user__company">
                                                     It Company
                                                 </span>
-                                                <span class="profile__post show-on-scroll">
+                                                <span class="profile__post">
                                                     CEO
                                                 </span>
                                             </div>
-                                            <div class="profile__img show-on-scroll">
-                                                <img src="assets/image/profile-img.png" alt="">
+                                            <div class="profile__img">
+                                                <img src="assets/image/profile-img.png" alt="image-description">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="testimonial__img show-on-scroll">
-                                    <img src="assets/image/testimonial-img.png" alt="">
+                                <div class="testimonial__img">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front gradient-border">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <img src="assets/image/testimonial-img.png" alt="image-description">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <img src="assets/image/testimonial-img.png" alt="image-description"> -->
                                 </div>
                             </div>
                         </div>
@@ -1536,7 +1666,7 @@
                             </svg>
 
                             <h2 class="footer__hero__heading">
-                                <a class="show-on-scroll" href ="contact-us.html">Let’s Talk!</a>
+                                <a class="show-on-scroll" href="contact-us.html">Let’s Talk!</a>
                             </h2>
                         </div>
                         <div class="footer__items__inner">
@@ -1554,10 +1684,10 @@
                             <div class="items">
                                 <h3 class="item__heading show-on-scroll">Resources</h3>
                                 <ul>
-                                    <li class="show-on-scroll"><a class="item " href="#">Podcast</a></li>
-                                    <li class="show-on-scroll"><a class="item " href="#">News room</a></li>
-                                    <li class="show-on-scroll"><a class="item" href="podcast.html">Podcast</a></li>
-                                    <li class="show-on-scroll"><a class="item" href="#">News room</a></li>
+                                    <li class="show-on-scroll"><a class="item " href="podcast.html">Podcast</a></li>
+                                    <li class="show-on-scroll"><a class="item " href="newsroom.html">News room</a></li>
+                                    
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -1603,94 +1733,43 @@
     <!-- === footer end === -->
 
     <!-- === script files === -->
-
     <script src="assets/js/common.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/617753/ThreeOrbitControls.js"></script>
     <script src="assets/js/index.js" defer></script>
+    <script src="assets/js/globalamp.js" defer></script>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script type='text/javascript' src='https://davidlynch.org/projects/maphilight/jquery.maphilight.js'></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            // $(".map-area area").each(function(){
-            //         var d = $(this).data('maphilight') || {};
-            //         d.alwaysOn=true;
-            //     });
             $('.map').maphilight();
             $('.lenovo').mouseover(function(e) {
                 $('#squidchina').mouseover();
                 }).mouseout(function(e) {
                     $('#squidchina').mouseout();
-            }).click(function(e) { e.preventDefault(); });
-
-            $('.coxusa').mouseover(function(e) {
-                $('#squidusa').mouseover();
-                }).mouseout(function(e) {
-                    $('#squidusa').mouseout();
-            }).click(function(e) { e.preventDefault(); });
-
-        });   
-    </script>
-
-    <script>
-        var connectLine=document.getElementsByClassName('connectline');
-
-        
-        setInterval(()=>{
-            let randommpaLink = Math.floor(Math.random() * connectLine.length);
-            connectLine[randommpaLink].classList.add('isactive');
-        },500)
-        
-    </script>
-
-    <!-- <script>
-        // Slider Js
-        window.addEventListener('load', () => {
-            const swiper = new Swiper('.trusted__logo__list', {
-                slidesPerView: 5,
-                centeredSlides: true,
-                spaceBetween: 30,
-                loop: true,
-                autoplay: true,
-                breakpoints: {
-                    320: {
-                        slidesPerView: 3,
-                    },
-                    640: {
-                        slidesPerView: 3,
-
-                    },
-                    768: {
-                        slidesPerView: 4,
-                    },
-                    1024: {
-                        slidesPerView: 5,
-                    },
-                },
-            });
-
-            const swipertestimonial = new Swiper('.testimonial__list', {
-                slidesPerView: 1,
-                centeredSlides: true,
-                spaceBetween: 300,
-                loop: true,
-                autoplay: true
-
-            });
-
-            // Mobile Responsive Slider
-            const mediaQuery = window.matchMedia('(max-width: 1200px)')
-            // Check if the media query is true
-            if (mediaQuery.matches) {
-                var mobileSlider = new Swiper(".mySwiper", {
-                    centeredSlides: true,
-                    slidesPerView: 1,
-                    loop: true,
+                }).click(function (e) {
+                    e.preventDefault();
                 });
-            }
-    </script> -->
 
+                $('.coxusa').mouseover(function (e) {
+                    $('#squidusa').mouseover();
+                }).mouseout(function (e) {
+                    $('#squidusa').mouseout();
+                }).click(function (e) {
+                    e.preventDefault();
+                });
+            });
+        </script>
+
+        <script>
+            var connectLine = document.getElementsByClassName('connectline');
+            setInterval(() => {
+                let randommpaLink = Math.floor(Math.random() * connectLine.length);
+                connectLine[randommpaLink].classList.add('isactive');
+            }, 500)
+        </script>
 </body>
+
 </html>
-
-
