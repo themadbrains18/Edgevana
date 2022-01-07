@@ -2,57 +2,7 @@
 
 // /* Testimonial Slider Cursor Js Code */
 
-
-
-
-let testimonialSlider = document.querySelector(".testimonial__list");
-var cursor = document.querySelector(".cursor");
-testimonialSlider.addEventListener("mousemove", (e) => {
-    testimonialSlider.classList.add("mouseenter")
-    cursor.setAttribute("style", ` top: ${e.pageY - 42}px; left: ${e.pageX - 49}px;`);
-})
-
-testimonialSlider.addEventListener("mouseout", (e) => {
-    testimonialSlider.classList.remove("mouseenter")
-})
-// /* Testimonial Slider Cursor Js Code */
-
 window.addEventListener('load', () => {
-    // hero Section Text animation
-    let heroHeading = document.querySelector('.hero__heading');
-    let heroTxt = document.querySelectorAll('.hero__heading > span');
-    let totalChildren = heroHeading.children.length;
-    let childrenCount = 1;
-    let height = 0;
-    var animationClass = [
-        "fadeInUp",
-        "fadeInLeft",
-    ];
-    let inerval = setInterval(() => {
-        if (heroTxt) {
-            for (let i = 1; i < heroHeading.children[childrenCount].children.length; i++) {
-                var randomItem = animationClass[Math.floor(Math.random() * animationClass.length)];
-                heroHeading.children[childrenCount].children[i].classList.add(randomItem);
-            }
-        }
-        heroHeading.children[childrenCount - 1].classList.remove('active');
-        heroHeading.children[childrenCount - 1].setAttribute('style', `transform: translateY(-${childrenCount}00%);`);
-        heroHeading.children[childrenCount].classList.add('active');
-        heroHeading.children[childrenCount].setAttribute('style', `transform: translateY(-${childrenCount}00%); `);
-        childrenCount++;
-        if (childrenCount == totalChildren) {
-            clearInterval(inerval);
-        }
-    }, 3000);
-    heroTxt.forEach(element => {
-        if (height <= element.offsetHeight) {
-            height = element.offsetHeight;
-        }
-    });
-    heroHeading.setAttribute('style', `height: ${height}px;`);
-
-
-
     let testimonialSlider = document.querySelector(".testimonial__list");
     var cursor = document.querySelector(".cursor__wrapper");
     testimonialSlider.addEventListener("mousemove", (e) => {
@@ -148,56 +98,7 @@ var swiper = new Swiper(".logo__swiper", {
 
 
 
-window.addEventListener("scroll", function (event) {
 
-    // var vectorline = document.getElementsByClassName("connect_hero_global_map");
-    // var vectorlineelement = vectorline[0];
-    // var elementPositionVector = vectorlineelement.getBoundingClientRect().top;
-    // if (elementPositionVector < 100 ) {
-    //     vectorlineelement.classList.add('is-vector-visible');
-    // }
-    // else {
-    //     vectorlineelement.classList.remove('is-vector-visible');
-    // }
-
-    // var d = document.getElementsByClassName("globel__sec__img");
-    // var element = d[0];
-    // var elementPosition = element.getBoundingClientRect().top;
-    // console.log(elementPosition);
-    // if (elementPositionVector < -100 && elementPosition > 0) {
-    //     element.classList.add('is-visible');
-    // }
-    // else {
-    //     element.classList.remove('is-visible');
-    // }
-    // // bg__lines
-    // var belowvectorline = document.getElementsByClassName("bg__lines");
-    // var belowvectorlineelement = belowvectorline[0];
-    // var elementPositionBelowVector = belowvectorlineelement.getBoundingClientRect().top;
-    // if (elementPositionBelowVector < 100 && elementPositionBelowVector > -400) {
-    //     belowvectorlineelement.classList.add('is-bgvector-visible');
-    // }
-    // else {
-    //     belowvectorlineelement.classList.remove('is-bgvector-visible');
-    // }
-
-    // var dcon = document.getElementsByClassName("deploy__sec__img");
-    // var elementCon = dcon[0];
-    // var elementPositionCon = elementCon.getBoundingClientRect().top;
-    // console.log(elementPositionCon);
-    // if (elementPositionBelowVector < -60 && elementPositionCon > 0) {
-    //     var linewidth = document.getElementsByClassName("connectline");
-    //     elementCon.classList.add('is-connect-visible');
-    // }
-    // else {
-    //     elementCon.classList.remove('is-connect-visible');
-    // }
-    // .is-connect-visible
-
-}, false);
-
-
-// counter js start
 // counter js start
 function counter(id, start, end, duration) {
     let obj = document.getElementById(id),
@@ -212,7 +113,7 @@ function counter(id, start, end, duration) {
        clearInterval(timer);
       }
      }, step);
-   }
+}
 
 let counterFlag = true;
 window.addEventListener("scroll",()=>{
@@ -220,10 +121,11 @@ window.addEventListener("scroll",()=>{
     let rect = counterSec.getBoundingClientRect();
     if(rect.top <= 150){
             if(counterFlag){
-            counter("count1", 29500, 30000, 2000);
+            counter("count1", 29500, 30000, 1000);
             counter("count2", 0, 107, 2500);
             counterFlag = false;
         }
     }
 });
+   
    

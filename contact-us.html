@@ -31,15 +31,47 @@
                             <a class="nav__item" href="service.html">Services</a>
                         </li>
                         <li>
-                            <a class="nav__item" href="#">Resources</a>
+                            <a class="nav__item nav-modifier">Resources</a>
+                            <div class="dropdown">
+                                <div class="dropdown__item">
+                                    <a href="newsroom.html"><img src="assets/svg/news.svg" alt="image-description"> Newsroom</a>
+                                </div>
+                                <div class="dropdown__item">
+                                    <a href="podcast.html"><img src="assets/svg/podcast.svg" alt="image-description"> Podcast</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="col-lg-hide">
                             <a class="nav__item" href="contact-us.html">Contact us</a>
                         </li>
                     </ul>
+
+                    <div class="informational__pages">
+                        <div class="copywrite__links">
+                            <ul>
+                                <li class="show-on-scroll"><a href="privacy-policy.html">Privacy Policy</a></li>
+                                <li class="show-on-scroll"><a href="terms-of-use.html">Terms of use</a></li>
+                                <li class="show-on-scroll"><a href="cookies.html">Cookies Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="social__icons">
+                        <a href="https://twitter.com/edgevana">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M26 26H20C18.3455 26 17 24.6545 17 23V21.5H26C27.656 21.5 29 20.156 29 18.5C29 16.844 27.656 15.5 26 15.5H17V11C17 9.344 15.656 8 14 8C12.344 8 11 9.344 11 11V23C11 27.9635 15.0365 32 20 32H26C27.656 32 29 30.656 29 29C29 27.344 27.656 26 26 26Z" fill="white"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/edgevana/"> 
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32.0009 31.9999V23.21C32.0009 18.89 31.0709 15.59 26.0309 15.59C23.6009 15.59 21.9809 16.91 21.3209 18.17H21.2609V15.98H16.4909V31.9999H21.4709V24.05C21.4709 21.95 21.8609 19.94 24.4409 19.94C26.9909 19.94 27.0209 22.31 27.0209 24.17V31.9699H32.0009V31.9999Z" fill="white"></path>
+                                <path d="M8.38812 15.98H13.3681V32H8.38812V15.98Z" fill="white"></path>
+                                <path d="M10.88 8C9.29 8 8 9.29 8 10.88C8 12.47 9.29 13.79 10.88 13.79C12.47 13.79 13.76 12.47 13.76 10.88C13.76 9.29 12.47 8 10.88 8V8Z" fill="white"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </nav>
                 <div class="contact__btn">
-                    <a class="nav__item" href="#">Contact us</a>
+                    <a class="nav__item" href="contact-us.html">Contact us</a>
                 </div>
             </div>
             <div class="toggle__btn">
@@ -65,13 +97,13 @@
                 <div class="sec__content">
                     <div class="sec__message__box">
                         <div class="breadcrums">
-                            <a href="#">Home /</a>
-                            <span class="active__link">Blog</span>
+                            <a class="show-on-scroll" href="#">Home /</a>
+                            <span class="active__link show-on-scroll">Blog</span>
                         </div>
-                        <h2 class="sec__heading">
+                        <h2 class="sec__heading show-on-scroll">
                             Contact Us <span>Our team is here for you.</span>
                         </h2>
-                        <h3 class="sec__heading">
+                        <h3 class="sec__heading show-on-scroll">
                             1 <span>
                                 <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -80,9 +112,9 @@
                                 </svg>
                             </span>Please submit a short message.
                         </h3>
-                        <form action="">
-                                    <input class="input__text" type="text" placeholder="Type your answar here..." required>
-                                    <div class="submit__button">
+                        <form  action="">
+                                    <input class="input__text show-on-scroll" type="text" placeholder="Type your answar here..." required>
+                                    <div class="submit__button show-on-scroll">
                                         <button>
                                             <input type="submit" value="OK">
 
@@ -110,8 +142,8 @@
                                     </div>
                         </form>
                     </div>
-                    <div class="sec__img">
-                        <img src="assets/svg/contact-us-img.svg" alt="">
+                    <div class="sec__img show-on-scroll">
+                        <img src="assets/image/contact-us-img.png" alt="">
                     </div>
                 </div>
             </div>
@@ -127,7 +159,7 @@
                 <div class="footer__content">
                     <div class="footer__text">
                         <div class="footer__text__inner">
-                            <svg width="180" height="38" viewBox="0 0 180 38" fill="none"
+                            <svg  class="show-on-scroll" width="180" height="38" viewBox="0 0 180 38" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M10.455 29.438C16.113 29.438 19.762 26.24 20.172 22.058H14.186C13.899 23.903 12.341 24.928 10.455 24.928C7.913 24.928 6.068 22.878 6.027 20.049H20.295V18.901C20.295 12.259 16.646 7.913 10.332 7.913C4.264 7.913 0 12.177 0 18.614C0 25.584 4.387 29.438 10.455 29.438ZM5.986 16.154C6.232 13.858 7.913 12.177 10.291 12.177C12.587 12.177 14.186 13.776 14.227 16.154H5.986Z"
@@ -154,46 +186,50 @@
                                     d="M168.168 29.438C171.448 29.438 173.539 28.085 174.605 26.117C174.482 26.732 174.441 27.347 174.441 27.962V28.7H179.935V16.851C179.935 11.193 177.352 7.913 171.038 7.913C165.585 7.913 162.018 10.947 161.69 15.129H167.717C167.922 13.284 169.234 12.177 171.243 12.177C173.129 12.177 174.154 13.243 174.154 14.473C174.154 15.375 173.621 15.908 172.022 16.113L169.152 16.441C164.888 16.974 161.239 18.532 161.239 23.042C161.239 27.142 164.642 29.438 168.168 29.438ZM170.013 25.215C168.414 25.215 167.225 24.313 167.225 22.755C167.225 21.238 168.578 20.5 170.628 20.131L172.022 19.885C173.211 19.639 173.867 19.434 174.277 19.065V20.951C174.277 23.493 172.432 25.215 170.013 25.215Z"
                                     fill="#D4DBFC" />
                             </svg>
+                            
                             <h2 class="footer__hero__heading">
-                                <a href="contact-us.html">Let’s Talk!</a>
+                                <a class="show-on-scroll" href ="contact-us.html">Let’s Talk!</a>
                             </h2>
                         </div>
                         <div class="footer__items__inner">
                             <div class="items">
-                                <h3 class="item__heading">Explore</h3>
+                                <h3 class="item__heading show-on-scroll">Explore</h3>
                                 <ul>
-                                    <li><a class="item" href="about-us.html">About us</a></li>
-                                    <li><a class="item" href="partner.html">Partner</a></li>
-                                    <li><a class="item" href="sustainable.html">Sustainability</a></li>
-                                    <li><a class="item" href="career.html">Careers</a></li>
+                                    
+                                    <li class="show-on-scroll"><a class="item" href="about-us.html">About us</a></li>
+                                    <li class="show-on-scroll"><a class="item" href="partner.html">Partner</a></li>
+                                    <li class="show-on-scroll"><a class="item" href="sustainable.html">Sustainability</a></li>
+                                    <li class="show-on-scroll"><a class="item" href="career.html">Careers</a></li>
                                 </ul>
                             </div>
                             <div class="items">
-                                <h3 class="item__heading">Resources</h3>
+                                <h3 class="item__heading show-on-scroll">Resources</h3>
                                 <ul>
-                                    <li><a class="item" href="podcast.html">Podcast</a></li>
-                                    <li><a class="item" href="#">News room</a></li>
+                                    <li class="show-on-scroll"><a class="item " href="podcast.html">Podcast</a></li>
+                                    <li class="show-on-scroll"><a class="item " href="newsroom.html">News room</a></li>
+                                    <li class="show-on-scroll"><a class="item" href="podcast.html">Podcast</a></li>
+                                    <li class="show-on-scroll"><a class="item" href="#">News room</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="footer__items__wrapper">
                         <div class="footer__text__inner">
-                            <h3 class="footer__heading hide--md">
+                            <h3 class="footer__heading hide--md show-on-scroll">
                                 Want Positive News in Your Inbox?
                             </h3>
-                            <p class="footer__info hide--md">
+                            <p class="footer__info hide--md show-on-scroll">
                                 You'll receive occasional tips and resources to help you hack
                                 your startup growth, and news about what we've up to!
                             </p>
                         </div>
                         <form action="" class="footer__form">
                             <div class="form__group">
-                                <div class="email__input">
+                                <div class="email__input show-on-scroll">
                                     <input type="email" id="email" name="email" placeholder="Enter Your Email."
                                         autocomplete="off" required />
                                 </div>
-                                <div class="submit__btn">
+                                <div class="submit__btn show-on-scroll">
                                     <button type="submit" id="submitBtn">Send</button>
                                 </div>
                             </div>
@@ -201,14 +237,14 @@
                     </div>
                 </div>
                 <div class="copywrite__text">
-                    <div class="copywrite__info">
+                    <div class="copywrite__info show-on-scroll">
                         <p>Copyright © 2021 Edgevana All Rights Reserved.</p>
                     </div>
                     <div class="copywrite__links">
                         <ul>
-                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                            <li><a href="terms-of-use.html">Terms of use</a></li>
-                            <li><a href="cookies.html">Cookies Policy</a></li>
+                            <li class="show-on-scroll"><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li class="show-on-scroll"><a href="terms-of-use.html">Terms of use</a></li>
+                            <li class="show-on-scroll"><a href="cookies.html">Cookies Policy</a></li>
                         </ul>
                     </div>
                 </div>

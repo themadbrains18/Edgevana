@@ -16,7 +16,6 @@
       font-size: 25px;
       line-height: 36px;
       color: #fff;
-      transition: 0.4s;
 
       &:hover {
         background: linear-gradient(to right, #d177a5, #7a70e1, #7ea9c2);
@@ -207,4 +206,8 @@
       }
     }
   }
+}
+
+.featured__tabs .tab__btn li.show-on-scroll {
+  transform: none;
 }
