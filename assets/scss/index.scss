@@ -586,12 +586,12 @@
 .hero__heading {
   overflow: hidden;
   height: 120px;
-  .lspan,.fspan{
+  span{
     display: inline-block; 
   }
 }
 .hero__heading.active{
-  .lspan,.fspan{
+  span{
     transition: transform 2s,opacity 1s;
   }
 }

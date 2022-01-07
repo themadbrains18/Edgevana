@@ -104,53 +104,95 @@
                         <!-- Hero Heading -->
                         <h2 class="hero__heading">
                             <span>
-                                <span class="fspan">Custom</span> <span class="lspan">Infrastructure</span>
+                                <span class="fspan">Custom</span> 
+                                <br>
+                                <span class="lspan">Infrastructure</span>
                             </span>
                             <span>
-                                <span class="fspan">Colocation</span> <span class="lspan"> Data Centers</span>
+                                <span class="fspan">Colocation</span>
+                                <span class="lspan"> Data Centers</span>
                             </span>
                             <span>
-                                <span class="fspan">Flexible</span> <span class="lspan"> Edge Deployment</span>
+                                <span class="fspan">Flexible</span>
+                                <span class="lspan">Edge Deployment</span>
                             </span>
                             <span>
-                                <span class="fspan">Securer</span> <span class="lspan"> Cloud Capabilities</span>
+                                <span class="fspan">Securer</span> 
+                                <span class="lspan"> Cloud Capabilities</span>
                             </span>
                             <span>
-                                <span class="fspan">Sustainable</span> <span class="lspan"> Deployment</span>
+                                <span class="fspan">Sustainable</span>
+                                <span class="lspan"> Deployment</span>
                             </span>
                         </h2>
                         <script>
                             let heroHeading = document.querySelector('.hero__heading');
+                            let parentSpan = heroHeading.querySelectorAll('.hero__heading > span');
                             let fspan = heroHeading.querySelectorAll('.fspan');
                             let lspan = heroHeading.querySelectorAll('.lspan');
-                            let parentSpan = heroHeading.querySelectorAll('.hero__heading > span');
                             let fspanCount = 1;
-                            heroHeading.setAttribute('style', `height:${parentSpan[fspanCount - 1].offsetHeight}px;`);
-                            fspan.forEach((elem, index) => {
-                                elem.setAttribute('style', `transform: translateY(${index}00%);`);
+
+                            let checkHeight = 0;
+                            let fspanHeight = 0;
+
+                            parentSpan.forEach((elem) => {
+                                if(elem.offsetHeight > checkHeight  ){
+                                    checkHeight = elem.offsetHeight;
+                                }
                             });
-                            lspan.forEach((elem, index) => {
-                                elem.setAttribute('style', `transform: translateY(${index * -2}00%);`);
+                            
+                            fspan.forEach((elem) => {
+                                if(elem.offsetHeight > fspanHeight  ){
+                                    fspanHeight = elem.offsetHeight;
+                                }
                             });
-                            let inerval = setInterval(() => {
-                                heroHeading.setAttribute('style',
-                                    `height:${parentSpan[fspanCount - 1].offsetHeight}px;`);
-                                heroHeading.classList.add('active');
-                                fspan.forEach((elem, index) => {
-                                    elem.setAttribute('style',
-                                        `transform: translateY(-${fspanCount}00%);`);
-                                })
-                                fspan[fspanCount - 1].style.opacity = "0";
-                                lspan.forEach((elem, index) => {
-                                    elem.setAttribute('style',
-                                        `transform: translateY(${(index * -2) + fspanCount}00%);`);
+                            
+                            
+                            heroHeading.setAttribute('style', `height:${checkHeight}px;`);
+                            if(checkHeight > fspanHeight){
+                                parentSpan.forEach((elem, index) => {
+                                    elem.setAttribute('style', `transform: translateY(${index}00%);`);
                                 });
-                                lspan[fspanCount - 1].style.opacity = "0";
+                            }else{
+                                fspan.forEach((elem, index) => {
+                                    elem.setAttribute('style', `transform: translateY(${index}00%);`);
+                                });
+                                lspan.forEach((elem, index) => {
+                                    elem.setAttribute('style', `transform: translateY(${index * -2}00%);`);
+                                });
+                            }
+                            
+                           
+                            let inerval = setInterval(() => {
+                                heroHeading.setAttribute('style', `height:${checkHeight}px;`);
+                                heroHeading.classList.add('active');
+                                if(checkHeight > fspanHeight){
+                                    parentSpan.forEach((elem, index) => {
+                                        elem.setAttribute('style', `transform: translateY(-${fspanCount}00%);opacity:0;`);
+                                        if(index == fspanCount){
+                                            elem.style.opacity = "1";
+                                        }
+                                    })
+                                }else{
+                                    fspan.forEach((elem, index) => {
+                                        elem.setAttribute('style', `transform: translateY(-${fspanCount}00%);opacity:0;`);
+                                        if(index == fspanCount){
+                                            elem.style.opacity = "1";
+                                        }
+                                    })
+                                    fspan[fspanCount - 1].style.opacity = "0";
+                                    lspan.forEach((elem, index) => {
+                                        elem.setAttribute('style', `transform: translateY(${(index * -2) + fspanCount}00%);opacity:0;`);
+                                        if(index == fspanCount){
+                                            elem.style.opacity = "1";
+                                        }
+                                    });
+                                }
+                                
                                 fspanCount++;
-                                if (fspan.length == fspanCount) {
+                                if (parentSpan.length == fspanCount) {
                                     clearInterval(inerval);
                                 }
-
                             }, 3000);
                         </script>
                         <!-- Btn -->
@@ -1150,6 +1192,22 @@
                 </div>
                 <div class="trusted__sec__map">
                     <!-- Background map -->
+<<<<<<< HEAD
+                    <!-- <img src="assets/image/02Map.png" alt=""> -->
+
+                    <img src="assets/image/02Map.png" usemap="#image-map" class="map">
+                    <map name="image-map" class="map-area">
+<<<<<<< HEAD
+                        <area id="area1" target="" alt="" 
+=======
+                        <area id="squidusa" id="area1" target="" alt="" 
+>>>>>>> f9870b1bceff8af5271c8dc78f13632e63a02d69
+                            title="COX" href="" coords="223,238,212,280,251,272,247,274" shape="poly">
+                        <area id="squidchina" target="" alt="" title="Lenovo" href=""
+                            coords="1321,134,1297,178,1349,171,1350,173,1321,134" shape="poly">
+                    </map>
+
+=======
                     <!-- <img src="assets/svg/line-map.svg" alt="image-description"> -->
                     <!-- <img src="assets/image/02Map.png" alt="image-description"> -->
                         <img src="assets/image/02Map.png" usemap="#image-map" class="map">
@@ -1159,6 +1217,7 @@
                                 <area id="squidchina" target="" alt="image-description" title="Lenovo" href=""
                                     coords="1321,134,1297,178,1349,171,1350,173,1321,134" shape="poly">
                             </map>
+>>>>>>> 12019f06bc1fadf0a09c7acc4d8df046673fa770
                     <!-- Logo List -->
                 </div>
             </div>
@@ -1600,8 +1659,8 @@
                                 <ul>
                                     <li class="show-on-scroll"><a class="item " href="podcast.html">Podcast</a></li>
                                     <li class="show-on-scroll"><a class="item " href="newsroom.html">News room</a></li>
-                                    <li class="show-on-scroll"><a class="item" href="podcast.html">Podcast</a></li>
-                                    <li class="show-on-scroll"><a class="item" href="#">News room</a></li>
+                                    
+                                    
                                 </ul>
                             </div>
                         </div>

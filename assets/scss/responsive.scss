@@ -1,5 +1,6 @@
 // === RESPONSIVE CSS 1440PX START === //
 @media only screen and (max-width: 1440px) {
+
   // Service responsive max-width 1400px
   .sec__service .service__banner__img svg {
     width: 400px;
@@ -27,6 +28,7 @@
 
   // Section Partner Banner responsive max-width 1440px
   .industrie__banner.sec--partner--banner {
+
     .banner__image,
     .banner__text {
       width: 45% !important;
@@ -47,17 +49,21 @@
     top: 52%;
     transform: translateX(-50%) rotate(-1deg) scale(1.25);
   }
+
   .tmb__globel__sec .bg__lines {
     top: 78%;
     left: 49%;
     transform: translateX(-50%) scale(1.8) rotate(1deg);
   }
+
   .sec__service .service__banner__img {
     padding-right: 0;
   }
+
   // Brodcast banner Section 1400px
   .brodcast__detail__banner .sec__content {
     gap: 20px;
+
     .founders__sec .about__bg__ele {
       left: -20%;
     }
@@ -69,6 +75,7 @@
     from {
       -webkit-transform: rotate(0deg) skew(-5deg) scale(0.8);
     }
+
     to {
       -webkit-transform: rotate(359deg) skew(5deg) scale(0.8);
     }
@@ -83,11 +90,13 @@
   .cursor__wrapper {
     display: none;
   }
+
   .founders__sec {
     .about__bg__ele {
       display: none;
     }
   }
+
   // footer responsive max-width 1200px
   .footer {
     padding: 50px 0;
@@ -194,6 +203,7 @@
           max-width: 100%;
         }
       }
+
       .sec__image {
         text-align: center;
       }
@@ -289,6 +299,7 @@
   .sec__service .sec__text {
     width: 40%;
   }
+
   .sec__service .service__banner__img svg {
     margin-right: 100px;
   }
@@ -299,6 +310,7 @@
       .jp-type-playlist {
         padding: 20px;
       }
+
       .sec__content__inner {
         .sec__text {
           width: 70%;
@@ -306,21 +318,25 @@
       }
     }
   }
+
   // Podacst responsive css start
 
-  .connect_hero_global_map{
+  .connect_hero_global_map {
     display: none;
   }
-  .tmb__globel__sec{
-    .bg__lines{
-      display: none;  
+
+  .tmb__globel__sec {
+    .bg__lines {
+      display: none;
     }
   }
-  .cursor__wrapper{
+
+  .cursor__wrapper {
     display: none !important;
   }
-  .testimonial__list{
-    min-height: auto; 
+
+  .testimonial__list {
+    min-height: auto;
   }
 }
 
@@ -328,6 +344,7 @@
 
 // === RESPONSIVE CSS 1024PX Start === //
 @media only screen and (max-width: 1024px) {
+
   // about page responsive css start
   .founders__sec {
     .sec__content {
@@ -359,12 +376,15 @@
   .sec__service .sec__content {
     gap: 50px;
   }
+
   .sec__service .sec__text {
     padding-right: 50px;
   }
+
   .sec__service .sec__content {
     display: block;
   }
+
   .sec__service .sec__text {
     border-right: none;
   }
@@ -376,12 +396,15 @@
   .sec__service .service__tabs.mobile__tabs .tabs__button {
     display: block !important;
   }
+
   .service__banner__img {
     display: none;
   }
-  .tabs__button.active ~ .sec__img .tabs__content {
+
+  .tabs__button.active~.sec__img .tabs__content {
     display: block;
   }
+
   .sec__service .tabs__item {
     display: block;
   }
@@ -389,10 +412,12 @@
   .sec__service .sec__text {
     position: inherit;
   }
+
   .industries__tabs__button {
     text-align: start;
     position: relative;
   }
+
   .tabs__button,
   .industries__tabs__button {
     border-bottom: 1px solid #d4dbfc !important;
@@ -414,10 +439,12 @@
     width: 16px;
     background-color: #babfc5;
   }
+
   .tabs__button::before,
   .industries__tabs__button::before {
     transform: rotate(90deg);
   }
+
   .tabs__button.active::before,
   .industries__tabs__button.active::before {
     transform: rotate(0deg);
@@ -428,33 +455,40 @@
   .tabs__item .service__faq {
     display: none;
   }
-  .tabs__button.active ~ div {
+
+  .tabs__button.active~div {
     display: block;
   }
+
   .sec__service.sec--industries .sec__text {
     padding-right: 0;
     width: 100%;
   }
+
   .tabs__content.industries--tabs {
     position: initial;
     max-width: 100%;
     margin-bottom: 40px;
   }
+
   // about us page start
   .counter__sec {
     padding: 180px 0;
+
     .sec__content {
       .counter__grid {
         grid-template-columns: repeat(2, 1fr);
       }
     }
   }
+
   // about us page end
   .sec__service.sec--industries {
     .sec__content {
       padding-bottom: 0px;
     }
   }
+
   .sec__service .service__tabs li:last-child .tabs__button {
     margin-bottom: 41px;
   }
@@ -464,6 +498,7 @@
 
 // === RESPONSIVE CSS 991PX START === //
 @media only screen and (max-width: 991px) {
+
   // header responsive css 991px start
   main {
     padding-top: 110px;
@@ -505,16 +540,18 @@
     transform: translateX(100%);
     transition: 0.4s;
   }
-  .dropdown{
-    .dropdown__item{
-      a{
-        img{
+
+  .dropdown {
+    .dropdown__item {
+      a {
+        img {
           width: 14px;
           height: 14px;
         }
       }
     }
   }
+
   .nav__list.show {
     transform: translateX(0);
   }
@@ -524,69 +561,86 @@
     align-items: flex-start;
     gap: 20px;
   }
+
   .toggle__btn {
     svg {
       path.first {
         transition: 0.4s;
       }
+
       path.second {
         transition: 0.4s;
       }
+
       path.third {
         transition: 0.4s;
       }
     }
   }
+
   .toggle__btn {
     svg.cross {
       path.first {
         transform: translateX(100%);
         opacity: 0;
       }
+
       path.second {
         transform: translate(5px, -11px) rotate(45deg);
       }
+
       path.third {
         transform: translate(0px, 13px) rotate(-45deg);
       }
     }
   }
-  .dropdown{
+
+  .dropdown {
     position: static;
     background: none;
     height: 0;
     overflow: hidden;
-    margin-top:0;
+    margin-top: 0;
     padding: 0;
-    transition:all 0.4s;
+    transition: all 0.4s;
     transform: translateY(0px);
   }
-  .nav-modifier{
+
+  .nav-modifier {
     color: #fff;
     background: none !important;
-    -webkit-background-clip: none  !important;
+    -webkit-background-clip: none !important;
     -webkit-text-fill-color: #fff !important;
   }
-  .nav-modifier::after, .nav-modifier::before{
+
+  .nav-modifier::after,
+  .nav-modifier::before {
     left: 95%;
   }
-  .nav-modifier:hover::after, .nav-modifier:hover::before {
-    background:#fff;
+
+  .nav-modifier:hover::after,
+  .nav-modifier:hover::before {
+    background: #fff;
   }
-  .social__icons{
+
+  .social__icons {
     display: block;
     position: absolute;
     bottom: 110px;
     right: 30px;
   }
-  .informational__pages{
+
+  .informational__pages {
     display: block;
     margin-top: 66px;
-    .copywrite__info, .copywrite__links a{
+
+    .copywrite__info,
+    .copywrite__links a {
       font-weight: 700;
       color: #BABFC5;
     }
   }
+
   /* Service Responsive 991px */
   .sec__service .sec__content {
     gap: 100px;
@@ -696,6 +750,7 @@
       }
 
       .sec__text {
+
         .email__resume,
         .sec__brief {
           max-width: 100%;
@@ -768,6 +823,7 @@
   .sec__service .tabs__content {
     max-width: 100%;
   }
+
   .sec__podcast__about .sec__content {
     gap: 40px;
   }
@@ -779,9 +835,11 @@
         text-align: start;
       }
     }
+
     .sec__content {
       .sec__content__inner {
         flex-direction: column;
+
         .episodes__wrapper,
         .form__wrapper {
           width: 100%;
@@ -794,19 +852,23 @@
   .sec__news__room__tabs .news__room__tabs__Content .sec__text {
     position: initial;
   }
+
   .news-shadow,
   .social__link {
     display: none !important;
   }
+
   .sec__news__room__tabs .sec__header {
     display: flex;
     flex-direction: column-reverse;
     gap: 50px;
   }
+
   .news__blog__content {
     background-color: #121625;
     border-radius: 10px;
   }
+
   .sec__news__room__tabs .grid__tabs {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -819,17 +881,21 @@
 @media only screen and (max-width: 767px) {
   .image__wrapper {
     padding: 0 8px;
-  } 
-  .trusted__logo__list .swiper-slide{
+  }
+
+  .trusted__logo__list .swiper-slide {
     width: 86px !important;
   }
-  .trusted__logo__list{
+
+  .trusted__logo__list {
     margin: 0;
   }
+
   // footer responsive css 767px
   .container {
     padding: 0 30px;
   }
+
   .career__banner__sec {
     overflow: hidden;
 
@@ -839,6 +905,7 @@
       transform: translateX(-50%) scale(3);
     }
   }
+
   .sec__content__wrapper {
     .sec__content {
       .sec__content__inner {
@@ -854,9 +921,11 @@
       }
     }
   }
+
   .sec__content__wrapper.wrapper-modifier {
     padding-top: 0;
   }
+
   .copywrite__text {
     flex-direction: column-reverse;
   }
@@ -880,6 +949,7 @@
     transform: scale(1.5);
     padding-block: 50px;
   }
+
   .service__bottom__img {
     width: calc(100% + 60px) !important;
     margin-left: -30px;
@@ -909,7 +979,8 @@
   .sec__service .tabs__content .sec__item li {
     margin-bottom: 15px;
   }
-  .tabs__button.active ~ .sec__img .tabs__content {
+
+  .tabs__button.active~.sec__img .tabs__content {
     display: block;
   }
 
@@ -960,6 +1031,7 @@
       .industries__tabs__button.active::before {
         transform: rotate(0deg);
       }
+
       // === Industries CSS 767PX end === //
       .sec__why__edge .edge__features ul li {
         margin-bottom: 20px;
@@ -968,6 +1040,7 @@
       .sec__service .sec__item ul {
         margin-left: 10px;
       }
+
       .sec__service .sec__content {
         padding-top: 150px;
       }
@@ -976,18 +1049,22 @@
       .sec__service .industries__tabs__button {
         font-size: 20px;
       }
+
       .sec__service.sec--industries .sec__content {
         padding-top: 100px;
       }
+
       .sec__service .tabs__content .sec__heading,
       .sec__service .tabs__content .sec__brief {
         font-size: 30px;
       }
+
       .sec__service .tabs__content .sec__item li {
         font-size: 20px;
         font-weight: 500;
       }
-      .tabs__button.active ~ div {
+
+      .tabs__button.active~div {
         display: block;
       }
 
@@ -1163,7 +1240,7 @@
           }
         }
 
-        .btn.active + div {
+        .btn.active+div {
           margin-top: 35px;
         }
       }
@@ -1175,13 +1252,16 @@
   .sec__service .industries__tabs__button {
     font-size: 20px;
   }
+
   .sec__service.sec--industries .sec__content {
     padding-top: 100px;
   }
+
   .sec__service .tabs__content .sec__heading,
   .sec__service .tabs__content .sec__brief {
     font-size: 30px;
   }
+
   .sec__service .tabs__content .sec__item li {
     font-size: 20px;
     font-weight: 500;
@@ -1192,20 +1272,25 @@
     font-weight: 700;
     line-height: 30px;
   }
+
   .faq__ans {
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
   }
+
   .sec__service .faq__heading {
     font-size: 45px;
   }
+
   .sec__why__edge .sec__heading {
     padding-bottom: 50px;
   }
+
   .sec__why__edge .edge__features ul {
     margin-top: 60px;
   }
+
   .sec__why__edge .edge__features ul li {
     font-size: 20px;
   }
@@ -1213,48 +1298,59 @@
   .tabs__content.industries--tabs .tabs__heading {
     font-size: 25px;
   }
+
   .sec__service .sec__text {
     width: 100%;
     padding-right: 0;
   }
+
   // Section Best Solution 767px */
   .sec__best__solution .sec__heading {
     font-size: 30px;
     padding-bottom: 30px;
   }
+
   .sec__best__solution .sec__best__solution__items {
     padding-top: 100px;
   }
+
   .sec__best__solution .sec__best__solution__items li {
     margin-bottom: 30px;
     font-size: 20px;
   }
+
   .sec__best__solution {
     padding-bottom: 100px;
   }
+
   // career page responsive css start
   .featured__tabs {
     .sec__content__inner {
       max-width: 100%;
+
       .tabs {
         .tab__btn {
           width: 100%;
         }
+
         .tab__content {
           position: static;
           transform: none;
           width: 100%;
+
           .tab__content__inner {
             padding: 0;
             max-width: 100%;
           }
         }
-        .btn.active + div {
+
+        .btn.active+div {
           margin-top: 35px;
         }
       }
     }
   }
+
   // career page responsive css end
 
   // sustain page responsive css start
@@ -1303,11 +1399,13 @@
       }
     }
   }
+
   // sustain page responsive css end
 
   // policy pages responsive start
   .sec__content__wrapper {
     padding: 50px 0;
+
     .sec__content__wrapper {
       padding: 25px 0;
 
@@ -1357,29 +1455,36 @@
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+
     .sec__img {
       order: 1;
       text-align: center;
     }
+
     .sec__text {
       order: 2;
       width: 100%;
     }
   }
+
   .social__media {
     display: none !important;
   }
+
   .social__inner.watch-now {
     display: block;
   }
+
   .social__icon {
     justify-content: space-between;
   }
+
   .brodcast__detail__banner .social__inner {
     border: none;
     padding-inline: 0;
   }
-  .social__inner.watch-now.active ~ .social__media {
+
+  .social__inner.watch-now.active~.social__media {
     display: block !important;
     position: absolute;
     right: 0;
@@ -1389,16 +1494,20 @@
     max-width: 280px;
     padding: 23px;
     z-index: 2;
+
     .social__inner {
       justify-content: space-between;
     }
   }
+
   .brodcast__detail__banner .social__inner.watch-now {
     display: flex;
   }
+
   .social__media.mobile {
     display: none;
   }
+
   .brodcast__detail__banner .social__inner.share__btn.desktop {
     display: flex;
   }
@@ -1407,20 +1516,25 @@
   .sec__podcast__about .sec__content {
     display: block;
   }
+
   .sec__podcast__about .sec__img {
     max-width: 150px;
   }
+
   .sec__podcast__about .container {
     position: relative;
+
     .sec__img {
       position: absolute;
       right: 30px;
       top: 20px;
     }
+
     .sec__text {
       width: 100%;
     }
   }
+
   .sec__podcast__about .sec__heading {
     width: calc(100% - 100px);
   }
@@ -1431,24 +1545,29 @@
     width: calc(100% + 60px);
     margin-left: -30px;
   }
+
   // podcast page responsive start
   .podcast__banner__sec {
     padding: 444px 0 0px;
     padding-top: clamp(300px, 60vw, 495px);
+
     .bg__waves {
       img {
         top: 30%;
         transform: translateY(-50%) scale(0.7);
       }
     }
+
     .sec__content {
       .sec__content__inner {
         .sec__text {
           width: 100%;
+
           .sec__heading,
           .sec__info {
             text-align: center;
           }
+
           .sec__heading {
             width: calc(100% + 50px);
             margin-left: -25px;
@@ -1463,9 +1582,11 @@
     width: 100%;
     opacity: 0.4;
   }
+
   .desktop-view {
     display: none;
   }
+
   .jp-toggles {
     opacity: 0;
     height: 0;
@@ -1473,9 +1594,11 @@
     overflow: hidden;
     transition: 0.4s;
   }
+
   #filterBtn {
     display: block !important;
   }
+
   .jp-toggles.show {
     opacity: 1;
     height: auto;
@@ -1483,6 +1606,7 @@
     overflow: visible;
     padding-top: 8px !important;
   }
+
   .jp-progress {
     position: absolute;
     top: 30px;
@@ -1490,6 +1614,7 @@
     width: 100%;
     padding: 0 30px;
   }
+
   .jp-duration,
   .jp-current-time {
     position: absolute;
@@ -1497,99 +1622,84 @@
     right: 0;
     padding: 0 30px;
   }
+
   .jp-current-time {
     right: auto;
     left: 0;
   }
+
   .jp-controls-holder {
     text-align: center;
   }
+
   .jp__jplayer__wrapper,
   .seek__bar__wrapper,
   .jp-gui {
     width: auto !important;
   }
+
   .jp-type-playlist {
     justify-content: space-between;
   }
+
   .jp-type-playlist .jp-controls {
     gap: 10px;
   }
+
   .jp-type-playlist .jp__jplayer__wrapper {
     gap: 8px;
   }
+
   .jp-type-playlist .jp-jplayer {
     width: 50% !important;
   }
+
   .jp-type-playlist #jp_poster_0,
   .jp-type-playlist #jp_video_0 {
     width: 37px !important;
     height: 37px !important;
   }
+
   .jp-state-full-screen {
     .jp-type-playlist {
       width: 100%;
       margin: 0;
     }
   }
+
   .recent__episodes {
     padding: 50px 0;
   }
-  .recent__episodes
-    .sec__content
-    .sec__content__inner
-    .episodes__wrapper
-    .load__more__btn
-    .primary-btn {
+
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .load__more__btn .primary-btn {
     width: 100%;
   }
-  .recent__episodes
-    .sec__content
-    .sec__content__inner
-    .form__wrapper
-    .podcast__form {
+
+  .recent__episodes .sec__content .sec__content__inner .form__wrapper .podcast__form {
     padding: 0;
     background-color: transparent;
     border: none;
   }
-  .recent__episodes
-    .sec__content
-    .sec__content__inner
-    .episodes__wrapper
-    .episode__inner
-    .episode__head
-    .date {
+
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__head .date {
     color: #6f6f6f;
   }
-  .recent__episodes
-    .sec__content
-    .sec__content__inner
-    .episodes__wrapper
-    .episode__inner {
+
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner {
     padding: 20px 0;
   }
-  .recent__episodes
-    .sec__content
-    .sec__content__inner
-    .episodes__wrapper
-    .episode__inner
-    .episode__head
-    .episode__heading {
+
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__head .episode__heading {
     font-weight: 400;
   }
-  .recent__episodes
-    .sec__content
-    .sec__content__inner
-    .episodes__wrapper
-    .episode__inner:not(:last-child) {
+
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner:not(:last-child) {
     margin-bottom: 0;
   }
-  .recent__episodes
-    .sec__content
-    .sec__content__inner
-    .episodes__wrapper
-    .episode__inner {
+
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner {
     position: relative;
+
     &::after {
       content: "";
       background-color: #1d212e;
@@ -1601,53 +1711,30 @@
       left: 0;
     }
   }
-  .recent__episodes
-    .sec__content
-    .sec__content__inner
-    .episodes__wrapper
-    .episode__inner
-    .info,
-  .recent__episodes
-    .sec__content
-    .sec__content__inner
-    .episodes__wrapper
-    .episode__inner
-    .episode__text
-    .jp__time,
-  .recent__episodes
-    .sec__content
-    .sec__content__inner
-    .episodes__wrapper
-    .episode__inner
-    .episode__text
-    .jp-seek-bar {
+
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .info,
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__text .jp__time,
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__text .jp-seek-bar {
     display: none;
   }
-  .recent__episodes
-    .sec__content
-    .sec__content__inner
-    .form__wrapper
-    .podcast__form
-    .podcast__form__group
-    .input__feild
-    input {
+
+  .recent__episodes .sec__content .sec__content__inner .form__wrapper .podcast__form .podcast__form__group .input__feild input {
     padding: 10px;
   }
-  .recent__episodes
-    .sec__content
-    .sec__content__inner
-    .episodes__wrapper
-    .episode__inner
-    .episode__head {
+
+  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__head {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .recent__episodes .sec__content .sec__content__inner {
     gap: 128px;
   }
+
   .recent__episodes .sec__content .sec__content__inner .timing.timing-modifier {
     display: block;
   }
+
   .date__wrapper {
     display: flex;
     align-items: center;
@@ -1655,35 +1742,42 @@
     gap: 50px;
     width: 100%;
   }
+
   // podcast page responsive end
   .sec__news__room__tabs .sec__header .sec__news_room__tabs {
     gap: 10px;
   }
+
   .sec__news__room__tabs {
     .news__room__tabs__Content .sec__text {
       padding: 20px 15px;
+
       .sec__heading__text {
         margin-bottom: 20px;
       }
     }
   }
-}
-.sec__news__room__tabs {
-  .profile img {
-    width: 24px;
+
+  .sec__news__room__tabs {
+    .profile img {
+      width: 24px;
+    }
+
+    .date img {
+      width: 18px;
+    }
   }
-  .date img {
-    width: 18px;
+
+  .sec__news__room__tabs .news__room__tabs__Content .sec__text .tabs__date {
+    gap: 40px;
   }
-}
-.sec__news__room__tabs .news__room__tabs__Content .sec__text .tabs__date {
-  gap: 40px;
 }
 
 // === RESPONSIVE CSS 767PX end === //
 
 // === RESPONSIVE CSS 576PX START === //
 @media only screen and (max-width: 576px) {
+
   // header responsive css start
   .header__logo img {
     width: 138px;
@@ -1847,9 +1941,11 @@
   .info__crd__sec {
     padding: 50px 0 25px;
   }
-  .testimonial__list{
+
+  .testimonial__list {
     margin-top: 0 !important;
   }
+
   .info__crd__sec {
     .sec__heading {
       font-size: 25px;
@@ -1884,6 +1980,7 @@
   .testimonial__list {
     margin-top: 30px;
   }
+
   /* Contact-Form */
   .contact--us--sec h2.sec__heading span {
     display: block;
@@ -1897,27 +1994,34 @@
     gap: 10px;
     justify-content: initial;
   }
+
   .social__inner img {
     width: 20px;
   }
+
   .sec__service.sec--industries .sec__content {
     padding-top: 0;
   }
+
   .sec__podcast__about {
     .sec__inner__brief {
       font-weight: 400;
     }
   }
+
   .sec__podcast__about .sec__img {
     max-width: 77px;
   }
+
   .sec__podcast__about .sec__heading {
     width: calc(100% - 50px);
   }
+
   /* Section Podcast Summary */
   .sec__podcast__summary .sec__header .sec__heading {
     font-weight: 500;
   }
+
   .deploy__sec__img svg {
     position: absolute;
     top: 10px;
@@ -1929,6 +2033,7 @@
 
 // === RESPONSIVE CSS 480PX START === //
 @media only screen and (max-width: 480px) {
+
   //footer responsive css 480px
   main {
     padding-top: 93px;
@@ -2096,8 +2201,10 @@
       }
     }
   }
+
   .featured__tabs {
     padding: 50px 0;
+
     .sec__content__inner {
       .tabs {
         .tab__content {
@@ -2108,6 +2215,7 @@
           }
         }
       }
+
       .apply__btn {
         .primary-btn {
           width: 100%;
@@ -2123,6 +2231,7 @@
   .sustainable__banner {
     padding: 50px 0;
   }
+
   .initiatives__sec {
     padding: 50px 0;
   }
@@ -2137,6 +2246,7 @@
   .about__banner {
     padding: 50px 0 50px;
   }
+
   .founders__sec {
     padding: 50px 0;
 
@@ -2156,6 +2266,7 @@
           }
 
           .flip-card {
+
             .flip-card-front,
             .flip-card-back {
               width: 150px;
@@ -2185,9 +2296,11 @@
       padding-right: 0;
       overflow: hidden;
     }
+
     .bg__element {
       display: block;
     }
+
     .swiper-slide.swiper-slide-next {
       .member__info {
         opacity: 1;
@@ -2200,51 +2313,64 @@
       transform: scale(1) !important;
     }
   }
+
   .counter__sec {
     padding: 50px 0;
+
     .sec__content {
       .counter__grid {
         grid-template-columns: 1fr;
       }
     }
   }
+
   // about us page responsive end
   .sec__podcast__summary .sec__header {
     width: calc(100% + 60px);
     margin-left: -30px;
   }
+
   .summary__info {
     padding: 0;
     border: none;
   }
+
   .sec__podcast__summary::-webkit-scrollbar {
     background-color: #121625;
     width: 10px;
   }
+
   .sec__podcast__summary::-webkit-scrollbar-thumb {
     background-color: transparent;
   }
+
   .summary__info::-webkit-scrollbar {
     background-color: transparent;
     width: 0px;
   }
+
   .summary__info::-webkit-scrollbar-thumb {
     background-color: #2a2e37;
     border-radius: 6px;
   }
+
   .summary__info {
     margin-top: 30px;
   }
+
   .summary__info p.sec__info {
     font-weight: 500;
   }
+
   .summary__info ul {
     margin: 20px 0 30px;
   }
-  .testimonial__list{
+
+  .testimonial__list {
     padding: 25px 0 25px;
   }
-  .trusted__logo__list{
+
+  .trusted__logo__list {
     top: 70%;
   }
 }
@@ -2264,16 +2390,20 @@
       }
     }
   }
-  .social__inner.watch-now.active ~ .social__media {
+
+  .social__inner.watch-now.active~.social__media {
     right: 50%;
     transform: translate(50%, 70px);
   }
-  .logo__swiper{
+
+  .logo__swiper {
     width: calc(100% + 40px);
     margin-left: -20px;
   }
+
   .deploy__sec__img svg {
     left: 24px;
   }
 }
+
 // === RESPONSIVE CSS 340PX end === //
