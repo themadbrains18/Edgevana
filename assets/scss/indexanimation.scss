@@ -1,20 +1,22 @@
 // global map annimate rotate
+
 @keyframes HeroGlobal {
   100% {
     opacity: 1;
-    // -webkit-transform: rotate(-40deg);
   }
 
   from {
-    -webkit-transform: rotate(180deg);
+    transform: rotateY(0deg) rotateY(25deg);
   }
   to {
-    -webkit-transform: rotate(-359deg);
+    transform: rotateY(-359deg) rotateY(25deg);
   }
 }
-.is-visible.global_img {
-  animation: HeroGlobal 20s linear forwards;
+.global_img {
+  // transform: rotateY(45deg);
+  animation: HeroGlobal 10s linear forwards infinite;
 }
+
 
 // global map annimate rotate end
 
@@ -81,16 +83,16 @@
   animation: dash 20s linear infinite;
 }
 
-.is-visible.line1 {
+.line1 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
-  animation: dash 2s linear alternate infinite;
+  animation: dash 5s linear alternate infinite;
 }
 
-.is-visible.line2 {
+.line2 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
-  animation: dash2 2s linear alternate infinite;
+  animation: dash2 5s linear alternate infinite;
 }
 
 .is-visible.Vector20 {
