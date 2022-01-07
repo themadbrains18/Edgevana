@@ -54,8 +54,7 @@
 
 .globel__sec__content {
   display: grid;
-  grid-template-columns: 28% 68%;
-  align-items: center;
+  grid-template-columns: 1fr auto;
   gap: 50px;
 }
 .globel__point__list {
