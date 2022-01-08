@@ -8,38 +8,6 @@ window.addEventListener('load', () => {
 
 /* Service Tabs Js */
 let tabs = document.querySelectorAll(".tabs__button");
-
-// for(let i of tabs){
-//     i.addEventListener("click",()=>{
-//         i.classList.add("ative");
-//         let heiddfs=i.scrollHeight;
-//         // console.log(heiddfs);
-//     })
-
-// }
-
-// // 
-// window.addEventListener('load',()=>{
-//     let serviceMobileTabsLi = document.querySelectorAll(".service__tabs.mobile__tabs li.tabs__item");
-//     for(let i of serviceMobileTabsLi){
-//         let newDiv = document.createElement('div');
-//         // let totalChildren = i.children.length;
-//         // console.log(totalChildren);
-//         console.log(i.children.length);
-//         for(let z = 0; z  < i.children.length ; z++){
-//             console.log(z);
-//             newDiv.appendChild(i.children[z]);
-//         }
-//         i.appendChild(newDiv);
-//     }
-// })
-
-// // 
-
-
-
-
-// if( window.innerWidth>1024){
     let ServiceBannerImg = document.querySelector(".service__banner__img");
     for(let i in tabs){
       if(tabs.length >= i){
