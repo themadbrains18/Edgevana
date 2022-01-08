@@ -145,11 +145,11 @@
   transition: 0.4s;
 }
 
-.faq__ques.active + .faq__ans {
-  height: auto;
-  opacity: 1;
-  overflow: visible;
-}
+// .faq__ques.active + .faq__ans {
+//   height: auto;
+//   opacity: 1;
+//   overflow: visible;
+// }
 
 .faq__ans {
   font-size: clamp(16px, 2vw, 25px);
@@ -234,4 +234,18 @@ svg {
   path.active {
     transform: scale(1.2);
   }
+}
+
+#quesMark > path {
+  opacity: 0;
+  transition: 1s 0.1s;
+  transform: translateY(-5px) scale(0.9);
+  transform-origin: bottom;
+}
+#quesMark.show-on-scroll {
+  transform: none;
+}
+#quesMark.is-visible > path {
+  opacity: 1;
+  transform: scale(1);
 }

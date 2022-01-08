@@ -29,15 +29,47 @@
                             <a class="nav__item" href="service.html">Services</a>
                         </li>
                         <li>
-                            <a class="nav__item" href="#">Resources</a>
+                            <a class="nav__item nav-modifier">Resources</a>
+                            <div class="dropdown">
+                                <div class="dropdown__item">
+                                    <a href="newsroom.html"><img src="assets/svg/news.svg" alt="image-description"> Newsroom</a>
+                                </div>
+                                <div class="dropdown__item">
+                                    <a href="podcast.html"><img src="assets/svg/podcast.svg" alt="image-description"> Podcast</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="col-lg-hide">
                             <a class="nav__item" href="contact-us.html">Contact us</a>
                         </li>
                     </ul>
+
+                    <div class="informational__pages">
+                        <div class="copywrite__links">
+                            <ul>
+                                <li class="show-on-scroll"><a href="privacy-policy.html">Privacy Policy</a></li>
+                                <li class="show-on-scroll"><a href="terms-of-use.html">Terms of use</a></li>
+                                <li class="show-on-scroll"><a href="cookies.html">Cookies Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="social__icons">
+                        <a href="https://twitter.com/edgevana">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M26 26H20C18.3455 26 17 24.6545 17 23V21.5H26C27.656 21.5 29 20.156 29 18.5C29 16.844 27.656 15.5 26 15.5H17V11C17 9.344 15.656 8 14 8C12.344 8 11 9.344 11 11V23C11 27.9635 15.0365 32 20 32H26C27.656 32 29 30.656 29 29C29 27.344 27.656 26 26 26Z" fill="white"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/edgevana/"> 
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32.0009 31.9999V23.21C32.0009 18.89 31.0709 15.59 26.0309 15.59C23.6009 15.59 21.9809 16.91 21.3209 18.17H21.2609V15.98H16.4909V31.9999H21.4709V24.05C21.4709 21.95 21.8609 19.94 24.4409 19.94C26.9909 19.94 27.0209 22.31 27.0209 24.17V31.9699H32.0009V31.9999Z" fill="white"></path>
+                                <path d="M8.38812 15.98H13.3681V32H8.38812V15.98Z" fill="white"></path>
+                                <path d="M10.88 8C9.29 8 8 9.29 8 10.88C8 12.47 9.29 13.79 10.88 13.79C12.47 13.79 13.76 12.47 13.76 10.88C13.76 9.29 12.47 8 10.88 8V8Z" fill="white"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </nav>
                 <div class="contact__btn">
-                    <a class="nav__item" href="#">Contact us</a>
+                    <a class="nav__item" href="contact-us.html">Contact us</a>
                 </div>
             </div>
             <div class="toggle__btn">
@@ -389,10 +421,10 @@
                             <div class="items">
                                 <h3 class="item__heading show-on-scroll">Resources</h3>
                                 <ul>
-                                    <li class="show-on-scroll"><a class="item " href="#">Podcast</a></li>
-                                    <li class="show-on-scroll"><a class="item " href="#">News room</a></li>
-                                    <li class="show-on-scroll"><a class="item" href="podcast.html">Podcast</a></li>
-                                    <li class="show-on-scroll"><a class="item" href="#">News room</a></li>
+                                    <li class="show-on-scroll"><a class="item " href="podcast.html">Podcast</a></li>
+                                    <li class="show-on-scroll"><a class="item " href="newsroom.html">News room</a></li>
+                                    
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -440,5 +472,6 @@
 
     <!-- === script files === -->
     <script src="assets/js/common.js"></script>
+    <script src="assets/js/cursor-canvas.js"></script>
 </body>
 </html>

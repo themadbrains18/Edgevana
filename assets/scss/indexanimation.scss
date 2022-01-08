@@ -1,19 +1,38 @@
 // global map annimate rotate
-@keyframes HeroGlobal {
-  100% {
-    opacity: 1;
-    // -webkit-transform: rotate(-40deg);
-  }
 
-  from {
-    -webkit-transform: rotate(180deg);
-  }
-  to {
-    -webkit-transform: rotate(-359deg);
+// @keyframes HeroGlobal {
+//   100% {
+//     opacity: 1;
+//   }
+
+//   from {
+//     transform: rotateY(0deg) rotateX(40deg);
+//   }
+//   to {
+//     transform: rotateY(-359deg) rotateX(-40deg);
+//   }
+// }
+// .global_img {
+//   // transform: rotateY(45deg);
+//   animation: HeroGlobal 10s linear forwards infinite;
+// }
+
+@keyframes global {
+  100%{
+    background-position: 100%;
   }
 }
-.is-visible.global_img {
-  animation: HeroGlobal 20s linear forwards;
+
+.globel__sec__img{
+  height: 500px;
+  width: 500px;
+  background-image: url(../image/Map2.png);
+  background-position: -50%;
+  background-size: auto 450px;
+  background-repeat: repeat no-repeat;
+  box-shadow: 0 0 50px #000, 0 0 100px #303031, inset 0 0 30px #555557;
+  border-radius: 50%;
+  animation: global 50s linear infinite;
 }
 
 // global map annimate rotate end
@@ -81,16 +100,16 @@
   animation: dash 20s linear infinite;
 }
 
-.is-visible.line1 {
+.line1 {
   stroke-dasharray: 1340;
   stroke-dashoffset: 140;
-  animation: dash 2s linear alternate infinite;
+  animation: dash 5s linear alternate infinite;
 }
 
-.is-visible.line2 {
+.line2 {
   stroke-dasharray: 1320;
   stroke-dashoffset: 1320;
-  animation: dash2 2s linear alternate infinite;
+  animation: dash2 5s linear alternate infinite;
 }
 
 .is-visible.Vector20 {

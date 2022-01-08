@@ -40,7 +40,7 @@ let tabs = document.querySelectorAll(".tabs__button");
 // }
 
 /* Faq Js */
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
     let faqQues = document.querySelectorAll('.faq__ques');
     function removeClass(){
         for (let i of faqQues) {
@@ -49,6 +49,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     }
     for (let i of faqQues) {
+
         i.addEventListener('click', ()=>{
             if(i.classList.contains("active")){
                 removeClass();    

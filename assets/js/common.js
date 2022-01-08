@@ -1,32 +1,69 @@
 // toggle btn js 
 let toggleBtn = document.querySelector(".toggle__btn svg");
 let navlist = document.querySelector(".nav__list");
+let body = document.querySelector("body")
 
-toggleBtn.addEventListener("click",()=>{
-    toggleBtn.classList.toggle("cross");
-    navlist.classList.toggle("show");
+toggleBtn.addEventListener("click", () => {
+  toggleBtn.classList.toggle("cross");
+  body.classList.toggle("scroll-none");
+  navlist.classList.toggle("show");
 });
 
 // header js start
 let header = document.querySelector(".header");
 let oldValue = 0;
-window.addEventListener("scroll",()=>{
-    if(window.scrollY > oldValue){
-        oldValue=window.scrollY;
-        // header.classList.remove("show");
-        header.setAttribute("style" ,"top: -100%;transition:0.5s;background-color:#0b0e1e;padding:30px 0;");
-    }else{
-        oldValue=window.scrollY;
-        // header.classList.add("show");
-        header.setAttribute("style" ,"top: 0px;transition:0.5s;background-color:#0b0e1e;padding:30px 0;");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > oldValue) {
+    oldValue = window.scrollY;
+    // header.classList.remove("show");
+    header.setAttribute("style", "top: -100%;transition:0.5s;background-color:#0b0e1e;padding:30px 0;");
+  } else {
+    oldValue = window.scrollY;
+    // header.classList.add("show");
+    header.setAttribute("style", "top: 0px;transition:0.5s;background-color:#0b0e1e;padding:30px 0;");
+  }
+  if (window.innerWidth > 991) {
+
+    if (window.scrollY == 0) {
+      header.setAttribute("style", "top: 67px;transition:0.5s;background-color:transparent;padding:0;");
     }
-    if (window.innerWidth > 991) { 
-        
-        if(window.scrollY == 0){
-            header.setAttribute("style" ,"top: 67px;transition:0.5s;background-color:transparent;padding:0;");
-        }
-    }
+  }
 });
+
+// resource dropdown js start
+if (window.innerWidth >= 992) {
+  let dropdown = document.querySelector(".nav__item.nav-modifier");
+
+  dropdown.addEventListener("click", () => {
+    dropdown.classList.toggle("show");
+  });
+}
+if (window.innerWidth <= 991) {
+  window.addEventListener('DOMContentLoaded', function () {
+    let dropdown = document.querySelector(".nav__item.nav-modifier");
+    dropdown.addEventListener('click', () => {
+      if(dropdown.classList.contains("show")){
+        dropdown.classList.remove("show")
+        let height = dropdown.nextElementSibling.scrollHeight;
+        dropdown.nextElementSibling.setAttribute("style", `height:0px;opacity:0;`);
+      }else{
+        dropdown.classList.add("show")
+        let height = dropdown.nextElementSibling.scrollHeight;
+        dropdown.nextElementSibling.setAttribute("style", `height: ${height}px;opacity:1;margin-top:20px;`);
+      }
+      // removeClass(); 
+    });
+  });
+}
+
+
+
+
+
+// resource dropdown js end
+
+
+
 // header js end
 
 // /* Canvs */
@@ -154,14 +191,14 @@ window.addEventListener("scroll",()=>{
 //     this.dy = dy;
 //     this.color = colursArry[Math.floor(Math.random() * colursArry.length)];
 //     this.font = `${(Math.random() * 15) + 7}px ABC Diatype Trial`;
-    
+
 //     this.draw = ()=>{
 //         ctx.font = this.font;
 //         ctx.fillStyle = this.color;
 //         ctx.fillText(Math.floor(Math.random() * 300), this.x, this.y);
 //     }
 //     this.update = ()=>{
-       
+
 //         if((this.y + this.h) > canvas.height || (this.y) < 0){
 //             this.dy = -this.dy;
 //         }
@@ -184,7 +221,7 @@ window.addEventListener("scroll",()=>{
 //                     this.x += this.dx;
 //                 }
 //             }
-            
+
 //             if(mouseY > this.y ){
 //                 if(this.dy < 0){
 //                     this.y -= this.dy;
@@ -215,7 +252,7 @@ window.addEventListener("scroll",()=>{
 //     numberArr.forEach(elem =>{
 //         elem.update();
 //     })
-    
+
 // } 
 
 // animation();
@@ -227,23 +264,23 @@ window.addEventListener("scroll",()=>{
 
 
 
-    
-    
+
+
 // Detect request animation frame
 var scroll = window.requestAnimationFrame ||
-             // IE Fallback
-             function(callback){ window.setTimeout(callback, 1000/60)};
-var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+  // IE Fallback
+  function (callback) { window.setTimeout(callback, 1000 / 60) };
+var elementsToShow = document.querySelectorAll('.show-on-scroll');
 
 function loop() {
 
-    Array.prototype.forEach.call(elementsToShow, function(element){
-      if (isElementInViewport(element)) {
-        element.classList.add('is-visible');
-      }
-    });
+  Array.prototype.forEach.call(elementsToShow, function (element) {
+    if (isElementInViewport(element)) {
+      element.classList.add('is-visible');
+    }
+  });
 
-    scroll(loop);
+  scroll(loop);
 }
 
 // Call the loop for the first time
