@@ -40,6 +40,16 @@ window.addEventListener('load', () => {
         },
     });
 
+    setInterval(() => {
+        console.log(swiper.activeIndex);
+        let index_currentSlide = swiper.activeIndex;
+            let currentSlide = swiper.slides[index_currentSlide]
+        console.log(
+            currentSlide
+            )
+    }, 4000);
+    
+
     const swipertestimonial = new Swiper('.testimonial__list', {
         slidesPerView: 1,
         centeredSlides: true,
@@ -62,9 +72,9 @@ window.addEventListener('load', () => {
     if (mediaQuery.matches) {
         var mobileSlider = new Swiper(".mySwiperInfocard", {
             centeredSlides: true,
-            spaceBetween: 0,
+            freeMode: true,
             slidesPerView: 1,
-            // autoHeight: true, 
+            loop: true,
         });
     }
 
