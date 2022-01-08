@@ -108,7 +108,7 @@ function counter(id, start, end, duration) {
      step = Math.abs(Math.floor(duration / range)),
      timer = setInterval(() => {
       current += increment;
-      obj.textContent = current;
+    //   obj.textContent = current;
       if (current == end) {
        clearInterval(timer);
       }
