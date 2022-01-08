@@ -54,8 +54,7 @@
 
 .globel__sec__content {
   display: grid;
-  grid-template-columns: 28% 68%;
-  align-items: center;
+  grid-template-columns: 1fr auto;
   gap: 50px;
 }
 .globel__point__list {
@@ -497,7 +496,7 @@
   padding-bottom: clamp(50px,5vw,77px);
   .connect_hero_global_map {
     position: absolute;
-    top: 38%;
+    top: 52%;
     left: 50%;
     transform: translateX(-50%) rotate(5deg) scale(1.37);
     z-index: -1;
@@ -593,12 +592,12 @@
 .hero__heading {
   overflow: hidden;
   height: 120px;
-  .lspan,.fspan{
+  span{
     display: inline-block; 
   }
 }
 .hero__heading.active{
-  .lspan,.fspan{
+  span{
     transition: transform 2s,opacity 1s;
   }
 }

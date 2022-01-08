@@ -1,7 +1,7 @@
 /* COLOURS */
 
 $colour-cyan: #00FFD3;
-$colour-white: #FFFFFF;
+$colour-white: #ff0;
 $colour-black: #000000;
 
 
@@ -196,12 +196,12 @@ $dotSizeLarge: $dotSize + ($dotSize / 2);
 	height: 100%;
 	width: 100%;
 	opacity: .3;
-	animation: rotation 5s linear infinite
+	animation: rotation 2s linear infinite
 }
 
 .svg-wrapper{
 	opacity: 0;
-	display: inline-block;
+	display: none;
 	position: absolute;
 	// width: 50vh;
 	height: 80%;
@@ -231,4 +231,8 @@ $dotSizeLarge: $dotSize + ($dotSize / 2);
 	100%{
 		transform: scaleX(-1) rotate(0deg)
 	}
+}
+
+.canvas-bg{
+    fill: radial-gradient(16191.85% 12500% at 559.69% -3857.43%, #FF00FF 0%, #00FFFF 100%)
 }
