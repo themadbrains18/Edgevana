@@ -229,17 +229,16 @@ svg {
   }
 }
 
-#quesMark>path{
+#quesMark > path {
   opacity: 0;
   transition: 1s 0.1s;
   transform: translateY(-5px) scale(0.9);
   transform-origin: bottom;
-
 }
-#quesMark.show-on-scroll{
+#quesMark.show-on-scroll {
   transform: none;
 }
-#quesMark.is-visible > path{
+#quesMark.is-visible > path {
   opacity: 1;
   transform: scale(1);
 }

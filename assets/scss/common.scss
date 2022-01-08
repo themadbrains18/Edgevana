@@ -128,7 +128,7 @@ main {
 .show-on-scroll {
   transform: translateY(-30px);
   opacity: 0;
-  transition: 0.8s linear;
+  transition: 0.3s;
 }
 .show-on-scroll.is-visible {
   transform: translateY(0px);

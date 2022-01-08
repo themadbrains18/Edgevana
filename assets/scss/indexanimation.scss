@@ -191,6 +191,35 @@
   }
 }
 
+@keyframes marker {
+  from{
+    -webkit-transform: translate(1em,0) ;
+    -webkit-transition: 1s ease-in-out;
+  }
+  
+}
+
+span.pointer.lenovo{
+  left: 79%;
+  top: 6%;
+  transform: scale3d(1.5, 1.5, 1.5);
+  animation: marker 2s linear infinite alternate;
+}
+
+span.pointer.cox{
+  left: 14%;
+  top: 15%;
+  transform: scale3d(1.5, 1.5, 1.5);
+  animation: marker 2s linear infinite alternate;
+}
+
+span.pointer{
+  position: absolute;
+  height: 100px;
+  width: 10px;
+  background-image: url(../image/marker.png);
+}
+
 // .Vector17 {
 //   width:50px;
 //   height: 5px;

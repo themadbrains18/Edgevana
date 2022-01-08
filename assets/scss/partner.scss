@@ -1,7 +1,11 @@
 /* Partner Banner Section Css Code */
+.industrie__banner.sec--partner--banner .banner__inner {
+  gap: 0px;
+}
 .industrie__banner.sec--partner--banner {
   overflow: hidden;
   z-index: 9;
+  padding-bottom: 129px;
   .partner__bg__element {
     position: absolute;
     left: 0;
