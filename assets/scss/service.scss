@@ -1,5 +1,14 @@
 /* Service Banner Css Code */
-
+.sec__service.sec--industries .container {
+  padding-block: 0;
+  position: relative;
+}
+.sec__service {
+  overflow-x: hidden;
+}
+.sec__service.sec--industries {
+  padding-top: clamp(59px, 10vw, 171px);
+}
 .tabs__content.industries--tabs {
   transition: 0.3s;
   height: 0;
@@ -9,10 +18,6 @@
 .sec__service {
   .service__tabs.mobile__tabs .tabs__button {
     display: none;
-  }
-
-  .container {
-    padding-top: clamp(64px, 5vw, 150px);
   }
   .sec__content.service__content {
     position: relative;
@@ -148,7 +153,6 @@
     color: #d4dbfc;
     position: relative;
     line-height: 30px;
-    padding: 25px 30px 0 0;
     display: flex;
     align-items: start;
   }
@@ -225,7 +229,7 @@
 .tabs__content.industries--tabs {
   position: absolute;
   right: 120px;
-  top: 200px;
+  top: 0px;
   max-width: 50%;
 }
 /* Section Why Edge Css Code */
@@ -263,6 +267,7 @@
 
 .global__network {
   margin-top: 150px !important;
+  text-align: center;
 }
 
 .service__banner__img svg #Layer_1-2 path {
@@ -297,4 +302,9 @@
 
 .tabs__button.ative ~ div {
   display: block;
+}
+
+.bare-metal-icon img {
+  max-width: calc(100% + 200px);
+  margin-left: -100px;
 }

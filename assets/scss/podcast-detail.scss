@@ -1,11 +1,18 @@
 /* Brodcast Banner Css Code */
 
 .brodcast__detail__banner {
+  padding-top: clamp(64px, 10vw, 200px);
   .sec__episode__date {
     font-weight: 500;
     font-size: 25px;
     line-height: 36px;
     color: #fff;
+  }
+  .social__icon.mobile {
+    display: none;
+  }
+  .jp-type-playlist {
+    margin-top: clamp(1px, 6vw, 104px);
   }
   .sec__heading {
     font-weight: 700;
@@ -76,7 +83,7 @@
 
 /* Podcast About Us Section Css Code */
 .sec__podcast__about {
-  padding-top: clamp(54px, 10vw, 172px);
+  padding-top: clamp(51px, 10vw, 172px);
   padding-bottom: clamp(55px, 10vw, 167px);
   .sec__content {
     display: flex;

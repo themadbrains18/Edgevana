@@ -62,9 +62,9 @@ window.addEventListener('load', () => {
     if (mediaQuery.matches) {
         var mobileSlider = new Swiper(".mySwiperInfocard", {
             centeredSlides: true,
-            freeMode: true,
+            spaceBetween: 0,
             slidesPerView: 1,
-            loop: true,
+            // autoHeight: true, 
         });
     }
 

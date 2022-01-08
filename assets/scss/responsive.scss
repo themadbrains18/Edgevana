@@ -1,19 +1,10 @@
 // === RESPONSIVE CSS 1440PX START === //
 @media only screen and (max-width: 1440px) {
-
   // Service responsive max-width 1400px
   .sec__service .service__banner__img svg {
     width: 400px;
     height: 400px;
     margin-right: 160px;
-  }
-
-  .sec__service.sec--industries .sec__content {
-    padding-top: 300px;
-  }
-
-  .tabs__content.industries--tabs {
-    top: 300px;
   }
 
   // Faq responsive max-width 1440px
@@ -28,7 +19,6 @@
 
   // Section Partner Banner responsive max-width 1440px
   .industrie__banner.sec--partner--banner {
-
     .banner__image,
     .banner__text {
       width: 45% !important;
@@ -69,7 +59,6 @@
     }
   }
 
-
   // index banner animation
   @keyframes HeroGlobalimg {
     from {
@@ -82,7 +71,7 @@
   }
 }
 
-// === RESPONSIVE CSS 1440PX end === //
+// === RESPONSIVE CSS 1200PX end === //
 @media only screen and (max-width: 1200px) {
   // === RESPONSIVE CSS 1200PX START === //
 
@@ -90,7 +79,9 @@
   .cursor__wrapper {
     display: none;
   }
-
+  canvas{
+    display: none !important;
+  }
   .founders__sec {
     .about__bg__ele {
       display: none;
@@ -231,6 +222,16 @@
       grid-row: 2;
     }
   }
+  .tmb__deploy__sec{
+    .d-none{
+      display: block;
+      max-width: 100%;
+    }
+    .d-block{
+      display: none;
+    }
+
+  }
 
   .crd__grid {
     grid-template-columns: 1fr;
@@ -320,31 +321,39 @@
   }
 
   // Podacst responsive css start
+  .sec__news__room__tabs .news__room__tabs__Content .sec__text {
+    padding: 40px 20px 20px;
 
-  .connect_hero_global_map {
-    display: none;
-  }
-
-  .tmb__globel__sec {
-    .bg__lines {
+    .connect_hero_global_map {
       display: none;
     }
-  }
 
-  .cursor__wrapper {
-    display: none !important;
-  }
+    .tmb__globel__sec {
+      .bg__lines {
+        display: none;
+      }
+    }
 
-  .testimonial__list {
-    min-height: auto;
+    .cursor__wrapper {
+      display: none !important;
+    }
+
+    .testimonial__list {
+      min-height: auto;
+    }
+  }
+  .mySwiperInfocard {
+    .swiper-slide-active{
+      background: linear-gradient(to right, #d177a5 0%, #7a70e1 48%, #7ea9c2 100%);
+      padding: 1px;
+      border-radius: 5px;
+    }
   }
 }
-
 // === RESPONSIVE CSS 1200PX END === //
 
 // === RESPONSIVE CSS 1024PX Start === //
 @media only screen and (max-width: 1024px) {
-
   // about page responsive css start
   .founders__sec {
     .sec__content {
@@ -401,7 +410,7 @@
     display: none;
   }
 
-  .tabs__button.active~.sec__img .tabs__content {
+  .tabs__button.active ~ .sec__img .tabs__content {
     display: block;
   }
 
@@ -456,7 +465,7 @@
     display: none;
   }
 
-  .tabs__button.active~div {
+  .tabs__button.active ~ div {
     display: block;
   }
 
@@ -492,13 +501,18 @@
   .sec__service .service__tabs li:last-child .tabs__button {
     margin-bottom: 41px;
   }
+  .grid__tabs .news__blog__content .sec__text {
+    position: initial;
+  }
+  .grid__tabs .news-shadow {
+    display: none;
+  }
 }
 
 // === RESPONSIVE CSS 1024PX END === //
 
 // === RESPONSIVE CSS 991PX START === //
 @media only screen and (max-width: 991px) {
-
   // header responsive css 991px start
   main {
     padding-top: 110px;
@@ -637,7 +651,7 @@
     .copywrite__info,
     .copywrite__links a {
       font-weight: 700;
-      color: #BABFC5;
+      color: #babfc5;
     }
   }
 
@@ -750,7 +764,6 @@
       }
 
       .sec__text {
-
         .email__resume,
         .sec__brief {
           max-width: 100%;
@@ -868,13 +881,66 @@
     background-color: #121625;
     border-radius: 10px;
   }
+  .sec__news__room__tabs .grid__tabs,
+  .sec__news__room__tabs .grid__three__row__tabs {
+    gap: 30px;
+  }
+  .grid__tabs .news__blog__content .sec__text,
+  .sec__news__room__tabs .grid__three__row__tabs .sec__text {
+    padding: 40px 20px 35px;
+  }
 
-  .sec__news__room__tabs .grid__tabs {
-    grid-template-columns: 1fr;
-    gap: 20px;
+  .feature__stories img {
+    min-height: 320px;
+    height: 100%;
+    object-fit: cover;
+  }
+  .date img {
+    min-height: auto;
+  }
+  .sec__news__room__tabs
+    .news__room__tabs__Content
+    .feature__stories
+    .sec__text {
+    position: absolute;
+  }
+  .feature__stories .news-shadow {
+    display: block !important;
+  }
+  .sec__news__room__tabs .sec__header .sec__news_room__tabs .news__tabs {
+    background-color: transparent;
+  }
+  .sec__news_room__tabs {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #121625;
+  }
+  .sec__news_room__tabs {
+    position: relative;
+  }
+  .bottom__line {
+    display: block;
+    width: 63px;
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    border: 1px solid #3a3c40;
+    transition: 1s;
+  }
+  .sec__news__room__tabs .news__room__tabs__Content .sec__text .tabs__date {
+    gap: 25px;
+  }
+  .news__blog__content + img {
+    width: 100%;
+  }
+  .sec__news__room__tabs .grid__three__row__tabs {
+    grid-template-columns: 1fr 1fr;
+
+    .sec__news__room__tabs .grid__tabs {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
   }
 }
-
 // === RESPONSIVE CSS 991PX END === //
 
 // === RESPONSIVE CSS 767PX START === //
@@ -980,7 +1046,7 @@
     margin-bottom: 15px;
   }
 
-  .tabs__button.active~.sec__img .tabs__content {
+  .tabs__button.active ~ .sec__img .tabs__content {
     display: block;
   }
 
@@ -1050,10 +1116,6 @@
         font-size: 20px;
       }
 
-      .sec__service.sec--industries .sec__content {
-        padding-top: 100px;
-      }
-
       .sec__service .tabs__content .sec__heading,
       .sec__service .tabs__content .sec__brief {
         font-size: 30px;
@@ -1064,7 +1126,7 @@
         font-weight: 500;
       }
 
-      .tabs__button.active~div {
+      .tabs__button.active ~ div {
         display: block;
       }
 
@@ -1141,10 +1203,6 @@
       .sec__service .tabs__button,
       .sec__service .industries__tabs__button {
         font-size: 20px;
-      }
-
-      .sec__service.sec--industries .sec__content {
-        padding-top: 100px;
       }
 
       .sec__service .tabs__content .sec__heading,
@@ -1240,7 +1298,7 @@
           }
         }
 
-        .btn.active+div {
+        .btn.active + div {
           margin-top: 35px;
         }
       }
@@ -1251,10 +1309,6 @@
   .sec__service .tabs__button,
   .sec__service .industries__tabs__button {
     font-size: 20px;
-  }
-
-  .sec__service.sec--industries .sec__content {
-    padding-top: 100px;
   }
 
   .sec__service .tabs__content .sec__heading,
@@ -1344,7 +1398,7 @@
           }
         }
 
-        .btn.active+div {
+        .btn.active + div {
           margin-top: 35px;
         }
       }
@@ -1403,17 +1457,17 @@
   // sustain page responsive css end
 
   // policy pages responsive start
-  .sec__content__wrapper {
-    padding: 50px 0;
-
+  .banner-modifier{
+    padding-top: 63px !important;
+  }
     .sec__content__wrapper {
-      padding: 25px 0;
+      padding: 15px 0 ;
 
       .policy__text {
         padding: 0;
       }
     }
-  }
+  
 
   // policy pages responsive end
 
@@ -1484,7 +1538,7 @@
     padding-inline: 0;
   }
 
-  .social__inner.watch-now.active~.social__media {
+  .social__inner.watch-now.active ~ .social__media {
     display: block !important;
     position: absolute;
     right: 0;
@@ -1671,33 +1725,66 @@
     padding: 50px 0;
   }
 
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .load__more__btn .primary-btn {
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .load__more__btn
+    .primary-btn {
     width: 100%;
   }
 
-  .recent__episodes .sec__content .sec__content__inner .form__wrapper .podcast__form {
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .form__wrapper
+    .podcast__form {
     padding: 0;
     background-color: transparent;
     border: none;
   }
 
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__head .date {
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .episode__inner
+    .episode__head
+    .date {
     color: #6f6f6f;
   }
 
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner {
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .episode__inner {
     padding: 20px 0;
   }
 
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__head .episode__heading {
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .episode__inner
+    .episode__head
+    .episode__heading {
     font-weight: 400;
   }
 
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner:not(:last-child) {
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .episode__inner:not(:last-child) {
     margin-bottom: 0;
   }
 
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner {
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .episode__inner {
     position: relative;
 
     &::after {
@@ -1712,17 +1799,46 @@
     }
   }
 
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .info,
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__text .jp__time,
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__text .jp-seek-bar {
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .episode__inner
+    .info,
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .episode__inner
+    .episode__text
+    .jp__time,
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .episode__inner
+    .episode__text
+    .jp-seek-bar {
     display: none;
   }
 
-  .recent__episodes .sec__content .sec__content__inner .form__wrapper .podcast__form .podcast__form__group .input__feild input {
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .form__wrapper
+    .podcast__form
+    .podcast__form__group
+    .input__feild
+    input {
     padding: 10px;
   }
 
-  .recent__episodes .sec__content .sec__content__inner .episodes__wrapper .episode__inner .episode__head {
+  .recent__episodes
+    .sec__content
+    .sec__content__inner
+    .episodes__wrapper
+    .episode__inner
+    .episode__head {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -1767,17 +1883,25 @@
       width: 18px;
     }
   }
-
   .sec__news__room__tabs .news__room__tabs__Content .sec__text .tabs__date {
     gap: 40px;
   }
-}
+  .sec__news__room__tabs .grid__tabs {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .news__blog__content img {
+    width: 100%;
 
+    .sec__news__room__tabs .news__room__tabs__Content .sec__text .tabs__date {
+      gap: 40px;
+    }
+  }
+}
 // === RESPONSIVE CSS 767PX end === //
 
 // === RESPONSIVE CSS 576PX START === //
 @media only screen and (max-width: 576px) {
-
   // header responsive css start
   .header__logo img {
     width: 138px;
@@ -1835,9 +1959,6 @@
 
   .tabs__content.industries--tabs .read__more__service {
     margin-top: 40px;
-  }
-
-  .tabs__content.industries--tabs .read__more__service {
     font-size: 20px;
   }
 
@@ -1999,10 +2120,6 @@
     width: 20px;
   }
 
-  .sec__service.sec--industries .sec__content {
-    padding-top: 0;
-  }
-
   .sec__podcast__about {
     .sec__inner__brief {
       font-weight: 400;
@@ -2022,18 +2139,37 @@
     font-weight: 500;
   }
 
-  .deploy__sec__img svg {
-    position: absolute;
-    top: 10px;
-    left: 54px;
+  /* More News Room Card Responsive 576px */
+  .more__news__room .more__news__room__card {
+    grid-template-columns: 1fr;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    h2 {
+      margin: 4px 0 4px;
+      font-weight: 700;
+    }
+  }
+  .sec__news__room__tabs .news__room__tabs__Content .sec__text {
+    padding: 15px;
+    .deploy__sec__img svg {
+      position: absolute;
+      top: 10px;
+      left: 54px;
+    }
+  }
+  .deploy__sec__img{
+    height: 270px;
+    svg{
+      left: 0;
+    }
   }
 }
-
 // === RESPONSIVE CSS 575PX End === //
 
 // === RESPONSIVE CSS 480PX START === //
 @media only screen and (max-width: 480px) {
-
   //footer responsive css 480px
   main {
     padding-top: 93px;
@@ -2100,9 +2236,6 @@
 
   .tabs__content.industries--tabs .read__more__service {
     margin-top: 30px;
-  }
-
-  .tabs__content.industries--tabs .read__more__service {
     font-size: 16px;
   }
 
@@ -2266,7 +2399,6 @@
           }
 
           .flip-card {
-
             .flip-card-front,
             .flip-card-back {
               width: 150px;
@@ -2373,6 +2505,9 @@
   .trusted__logo__list {
     top: 70%;
   }
+  .policy__text{
+    padding: 0;
+  }
 }
 
 // === RESPONSIVE CSS 480PX END === //
@@ -2391,7 +2526,7 @@
     }
   }
 
-  .social__inner.watch-now.active~.social__media {
+  .social__inner.watch-now.active ~ .social__media {
     right: 50%;
     transform: translate(50%, 70px);
   }
@@ -2399,10 +2534,6 @@
   .logo__swiper {
     width: calc(100% + 40px);
     margin-left: -20px;
-  }
-
-  .deploy__sec__img svg {
-    left: 24px;
   }
 }
 

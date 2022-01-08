@@ -1,0 +1,60 @@
+// === RESPONSIVE CSS 1200PX end === //
+
+@media only screen and (max-width: 1440px) {
+  .sec__service.sec--industries {
+    padding-top: 300px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .sec__submit__message.contact--us--sec .sec__img {
+    text-align: center;
+  }
+  .sec__submit__message .sec__content .sec__message__box {
+    max-width: 100%;
+  }
+  .sec__service.sec--industries {
+    padding-top: clamp(59px, 10vw, 171px);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .social__icon.mobile {
+    display: flex !important;
+  }
+  .social__icon.desktop {
+    display: none;
+  }
+  .social__icon.mobile {
+    margin-top: 22px;
+  }
+  .sec__service .faq__ques {
+    padding: 0;
+  }
+  .sec__service .service__faq .container {
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .industrie__banner.sec--partner--banner {
+    padding-bottom: 10px;
+  }
+  .sec__best__solution {
+    padding: 100px 0 50px;
+  }
+  .sec__submit__message {
+    padding-bottom: 50px;
+  }
+  .brodcast__detail__banner .jp-type-playlist {
+    margin-top: 0;
+  }
+  .sec__podcast__summary .sec__header {
+    padding-block: 8px;
+  }
+  .sec__service .container {
+    padding-top: 0;
+  }
+  .sec__service .service__tabs .faq__item {
+    padding-top: 10px;
+  }
+}
