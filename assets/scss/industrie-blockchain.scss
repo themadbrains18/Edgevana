@@ -145,17 +145,17 @@
   transition: 0.4s;
 }
 
-.faq__ques.active + .faq__ans {
-  height: auto;
-  opacity: 1;
-  overflow: visible;
-}
+// .faq__ques.active + .faq__ans {
+//   height: auto;
+//   opacity: 1;
+//   overflow: visible;
+// }
 
 .faq__ans {
   font-size: clamp(16px, 2vw, 25px);
   line-height: clamp(20px, 3vw, 36px);
 
-  transition: 0.4s;
+  transition:all 0.4s;
   height: 0;
   font-weight: 500;
   overflow: hidden;

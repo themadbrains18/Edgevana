@@ -90,7 +90,9 @@
   .cursor__wrapper {
     display: none;
   }
-
+  canvas{
+    display: none !important;
+  }
   .founders__sec {
     .about__bg__ele {
       display: none;
@@ -231,6 +233,16 @@
       grid-row: 2;
     }
   }
+  .tmb__deploy__sec{
+    .d-none{
+      display: block;
+      max-width: 100%;
+    }
+    .d-block{
+      display: none;
+    }
+
+  }
 
   .crd__grid {
     grid-template-columns: 1fr;
@@ -337,6 +349,13 @@
 
   .testimonial__list {
     min-height: auto;
+  }
+  .mySwiperInfocard {
+    .swiper-slide-active{
+      background: linear-gradient(to right, #d177a5 0%, #7a70e1 48%, #7ea9c2 100%);
+      padding: 1px;
+      border-radius: 5px;
+    }
   }
 }
 
@@ -1403,17 +1422,17 @@
   // sustain page responsive css end
 
   // policy pages responsive start
-  .sec__content__wrapper {
-    padding: 50px 0;
-
+  .banner-modifier{
+    padding-top: 63px !important;
+  }
     .sec__content__wrapper {
-      padding: 25px 0;
+      padding: 15px 0 ;
 
       .policy__text {
         padding: 0;
       }
     }
-  }
+  
 
   // policy pages responsive end
 
@@ -2027,6 +2046,12 @@
     top: 10px;
     left: 54px;
   }
+  .deploy__sec__img{
+    height: 270px;
+    svg{
+      left: 0;
+    }
+  }
 }
 
 // === RESPONSIVE CSS 575PX End === //
@@ -2373,6 +2398,9 @@
   .trusted__logo__list {
     top: 70%;
   }
+  .policy__text{
+    padding: 0;
+  }
 }
 
 // === RESPONSIVE CSS 480PX END === //
@@ -2399,10 +2427,6 @@
   .logo__swiper {
     width: calc(100% + 40px);
     margin-left: -20px;
-  }
-
-  .deploy__sec__img svg {
-    left: 24px;
   }
 }
 

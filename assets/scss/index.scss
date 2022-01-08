@@ -80,11 +80,19 @@
 /* Deploy Sec Start */
 .tmb__deploy__sec {
   padding: 140px 0 215px;
+  .sec__heading{
+    max-width: 900px;
+    width: 100%;
+  }
+  .d-none{
+    display: none;
+  }
 }
+
 .deploy__sec__content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+  grid-template-columns: 39% 1fr;
+  align-items: flex-start;
 }
 .deploy__detail {
   margin-top: 43px;
@@ -188,6 +196,7 @@
     padding: 110px 40px;
     background: linear-gradient(139.23deg, #121625 0%, #2a2e37 100%);
     border-radius: inherit;
+    text-align: start;
   }
   &:hover {
     background-image: linear-gradient(
@@ -217,10 +226,8 @@
 }
 
 /* Testimonial Start */
-.testimonial__list {
+.testimonial{
   padding: 203px 0 257px;
-  min-height: 100vh;
-  height: 100%;
 }
 .testimonial__grid {
   display: grid;
