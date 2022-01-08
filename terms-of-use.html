@@ -502,53 +502,57 @@
 
     <!-- === script files === -->
 
-    <canvas id='shape' style="height: 500px;width: 500px;border: 2px solid #fff ; "></canvas>
+    <canvas id='shape' style="height: 500px;width: 500px;border: 2px solid #fff;"></canvas>
 
-    <script>
+    <style>
+        @keyframes qwe{
+            0%{
+                border-radius: 50%;
+            }
+            10%{
+                border-radius: 0;
+            }
+            30%{
+                clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+            }
+            40%{
+                border-radius: 50%;
+            }
+            50%{
+                border-radius: 0%;
+            }
+            60%{
+                clip-path: polygon(50% 0, 50% 0, 100% 50%, 100% 50%, 50% 100%, 50% 100%, 0 50%, 0 50%);
+            }
+        }
+        #shape{
+            animation:  qwe 10s linear alternate infinite;
+            background-color: #fff;
+            clip-path: polygon(0 0, 70% 0%, 100% 0, 100% 68%, 100% 100%, 0 100%, 0% 70%, 0% 30%);
+        }
+    </style>
+    <!-- <script>
         let shapeCanvas = document.querySelector('#shape');
-        let sctx  = shapeCanvas.getContext('2d');
+        let ctx  = shapeCanvas.getContext('2d');
+        ctx.beginPath();
+        ctx.moveTo(125, 125);
+        ctx.lineTo(125, 45);
+        ctx.lineTo(45, 125);
+        ctx.lineTo(45, 45);
+        ctx.fillStyle = '#fff';
+        ctx.fill();
 
 
-         // left face
-        sctx.beginPath();
-        sctx.moveTo(x, y);
-        sctx.lineTo(x - wx, y - wx * 0.5);
-        sctx.lineTo(x - wx, y - h - wx * 0.5);
-        sctx.lineTo(x, y - h * 1);
-        sctx.closePath();
-        sctx.fillStyle = "#838357"
-        sctx.strokeStyle = "#7a7a51";
-        sctx.stroke();
-        sctx.fill();
+        // setInterval(()=>{
 
-            // right face
-        sctx.beginPath();
-        sctx.moveTo(x, y);
-        sctx.lineTo(x + wy, y - wy * 0.5);
-        sctx.lineTo(x + wy, y - h - wy * 0.5);
-        sctx.lineTo(x, y - h * 1);
-        sctx.closePath();
-        sctx.fillStyle = "#6f6f49";
-        sctx.strokeStyle = "#676744";
-        sctx.stroke();
-        sctx.fill();
+        // },2000)
 
-            // center face
-        sctx.beginPath();
-        sctx.moveTo(x, y - h);
-        sctx.lineTo(x - wx, y - h - wx * 0.5);
-        sctx.lineTo(x - wx + wy, y - h - (wx * 0.5 + wy * 0.5));
-        sctx.lineTo(x + wy, y - h - wy * 0.5);
-        sctx.closePath();
-        sctx.fillStyle = "#989865";
-        sctx.strokeStyle = "#8e8e5e";
-        sctx.stroke();
-        sctx.fill();
-    </script>
+
+    </script> -->
 
     <!-- Background Element Canvas Script -->
     <script src="assets/js/common.js"></script>
-    <script src="assets/js/cursor-canvas.js"></script>
+    <!-- <script src="assets/js/cursor-canvas.js"></script> -->
 </body>
 
 </html>
