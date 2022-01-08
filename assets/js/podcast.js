@@ -1,10 +1,5 @@
 /* Podcast Js */
 'use strict';
-
-// let podcastBtndetail = document.querySelector(".watch-now");
-// podcastBtndetail.addEventListener("click",()=>{
-//     podcastBtndetail.classList.toggle("active");
-// })
 // filter button js start
 if(window.innerWidth <= 767){
 
@@ -29,3 +24,19 @@ loadBtn.addEventListener("click",()=>{
         i.style.display="flex";
     }
 });
+
+// ======= play pause btn js start =======
+
+jQuery(document).ready(function(){
+    jQuery(".playBtn").hide();
+    jQuery(".pauseBtn").click(function(){
+        jQuery(".playBtn").show();
+        jQuery(".pauseBtn").hide();
+    });
+    jQuery(".playBtn").click(function(){
+        jQuery(".pauseBtn").show();
+        jQuery(".playBtn").hide();
+    });
+
+});
+// ======= play pause btn js end =======
