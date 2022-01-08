@@ -41,9 +41,9 @@
 
   .bg__lines {
     position: absolute;
-    top: 82%;
+    top: 89%;
     left: 50%;
-    transform: translateX(-50%) scale(1.9) rotate(-3deg);
+    transform: translateX(-50%) scale(2.2) rotate(4deg);
     z-index: -1;
   }
 }
@@ -146,6 +146,7 @@
   transform: translate(-50%, -50%);
   width: 100%;
   overflow: hidden;
+  user-select: none;
   .swiper-wrapper {
     align-items: center;
     // gap: clamp(30px,7vw,100px);
@@ -153,7 +154,7 @@
   .swiper-slide {
     text-align: center;
     // min-width: 137px ;
-    width: auto !important;
+    // width: auto !important;
 
     img {
       filter: grayscale(100%);

@@ -1,0 +1,28 @@
+// banner css start
+.browse__banner__sec{
+    padding:111px 0 182px ;
+    .sec__content__inner{
+        align-items: center;
+        gap: 50px;
+        .sec__text,
+        .sec__img
+        {
+            width: 50%;
+        }
+        .sec__text{
+            .sec__heading {
+                width: calc(100% + 170px);
+            }
+            hr.line{
+                width:80%;
+                margin-top: clamp(20px,4vw,63px);
+            }
+            .primary-btn{
+                margin-top: clamp(36px,11vw,175px);
+                position: relative;
+                border: 1px solid #2940d3;
+            }
+        }
+    }
+}
+// banner css end

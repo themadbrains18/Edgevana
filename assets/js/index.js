@@ -19,12 +19,11 @@ window.addEventListener('load', () => {
     
     const swiper = new Swiper('.trusted__logo__list', {
         slidesPerView: 5,
-        speed: 800,
+        speed: 300,
         autoplay:true,
-        grabCursor:true,
         loop: true,
+        noSwipingClass: 'swiper-no-swiping',
         resizeReInit: true,
-        slidesPerView: 'auto',
         centeredSlides  : true,
         breakpoints: {
             310: {
