@@ -1,6 +1,9 @@
 /* Faq Js */
 window.addEventListener('DOMContentLoaded', function() {
     let faqQues = document.querySelectorAll('.faq__ques');
+    let faqQuesactive = document.querySelector('.faq__ques.active');
+    let heightt = faqQuesactive.nextElementSibling.scrollHeight;
+    faqQuesactive.nextElementSibling.setAttribute("style", `height: ${heightt}px;opacity:1;`);
     function removeClass(){
         for (let i of faqQues) {
             i.classList.remove("active");
@@ -16,22 +19,4 @@ window.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
-// faq svg js start
-// let svgElement = document.querySelector(".faq__sec .sec__image svg");
-// let svgElementPath = document.querySelectorAll(".faq__sec .sec__image svg g path[fill='white']");
-
-// console.log(svgElementPath);
-// svgElement.addEventListener("mouseover",()=>{
-//     for(let i of svgElementPath){
-//         i.classList.add("active")
-//     }
-// });
-// svgElement.addEventListener("mouseleave",()=>{
-//     for(let i of svgElementPath){
-//         i.classList.remove("active")
-//     }
-// });
-
-
 // faq svg js end
