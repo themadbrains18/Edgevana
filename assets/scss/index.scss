@@ -16,9 +16,7 @@
   margin-top: clamp(34px, 5vw, 80px);
 }
 
-.hero__img {
-  filter: drop-shadow(0px 0px 100px red);
-}
+
 
 .logo__list {
   margin-top: clamp(81px, 5vw, 250px);
@@ -605,4 +603,35 @@
   .swiper-slide {
     width: auto;
   }
+}
+
+// index Hero sec Code 
+.globel__sec__img{
+  background-color: #0b0e1e;
+}
+@keyframes qwe{
+  0%{
+      border-radius: 50%;
+  }
+  10%{
+      border-radius: 0;
+  }
+  30%{
+      clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  }
+  40%{
+      border-radius: 50%;
+  }
+  50%{
+      border-radius: 0%;
+  }
+  60%{
+      clip-path: polygon(50% 0, 50% 0, 100% 50%, 100% 50%, 50% 100%, 50% 100%, 0 50%, 0 50%);
+  }
+}
+#heroShape{
+  animation:  qwe 10s linear alternate infinite;
+  height: 500px;width: 500px;border: 2px solid #fff;
+  background-color: #fff;
+  clip-path: polygon(0 0, 70% 0%, 100% 0, 100% 68%, 100% 100%, 0 100%, 0% 70%, 0% 30%);
 }

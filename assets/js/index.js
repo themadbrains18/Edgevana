@@ -1,8 +1,8 @@
 'use strict';
 
-// /* Testimonial Slider Cursor Js Code */
 
 window.addEventListener('load', () => {
+    // /* Testimonial Slider Cursor Js Code */
     let testimonialSlider = document.querySelector(".testimonial__list");
     var cursor = document.querySelector(".cursor__wrapper");
     testimonialSlider.addEventListener("mousemove", (e) => {
@@ -10,21 +10,21 @@ window.addEventListener('load', () => {
         // console.log(e.x);
         cursor.setAttribute("style", ` top: ${e.y - 42}px; left: ${e.x - 49}px;`);
     })
-    
+
     testimonialSlider.addEventListener("mouseleave", (e) => {
         testimonialSlider.classList.remove("mouseenter")
     })
 
     //slider swipe
-    
-    const swiper = new Swiper('.trusted__logo__list', {
+
+    const trustedSwiper = new Swiper('.trusted__logo__list', {
         slidesPerView: 5,
         speed: 300,
-        autoplay:true,
+        autoplay: true,
         loop: true,
         noSwipingClass: 'swiper-no-swiping',
         resizeReInit: true,
-        centeredSlides  : true,
+        centeredSlides: true,
         breakpoints: {
             310: {
                 slidesPerView: 3,
@@ -38,6 +38,16 @@ window.addEventListener('load', () => {
             },
         },
     });
+
+    setInterval(() => {
+        console.log(swiper.activeIndex);
+        let index_currentSlide = swiper.activeIndex;
+        let currentSlide = swiper.slides[index_currentSlide]
+        console.log(
+            currentSlide
+        )
+    }, 4000);
+
 
     const swipertestimonial = new Swiper('.testimonial__list', {
         slidesPerView: 1,
@@ -61,70 +71,69 @@ window.addEventListener('load', () => {
     if (mediaQuery.matches) {
         var mobileSlider = new Swiper(".mySwiperInfocard", {
             centeredSlides: true,
-            spaceBetween: 0,
+            freeMode: true,
             slidesPerView: 1,
-            // autoHeight: true, 
+            loop: true,
         });
     }
 
-})
 
-// banner logo slider
-var swiper = new Swiper(".logo__swiper", {
-    slidesPerView: 8,
-    autoplay: {
-      delay: 1500,
-    },
-    breakpoints: {
-        // when window width is >= 320px
-        320: {
-          slidesPerView: 3,
-          spaceBetween: 20,
+
+    // banner logo slider
+    var swiper = new Swiper(".logo__swiper", {
+        slidesPerView: 8,
+        autoplay: {
+            delay: 1500,
         },
-        // when window width is >= 575px
-        575: {
-          slidesPerView: 4,
-          loop:true,
-        },
-        // when window width is >= 1200px
-        1200: {
-            slidesPerView: 8,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            // when window width is >= 575px
+            575: {
+                slidesPerView: 4,
+                loop: true,
+            },
+            // when window width is >= 1200px
+            1200: {
+                slidesPerView: 8,
+            }
         }
+    });
+
+
+
+
+
+
+    // counter js start
+    function counter(id, start, end, duration) {
+        let obj = document.getElementById(id),
+            current = start,
+            range = end - start,
+            increment = end > start ? 1 : -1,
+            step = Math.abs(Math.floor(duration / range)),
+            timer = setInterval(() => {
+                current += increment;
+                //   obj.textContent = current;
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, step);
     }
-});
 
-
-
-
-
-
-// counter js start
-function counter(id, start, end, duration) {
-    let obj = document.getElementById(id),
-     current = start,
-     range = end - start,
-     increment = end > start ? 1 : -1,
-     step = Math.abs(Math.floor(duration / range)),
-     timer = setInterval(() => {
-      current += increment;
-    //   obj.textContent = current;
-      if (current == end) {
-       clearInterval(timer);
-      }
-     }, step);
-}
-
-let counterFlag = true;
-window.addEventListener("scroll",()=>{
-    let counterSec = document.querySelector(".tmb__deploy__sec");
-    let rect = counterSec.getBoundingClientRect();
-    if(rect.top <= 150){
-            if(counterFlag){
-            counter("count1", 29500, 30000, 1000);
-            counter("count2", 0, 107, 2500);
-            counterFlag = false;
+    let counterFlag = true;
+    window.addEventListener("scroll", () => {
+        let counterSec = document.querySelector(".tmb__deploy__sec");
+        let rect = counterSec.getBoundingClientRect();
+        if (rect.top <= 150) {
+            if (counterFlag) {
+                counter("count1", 29500, 30000, 1000);
+                counter("count2", 0, 107, 2500);
+                counterFlag = false;
+            }
         }
-    }
+    });
 });
-   
-   
