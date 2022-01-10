@@ -1,28 +1,42 @@
 const canvas = document.createElement('canvas');
-canvas.height = window.innerHeight;
-canvas.width = window.innerWidth;
+
+
+
 const ctx = canvas.getContext("2d");
-let mouseX, mouseY, numberCounte = 0;
+let mouseX, mouseY = 0;
 const maxCursorArea = 200;
 const minCursorArea = 50;
+let mouseIn = true;
 let numberArr = [];
+document.addEventListener("mouseleave", function(event){
+    if(event.clientY <= 0 || event.clientX <= 0 || (event.clientX >= window.innerWidth || event.clientY >= window.innerHeight))
+    {
+        mouseIn = false;
+    }
+  });
 
 canvas.setAttribute('style', `position: fixed;top:0px;left:0px;z-index:-1;width:100%;height:100%;`);
 
-for (let i = 0; i < 215; i++) {
-    let h = (Math.random() * 30) + 20;
-    let w = (Math.random() * 30) + 20;
-    let y = (Math.random() * (canvas.height - (h * 2))) + h;
-    let x = (Math.random() * (canvas.width - (w * 2))) + w;
-    let dy = (Math.random() - 0.5) * 1;
-    let dx = (Math.random() - 0.5) * 1;
-    let addNumber = new AddNumber(x, y, h, w, dx, dy);
-    numberArr.push(addNumber);
+const init = ()=>{
+    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+    numberArr = [];
+    for (let i = 0; i < 200; i++) {
+        let h = (Math.random() * 30) + 20;
+        let w = (Math.random() * 30) + 20;
+        let y = (Math.random() * (canvas.height - (h * 2))) + h;
+        let x = (Math.random() * (canvas.width - (w * 2))) + w;
+        let dy = (Math.random() - 0.5) * 2;
+        let dx = (Math.random() - 0.5) * 2;
+        let addNumber = new AddNumber(x, y, h, w, dx, dy);
+        numberArr.push(addNumber);
+    }
 }
 
 window.addEventListener('mousemove', (e) => {
     mouseX = e.x;
     mouseY = e.y;
+    mouseIn = true;
 });
 
 function AddNumber(x, y, h, w, dx, dy) {
@@ -34,7 +48,6 @@ function AddNumber(x, y, h, w, dx, dy) {
     this.dy = dy;
     this.followSpeed = 5;
     this.textAlpha = 2;
-    // this.shapeSize = 1;
     this.colursArry = [
         `rgba(120, 240, 255, 0.${this.textAlpha})`,
         `rgba(60, 130, 255, 0.${this.textAlpha})`,
@@ -58,7 +71,8 @@ function AddNumber(x, y, h, w, dx, dy) {
             this.dx = -this.dx;
         }
 
-        if (mouseX - this.x < maxCursorArea && mouseX - this.x > -maxCursorArea && mouseY - this.y < maxCursorArea && mouseY - this.y > -maxCursorArea) {
+
+        if (mouseX - this.x < maxCursorArea && mouseX - this.x > -maxCursorArea && mouseY - this.y < maxCursorArea && mouseY - this.y > -maxCursorArea && mouseIn) {
             if (this.color[this.color.length - 2] == this.textAlpha && this.color[this.color.length - 3] === ".") {
                 this.color = Array.from(this.color);
                 this.color[this.color.length - 2] = "9";
@@ -116,9 +130,11 @@ const animation = () => {
     })
 
 }
-
+init();
 animation();
+
 window.addEventListener('resize', () => {
+    init();
     animation();
 })
 document.body.append(canvas);
