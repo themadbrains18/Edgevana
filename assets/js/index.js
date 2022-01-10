@@ -20,16 +20,16 @@ window.addEventListener('load', () => {
     const swiper = new Swiper('.trusted__logo__list', {
         slidesPerView: 5,
         speed: 800,
-        autoplay:true,
+        // autoplay:true,
         grabCursor:true,
         loop: true,
         resizeReInit: true,
         slidesPerView: 'auto',
         centeredSlides  : true,
+        spaceBetween: 50,        
         breakpoints: {
             310: {
                 slidesPerView: 3,
-
             },
             768: {
                 slidesPerView: 4,
