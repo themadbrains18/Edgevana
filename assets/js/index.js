@@ -1,10 +1,13 @@
 'use strict';
+
+
 window.addEventListener('load', () => {
     // /* Testimonial Slider Cursor Js Code */
     let testimonialSlider = document.querySelector(".testimonial__list");
     var cursor = document.querySelector(".cursor__wrapper");
     testimonialSlider.addEventListener("mousemove", (e) => {
         testimonialSlider.classList.add("mouseenter")
+        // console.log(e.x);
         cursor.setAttribute("style", ` top: ${e.y - 42}px; left: ${e.x - 49}px;`);
     })
 
@@ -13,7 +16,8 @@ window.addEventListener('load', () => {
     })
 
     //slider swipe
-    const swiper = new Swiper('.trusted__logo__list', {
+
+    const trustedSwiper = new Swiper('.trusted__logo__list', {
         slidesPerView: 5,
         speed: 300,
         autoplay: true,
@@ -36,6 +40,7 @@ window.addEventListener('load', () => {
     });
 
     setInterval(() => {
+        console.log(swiper.activeIndex);
         let index_currentSlide = swiper.activeIndex;
         let currentSlide = swiper.slides[index_currentSlide]
         console.log(
@@ -75,7 +80,7 @@ window.addEventListener('load', () => {
 
 
     // banner logo slider
-    var logoSwiper = new Swiper(".logo__swiper", {
+    var swiper = new Swiper(".logo__swiper", {
         slidesPerView: 8,
         autoplay: {
             delay: 1500,
