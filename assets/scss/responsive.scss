@@ -37,13 +37,13 @@
 
   .tmb__hero__sec .connect_hero_global_map {
     top: 52%;
-    transform: translateX(-50%) rotate(-1deg) scale(1.25);
+    transform: translateX(-50%) rotate(-1deg) scale(1.5);
   }
 
   .tmb__globel__sec .bg__lines {
-    top: 78%;
-    left: 49%;
-    transform: translateX(-50%) scale(1.8) rotate(1deg);
+    top: 94%;
+    left: 51%;
+    transform: translateX(-50%) scale(2.9) rotate(12deg);
   }
 
   .sec__service .service__banner__img {
@@ -117,7 +117,7 @@
 
   // === industrie Page start === //
   .industrie__banner {
-    padding: 150px 0;
+    padding: 50px 0;
 
     .banner__inner {
       flex-direction: column-reverse;
@@ -133,8 +133,27 @@
       }
     }
   }
-
+  .how__its__work__sec{
+    padding-bottom: 50px;
+  }
+  .contact__our__team__sec{
+    padding: 50px 0;
+  }
+  .sustainable__banner{
+    padding-bottom: 50px;
+  }
+  .initiatives__sec{
+    padding: 50px 0;
+  }
+  .about__banner,
+  .founders__sec,
+  .team__sec,
+  .counter__sec
+  {
+    padding: 50px 0;
+  }
   .faq__sec {
+    padding: 50px 0;
     .container {
       margin: 0;
     }
@@ -209,6 +228,7 @@
 
   .globel__sec__content {
     grid-template-columns: 1fr;
+    place-items: center;
 
     .globel__sec__img {
       text-align: center;
@@ -274,6 +294,7 @@
 
     .swiper-wrapper {
       display: flex;
+      gap: 0;
     }
 
     .crd__content {
@@ -348,6 +369,20 @@
       padding: 1px;
       border-radius: 5px;
     }
+  }
+  .featured__tabs,
+  .grow__sec
+  {
+    padding: 50px 0;
+  }
+  .career__banner__sec{
+    padding-bottom: 50px;
+  }
+  .recent__episodes {
+    padding: 80px 0;
+  }
+  .browse__banner__sec{
+    padding: 60px 0;
   }
 }
 // === RESPONSIVE CSS 1200PX END === //
@@ -508,7 +543,6 @@
     display: none;
   }
 }
-
 // === RESPONSIVE CSS 1024PX END === //
 
 // === RESPONSIVE CSS 991PX START === //
@@ -538,6 +572,7 @@
     top: 0;
     padding: 30px 0;
     background-color: #0b0e1e;
+    border-bottom: 1px solid #1D212E;
   }
 
   nav.nav__list {
@@ -635,6 +670,15 @@
   .nav-modifier:hover::after,
   .nav-modifier:hover::before {
     background: #fff;
+  }
+  .header.header-modofier{
+    .view__cart__wrapper{
+      width: 100%;
+      .nav__item.view-cart-btn{
+        width: 100%;
+        text-align: center;
+      }
+    }
   }
 
   .social__icons {
@@ -1651,6 +1695,7 @@
 
   #filterBtn {
     display: block !important;
+    margin: 0 auto;
   }
 
   .jp-toggles.show {
@@ -1886,6 +1931,24 @@
   .sec__news__room__tabs .news__room__tabs__Content .sec__text .tabs__date {
     gap: 40px;
   }
+  .browse__banner__sec{
+    .sec__content__inner{
+        flex-direction: column-reverse;
+        .sec__text,
+        .sec__img{
+          width: 100%;
+        }      
+        .sec__text{
+          .sec__heading{
+            width: calc(100% + 10px);
+            margin-left: -5px;
+          }
+          hr.line{
+            width: 100%;
+          }
+        }
+    }
+  } 
   .sec__news__room__tabs .grid__tabs {
     gap: 20px;
     grid-template-columns: 1fr;
@@ -2508,8 +2571,18 @@
   .policy__text{
     padding: 0;
   }
+  .jp-type-playlist .control__wrapper, .jp-type-playlist .jp-toggles{
+    margin-top: 0;
+  }
+  .globel__sec__img{
+    height: 250px;
+    max-width: 250px;
+  }
+  .browse__banner__sec .sec__content__inner .sec__text .primary-btn{
+    width: 100%;
+    text-align: center;
+  }
 }
-
 // === RESPONSIVE CSS 480PX END === //
 
 // === RESPONSIVE CSS 340PX START === //

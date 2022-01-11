@@ -16,10 +16,6 @@
   margin-top: clamp(34px, 5vw, 80px);
 }
 
-.hero__img {
-  filter: drop-shadow(0px 0px 100px red);
-}
-
 .logo__list {
   margin-top: clamp(81px, 5vw, 250px);
   display: flex;
@@ -41,9 +37,9 @@
 
   .bg__lines {
     position: absolute;
-    top: 82%;
+    top: 89%;
     left: 50%;
-    transform: translateX(-50%) scale(1.9) rotate(-3deg);
+    transform: translateX(-50%) scale(2.2) rotate(4deg);
     z-index: -1;
   }
 }
@@ -146,6 +142,7 @@
   transform: translate(-50%, -50%);
   width: 100%;
   overflow: hidden;
+  user-select: none;
   .swiper-wrapper {
     align-items: center;
     // gap: clamp(30px,7vw,100px);
@@ -153,7 +150,7 @@
   .swiper-slide {
     text-align: center;
     // min-width: 137px ;
-    width: auto !important;
+    // width: auto !important;
 
     img {
       filter: grayscale(100%);
@@ -479,8 +476,7 @@
 // }
 
 .logo__list img:hover {
-  background-color: rgba(201, 199, 199, 0.2);
-  -webkit-transform: scale(1.1);
+  background-color: #313340;
   transform: scale(1.1);
 }
 .logo__list img {
@@ -587,7 +583,6 @@
   display: inline-block;
   // padding: 0 30px;
 }
-
 .hero__heading {
   overflow: hidden;
   height: 120px;
@@ -604,4 +599,64 @@
   .swiper-slide {
     width: auto;
   }
+}
+
+// index Hero sec Code
+.globel__sec__img {
+  background-color: #0b0e1e;
+}
+@keyframes qwe {
+  0% {
+    border-radius: 50%;
+  }
+  10% {
+    border-radius: 0;
+  }
+  30% {
+    clip-path: polygon(
+      30% 0%,
+      70% 0%,
+      100% 30%,
+      100% 70%,
+      70% 100%,
+      30% 100%,
+      0% 70%,
+      0% 30%
+    );
+  }
+  40% {
+    border-radius: 50%;
+  }
+  50% {
+    border-radius: 0%;
+  }
+  60% {
+    clip-path: polygon(
+      50% 0,
+      50% 0,
+      100% 50%,
+      100% 50%,
+      50% 100%,
+      50% 100%,
+      0 50%,
+      0 50%
+    );
+  }
+}
+#heroShape {
+  animation: qwe 10s linear alternate infinite;
+  height: 500px;
+  width: 500px;
+  border: 2px solid #fff;
+  background-color: #fff;
+  clip-path: polygon(
+    0 0,
+    70% 0%,
+    100% 0,
+    100% 68%,
+    100% 100%,
+    0 100%,
+    0% 70%,
+    0% 30%
+  );
 }

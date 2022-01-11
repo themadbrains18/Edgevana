@@ -114,7 +114,9 @@ main {
 .mt-40 {
   margin-top: clamp(20px, 3vw, 40px);
 }
-
+.d-flex {
+  display: flex;
+}
 #canvas {
   position: fixed;
 }
