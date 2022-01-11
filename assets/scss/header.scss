@@ -32,7 +32,7 @@
     display: none;
   }
 }
-.scroll-none{
+.scroll-none {
   overflow: hidden;
 }
 .col-lg-hide {
@@ -44,59 +44,69 @@
   right: 30px;
   transform: translateY(-50%);
 }
-.nav__list{
-  ul{
-    li{
+.nav__list {
+  ul {
+    li {
       position: relative;
     }
   }
 }
-.dropdown{
-  background-color: #2A2E37;
+.dropdown__inner {
+  transition: 0.5s ease-out;
+}
+.dropdown {
+  background-color: #2a2e37;
   padding: 35px 30px;
   position: absolute;
-  top: 25px;
+  top: 40px;
+  display: none;
   left: 0;
   width: 260px;
   border-radius: 10px;
-  display: none;
-    .dropdown__item{
+  overflow: hidden;
+  transition: 0.5s ease-out;
+  transform: translateY(20px);
+  .dropdown__item {
     position: relative;
-    
-    &:not(:last-child){
+
+    &:not(:last-child) {
       margin-bottom: 10px;
     }
-    &::after{
-      content: '';
+    &::after {
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(89.66deg, rgba(209, 119, 165, 0.4) 0.38%, rgba(122, 112, 225, 0.4) 48.89%, rgba(126, 169, 194, 0.3) 99.8%);
+      background: linear-gradient(
+        89.66deg,
+        rgba(209, 119, 165, 0.4) 0.38%,
+        rgba(122, 112, 225, 0.4) 48.89%,
+        rgba(126, 169, 194, 0.3) 99.8%
+      );
       border-radius: 5px;
       transition: 0.4s;
       display: block;
-      transform: scale(0,1 );
+      transform: scale(0, 1);
       transform-origin: top right;
       transition: transform 0.5s;
       opacity: 0.7;
-
     }
 
-    &:hover::after{
+    &:hover::after {
       // width: 100%;
-      transform: scale(1,1);
+      transform: scale(1, 1);
       transform-origin: top left;
     }
-    a{
+    a {
       display: flex;
       align-items: center;
       gap: 15px;
       font-weight: bold;
-      font-size: clamp(10px,1vw,16px);
-      line-height: clamp(12px,1vw,20px);
-      color: #FFFFFF;
+      font-size: clamp(10px, 1vw, 16px);
+      line-height: clamp(12px, 1vw, 20px);
+      color: #ffffff;
       padding: 10px;
       transition: 0.6s;
       border-radius: 5px;
@@ -106,9 +116,9 @@
   }
 }
 
-.nav__item{
+.nav__item {
   position: relative;
-  &::after{
+  &::after {
     content: "";
     background: linear-gradient(to right, #d177a5, #7a70e1, #7ea9c2);
     position: absolute;
@@ -118,7 +128,7 @@
     height: 1.7px;
     transition: 0.4s;
   }
-  &:hover{
+  &:hover {
     background: linear-gradient(to right, #d177a5, #7a70e1, #7ea9c2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -127,7 +137,8 @@
     width: 100%;
   }
 }
-.nav-modifier{
+.nav-modifier {
+  padding-right: 20px;
   position: relative;
   display: flex;
   align-items: center;
@@ -135,13 +146,13 @@
   position: relative;
   cursor: pointer;
   &::after,
-  &::before{
+  &::before {
     display: none;
   }
-  &:hover{
-    svg rect{
+  &:hover {
+    svg rect {
       fill: #7ea9c2;
-      transition:opacity 0.4s;
+      transition: opacity 0.4s;
     }
   }
 }
@@ -150,11 +161,11 @@
 //   transition:transform 0.4s;
 //   // transform: translatey(0);
 // }
-.nav__item.nav-modifier.show{
-  background: linear-gradient(to right, #d177a5, #7a70e1, #7ea9c2) !important; 
+.nav__item.nav-modifier.show {
+  background: linear-gradient(to right, #d177a5, #7a70e1, #7ea9c2) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
-  svg rect{
+  svg rect {
     fill: #7ea9c2;
   }
   .col-line {
@@ -162,53 +173,49 @@
   }
 }
 .informational__pages,
-.social__icons
-{
+.social__icons {
   display: none;
 }
 
 // browse page header css start
-.header.header-modofier{
+.header.header-modofier {
   .nav__list ul {
     gap: clamp(20px, 3vw, 45px);
   }
   .nav__item.d-flex::after,
-  .view-cart-btn::after
-  {
+  .view-cart-btn::after {
     display: none;
   }
 
-  .view-cart-btn{
-    border: 1px solid #2566F8;
+  .view-cart-btn {
+    border: 1px solid #2566f8;
     padding: 10px 15px;
-    color: #2566F8;
+    color: #2566f8;
     border-radius: 4px;
-    background:transparent ;
+    background: transparent;
     position: relative;
     transition: 0.4s;
-    &::before{
-      content: '';
-      background-color:#2566F8;
+    &::before {
+      content: "";
+      background-color: #2566f8;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      transform: scale(0,1);
-      transform-origin:  right;
+      transform: scale(0, 1);
+      transform-origin: right;
       transition: transform 0.5s;
       z-index: -1;
     }
 
-    &:hover{
+    &:hover {
       -webkit-text-fill-color: unset;
       color: #fff;
-      
     }
-    &:hover::before{
-      transform: scale(1,1);
-      transform-origin:  left;
+    &:hover::before {
+      transform: scale(1, 1);
+      transform-origin: left;
     }
-    
   }
 }

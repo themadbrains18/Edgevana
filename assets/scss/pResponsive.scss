@@ -17,6 +17,12 @@
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .dropdown {
+    display: block;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .social__icon.mobile {
     display: flex !important;
