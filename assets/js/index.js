@@ -5,11 +5,11 @@ window.addEventListener('load', () => {
     // /* Testimonial Slider Cursor Js Code */
     let testimonialSlider = document.querySelector(".testimonial__list");
     var cursor = document.querySelector(".cursor__wrapper");
-    testimonialSlider.addEventListener("wheel","mousemove", (e) => {
+    testimonialSlider.addEventListener("mousemove", (e) => {
         testimonialSlider.classList.add("mouseenter")
         cursor.setAttribute("style", ` top: ${e.y - 42}px; left: ${e.x - 49}px;`);
     })
-testimonialSlider.addEventListener("wheel","mouseleave", (e) => {
+testimonialSlider.addEventListener("mouseleave", (e) => {
         testimonialSlider.classList.remove("mouseenter")
     })
 
