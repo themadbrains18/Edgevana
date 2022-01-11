@@ -69,9 +69,7 @@
   animation: bgrotate 30s linear infinite;
   transition: transform 500ms linear;
   transform-style: preserve-3d;
-
   opacity: 0.1 !important;
-  // background-color: red;
 }
 
 @keyframes bgrotate {
