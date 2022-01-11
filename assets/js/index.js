@@ -40,12 +40,12 @@ window.addEventListener('load', () => {
     });
 
     setInterval(() => {
-        console.log(swiper.activeIndex);
+        // console.log(swiper.activeIndex);
         let index_currentSlide = swiper.activeIndex;
         let currentSlide = swiper.slides[index_currentSlide]
-        console.log(
-            currentSlide
-        )
+        // console.log(
+        //     currentSlide
+        // )
     }, 4000);
 
 
@@ -111,17 +111,17 @@ window.addEventListener('load', () => {
     // counter js start
     function counter(id, start, end, duration) {
         let obj = document.getElementById(id),
-            current = start,
-            range = end - start,
-            increment = end > start ? 1 : -1,
-            step = Math.abs(Math.floor(duration / range)),
-            timer = setInterval(() => {
-                current += increment;
-                //   obj.textContent = current;
-                if (current == end) {
-                    clearInterval(timer);
-                }
-            }, step);
+        current = start,
+        range = end - start,
+        increment = end > start ? 1 : -1,
+        step = Math.abs(Math.floor(duration / range)),
+        timer = setInterval(() => {
+        current += increment;
+        obj.textContent = current;
+        if (current == end) {
+            clearInterval(timer);
+        }
+        }, step);
     }
 
     let counterFlag = true;

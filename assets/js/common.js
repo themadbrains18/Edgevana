@@ -31,13 +31,19 @@ window.addEventListener("scroll", () => {
 });
 
 // resource dropdown js start
-if (window.innerWidth >= 992) {
-  let dropdown = document.querySelector(".header .nav__item.nav-modifier");
+// if (window.innerWidth >= 992) {
+//   let dropdown = document.querySelector(".header .nav__item.nav-modifier");
 
-  dropdown.addEventListener("click", () => {
-    dropdown.classList.toggle("show");
+//   dropdown.addEventListener("click", () => {
+//     dropdown.classList.toggle("show");
+//   });
+// }
+$(document).ready(function() {
+  $('.nav__item.nav-modifier').click(function() {
+    $('.nav__item.nav-modifier').add("show");
+    $('.dropdown').slideToggle("300");
   });
-}
+});
 if (window.innerWidth <= 991) {
   window.addEventListener('DOMContentLoaded', function () {
     let dropdown = document.querySelector(".nav__item.nav-modifier");
