@@ -29,15 +29,6 @@ window.addEventListener("scroll", () => {
     }
   }
 });
-
-// resource dropdown js start
-if (window.innerWidth >= 992) {
-  let dropdown = document.querySelector(".header .nav__item.nav-modifier");
-
-  dropdown.addEventListener("click", () => {
-    dropdown.classList.toggle("show");
-  });
-}
 if (window.innerWidth <= 991) {
   window.addEventListener('DOMContentLoaded', function () {
     let dropdown = document.querySelector(".nav__item.nav-modifier");
@@ -94,3 +85,7 @@ function isElementInViewport(el) {
       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
   );
 }
+
+/* Copy Right Dynmic Year */
+const CuurentYear = new Date;
+let dynmicYear = document.querySelector(".copyright__dynmic__year").innerHTML=CuurentYear.getFullYear();

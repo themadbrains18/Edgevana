@@ -5,13 +5,11 @@ window.addEventListener('load', () => {
     // /* Testimonial Slider Cursor Js Code */
     let testimonialSlider = document.querySelector(".testimonial__list");
     var cursor = document.querySelector(".cursor__wrapper");
-    testimonialSlider.addEventListener("mousemove", (e) => {
+    testimonialSlider.addEventListener("wheel","mousemove", (e) => {
         testimonialSlider.classList.add("mouseenter")
-        // console.log(e.x);
         cursor.setAttribute("style", ` top: ${e.y - 42}px; left: ${e.x - 49}px;`);
     })
-
-    testimonialSlider.addEventListener("mouseleave", (e) => {
+testimonialSlider.addEventListener("wheel","mouseleave", (e) => {
         testimonialSlider.classList.remove("mouseenter")
     })
 
@@ -28,9 +26,8 @@ window.addEventListener('load', () => {
         breakpoints: {
             310: {
                 slidesPerView: 3,
-
             },
-            768: {
+            768: {  
                 slidesPerView: 4,
             },
             1024: {
@@ -40,14 +37,9 @@ window.addEventListener('load', () => {
     });
 
     setInterval(() => {
-        console.log(swiper.activeIndex);
         let index_currentSlide = swiper.activeIndex;
         let currentSlide = swiper.slides[index_currentSlide]
-        console.log(
-            currentSlide
-        )
     }, 4000);
-
 
     const swipertestimonial = new Swiper('.testimonial__list', {
         slidesPerView: 1,
@@ -111,17 +103,17 @@ window.addEventListener('load', () => {
     // counter js start
     function counter(id, start, end, duration) {
         let obj = document.getElementById(id),
-            current = start,
-            range = end - start,
-            increment = end > start ? 1 : -1,
-            step = Math.abs(Math.floor(duration / range)),
-            timer = setInterval(() => {
-                current += increment;
-                  obj.textContent = current;
-                if (current == end) {
-                    clearInterval(timer);
-                }
-            }, step);
+        current = start,
+        range = end - start,
+        increment = end > start ? 1 : -1,
+        step = Math.abs(Math.floor(duration / range)),
+        timer = setInterval(() => {
+        current += increment;
+        obj.textContent = current;
+        if (current == end) {
+            clearInterval(timer);
+        }
+        }, step);
     }
 
     let counterFlag = true;
