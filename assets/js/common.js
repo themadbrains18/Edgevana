@@ -56,6 +56,26 @@ if (window.innerWidth <= 991) {
   });
 }
 
+// header dropdown close click anywhere js start
+if(window.innerWidth >= 992){
+   let DropdownParent = document.querySelector('header .nav__item.nav-modifier');
+   let dropdown = document.querySelector('header .nav__list .dropdown');
+   let dropdownflag = true;
+  document.addEventListener('click', (e)=>{
+    for(let i of e.path){
+      if(i == dropdown || i == DropdownParent){
+        dropdownflag = false;
+      }
+      if(dropdownflag){
+        DropdownParent.classList.remove("show");
+      }
+    }
+    dropdownflag = true;
+  });
+}
+
+// header dropdown close click anywhere js end
+
 // Detect request animation frame
 var scroll = window.requestAnimationFrame ||
   // IE Fallback
