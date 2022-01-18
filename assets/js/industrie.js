@@ -20,3 +20,20 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 });
 // faq svg js end
+
+// Initiatives tabs js start
+let numberText = document.querySelector(".numbring__text h1");
+let briefText = document.querySelectorAll(".brief__text p");
+
+briefText.forEach(function(element,index) {
+    element.addEventListener("mouseenter",()=>{
+        let values = index + 1;
+        numberText.innerHTML = `0${values}`;
+    })
+    // element.addEventListener("mouseleave",()=>{
+    //     numberText.innerHTML = "00";
+    // })
+
+});
+
+// Initiatives tabs js end

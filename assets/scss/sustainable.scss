@@ -61,6 +61,14 @@
       .numbring__text,
       .brief__text {
         width: 100%;
+
+
+      }
+      .brief__text p{
+          transition: 0.2s  !important;
+        &:hover{
+          color:#d4dbfc;
+        }
       }
       .numbring__text {
         .numbring {

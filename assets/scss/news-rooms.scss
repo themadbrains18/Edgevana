@@ -26,6 +26,7 @@
       line-height: clamp(20px, 5vw, 36px);
       padding: 4px 20px;
       background-color: #121625;
+      transition: 0.3s !important;
     }
     .news__tabs:hover,
     .news__tabs.active {
@@ -145,6 +146,7 @@
   .feature__stories .sec__heading__text {
     margin-bottom: 20px;
   }
+  
 }
 
 .sec__news__room__tabs .feature__stories .sec__heading__text h2 {

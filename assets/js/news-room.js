@@ -46,10 +46,10 @@ window.addEventListener('load',()=>{
 })
 /* Feature Stories Slider Cursor Js Code */
     let testimonialSlider = document.querySelector(".feature__stories");
-    var cursor = document.querySelector(".cursor");
+    var cursor = document.querySelector(".cursor__wrapper");
     testimonialSlider.addEventListener("mousemove", (e) => {
         testimonialSlider.classList.add("mouseenter")
-        cursor.setAttribute("style", ` top: ${e.pageY - 42}px; left: ${e.pageX - 49}px;`);
+        cursor.setAttribute("style", ` top: ${e.y - 42}px; left: ${e.x - 49}px;`);
     })
     testimonialSlider.addEventListener("mouseleave", (e) => {
         testimonialSlider.classList.remove("mouseenter")
