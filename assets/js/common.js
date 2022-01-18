@@ -30,14 +30,14 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// resource dropdown js start
+// if window is >=992px
 if (window.innerWidth >= 992) {
   let dropdown = document.querySelector(".header .nav__item.nav-modifier");
   dropdown.addEventListener("click", () => {
         dropdown.classList.toggle("show");
   });
 }
-
+// if window is <=991px
 if (window.innerWidth <= 991) {
   window.addEventListener('DOMContentLoaded', function () {
     let dropdown = document.querySelector(".nav__item.nav-modifier");

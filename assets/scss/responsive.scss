@@ -79,7 +79,7 @@
   .cursor__wrapper {
     display: none;
   }
-  canvas{
+  canvas {
     display: none !important;
   }
   .founders__sec {
@@ -88,8 +88,7 @@
     }
   }
   .tmb__globel__sec .bg__lines,
-  .tmb__hero__sec .connect_hero_global_map
-  {
+  .tmb__hero__sec .connect_hero_global_map {
     display: none;
   }
 
@@ -138,23 +137,22 @@
       }
     }
   }
-  .how__its__work__sec{
+  .how__its__work__sec {
     padding-bottom: 50px;
   }
-  .contact__our__team__sec{
+  .contact__our__team__sec {
     padding: 50px 0;
   }
-  .sustainable__banner{
+  .sustainable__banner {
     padding-bottom: 50px;
   }
-  .initiatives__sec{
+  .initiatives__sec {
     padding: 50px 0;
   }
   .about__banner,
   .founders__sec,
   .team__sec,
-  .counter__sec
-  {
+  .counter__sec {
     padding: 50px 0;
   }
   .faq__sec {
@@ -247,15 +245,14 @@
       grid-row: 2;
     }
   }
-  .tmb__deploy__sec{
-    .d-none{
+  .tmb__deploy__sec {
+    .d-none {
       display: block;
       max-width: 100%;
     }
-    .d-block{
+    .d-block {
       display: none;
     }
-
   }
 
   .crd__grid {
@@ -369,24 +366,28 @@
     }
   }
   .mySwiperInfocard {
-    .swiper-slide-active{
-      background: linear-gradient(to right, #d177a5 0%, #7a70e1 48%, #7ea9c2 100%);
+    .swiper-slide-active {
+      background: linear-gradient(
+        to right,
+        #d177a5 0%,
+        #7a70e1 48%,
+        #7ea9c2 100%
+      );
       padding: 1px;
       border-radius: 5px;
     }
   }
   .featured__tabs,
-  .grow__sec
-  {
+  .grow__sec {
     padding: 50px 0;
   }
-  .career__banner__sec{
+  .career__banner__sec {
     padding-bottom: 50px;
   }
   .recent__episodes {
     padding: 80px 0;
   }
-  .browse__banner__sec{
+  .browse__banner__sec {
     padding: 60px 0;
   }
 }
@@ -577,7 +578,7 @@
     top: 0;
     padding: 30px 0;
     background-color: #0b0e1e;
-    border-bottom: 1px solid #1D212E;
+    border-bottom: 1px solid #1d212e;
   }
 
   nav.nav__list {
@@ -676,10 +677,10 @@
   .nav-modifier:hover::before {
     background: #fff;
   }
-  .header.header-modofier{
-    .view__cart__wrapper{
+  .header.header-modofier {
+    .view__cart__wrapper {
       width: 100%;
-      .nav__item.view-cart-btn{
+      .nav__item.view-cart-btn {
         width: 100%;
         text-align: center;
       }
@@ -1506,17 +1507,16 @@
   // sustain page responsive css end
 
   // policy pages responsive start
-  .banner-modifier{
+  .banner-modifier {
     padding-top: 63px !important;
   }
-    .sec__content__wrapper {
-      padding: 15px 0 ;
+  .sec__content__wrapper {
+    padding: 15px 0;
 
-      .policy__text {
-        padding: 0;
-      }
+    .policy__text {
+      padding: 0;
     }
-  
+  }
 
   // policy pages responsive end
 
@@ -1936,24 +1936,24 @@
   .sec__news__room__tabs .news__room__tabs__Content .sec__text .tabs__date {
     gap: 40px;
   }
-  .browse__banner__sec{
-    .sec__content__inner{
-        flex-direction: column-reverse;
-        .sec__text,
-        .sec__img{
-          width: 100%;
-        }      
-        .sec__text{
-          .sec__heading{
-            width: calc(100% + 10px);
-            margin-left: -5px;
-          }
-          hr.line{
-            width: 100%;
-          }
+  .browse__banner__sec {
+    .sec__content__inner {
+      flex-direction: column-reverse;
+      .sec__text,
+      .sec__img {
+        width: 100%;
+      }
+      .sec__text {
+        .sec__heading {
+          width: calc(100% + 10px);
+          margin-left: -5px;
         }
+        hr.line {
+          width: 100%;
+        }
+      }
     }
-  } 
+  }
   .sec__news__room__tabs .grid__tabs {
     gap: 20px;
     grid-template-columns: 1fr;
@@ -2227,9 +2227,9 @@
       left: 54px;
     }
   }
-  .deploy__sec__img{
+  .deploy__sec__img {
     height: 270px;
-    svg{
+    svg {
       left: 0;
     }
   }
@@ -2573,17 +2573,18 @@
   .trusted__logo__list {
     top: 70%;
   }
-  .policy__text{
+  .policy__text {
     padding: 0;
   }
-  .jp-type-playlist .control__wrapper, .jp-type-playlist .jp-toggles{
+  .jp-type-playlist .control__wrapper,
+  .jp-type-playlist .jp-toggles {
     margin-top: 0;
   }
-  .globel__sec__img{
+  .globel__sec__img {
     height: 250px;
     max-width: 250px;
   }
-  .browse__banner__sec .sec__content__inner .sec__text .primary-btn{
+  .browse__banner__sec .sec__content__inner .sec__text .primary-btn {
     width: 100%;
     text-align: center;
   }

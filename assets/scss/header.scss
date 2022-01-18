@@ -66,6 +66,7 @@
   overflow: hidden;
   transition: 0.5s ease-out;
   transform: translateY(20px);
+
   .dropdown__item {
     position: relative;
 
@@ -140,43 +141,75 @@
 .nav-modifier {
   padding-right: 20px;
   position: relative;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  display: block;
   position: relative;
   cursor: pointer;
   &::after,
   &::before {
-    display: none;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 10px);
+    transform: translatey(-50%);
+    background-color: #fff;
+    width: 10px;
+    height: 2px;
+    border-radius: 10px;
+    transition: transform 0.4s;
+  }
+  &::before {
+    transform: rotate(90deg);
+  }
+  &::after {
+    transform: translatey(-20%);
+    width: 10px !important;
+    background: #fff;
   }
   &:hover {
-    svg rect {
-      fill: #7ea9c2;
-      transition: opacity 0.4s;
+    &::after,
+    &::before {
+      background: linear-gradient(to right, #d177a5, #7a70e1, #7ea9c2);
     }
   }
 }
-// .nav__item.nav-modifier.show + div{
-//   display: block;
-//   transition:transform 0.4s;
-//   // transform: translatey(0);
+.nav__item.nav-modifier.show ~ .dropdown {
+  opacity: 1;
+  display: block;
+  transform: translatey(0);
+  transition: 0.5s ease-out;
+}
+.nav__item.nav-modifier.show + .dropdown {
+  animation: header 0.2s linear alternate;
+}
+@keyframes header {
+  0% {
+    top: 70px;
+    opacity: 0;
+  }
+
+  100% {
+    top: 40px;
+    opacity: 1;
+  }
+}
+// .nav__item.nav-modifier.show ~ .dropdown .dropdown__inner {
 // }
 .nav__item.nav-modifier.show {
   background: linear-gradient(to right, #d177a5, #7a70e1, #7ea9c2) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
-  svg rect {
-    fill: #7ea9c2;
+  &::after,
+  &::before {
+    background: linear-gradient(to right, #d177a5, #7a70e1, #7ea9c2);
   }
-  .col-line {
-    opacity: 0;
+  &::before {
+    transform: rotate(0deg);
   }
 }
 .informational__pages,
 .social__icons {
   display: none;
 }
-
 // browse page header css start
 .header.header-modofier {
   .nav__list ul {
@@ -186,7 +219,6 @@
   .view-cart-btn::after {
     display: none;
   }
-
   .view-cart-btn {
     border: 1px solid #2566f8;
     padding: 10px 15px;
